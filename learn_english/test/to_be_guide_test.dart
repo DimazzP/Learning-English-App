@@ -41,8 +41,8 @@ void main() {
       expect(ToBeData.commonMistakes.any((m) => m.wrong.contains('agree')), isTrue);
     });
 
-    test('Practice questions have valid options and single correct answer', () {
-      expect(ToBeData.practiceQuestions.length, greaterThanOrEqualTo(10));
+    test('Practice questions has 30 items with valid options and single correct answer', () {
+      expect(ToBeData.practiceQuestions.length, 30);
       for (final q in ToBeData.practiceQuestions) {
         expect(q.id.isNotEmpty, isTrue);
         expect(q.question.contains('_______'), isTrue);

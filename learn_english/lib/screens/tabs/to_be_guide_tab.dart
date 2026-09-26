@@ -13,20 +13,48 @@ class _ToBeGuideTabState extends State<ToBeGuideTab> {
   // 'rules' (Pondasi & Aturan), 'matrix' (Matriks Subjek), 'mistakes' (Kesalahan Umum), 'quiz' (Latihan Soal)
   String _activeSection = 'rules';
 
-  // Quiz state
-  int _currentQuizIndex = 0;
+  // Continuous Quiz state (same behavior as Tense Quiz in QuizTab)
+  ToBeQuizQuestion? _currentQuizQuestion;
   String? _selectedAnswer;
   bool _hasAnswered = false;
-  int _score = 0;
-  final Set<String> _answeredQuestions = {};
+  final Set<String> _usedQuizQuestionIds = <String>{};
 
-  void _resetQuiz() {
+  @override
+  void initState() {
+    super.initState();
+    _loadNextQuizQuestion();
+  }
+
+  void _loadNextQuizQuestion() {
+    final questions = ToBeData.practiceQuestions;
+    if (questions.isEmpty) return;
+
+    final available = questions
+        .where((q) => !_usedQuizQuestionIds.contains(q.id))
+        .toList();
+
+    if (available.isEmpty) {
+      _usedQuizQuestionIds.clear();
+      available.addAll(questions);
+    }
+
+    available.shuffle();
+    final nextQ = available.first;
+    _usedQuizQuestionIds.add(nextQ.id);
+
+    final shuffledOptions = List<String>.from(nextQ.options)..shuffle();
+
     setState(() {
-      _currentQuizIndex = 0;
+      _currentQuizQuestion = ToBeQuizQuestion(
+        id: nextQ.id,
+        question: nextQ.question,
+        options: shuffledOptions,
+        correctAnswer: nextQ.correctAnswer,
+        explanation: nextQ.explanation,
+        translation: nextQ.translation,
+      );
       _selectedAnswer = null;
       _hasAnswered = false;
-      _score = 0;
-      _answeredQuestions.clear();
     });
   }
 
@@ -35,21 +63,7 @@ class _ToBeGuideTabState extends State<ToBeGuideTab> {
     setState(() {
       _selectedAnswer = option;
       _hasAnswered = true;
-      if (option == q.correctAnswer) {
-        _score++;
-      }
-      _answeredQuestions.add(q.id);
     });
-  }
-
-  void _nextQuestion(int totalQuestions) {
-    if (_currentQuizIndex < totalQuestions - 1) {
-      setState(() {
-        _currentQuizIndex++;
-        _selectedAnswer = null;
-        _hasAnswered = false;
-      });
-    }
   }
 
   @override
@@ -534,202 +548,235 @@ class _ToBeGuideTabState extends State<ToBeGuideTab> {
 
   // ==================== SECTION 4: PRACTICE QUIZ ====================
   Widget _buildQuizSection(bool isDark) {
-    final questions = ToBeData.practiceQuestions;
-    final total = questions.length;
-    final isFinished = _currentQuizIndex >= total;
+    final q = _currentQuizQuestion;
+    if (q == null) {
+      return const Center(child: CircularProgressIndicator());
+    }
 
-    if (isFinished) {
-      return Card(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+    final isCorrect = _selectedAnswer == q.correctAnswer;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Question Card
+        Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            color: isDark ? const Color(0xFF1E293B) : Colors.white,
+            borderRadius: BorderRadius.circular(18),
+            border: Border.all(
+              color: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
+            ),
+          ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Icon(Icons.emoji_events_rounded, color: Colors.amber, size: 56),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: Colors.purple.withValues(alpha: 0.15),
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(color: Colors.purple.withValues(alpha: 0.3)),
+                    ),
+                    child: const Text(
+                      'Latihan To Be',
+                      style: TextStyle(
+                        fontSize: 11,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.purple,
+                      ),
+                    ),
+                  ),
+                  IconButton(
+                    tooltip: 'Dengarkan kalimat soal',
+                    icon: const Icon(Icons.volume_up_rounded, color: Colors.purple, size: 20),
+                    onPressed: () => TtsService.instance.speak(q.question.replaceAll('_______', 'blank')),
+                  ),
+                ],
+              ),
               const SizedBox(height: 12),
-              const Text(
-                'Latihan Selesai!',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              Text(
+                q.question,
+                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, height: 1.4),
               ),
               const SizedBox(height: 8),
               Text(
-                'Skor Anda: $_score dari $total soal benar',
-                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.purple),
-              ),
-              const SizedBox(height: 20),
-              ElevatedButton.icon(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.purple,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                ),
-                icon: const Icon(Icons.replay_rounded),
-                label: const Text('Ulangi Latihan'),
-                onPressed: _resetQuiz,
+                'Arti: "${q.translation}"',
+                style: TextStyle(fontSize: 12.5, color: isDark ? Colors.grey.shade400 : Colors.grey.shade600),
               ),
             ],
           ),
         ),
-      );
-    }
+        const SizedBox(height: 14),
 
-    final q = questions[_currentQuizIndex];
+        // 4 Options
+        ...q.options.map((option) {
+          final isOptionCorrect = option == q.correctAnswer;
+          final isSelected = _selectedAnswer == option;
 
-    return Card(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      elevation: 2,
-      child: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Quiz Progress Header
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Soal ${_currentQuizIndex + 1} dari $total',
-                  style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.purple, fontSize: 14),
+          Color? btnBgColor;
+          Color? btnTextColor;
+          BorderSide borderSide = BorderSide(
+            color: isDark ? const Color(0xFF334155) : const Color(0xFFCBD5E1),
+          );
+
+          if (_hasAnswered) {
+            if (isOptionCorrect) {
+              btnBgColor = Colors.green.withValues(alpha: 0.15);
+              btnTextColor = Colors.green;
+              borderSide = const BorderSide(color: Colors.green, width: 1.5);
+            } else if (isSelected) {
+              btnBgColor = Colors.red.withValues(alpha: 0.15);
+              btnTextColor = Colors.red;
+              borderSide = const BorderSide(color: Colors.red, width: 1.5);
+            }
+          }
+
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 10),
+            child: SizedBox(
+              width: double.infinity,
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  backgroundColor: btnBgColor,
+                  foregroundColor: btnTextColor,
+                  side: borderSide,
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                  alignment: Alignment.centerLeft,
                 ),
-                Text(
-                  'Skor: $_score',
-                  style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.green, fontSize: 14),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            LinearProgressIndicator(
-              value: (_currentQuizIndex + 1) / total,
-              backgroundColor: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
-              color: Colors.purple,
-              borderRadius: BorderRadius.circular(6),
-            ),
-            const SizedBox(height: 20),
-
-            // Question Text
-            Text(
-              q.question,
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 6),
-            Text(
-              q.translation,
-              style: TextStyle(fontSize: 13, color: isDark ? Colors.grey.shade400 : Colors.grey.shade700),
-            ),
-            const SizedBox(height: 20),
-
-            // 4 Options
-            ...q.options.map((option) {
-              final isCorrect = option == q.correctAnswer;
-              final isSelected = _selectedAnswer == option;
-
-              Color? btnBgColor;
-              Color? btnTextColor;
-              BorderSide borderSide = BorderSide(
-                color: isDark ? const Color(0xFF334155) : const Color(0xFFCBD5E1),
-              );
-
-              if (_hasAnswered) {
-                if (isCorrect) {
-                  btnBgColor = Colors.green.withValues(alpha: 0.15);
-                  btnTextColor = Colors.green;
-                  borderSide = const BorderSide(color: Colors.green, width: 1.5);
-                } else if (isSelected) {
-                  btnBgColor = Colors.red.withValues(alpha: 0.15);
-                  btnTextColor = Colors.red;
-                  borderSide = const BorderSide(color: Colors.red, width: 1.5);
-                }
-              }
-
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 10),
-                child: SizedBox(
-                  width: double.infinity,
-                  child: OutlinedButton(
-                    style: OutlinedButton.styleFrom(
-                      backgroundColor: btnBgColor,
-                      foregroundColor: btnTextColor,
-                      side: borderSide,
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                      alignment: Alignment.centerLeft,
-                    ),
-                    onPressed: () => _handleAnswerSelect(option, q),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          option,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-                          ),
-                        ),
-                        if (_hasAnswered && isCorrect)
-                          const Icon(Icons.check_circle_rounded, color: Colors.green, size: 20),
-                        if (_hasAnswered && isSelected && !isCorrect)
-                          const Icon(Icons.cancel_rounded, color: Colors.red, size: 20),
-                      ],
-                    ),
-                  ),
-                ),
-              );
-            }),
-
-            // Explanation & Next Button after answering
-            if (_hasAnswered) ...[
-              const SizedBox(height: 12),
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(14),
-                decoration: BoxDecoration(
-                  color: isDark ? const Color(0xFF1E293B) : const Color(0xFFF1F5F9),
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(
-                    color: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
-                  ),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                onPressed: () => _handleAnswerSelect(option, q),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Row(
-                      children: [
-                        Icon(Icons.info_outline_rounded, color: Colors.purple, size: 18),
-                        SizedBox(width: 6),
-                        Text(
-                          'Penjelasan:',
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 4),
                     Text(
-                      q.explanation,
-                      style: const TextStyle(fontSize: 13, height: 1.4),
+                      option,
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                      ),
                     ),
+                    if (_hasAnswered && isOptionCorrect)
+                      const Icon(Icons.check_circle_rounded, color: Colors.green, size: 20),
+                    if (_hasAnswered && isSelected && !isOptionCorrect)
+                      const Icon(Icons.cancel_rounded, color: Colors.red, size: 20),
                   ],
                 ),
               ),
-              const SizedBox(height: 16),
-              Align(
-                alignment: Alignment.centerRight,
-                child: ElevatedButton.icon(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.purple,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                  ),
-                  icon: const Icon(Icons.arrow_forward_rounded, size: 18),
-                  label: Text(_currentQuizIndex < total - 1 ? 'Soal Berikutnya' : 'Lihat Hasil'),
-                  onPressed: () => _nextQuestion(total),
-                ),
+            ),
+          );
+        }),
+
+        // Feedback & Next Button (identical to Tense Quiz behavior)
+        if (_hasAnswered) ...[
+          const SizedBox(height: 10),
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: (isCorrect ? Colors.green : Colors.red).withValues(alpha: isDark ? 0.18 : 0.08),
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(
+                color: (isCorrect ? Colors.green : Colors.red).withValues(alpha: 0.35),
+                width: 1.5,
               ),
-            ],
-          ],
-        ),
-      ),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(
+                          isCorrect ? Icons.check_circle_rounded : Icons.cancel_rounded,
+                          color: isCorrect ? Colors.green : Colors.red,
+                          size: 20,
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          isCorrect ? 'Jawaban Benar!' : 'Jawaban Kurang Tepat',
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: isCorrect ? Colors.green : Colors.red,
+                          ),
+                        ),
+                      ],
+                    ),
+                    IconButton(
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(),
+                      tooltip: 'Dengarkan kalimat lengkap',
+                      icon: const Icon(Icons.volume_up_rounded, color: Colors.purple, size: 20),
+                      onPressed: () => TtsService.instance.speak(
+                        q.question.replaceAll('_______', q.correctAnswer),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'Jawaban tepat: "${q.correctAnswer}"',
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.bold,
+                    color: isDark ? Colors.greenAccent : Colors.green.shade800,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: isDark ? const Color(0xFF1E293B) : Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Icon(Icons.lightbulb_outline_rounded, size: 16, color: Colors.amber),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Penjelasan:',
+                              style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.amber),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              q.explanation,
+                              style: const TextStyle(fontSize: 12, height: 1.35),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 14),
+          FilledButton.icon(
+            onPressed: _loadNextQuizQuestion,
+            icon: const Icon(Icons.arrow_forward_rounded),
+            label: const Text('Soal Berikutnya (Acak)'),
+            style: FilledButton.styleFrom(
+              backgroundColor: Colors.purple,
+              minimumSize: const Size(double.infinity, 48),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            ),
+          ),
+        ],
+      ],
     );
   }
 }
