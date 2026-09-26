@@ -1,0 +1,90 @@
+[
+  {
+    "id": "q_past_14",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "By the time the fire brigade arrived, the neighbors _______ extinguished the flames.",
+    "options": [
+      "had",
+      "have",
+      "were",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Frasa 'By the time' diikuti Simple Past menandakan peristiwa sebelumnya menggunakan Past Perfect: had + extinguished.",
+    "translation": "Menjelang pemadam kebakaran tiba, para tetangga telah memadamkan kobaran api.",
+    "targetSentence": "By the time the fire brigade arrived, the neighbors had extinguished the flames.",
+    "indonesianPrompt": "Menjelang pemadam kebakaran tiba, para tetangga telah memadamkan kobaran api.",
+    "acceptedAnswers": [
+      "By the time the fire brigade arrived, the neighbors had extinguished the flames."
+    ]
+  },
+  {
+    "id": "q_past_19",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "She had been _______ as a freelance translator for five years before opening her agency.",
+    "options": [
+      "working",
+      "worked",
+      "work",
+      "works"
+    ],
+    "correctAnswer": "working",
+    "explanation": "Rumus Past Perfect Continuous adalah had + been + Verb-ing (working) untuk menekankan durasi aksi sebelum peristiwa lampau lain.",
+    "translation": "Dia telah bekerja sebagai penerjemah lepas selama lima tahun sebelum membuka agensinya sendiri.",
+    "targetSentence": "She had been working as a freelance translator for five years before opening her agency.",
+    "indonesianPrompt": "Dia telah bekerja sebagai penerjemah lepas selama lima tahun sebelum membuka agensinya sendiri.",
+    "acceptedAnswers": [
+      "She had been working as a freelance translator for five years before opening her agency."
+    ]
+  },
+  {
+    "id": "q_past_20",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "His clothes were soaked because he _______ been walking through the heavy rain.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "have"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Menjelaskan sebab akibat di masa lampau (pakaiannya basah kuyup) menggunakan Past Perfect Continuous: had been walking.",
+    "translation": "Pakaiannya basah kuyup karena dia telah berjalan menembus hujan lebat.",
+    "targetSentence": "His clothes were soaked because he had been walking through the heavy rain.",
+    "indonesianPrompt": "Pakaiannya basah kuyup karena dia telah berjalan menembus hujan lebat.",
+    "acceptedAnswers": [
+      "His clothes were soaked because he had been walking through the heavy rain."
+    ]
+  },
+  {
+    "id": "q_past_21",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "How long had the orchestra been _______ before the concert hall opened its doors?",
+    "options": [
+      "rehearsing",
+      "rehearsed",
+      "rehearse",
+      "rehearses"
+    ],
+    "correctAnswer": "rehearsing",
+    "explanation": "Struktur pertanyaan Past Perfect Continuous membutuhkan 'been + Verb-ing': rehearsing.",
+    "translation": "Berapa lama orkestra itu telah berlatih sebelum gedung konser membuka pintunya?",
+    "targetSentence": "How long had the orchestra been rehearsing before the concert hall opened its doors?",
+    "indonesianPrompt": "Berapa lama orkestra itu telah berlatih sebelum gedung konser membuka pintunya?",
+    "acceptedAnswers": [
+      "How long had the orchestra been rehearsing before the concert hall opened its doors?"
+    ]
+  }
+]

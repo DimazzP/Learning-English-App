@@ -1,0 +1,290 @@
+[
+  {
+    "id": "b_pfut_01",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "He said that he _______ help me with my work.",
+    "options": [
+      "would",
+      "will",
+      "can",
+      "shall"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Dalam kalimat lampau tidak langsung ('said'), kata 'will' berubah menjadi 'would'.",
+    "translation": "Dia mengatakan bahwa dia akan membantu saya menyelesaikan pekerjaan saya.",
+    "targetSentence": "He said that he would help me with my work.",
+    "indonesianPrompt": "Dia mengatakan bahwa dia akan membantu saya menyelesaikan pekerjaan saya.",
+    "acceptedAnswers": [
+      "He said that he would help me with my work."
+    ]
+  },
+  {
+    "id": "b_pfut_02",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "I told him that I _______ be late.",
+    "options": [
+      "would",
+      "will",
+      "am",
+      "can"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Bentuk past future dari 'will be' setelah kalimat pengantar lampau ('told') adalah 'would be'.",
+    "translation": "Saya memberi tahu dia bahwa saya akan terlambat.",
+    "targetSentence": "I told him that I would be late.",
+    "indonesianPrompt": "Saya memberi tahu dia bahwa saya akan terlambat.",
+    "acceptedAnswers": [
+      "I told him that I would be late."
+    ]
+  },
+  {
+    "id": "b_pfut_03",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "She promised she _______ buy some bread on her way home.",
+    "options": [
+      "would",
+      "will",
+      "can",
+      "shall"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Janji di masa lampau ('promised') menggunakan modal 'would' + Verb 1.",
+    "translation": "Dia berjanji dia akan membeli roti dalam perjalanan pulang.",
+    "targetSentence": "She promised she would buy some bread on her way home.",
+    "indonesianPrompt": "Dia berjanji dia akan membeli roti dalam perjalanan pulang.",
+    "acceptedAnswers": [
+      "She promised she would buy some bread on her way home."
+    ]
+  },
+  {
+    "id": "b_pfut_04",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "If I had money, I _______ buy that bicycle.",
+    "options": [
+      "would",
+      "will",
+      "can",
+      "did"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Pengandaian sederhana masa kini (Conditional Type 2) menggunakan: would + Verb 1 (buy).",
+    "translation": "Jika saya punya uang, saya akan membeli sepeda itu.",
+    "targetSentence": "If I had money, I would buy that bicycle.",
+    "indonesianPrompt": "Jika saya punya uang, saya akan membeli sepeda itu.",
+    "acceptedAnswers": [
+      "If I had money, I would buy that bicycle."
+    ]
+  },
+  {
+    "id": "b_pfut_05",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "_______ you please open the door for me?",
+    "options": [
+      "Would",
+      "Did",
+      "Shall",
+      "Was"
+    ],
+    "correctAnswer": "Would",
+    "explanation": "Ungkapan sopan meminta bantuan menggunakan 'Would you please...'.",
+    "translation": "Maukah Anda membukakan pintu untuk saya?",
+    "targetSentence": "Would you please open the door for me?",
+    "indonesianPrompt": "Maukah Anda membukakan pintu untuk saya?",
+    "acceptedAnswers": [
+      "Would you please open the door for me?"
+    ]
+  },
+  {
+    "id": "b_pfut_06",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "We thought it _______ rain, so we took umbrellas.",
+    "options": [
+      "would",
+      "will",
+      "is",
+      "can"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Pikiran masa lampau ('thought') diikuti bentuk lampau masa depan: would rain.",
+    "translation": "Kami mengira akan hujan, jadi kami membawa payung.",
+    "targetSentence": "We thought it would rain, so we took umbrellas.",
+    "indonesianPrompt": "Kami mengira akan hujan, jadi kami membawa payung.",
+    "acceptedAnswers": [
+      "We thought it would rain, so we took umbrellas."
+    ]
+  },
+  {
+    "id": "b_pfut_07",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "I _______ like a cup of hot chocolate, please.",
+    "options": [
+      "would",
+      "will",
+      "did",
+      "was"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Ungkapan santun memesan minuman: 'I would like' (I'd like).",
+    "translation": "Saya ingin secangkir cokelat panas, tolong.",
+    "targetSentence": "I would like a cup of hot chocolate, please.",
+    "indonesianPrompt": "Saya ingin secangkir cokelat panas, tolong.",
+    "acceptedAnswers": [
+      "I would like a cup of hot chocolate, please."
+    ]
+  },
+  {
+    "id": "b_pfut_08",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "They said they _______ visit us last week.",
+    "options": [
+      "would",
+      "will",
+      "are",
+      "have"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Niat masa lalu yang disampaikan sebelumnya menggunakan 'would visit'.",
+    "translation": "Mereka mengatakan mereka akan mengunjungi kami minggu lalu.",
+    "targetSentence": "They said they would visit us last week.",
+    "indonesianPrompt": "Mereka mengatakan mereka akan mengunjungi kami minggu lalu.",
+    "acceptedAnswers": [
+      "They said they would visit us last week."
+    ]
+  },
+  {
+    "id": "b_pfut_09",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "She _______ not eat the food because she was not hungry.",
+    "options": [
+      "would",
+      "will",
+      "is",
+      "has"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Bentuk penolakan di masa lalu: would not + Verb 1 (eat).",
+    "translation": "Dia tidak mau memakan makanan itu karena dia tidak lapar.",
+    "targetSentence": "She would not eat the food because she was not hungry.",
+    "indonesianPrompt": "Dia tidak mau memakan makanan itu karena dia tidak lapar.",
+    "acceptedAnswers": [
+      "She would not eat the food because she was not hungry.",
+      "She wouldn't eat the food because she was not hungry.",
+      "She would not eat the food because she wasn't hungry."
+    ]
+  },
+  {
+    "id": "b_pfut_10",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "If he were here, he _______ help us solve this.",
+    "options": [
+      "would",
+      "will",
+      "did",
+      "can"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Pengandaian Type 2 (If he were here) berpasangan dengan would + Verb 1.",
+    "translation": "Jika dia ada di sini, dia akan membantu kita menyelesaikan ini.",
+    "targetSentence": "If he were here, he would help us solve this.",
+    "indonesianPrompt": "Jika dia ada di sini, dia akan membantu kita menyelesaikan ini.",
+    "acceptedAnswers": [
+      "If he were here, he would help us solve this."
+    ]
+  },
+  {
+    "id": "b_pfut_11",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "I knew that you _______ pass the driving test.",
+    "options": [
+      "would",
+      "will",
+      "can",
+      "shall"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Setelah 'knew' (tahu di masa lampau), gunakan 'would pass'.",
+    "translation": "Saya tahu bahwa kamu akan lulus ujian mengemudi itu.",
+    "targetSentence": "I knew that you would pass the driving test.",
+    "indonesianPrompt": "Saya tahu bahwa kamu akan lulus ujian mengemudi itu.",
+    "acceptedAnswers": [
+      "I knew that you would pass the driving test."
+    ]
+  },
+  {
+    "id": "b_pfut_12",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "He promised he _______ call as soon as he arrived.",
+    "options": [
+      "would",
+      "will",
+      "can",
+      "shall"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Janji masa lampau menggunakan modal 'would' + Verb 1.",
+    "translation": "Dia berjanji dia akan menelepon begitu dia tiba.",
+    "targetSentence": "He promised he would call as soon as he arrived.",
+    "indonesianPrompt": "Dia berjanji dia akan menelepon begitu dia tiba.",
+    "acceptedAnswers": [
+      "He promised he would call as soon as he arrived."
+    ]
+  },
+  {
+    "id": "b_pfut_13",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "Would you _______ a glass of fresh orange juice?",
+    "options": [
+      "like",
+      "likes",
+      "liked",
+      "liking"
+    ],
+    "correctAnswer": "like",
+    "explanation": "Setelah 'Would you', kata kerja selalu berbentuk dasar: like.",
+    "translation": "Apakah kamu mau segelas jus jeruk segar?",
+    "targetSentence": "Would you like a glass of fresh orange juice?",
+    "indonesianPrompt": "Apakah kamu mau segelas jus jeruk segar?",
+    "acceptedAnswers": [
+      "Would you like a glass of fresh orange juice?"
+    ]
+  }
+]

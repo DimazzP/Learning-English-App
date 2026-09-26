@@ -1,0 +1,269 @@
+[
+  {
+    "id": "q_pfut_02",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "If I had enough financial savings, I _______ buy that professional camera.",
+    "options": [
+      "would",
+      "will",
+      "had",
+      "did"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Pada Conditional Sentence Type 2 (pengandaian masa kini yang tidak nyata), klausa utama menggunakan would + Verb 1.",
+    "translation": "Jika saya memiliki cukup tabungan finansial, saya akan membeli kamera profesional itu.",
+    "targetSentence": "If I had enough financial savings, I would buy that professional camera.",
+    "indonesianPrompt": "Jika saya memiliki cukup tabungan finansial, saya akan membeli kamera profesional itu.",
+    "acceptedAnswers": [
+      "If I had enough financial savings, I would buy that professional camera."
+    ]
+  },
+  {
+    "id": "q_pfut_13",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Perfect Tense",
+    "question": "If they had left the house twenty minutes earlier, they _______ caught the express train.",
+    "options": [
+      "would have",
+      "will have",
+      "had",
+      "would"
+    ],
+    "correctAnswer": "would have",
+    "explanation": "Conditional Sentence Type 3 (pengandaian masa lampau): if + had + V3 berpasangan dengan would have + V3 (caught).",
+    "translation": "Jika mereka berangkat dari rumah dua puluh menit lebih awal, mereka pasti sudah mengejar kereta ekspres itu.",
+    "targetSentence": "If they had left the house twenty minutes earlier, they would have caught the express train.",
+    "indonesianPrompt": "Jika mereka berangkat dari rumah dua puluh menit lebih awal, mereka pasti sudah mengejar kereta ekspres itu.",
+    "acceptedAnswers": [
+      "If they had left the house twenty minutes earlier, they would have caught the express train."
+    ]
+  },
+  {
+    "id": "q_pfut_14",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Perfect Tense",
+    "question": "She would have _______ the difficult English examination if she had reviewed the verb charts.",
+    "options": [
+      "passed",
+      "pass",
+      "passing",
+      "passes"
+    ],
+    "correctAnswer": "passed",
+    "explanation": "Setelah 'would have', kata kerja WAJIB berbentuk Verb 3 (Past Participle): passed.",
+    "translation": "Dia pasti sudah lulus ujian bahasa Inggris yang sulit itu jika dia meninjau tabel kata kerja.",
+    "targetSentence": "She would have passed the difficult English examination if she had reviewed the verb charts.",
+    "indonesianPrompt": "Dia pasti sudah lulus ujian bahasa Inggris yang sulit itu jika dia meninjau tabel kata kerja.",
+    "acceptedAnswers": [
+      "She would have passed the difficult English examination if she had reviewed the verb charts."
+    ]
+  },
+  {
+    "id": "q_pfut_15",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Perfect Tense",
+    "question": "I _______ not have made that spelling mistake if I had checked the dictionary.",
+    "options": [
+      "would",
+      "will",
+      "had",
+      "did"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Bentuk penyesalan masa lampau negatif menggunakan rumus: would not have + Verb 3 (made).",
+    "translation": "Saya tidak akan membuat kesalahan ejaan itu seandainya saya memeriksa kamus.",
+    "targetSentence": "I would not have made that spelling mistake if I had checked the dictionary.",
+    "indonesianPrompt": "Saya tidak akan membuat kesalahan ejaan itu seandainya saya memeriksa kamus.",
+    "acceptedAnswers": [
+      "I would not have made that spelling mistake if I had checked the dictionary.",
+      "I wouldn't have made that spelling mistake if I had checked the dictionary."
+    ]
+  },
+  {
+    "id": "q_pfut_16",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Perfect Tense",
+    "question": "Would you have _______ the job offer if the headquarters had been located in Jakarta?",
+    "options": [
+      "accepted",
+      "accept",
+      "accepting",
+      "accepts"
+    ],
+    "correctAnswer": "accepted",
+    "explanation": "Pertanyaan pengandaian masa lampau (Third Conditional) membutuhkan: Would you have + Verb 3 (accepted).",
+    "translation": "Apakah kamu akan telah menerima tawaran pekerjaan itu jika kantor pusatnya berlokasi di Jakarta?",
+    "targetSentence": "Would you have accepted the job offer if the headquarters had been located in Jakarta?",
+    "indonesianPrompt": "Apakah kamu akan telah menerima tawaran pekerjaan itu jika kantor pusatnya berlokasi di Jakarta?",
+    "acceptedAnswers": [
+      "Would you have accepted the job offer if the headquarters had been located in Jakarta?"
+    ]
+  },
+  {
+    "id": "q_pfut_17",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Perfect Tense",
+    "question": "By 2021, the company expected that it _______ completed the digital transformation.",
+    "options": [
+      "would have",
+      "will have",
+      "has",
+      "had been"
+    ],
+    "correctAnswer": "would have",
+    "explanation": "Ekspektasi masa lampau bahwa suatu aksi sudah tuntas sebelum batas waktu lampau menggunakan Past Future Perfect: would have completed.",
+    "translation": "Menjelang tahun 2021, perusahaan memperkirakan bahwa mereka pasti sudah menyelesaikan transformasi digital.",
+    "targetSentence": "By 2021, the company expected that it would have completed the digital transformation.",
+    "indonesianPrompt": "Menjelang tahun 2021, perusahaan memperkirakan bahwa mereka pasti sudah menyelesaikan transformasi digital.",
+    "acceptedAnswers": [
+      "By 2021, the company expected that it would have completed the digital transformation."
+    ]
+  },
+  {
+    "id": "q_pfut_18",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Perfect Tense",
+    "question": "If you had informed us earlier, we would _______ been able to assist you.",
+    "options": [
+      "have",
+      "had",
+      "has",
+      "are"
+    ],
+    "correctAnswer": "have",
+    "explanation": "Setelah modal lampau 'would', kata bantu kepemilikan bentuk sempurna WAJIB 'have' (bukan had atau has).",
+    "translation": "Jika kamu memberi tahu kami lebih awal, kami pasti sudah dapat membantumu.",
+    "targetSentence": "If you had informed us earlier, we would have been able to assist you.",
+    "indonesianPrompt": "Jika kamu memberi tahu kami lebih awal, kami pasti sudah dapat membantumu.",
+    "acceptedAnswers": [
+      "If you had informed us earlier, we would have been able to assist you."
+    ]
+  },
+  {
+    "id": "q_pfut_19",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Perfect Continuous Tense",
+    "question": "By last autumn, he _______ have been teaching at the university for twenty-five years.",
+    "options": [
+      "would",
+      "will",
+      "had",
+      "is"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Menyatakan durasi yang seharusnya sudah terlewati di masa lampau seandainya tidak ada perubahan: would have been teaching.",
+    "translation": "Menjelang musim gugur lalu, dia semestinya telah mengajar di universitas itu selama dua puluh lima tahun.",
+    "targetSentence": "By last autumn, he would have been teaching at the university for twenty-five years.",
+    "indonesianPrompt": "Menjelang musim gugur lalu, dia semestinya telah mengajar di universitas itu selama dua puluh lima tahun.",
+    "acceptedAnswers": [
+      "By last autumn, he would have been teaching at the university for twenty-five years."
+    ]
+  },
+  {
+    "id": "q_pfut_20",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Perfect Continuous Tense",
+    "question": "She would have been _______ for three hours by noon yesterday if the flight hadn't been delayed.",
+    "options": [
+      "flying",
+      "flown",
+      "flew",
+      "fly"
+    ],
+    "correctAnswer": "flying",
+    "explanation": "Rumus Past Future Perfect Continuous adalah would have been + Verb-ing: flying.",
+    "translation": "Dia semestinya telah terbang selama tiga jam menjelang siang kemarin seandainya penerbangan tidak ditunda.",
+    "targetSentence": "She would have been flying for three hours by noon yesterday if the flight hadn't been delayed.",
+    "indonesianPrompt": "Dia semestinya telah terbang selama tiga jam menjelang siang kemarin seandainya penerbangan tidak ditunda.",
+    "acceptedAnswers": [
+      "She would have been flying for three hours by noon yesterday if the flight hadn't been delayed.",
+      "She would have been flying for three hours by noon yesterday if the flight had not been delayed."
+    ]
+  },
+  {
+    "id": "q_pfut_21",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Perfect Continuous Tense",
+    "question": "They _______ not have been living in such hardship if the venture had been successful.",
+    "options": [
+      "would",
+      "will",
+      "had",
+      "did"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Bentuk pengandaian negatif durasi masa lampau: would not have been living.",
+    "translation": "Mereka tidak akan telah hidup dalam kesulitan seperti itu seandainya usaha tersebut berhasil.",
+    "targetSentence": "They would not have been living in such hardship if the venture had been successful.",
+    "indonesianPrompt": "Mereka tidak akan telah hidup dalam kesulitan seperti itu seandainya usaha tersebut berhasil.",
+    "acceptedAnswers": [
+      "They wouldn't have been living in such hardship if the venture had been successful.",
+      "They would not have been living in such hardship if the venture had been successful."
+    ]
+  },
+  {
+    "id": "q_pfut_23",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Perfect Tense",
+    "question": "The research article _______ been published last month if the peer review had gone smoothly.",
+    "options": [
+      "would have",
+      "will have",
+      "has",
+      "had"
+    ],
+    "correctAnswer": "would have",
+    "explanation": "Bentuk pasif Past Future Perfect: would have been + Verb 3 (published).",
+    "translation": "Artikel penelitian itu pasti sudah diterbitkan bulan lalu jika penelaahan sejawat berjalan lancar.",
+    "targetSentence": "The research article would have been published last month if the peer review had gone smoothly.",
+    "indonesianPrompt": "Artikel penelitian itu pasti sudah diterbitkan bulan lalu jika penelaahan sejawat berjalan lancar.",
+    "acceptedAnswers": [
+      "The research article would have been published last month if the peer review had gone smoothly."
+    ]
+  },
+  {
+    "id": "q_pfut_25",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Perfect Continuous Tense",
+    "question": "By 2023, she would have been _______ the charity foundation for ten years if she had stayed.",
+    "options": [
+      "leading",
+      "led",
+      "leads",
+      "lead"
+    ],
+    "correctAnswer": "leading",
+    "explanation": "Rumus Past Future Perfect Continuous mewajibkan bentuk Verb-ing: leading.",
+    "translation": "Menjelang tahun 2023, dia semestinya telah memimpin yayasan amal itu selama sepuluh tahun jika dia tetap bertahan.",
+    "targetSentence": "By 2023, she would have been leading the charity foundation for ten years if she had stayed.",
+    "indonesianPrompt": "Menjelang tahun 2023, dia semestinya telah memimpin yayasan amal itu selama sepuluh tahun jika dia tetap bertahan.",
+    "acceptedAnswers": [
+      "By 2023, she would have been leading the charity foundation for ten years if she had stayed."
+    ]
+  }
+]

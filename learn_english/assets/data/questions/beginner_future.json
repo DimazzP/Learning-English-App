@@ -1,0 +1,267 @@
+[
+  {
+    "id": "b_fut_01",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "I _______ visit my grandmother tomorrow.",
+    "options": [
+      "will",
+      "am",
+      "did",
+      "was"
+    ],
+    "correctAnswer": "will",
+    "explanation": "Keterangan waktu 'tomorrow' menandakan Simple Future Tense dengan modal 'will' + Verb 1.",
+    "translation": "Saya akan mengunjungi nenek saya besok.",
+    "targetSentence": "I will visit my grandmother tomorrow.",
+    "indonesianPrompt": "Saya akan mengunjungi nenek saya besok.",
+    "acceptedAnswers": [
+      "I will visit my grandmother tomorrow."
+    ]
+  },
+  {
+    "id": "b_fut_02",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "She will _______ delicious soup for lunch tomorrow.",
+    "options": [
+      "cook",
+      "cooks",
+      "cooked",
+      "cooking"
+    ],
+    "correctAnswer": "cook",
+    "explanation": "Setelah modal 'will', kata kerja SELALU menggunakan bentuk dasar Verb 1: cook.",
+    "translation": "Dia akan memasak sup yang lezat untuk makan siang besok.",
+    "targetSentence": "She will cook delicious soup for lunch tomorrow.",
+    "indonesianPrompt": "Dia akan memasak sup yang lezat untuk makan siang besok.",
+    "acceptedAnswers": [
+      "She will cook delicious soup for lunch tomorrow."
+    ]
+  },
+  {
+    "id": "b_fut_03",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "They _______ go to the beach next Sunday.",
+    "options": [
+      "will",
+      "are",
+      "did",
+      "were"
+    ],
+    "correctAnswer": "will",
+    "explanation": "Rencana masa depan 'next Sunday' dinyatakan dengan modal 'will'.",
+    "translation": "Mereka akan pergi ke pantai hari Minggu depan.",
+    "targetSentence": "They will go to the beach next Sunday.",
+    "indonesianPrompt": "Mereka akan pergi ke pantai hari Minggu depan.",
+    "acceptedAnswers": [
+      "They will go to the beach next Sunday."
+    ]
+  },
+  {
+    "id": "b_fut_04",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "I will not _______ your secret.",
+    "options": [
+      "tell",
+      "tells",
+      "told",
+      "telling"
+    ],
+    "correctAnswer": "tell",
+    "explanation": "Setelah bentuk negatif 'will not' (won't), kata kerja tetap berbentuk Verb 1: tell.",
+    "translation": "Saya tidak akan menceritakan rahasiamu.",
+    "targetSentence": "I will not tell your secret.",
+    "indonesianPrompt": "Saya tidak akan menceritakan rahasiamu.",
+    "acceptedAnswers": [
+      "I won't tell your secret.",
+      "I will not tell your secret."
+    ]
+  },
+  {
+    "id": "b_fut_05",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "Will you _______ me with this bag?",
+    "options": [
+      "help",
+      "helps",
+      "helped",
+      "helping"
+    ],
+    "correctAnswer": "help",
+    "explanation": "Kalimat tanya Simple Future: Will + Subject + Verb 1 (help).",
+    "translation": "Maukah kamu membantuku membawa tas ini?",
+    "targetSentence": "Will you help me with this bag?",
+    "indonesianPrompt": "Maukah kamu membantuku membawa tas ini?",
+    "acceptedAnswers": [
+      "Will you help me with this bag?"
+    ]
+  },
+  {
+    "id": "b_fut_06",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "We are _______ to watch a movie tonight.",
+    "options": [
+      "going",
+      "go",
+      "went",
+      "gone"
+    ],
+    "correctAnswer": "going",
+    "explanation": "Rencana yang sudah dipersiapkan menggunakan pola 'be going to': are going to watch.",
+    "translation": "Kami akan menonton film nanti malam.",
+    "targetSentence": "We are going to watch a movie tonight.",
+    "indonesianPrompt": "Kami akan menonton film nanti malam.",
+    "acceptedAnswers": [
+      "We are going to watch a movie tonight."
+    ]
+  },
+  {
+    "id": "b_fut_07",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "The train _______ arrive at 9 AM tomorrow.",
+    "options": [
+      "will",
+      "is",
+      "did",
+      "was"
+    ],
+    "correctAnswer": "will",
+    "explanation": "Peristiwa yang akan datang besok dinyatakan dengan 'will arrive'.",
+    "translation": "Kereta akan tiba pada pukul 9 pagi besok.",
+    "targetSentence": "The train will arrive at 9 AM tomorrow.",
+    "indonesianPrompt": "Kereta akan tiba pada pukul 9 pagi besok.",
+    "acceptedAnswers": [
+      "The train will arrive at 9 AM tomorrow."
+    ]
+  },
+  {
+    "id": "b_fut_08",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "He will _______ a doctor when he grows up.",
+    "options": [
+      "be",
+      "is",
+      "are",
+      "was"
+    ],
+    "correctAnswer": "be",
+    "explanation": "Kalimat nominal Simple Future menggunakan: will + be + noun.",
+    "translation": "Dia akan menjadi seorang dokter ketika dia dewasa.",
+    "targetSentence": "He will be a doctor when he grows up.",
+    "indonesianPrompt": "Dia akan menjadi seorang dokter ketika dia dewasa.",
+    "acceptedAnswers": [
+      "He will be a doctor when he grows up."
+    ]
+  },
+  {
+    "id": "b_fut_09",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "I think it _______ rain soon.",
+    "options": [
+      "will",
+      "is",
+      "did",
+      "was"
+    ],
+    "correctAnswer": "will",
+    "explanation": "Prediksi masa depan menggunakan 'will' + Verb 1 dasar.",
+    "translation": "Saya rasa sebentar lagi akan turun hujan.",
+    "targetSentence": "I think it will rain soon.",
+    "indonesianPrompt": "Saya rasa sebentar lagi akan turun hujan.",
+    "acceptedAnswers": [
+      "I think it will rain soon."
+    ]
+  },
+  {
+    "id": "b_fut_10",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Future Continuous Tense",
+    "question": "Tomorrow at 8 AM, I will be _______ to school.",
+    "options": [
+      "going",
+      "go",
+      "went",
+      "gone"
+    ],
+    "correctAnswer": "going",
+    "explanation": "Future Continuous Tense menggunakan will be + Verb-ing: going.",
+    "translation": "Besok pukul 8 pagi, saya akan sedang pergi ke sekolah.",
+    "targetSentence": "Tomorrow at 8 AM, I will be going to school.",
+    "indonesianPrompt": "Besok pukul 8 pagi, saya akan sedang pergi ke sekolah.",
+    "acceptedAnswers": [
+      "Tomorrow at 8 AM, I will be going to school."
+    ]
+  },
+  {
+    "id": "b_fut_11",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "She _______ help you with your homework later.",
+    "options": [
+      "will",
+      "did",
+      "was",
+      "has"
+    ],
+    "correctAnswer": "will",
+    "explanation": "Janji atau tawaran bantuan di masa depan memakai modal 'will'.",
+    "translation": "Dia akan membantumu mengerjakan PR-mu nanti.",
+    "targetSentence": "She will help you with your homework later.",
+    "indonesianPrompt": "Dia akan membantumu mengerjakan PR-mu nanti.",
+    "acceptedAnswers": [
+      "She will help you with your homework later."
+    ]
+  },
+  {
+    "id": "b_fut_12",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "We will _______ you at the station.",
+    "options": [
+      "meet",
+      "meets",
+      "met",
+      "meeting"
+    ],
+    "correctAnswer": "meet",
+    "explanation": "Setelah 'will', kata kerja 'meet' tetap dalam bentuk Verb 1.",
+    "translation": "Kami akan menemuimu di stasiun.",
+    "targetSentence": "We will meet you at the station.",
+    "indonesianPrompt": "Kami akan menemuimu di stasiun.",
+    "acceptedAnswers": [
+      "We will meet you at the station."
+    ]
+  }
+]

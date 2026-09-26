@@ -1,0 +1,1065 @@
+[
+  {
+    "id": "simple_present",
+    "name": "Simple Present Tense",
+    "category": "Present",
+    "shortSummary": "Menyatakan kebiasaan (habitual action), rutinitas, dan kebenaran umum (general truth).",
+    "description": "Simple Present Tense adalah bentuk waktu yang digunakan untuk menyatakan suatu perbuatan atau peristiwa yang berlangsung berulang-ulang, kebiasaan sehari-hari, serta fakta ilmiah atau kebenaran umum yang tidak berubah sepanjang waktu.",
+    "verbFormUsed": "Verb 1 (Infinitive) / Verb-s/-es",
+    "functions": [
+      {
+        "title": "Kebiasaan atau Rutinitas (Habitual Action)",
+        "explanation": "Menyatakan kegiatan yang dilakukan secara rutin atau berulang-ulang.",
+        "example": "He drinks coffee every morning.",
+        "meaning": "Dia minum kopi setiap pagi."
+      },
+      {
+        "title": "Kebenaran Umum atau Fakta Ilmiah (General Truth)",
+        "explanation": "Menyatakan fakta alam atau kebenaran mutlak yang diakui semua orang.",
+        "example": "The sun rises in the east and sets in the west.",
+        "meaning": "Matahari terbit di sebelah timur dan terbenam di sebelah barat."
+      },
+      {
+        "title": "Keadaan Tetap / Situasi Permanen (Permanent State)",
+        "explanation": "Menyatakan situasi atau kondisi yang relatif tetap dalam jangka waktu lama.",
+        "example": "My parents live in Bandung.",
+        "meaning": "Orang tua saya tinggal di Bandung."
+      },
+      {
+        "title": "Jadwal Tetap / Transportasi (Fixed Timetable)",
+        "explanation": "Menyatakan jadwal keberangkatan atau agenda resmi di masa depan.",
+        "example": "The morning train leaves at 07:00 AM.",
+        "meaning": "Kereta pagi berangkat pada pukul 07:00."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + Verb 1 (-s/-es untuk He/She/It) + Object / Complement",
+        "negative": "Subject + do / does + not + Verb 1 + Object / Complement",
+        "interrogative": "Do / Does + Subject + Verb 1 + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + is / am / are + Non-verb (Adjective / Noun / Adverb)",
+        "negative": "Subject + is / am / are + not + Non-verb",
+        "interrogative": "Is / Am / Are + Subject + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "always (selalu)",
+      "usually (biasanya)",
+      "often (sering)",
+      "sometimes (kadang-kadang)",
+      "seldom / rarely (jarang)",
+      "never (tidak pernah)",
+      "every day / every week / every month (setiap hari / minggu / bulan)",
+      "once a week (sekali seminggu)",
+      "twice a month (dua kali sebulan)"
+    ],
+    "examples": [
+      {
+        "type": "Verbal Positif",
+        "sentence": "She speaks English very fluently in her office.",
+        "meaning": "Dia berbicara bahasa Inggris dengan sangat lancar di kantornya."
+      },
+      {
+        "type": "Verbal Negatif",
+        "sentence": "They do not know the correct answer to the question.",
+        "meaning": "Mereka tidak mengetahui jawaban yang benar atas pertanyaan itu."
+      },
+      {
+        "type": "Verbal Tanya",
+        "sentence": "Does he practice speaking English every afternoon?",
+        "meaning": "Apakah dia berlatih berbicara bahasa Inggris setiap sore?"
+      },
+      {
+        "type": "Nominal Positif",
+        "sentence": "Learning grammar is easy when you understand the patterns.",
+        "meaning": "Belajar tata bahasa itu mudah ketika kamu memahami polanya."
+      },
+      {
+        "type": "Nominal Negatif",
+        "sentence": "He is not late for the morning meeting today.",
+        "meaning": "Dia tidak terlambat untuk rapat pagi hari ini."
+      },
+      {
+        "type": "Nominal Tanya",
+        "sentence": "Are they ready to take the national English test?",
+        "meaning": "Apakah mereka siap mengikuti tes bahasa Inggris nasional?"
+      }
+    ],
+    "tips": "Perhatikan subjek tunggal orang ketiga (He, She, It, nama orang tunggal): kata kerja harus ditambah akhiran -s atau -es. Pada kalimat negatif dan tanya, jika sudah ada 'does' atau 'doesn't', kata kerja WAJIB kembali ke bentuk dasar Verb 1 tanpa akhiran -s/-es."
+  },
+  {
+    "id": "present_continuous",
+    "name": "Present Continuous Tense",
+    "category": "Present",
+    "shortSummary": "Menyatakan aksi yang sedang berlangsung saat ini atau rencana masa depan yang pasti.",
+    "description": "Present Continuous Tense (sering disebut juga Present Progressive) digunakan untuk menunjukkan kegiatan yang sedang berlangsung secara nyata pada saat pembicaraan terjadi, aksi sementara, atau rencana masa depan yang sudah terencana matang.",
+    "verbFormUsed": "to be (am/is/are) + Verb-ing (Present Participle)",
+    "functions": [
+      {
+        "title": "Aksi Sedang Terjadi Sekarang (Action in Progress)",
+        "explanation": "Menyatakan aktivitas yang sedang berjalan tepat ketika dibicarakan.",
+        "example": "I am writing an English essay right now.",
+        "meaning": "Saya sedang menulis esai bahasa Inggris saat ini."
+      },
+      {
+        "title": "Aksi Sementara di Sekitar Waktu Sekarang (Temporary Action)",
+        "explanation": "Menyatakan hal yang sedang dikerjakan dalam periode ini, meski tidak tepat detik ini.",
+        "example": "He is studying software engineering this semester.",
+        "meaning": "Dia sedang belajar rekayasa perangkat lunak semester ini."
+      },
+      {
+        "title": "Rencana Masa Depan yang Pasti (Definite Future Plan)",
+        "explanation": "Menyatakan jadwal atau perjanjian yang sudah disepakati untuk masa depan dekat.",
+        "example": "We are meeting the director tomorrow afternoon.",
+        "meaning": "Kami akan bertemu direktur besok sore."
+      },
+      {
+        "title": "Tren atau Perubahan yang Sedang Berkembang (Changing Trends)",
+        "explanation": "Menyatakan perubahan kondisi yang terus berkembang seiring waktu.",
+        "example": "The price of smartphones is becoming more affordable.",
+        "meaning": "Harga ponsel pintar menjadi semakin terjangkau."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + is / am / are + Verb-ing + Object / Complement",
+        "negative": "Subject + is / am / are + not + Verb-ing + Object / Complement",
+        "interrogative": "Is / Am / Are + Subject + Verb-ing + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + is / am / are + being + Adjective / Noun (jarang dipakai, untuk perilaku sementara)",
+        "negative": "Subject + is / am / are + not + being + Adjective / Noun",
+        "interrogative": "Is / Am / Are + Subject + being + Adjective / Noun ?"
+      }
+    },
+    "timeSignals": [
+      "now (sekarang)",
+      "right now (saat ini juga)",
+      "at the moment (pada saat ini)",
+      "at present (saat sekarang)",
+      "currently (saat ini)",
+      "Look! (Lihat!)",
+      "Listen! (Dengarkan!)",
+      "this semester / this week (semester ini / minggu ini)"
+    ],
+    "examples": [
+      {
+        "type": "Positif",
+        "sentence": "They are watching an English grammar tutorial on YouTube.",
+        "meaning": "Mereka sedang menonton tutorial tata bahasa Inggris di YouTube."
+      },
+      {
+        "type": "Negatif",
+        "sentence": "She is not playing games; she is completing her English project.",
+        "meaning": "Dia tidak sedang bermain game; dia sedang menyelesaikan proyek bahasa Inggrisnya."
+      },
+      {
+        "type": "Tanya",
+        "sentence": "Are you listening to the pronunciation audio carefully?",
+        "meaning": "Apakah kamu sedang mendengarkan audio pelafalan itu dengan saksama?"
+      },
+      {
+        "type": "Rencana Masa Depan",
+        "sentence": "We are flying to Singapore next Friday morning.",
+        "meaning": "Kami akan terbang ke Singapura Jumat pagi mendatang."
+      }
+    ],
+    "tips": "Hati-hati dengan 'Stative Verbs' (kata kerja emosi, kepemilikan, atau persepsi indra) seperti know, understand, believe, love, hate, want, need, have (milik). Kata-kata ini umumnya TIDAK boleh menggunakan bentuk -ing untuk makna standarnya (misal: katakan 'I understand', bukan 'I am understanding')."
+  },
+  {
+    "id": "present_perfect",
+    "name": "Present Perfect Tense",
+    "category": "Present",
+    "shortSummary": "Menyatakan aksi yang telah selesai di masa lampau namun akibat/relevansinya masih terasa sekarang.",
+    "description": "Present Perfect Tense digunakan untuk menyatakan peristiwa yang sudah terjadi di masa lampau pada waktu yang tidak spesifik, atau peristiwa yang berawal di masa lalu dan masih berlangsung hingga saat ini, di mana hasilnya sangat relevan dengan masa sekarang.",
+    "verbFormUsed": "have / has + Verb 3 (Past Participle)",
+    "functions": [
+      {
+        "title": "Aksi yang Baru Saja Selesai (Just Completed Action)",
+        "explanation": "Menyatakan perbuatan yang baru beberapa saat lalu tuntas dilakukan.",
+        "example": "I have just finished reading chapter five.",
+        "meaning": "Saya baru saja selesai membaca bab lima."
+      },
+      {
+        "title": "Pengalaman Hidup (Life Experience)",
+        "explanation": "Menyatakan pernah atau belum pernah melakukan sesuatu seumur hidup.",
+        "example": "Have you ever visited Raja Ampat in Papua?",
+        "meaning": "Pernahkah kamu mengunjungi Raja Ampat di Papua?"
+      },
+      {
+        "title": "Peristiwa Masa Lalu dengan Hasil Sekarang (Result in Present)",
+        "explanation": "Menyatakan kejadian lampau yang akibat langsungnya masih ada saat ini.",
+        "example": "He has lost his house key, so he cannot enter.",
+        "meaning": "Dia telah kehilangan kunci rumahnya, sehingga dia tidak bisa masuk."
+      },
+      {
+        "title": "Aksi Dimulai di Masa Lalu dan Masih Berlanjut (Unfinished Action)",
+        "explanation": "Menyatakan kondisi yang dimulai di waktu lampau dan sampai saat ini masih berlangsung.",
+        "example": "She has lived in Jakarta for eight years.",
+        "meaning": "Dia telah tinggal di Jakarta selama delapan tahun (masih tinggal sampai sekarang)."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + have / has + Verb 3 + Object / Complement",
+        "negative": "Subject + have / has + not + Verb 3 + Object / Complement",
+        "interrogative": "Have / Has + Subject + Verb 3 + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + have / has + been + Non-verb (Adjective / Noun / Adverb)",
+        "negative": "Subject + have / has + not + been + Non-verb",
+        "interrogative": "Have / Has + Subject + been + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "already (sudah)",
+      "just (baru saja)",
+      "yet (belum - untuk kalimat negatif/tanya)",
+      "ever (pernah)",
+      "never (tidak pernah)",
+      "for + durasi (selama 2 tahun, selama 5 jam)",
+      "since + titik waktu (sejak 2020, sejak kemarin)",
+      "so far (sejauh ini)",
+      "lately / recently (akhir-akhir ini)"
+    ],
+    "examples": [
+      {
+        "type": "Verbal Positif",
+        "sentence": "He has learned more than one hundred irregular verbs this month.",
+        "meaning": "Dia telah mempelajari lebih dari seratus kata kerja tak beraturan bulan ini."
+      },
+      {
+        "type": "Verbal Negatif",
+        "sentence": "We have not received the official confirmation email yet.",
+        "meaning": "Kami belum menerima email konfirmasi resmi tersebut."
+      },
+      {
+        "type": "Verbal Tanya",
+        "sentence": "Have you eaten lunch, or do you want to join us?",
+        "meaning": "Apakah kamu sudah makan siang, atau kamu ingin ikut kami?"
+      },
+      {
+        "type": "Nominal Positif",
+        "sentence": "They have been best friends since high school.",
+        "meaning": "Mereka telah bersahabat sejak masa SMA."
+      },
+      {
+        "type": "Nominal Negatif",
+        "sentence": "She has not been sick this whole semester.",
+        "meaning": "Dia tidak pernah jatuh sakit sepanjang semester ini."
+      }
+    ],
+    "tips": "Gunakan 'has' untuk subjek He/She/It dan nama tunggal; gunakan 'have' untuk I/You/They/We. JANGAN sebutkan waktu lampau yang spesifik (seperti 'yesterday', 'two days ago', 'in 2010') pada Present Perfect — jika waktu lampaunya spesifik, gunakan Simple Past Tense!"
+  },
+  {
+    "id": "present_perfect_continuous",
+    "name": "Present Perfect Continuous Tense",
+    "category": "Present",
+    "shortSummary": "Menekankan durasi suatu kegiatan yang dimulai di masa lalu dan masih terus berlangsung sampai sekarang.",
+    "description": "Present Perfect Continuous Tense digunakan untuk menyatakan tindakan yang telah dimulai di masa lalu dan masih berlangsung secara berkesinambungan hingga saat ini, dengan penekanan kuat pada durasi (lama waktu) kegiatan tersebut.",
+    "verbFormUsed": "have / has + been + Verb-ing",
+    "functions": [
+      {
+        "title": "Menekankan Durasi Aktivitas (Focus on Duration)",
+        "explanation": "Menunjukkan berapa lama suatu aktivitas telah berjalan tanpa henti sampai sekarang.",
+        "example": "He has been coding the Flutter app for six hours non-stop.",
+        "meaning": "Dia telah memprogram aplikasi Flutter itu selama enam jam tanpa henti."
+      },
+      {
+        "title": "Aksi Baru Selesai dengan Bukti Fisik Nyata (Recent Action with Visible Evidence)",
+        "explanation": "Menyatakan aksi yang baru saja berhenti, dan tanda atau efek fisiknya terlihat jelas.",
+        "example": "The ground is wet because it has been raining heavily.",
+        "meaning": "Tanah basah karena baru saja turun hujan lebat."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + have / has + been + Verb-ing + Object / Complement",
+        "negative": "Subject + have / has + not + been + Verb-ing + Object / Complement",
+        "interrogative": "Have / Has + Subject + been + Verb-ing + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + have / has + been + being + Non-verb (sangat jarang digunakan secara alami)",
+        "negative": "Subject + have / has + not + been + being + Non-verb",
+        "interrogative": "Have / Has + Subject + been + being + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "for + durasi (for 3 hours, for 2 days)",
+      "since + titik waktu (since this morning, since 8 AM)",
+      "all day (sepanjang hari)",
+      "all morning (sepanjang pagi)",
+      "the whole week (sepanjang pekan)"
+    ],
+    "examples": [
+      {
+        "type": "Positif",
+        "sentence": "She has been practicing her pronunciation since eight o'clock.",
+        "meaning": "Dia telah berlatih pelafalannya sejak pukul delapan."
+      },
+      {
+        "type": "Negatif",
+        "sentence": "They have not been waiting here for too long.",
+        "meaning": "Mereka belum menunggu di sini terlalu lama."
+      },
+      {
+        "type": "Tanya",
+        "sentence": "How long have you been studying English grammar?",
+        "meaning": "Berapa lama kamu telah mempelajari tata bahasa Inggris?"
+      }
+    ],
+    "tips": "Perbedaan dengan Present Perfect biasa: Present Perfect menekankan HASIL (sudah selesai berapa banyak), sedangkan Present Perfect Continuous menekankan PROSES & DURASI (berapa lama kegiatan itu sudah dilakukan)."
+  },
+  {
+    "id": "simple_past",
+    "name": "Simple Past Tense",
+    "category": "Past",
+    "shortSummary": "Menyatakan aksi atau peristiwa yang terjadi dan telah tuntas di masa lampau pada waktu tertentu.",
+    "description": "Simple Past Tense digunakan untuk membicarakan peristiwa yang terjadi di masa lalu dan sudah selesai sepenuhnya pada waktu lampau tertentu yang jelas (seperti kemarin, minggu lalu, tahun lalu).",
+    "verbFormUsed": "Verb 2 (Past Simple) untuk kalimat positif; did + Verb 1 untuk kalimat negatif dan tanya",
+    "functions": [
+      {
+        "title": "Aksi Selesai di Masa Lalu (Completed Past Action)",
+        "explanation": "Menyatakan peristiwa yang dimulai dan selesai di masa lalu.",
+        "example": "She bought a new English dictionary yesterday.",
+        "meaning": "Dia membeli kamus bahasa Inggris baru kemarin."
+      },
+      {
+        "title": "Rangkaian Peristiwa di Masa Lalu (Series of Past Events)",
+        "explanation": "Menceritakan urutan kejadian dalam suatu cerita atau laporan naratif.",
+        "example": "He entered the room, sat down, and opened his laptop.",
+        "meaning": "Dia masuk ke dalam ruangan, duduk, dan membuka laptopnya."
+      },
+      {
+        "title": "Kebiasaan di Masa Lalu yang Sudah Tidak Dilakukan (Past Habit)",
+        "explanation": "Menyatakan kebiasaan lama (sering menggunakan kata bantu 'used to').",
+        "example": "I played badminton every weekend when I was in high school.",
+        "meaning": "Saya bermain bulu tangkis setiap akhir pekan saat saya masih SMA."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + Verb 2 + Object / Complement",
+        "negative": "Subject + did + not + Verb 1 + Object / Complement",
+        "interrogative": "Did + Subject + Verb 1 + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + was / were + Non-verb (was untuk I/He/She/It; were untuk You/They/We)",
+        "negative": "Subject + was / were + not + Non-verb",
+        "interrogative": "Was / Were + Subject + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "yesterday (kemarin)",
+      "yesterday morning / afternoon (kemarin pagi / sore)",
+      "last night (tadi malam)",
+      "last week / last month / last year (minggu lalu / bulan lalu / tahun lalu)",
+      "two days ago / an hour ago (dua hari yang lalu / satu jam yang lalu)",
+      "in 1945 / in 2020 (pada tahun 1945 / 2020)",
+      "just now (baru saja tadi)"
+    ],
+    "examples": [
+      {
+        "type": "Verbal Positif (Irregular)",
+        "sentence": "They went to Borobudur Temple during the school holiday.",
+        "meaning": "Mereka pergi ke Candi Borobudur selama liburan sekolah."
+      },
+      {
+        "type": "Verbal Positif (Regular)",
+        "sentence": "The teacher explained the difference between V2 and V3 clearly.",
+        "meaning": "Guru menjelaskan perbedaan antara V2 dan V3 dengan jelas."
+      },
+      {
+        "type": "Verbal Negatif",
+        "sentence": "He did not attend the final vocabulary workshop last Friday.",
+        "meaning": "Dia tidak menghadiri lokakarya kosakata terakhir Jumat lalu."
+      },
+      {
+        "type": "Verbal Tanya",
+        "sentence": "Did you find your lost English notes under the table?",
+        "meaning": "Apakah kamu menemukan catatan bahasa Inggrismu yang hilang di bawah meja?"
+      },
+      {
+        "type": "Nominal Positif",
+        "sentence": "We were very excited to participate in the international speech contest.",
+        "meaning": "Kami sangat bersemangat untuk berpartisipasi dalam lomba pidato internasional."
+      },
+      {
+        "type": "Nominal Negatif",
+        "sentence": "The library was not open late on Sunday evening.",
+        "meaning": "Perpustakaan tidak buka sampai larut pada Minggu malam."
+      }
+    ],
+    "tips": "KESALAHAN PALING SERING: Pada kalimat negatif dan kalimat tanya yang menggunakan 'did' atau 'didn't', kata kerja WAJIB kembali ke Verb 1. Jangan katakan 'Did you went?' ❌, tetapi katakan 'Did you go?' ✔️."
+  },
+  {
+    "id": "past_continuous",
+    "name": "Past Continuous Tense",
+    "category": "Past",
+    "shortSummary": "Menyatakan aksi yang sedang berlangsung pada waktu tertentu di masa lampau.",
+    "description": "Past Continuous Tense digunakan untuk menyatakan peristiwa yang sedang terjadi pada titik waktu tertentu di masa lalu, atau peristiwa yang sedang berjalan ketika peristiwa lain memotongnya (interrupted action).",
+    "verbFormUsed": "was / were + Verb-ing",
+    "functions": [
+      {
+        "title": "Aksi Sedang Berlangsung di Titik Waktu Lampau (Action in Progress in Past)",
+        "explanation": "Menyatakan kegiatan yang tepat sedang terjadi pada jam tertentu di masa lalu.",
+        "example": "At eight o'clock last night, I was studying English.",
+        "meaning": "Pada pukul delapan tadi malam, saya sedang belajar bahasa Inggris."
+      },
+      {
+        "title": "Aksi yang Disela Kejadian Lain (Interrupted Action)",
+        "explanation": "Satu aksi sedang berjalan (Past Continuous), lalu disela oleh aksi pendek (Simple Past).",
+        "example": "I was washing my hands when the phone rang.",
+        "meaning": "Saya sedang mencuci tangan ketika telepon berdering."
+      },
+      {
+        "title": "Dua Aksi Bersamaan di Masa Lampau (Simultaneous Actions)",
+        "explanation": "Dua aksi yang berlangsung berbarengan di masa lalu menggunakan penghubung 'while'.",
+        "example": "While my brother was studying, I was listening to music.",
+        "meaning": "Sementara adik saya sedang belajar, saya sedang mendengarkan musik."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + was / were + Verb-ing + Object / Complement",
+        "negative": "Subject + was / were + not + Verb-ing + Object / Complement",
+        "interrogative": "Was / Were + Subject + Verb-ing + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + was / were + being + Adjective / Noun (untuk sifat sementara di masa lalu)",
+        "negative": "Subject + was / were + not + being + Adjective / Noun",
+        "interrogative": "Was / Were + Subject + being + Adjective / Noun ?"
+      }
+    },
+    "timeSignals": [
+      "at 7 PM yesterday (pada pukul 7 malam kemarin)",
+      "when + Simple Past (ketika ...)",
+      "while + Past Continuous (sementara / saat ...)",
+      "all day yesterday (sepanjang hari kemarin)",
+      "at this time last year (pada waktu seperti ini tahun lalu)"
+    ],
+    "examples": [
+      {
+        "type": "Positif",
+        "sentence": "The students were discussing their presentation when the professor arrived.",
+        "meaning": "Para siswa sedang mendiskusikan presentasi mereka ketika profesor tiba."
+      },
+      {
+        "type": "Negatif",
+        "sentence": "She was not driving when the sudden storm struck the city.",
+        "meaning": "Dia tidak sedang menyetir ketika badai tiba-tiba melanda kota."
+      },
+      {
+        "type": "Tanya",
+        "sentence": "What were you doing at nine o'clock yesterday morning?",
+        "meaning": "Apa yang sedang kamu lakukan pada pukul sembilan kemarin pagi?"
+      }
+    ],
+    "tips": "Ingat rumus penghubung: Klausa setelah 'when' umumnya diikuti Simple Past (Verb 2), sedangkan klausa setelah 'while' umumnya diikuti Past Continuous (was/were + Verb-ing)."
+  },
+  {
+    "id": "past_perfect",
+    "name": "Past Perfect Tense",
+    "category": "Past",
+    "shortSummary": "Menyatakan aksi yang telah selesai dilakukan SEBELUM aksi lain terjadi di masa lampau.",
+    "description": "Past Perfect Tense digunakan untuk menunjukkan bahwa suatu peristiwa telah tuntas terjadi sebelum peristiwa lampau lainnya terjadi. Tense ini berfungsi sebagai 'masa lampaunya masa lampau' (the past of the past).",
+    "verbFormUsed": "had + Verb 3 (Past Participle)",
+    "functions": [
+      {
+        "title": "Aksi yang Lebih Dulu Terjadi (First Past Action)",
+        "explanation": "Membedakan urutan waktu antara dua peristiwa lampau agar tidak membingungkan.",
+        "example": "When the doctor arrived, the patient had already recovered.",
+        "meaning": "Ketika dokter tiba, pasien tersebut sudah pulih terlebih dahulu."
+      },
+      {
+        "title": "Pengandaian Masa Lalu (Third Conditional)",
+        "explanation": "Digunakan dalam klausa if (Conditional Type 3) untuk penyesalan masa lalu.",
+        "example": "If I had practiced more irregular verbs, I would have passed the test.",
+        "meaning": "Jika saya berlatih lebih banyak kata kerja tak beraturan, saya pasti lulus ujian itu."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + had + Verb 3 + Object / Complement",
+        "negative": "Subject + had + not + Verb 3 + Object / Complement",
+        "interrogative": "Had + Subject + Verb 3 + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + had + been + Non-verb (Adjective / Noun / Adverb)",
+        "negative": "Subject + had + not + been + Non-verb",
+        "interrogative": "Had + Subject + been + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "before + Simple Past (sebelum ...)",
+      "after + Past Perfect (setelah ...)",
+      "by the time + Simple Past (menjelang waktu ...)",
+      "already (sudah)",
+      "until that day (sampai hari itu)"
+    ],
+    "examples": [
+      {
+        "type": "Verbal Positif",
+        "sentence": "The train had left the platform before we reached the station.",
+        "meaning": "Kereta itu sudah meninggalkan peron sebelum kami tiba di stasiun."
+      },
+      {
+        "type": "Verbal Negatif",
+        "sentence": "He had not eaten anything until his mother returned from work.",
+        "meaning": "Dia belum memakan apa pun sampai ibunya pulang dari bekerja."
+      },
+      {
+        "type": "Verbal Tanya",
+        "sentence": "Had they finished the assignment before the deadline expired?",
+        "meaning": "Apakah mereka sudah menyelesaikan tugas itu sebelum tenggat waktu berakhir?"
+      },
+      {
+        "type": "Nominal Positif",
+        "sentence": "She had been a teacher for five years before she became a principal.",
+        "meaning": "Dia telah menjadi guru selama lima tahun sebelum dia menjadi kepala sekolah."
+      }
+    ],
+    "tips": "Untuk semua subjek (I, You, They, We, He, She, It), auxiliary kata kerjanya SAMA, yaitu 'had'. Aksi yang terjadi LEBIH AWAL menggunakan Past Perfect (had + V3), sedangkan aksi yang terjadi KEMUDIAN menggunakan Simple Past (V2)."
+  },
+  {
+    "id": "past_perfect_continuous",
+    "name": "Past Perfect Continuous Tense",
+    "category": "Past",
+    "shortSummary": "Menyatakan aksi yang sedang berlangsung selama periode tertentu di masa lampau sebelum peristiwa lampau lain terjadi.",
+    "description": "Past Perfect Continuous Tense digunakan untuk mengungkapkan aksi yang telah dan sedang berlangsung selama kurun waktu tertentu di masa lalu, sebelum disusul atau dihentikan oleh peristiwa masa lalu lainnya.",
+    "verbFormUsed": "had + been + Verb-ing",
+    "functions": [
+      {
+        "title": "Durasi Berkelanjutan Sebelum Kejadian Lampau Lain (Duration up to Past Event)",
+        "explanation": "Menekankan berapa lama suatu aksi sudah berlangsung sebelum peristiwa lain terjadi di masa lalu.",
+        "example": "They had been talking for two hours when the storm suddenly cut the power.",
+        "meaning": "Mereka telah mengobrol selama dua jam ketika badai tiba-tiba memutus aliran listrik."
+      },
+      {
+        "title": "Penyebab dari Suatu Kondisi di Masa Lampau (Cause of a Past Result)",
+        "explanation": "Menjelaskan alasan di balik kondisi fisik seseorang di masa lampau.",
+        "example": "His eyes were red because he had been crying all evening.",
+        "meaning": "Matanya memerah karena dia telah menangis sepanjang sore."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + had + been + Verb-ing + Object / Complement",
+        "negative": "Subject + had + not + been + Verb-ing + Object / Complement",
+        "interrogative": "Had + Subject + been + Verb-ing + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + had + been + being + Non-verb (sangat jarang digunakan)",
+        "negative": "Subject + had + not + been + being + Non-verb",
+        "interrogative": "Had + Subject + been + being + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "for + durasi + before (selama ... sebelum ...)",
+      "since + waktu lampau",
+      "the whole afternoon (sepanjang sore itu)",
+      "by the time (menjelang saat itu)"
+    ],
+    "examples": [
+      {
+        "type": "Positif",
+        "sentence": "She had been living in Bali for three years before she moved to London.",
+        "meaning": "Dia telah tinggal di Bali selama tiga tahun sebelum dia pindah ke London."
+      },
+      {
+        "type": "Negatif",
+        "sentence": "The athletes had not been training long before the competition began.",
+        "meaning": "Para atlet itu belum berlatih lama sebelum kompetisi dimulai."
+      },
+      {
+        "type": "Tanya",
+        "sentence": "Had you been waiting for a long time before the bus finally showed up?",
+        "meaning": "Apakah kamu telah menunggu lama sebelum bus akhirnya muncul?"
+      }
+    ],
+    "tips": "Tense ini memiliki pola yang sama dengan Present Perfect Continuous, perbedaannya hanya pada sudut pandang waktu yang digeser ke masa lampau ('have/has been' diganti menjadi 'had been')."
+  },
+  {
+    "id": "simple_future",
+    "name": "Simple Future Tense",
+    "category": "Future",
+    "shortSummary": "Menyatakan aksi atau peristiwa yang akan terjadi di masa yang akan datang.",
+    "description": "Simple Future Tense digunakan untuk menyatakan peristiwa atau keputusan yang akan dilakukan di masa depan. Bisa menggunakan modal 'will' (untuk keputusan spontan/janji/prediksi) atau 'be going to' (untuk rencana pasti atau prediksi berdasarkan tanda yang terlihat).",
+    "verbFormUsed": "will + Verb 1 / to be (am/is/are) + going to + Verb 1",
+    "functions": [
+      {
+        "title": "Keputusan Spontan (Spontaneous Decision)",
+        "explanation": "Keputusan yang diambil langsung saat berbicara tanpa rencana sebelumnya.",
+        "example": "I am thirsty; I will buy a bottle of mineral water.",
+        "meaning": "Saya haus; saya akan membeli sebotol air mineral."
+      },
+      {
+        "title": "Janji, Penawaran, atau Kesediaan (Promises and Offers)",
+        "explanation": "Menyatakan janji atau tawaran bantuan kepada orang lain.",
+        "example": "I will help you memorize regular and irregular verbs.",
+        "meaning": "Saya akan membantumu menghafal kata kerja beraturan dan tak beraturan."
+      },
+      {
+        "title": "Prediksi Masa Depan (Prediction)",
+        "explanation": "Memprediksi hal yang diperkirakan akan terjadi di masa mendatang.",
+        "example": "Artificial intelligence will transform education in the coming years.",
+        "meaning": "Kecerdasan buatan akan mentransformasi pendidikan di tahun-tahun mendatang."
+      },
+      {
+        "title": "Rencana yang Sudah Dipersiapkan (Planned Future with 'be going to')",
+        "explanation": "Rencana masa depan yang sudah ada niat atau persiapannya sebelum berbicara.",
+        "example": "We are going to visit the library tomorrow morning.",
+        "meaning": "Kami akan mengunjungi perpustakaan besok pagi."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + will + Verb 1 + Object / Complement  (atau: S + am/is/are + going to + V1)",
+        "negative": "Subject + will + not (won't) + Verb 1 + Object / Complement",
+        "interrogative": "Will + Subject + Verb 1 + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + will + be + Non-verb (Adjective / Noun / Adverb)",
+        "negative": "Subject + will + not + be + Non-verb",
+        "interrogative": "Will + Subject + be + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "tomorrow (besok)",
+      "tomorrow morning / evening (besok pagi / sore)",
+      "next week / next month / next year (minggu depan / bulan depan / tahun depan)",
+      "tonight (nanti malam)",
+      "soon (segera)",
+      "in two days / in three hours (dalam dua hari / dalam tiga jam)",
+      "later (nanti)"
+    ],
+    "examples": [
+      {
+        "type": "Verbal Positif",
+        "sentence": "Our team will release the updated version of the learning app next week.",
+        "meaning": "Tim kami akan merilis versi terbaru dari aplikasi pembelajaran minggu depan."
+      },
+      {
+        "type": "Verbal Negatif",
+        "sentence": "He will not forget the helpful advice given by his English teacher.",
+        "meaning": "Dia tidak akan melupakan nasihat bermanfaat yang diberikan oleh guru bahasa Inggrisnya."
+      },
+      {
+        "type": "Verbal Tanya",
+        "sentence": "Will you take the TOEFL preparation class next semester?",
+        "meaning": "Apakah kamu akan mengambil kelas persiapan TOEFL semester depan?"
+      },
+      {
+        "type": "Nominal Positif",
+        "sentence": "She will be very happy to see your excellent progress.",
+        "meaning": "Dia akan sangat senang melihat kemajuanmu yang luar biasa."
+      },
+      {
+        "type": "Nominal Negatif",
+        "sentence": "The weather will not be too hot tomorrow afternoon.",
+        "meaning": "Cuaca tidak akan terlalu panas besok siang."
+      }
+    ],
+    "tips": "Setelah modal 'will', kata kerja SELALU menggunakan bentuk dasar Verb 1 tanpa tambahan apapun (tidak boleh ditambah -s, -ed, atau -ing). Bentuk singkatan 'will not' adalah 'won't'."
+  },
+  {
+    "id": "future_continuous",
+    "name": "Future Continuous Tense",
+    "category": "Future",
+    "shortSummary": "Menyatakan aksi yang akan SEDANG berlangsung pada waktu tertentu di masa depan.",
+    "description": "Future Continuous Tense digunakan untuk menyatakan tindakan yang akan sedang berada dalam proses pengerjaan pada suatu waktu tertentu yang spesifik di masa mendatang.",
+    "verbFormUsed": "will + be + Verb-ing",
+    "functions": [
+      {
+        "title": "Aksi yang Sedang Berlangsung di Masa Depan (Action in Progress at Future Time)",
+        "explanation": "Menunjukkan bahwa pada jam tertentu di masa depan, suatu aksi sedang berjalan.",
+        "example": "At this time tomorrow, I will be flying to Japan.",
+        "meaning": "Pada waktu seperti ini besok, saya akan sedang terbang ke Jepang."
+      },
+      {
+        "title": "Menanyakan Rencana dengan Sangat Sopan (Polite Inquiry)",
+        "explanation": "Menanyakan rencana seseorang tanpa bermaksud mendesak.",
+        "example": "Will you be using your dictionary this afternoon?",
+        "meaning": "Apakah kamu akan sedang memakai kamusmu sore ini?"
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + will + be + Verb-ing + Object / Complement",
+        "negative": "Subject + will + not + be + Verb-ing + Object / Complement",
+        "interrogative": "Will + Subject + be + Verb-ing + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + will + be + being + Non-verb (hampir tidak pernah digunakan)",
+        "negative": "Subject + will + not + be + being + Non-verb",
+        "interrogative": "Will + Subject + be + being + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "at 8 PM tomorrow (pada pukul 8 malam besok)",
+      "at this time next week (pada waktu seperti ini minggu depan)",
+      "all day tomorrow (sepanjang hari besok)",
+      "when + Simple Present (ketika ... terjadi di masa depan)"
+    ],
+    "examples": [
+      {
+        "type": "Positif",
+        "sentence": "They will be having their dinner when you arrive at their house tonight.",
+        "meaning": "Mereka akan sedang makan malam ketika kamu tiba di rumah mereka nanti malam."
+      },
+      {
+        "type": "Negatif",
+        "sentence": "I will not be sleeping at midnight because I must finish my project.",
+        "meaning": "Saya tidak akan sedang tidur di tengah malam karena saya harus menyelesaikan proyek saya."
+      },
+      {
+        "type": "Tanya",
+        "sentence": "Will the students be taking an exam at ten o'clock tomorrow?",
+        "meaning": "Apakah para siswa akan sedang mengikuti ujian pada pukul sepuluh besok?"
+      }
+    ],
+    "tips": "Ciri khas Future Continuous adalah adanya keterangan waktu yang sangat spesifik di masa depan (misal: 'at 8 AM tomorrow', bukan hanya 'tomorrow')."
+  },
+  {
+    "id": "future_perfect",
+    "name": "Future Perfect Tense",
+    "category": "Future",
+    "shortSummary": "Menyatakan aksi yang dipastikan AKAN SUDAH SELESAI sebelum waktu tertentu di masa depan.",
+    "description": "Future Perfect Tense digunakan untuk menunjukkan bahwa suatu tindakan akan telah selesai dilakukan sebelum titik waktu atau batas waktu (deadline) tertentu di masa yang akan datang.",
+    "verbFormUsed": "will + have + Verb 3 (Past Participle)",
+    "functions": [
+      {
+        "title": "Aksi yang Akan Sudah Selesai Sebelum Batas Waktu (Action Completed Before Future Deadline)",
+        "explanation": "Menyatakan kepastian selesainya suatu pekerjaan sebelum waktu yang ditentukan.",
+        "example": "By next month, I will have finished writing my bachelor thesis.",
+        "meaning": "Menjelang bulan depan, saya akan sudah selesai menulis skripsi sarjana saya."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + will + have + Verb 3 + Object / Complement",
+        "negative": "Subject + will + not + have + Verb 3 + Object / Complement",
+        "interrogative": "Will + Subject + have + Verb 3 + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + will + have + been + Non-verb (Adjective / Noun / Adverb)",
+        "negative": "Subject + will + not + have + been + Non-verb",
+        "interrogative": "Will + Subject + have + been + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "by tomorrow (menjelang besok)",
+      "by next week / next month / next year (menjelang minggu depan / bulan depan / tahun depan)",
+      "by the end of this year (menjelang akhir tahun ini)",
+      "by the time + Simple Present (menjelang saat ...)",
+      "in two years' time (dalam jangka dua tahun ke depan)"
+    ],
+    "examples": [
+      {
+        "type": "Verbal Positif",
+        "sentence": "By five o'clock this afternoon, the technician will have repaired all network routers.",
+        "meaning": "Menjelang pukul lima sore ini, teknisi akan sudah selesai memperbaiki seluruh router jaringan."
+      },
+      {
+        "type": "Verbal Negatif",
+        "sentence": "We will not have completed the application build before midnight.",
+        "meaning": "Kami belum akan menyelesaikan pembuatan aplikasi tersebut sebelum tengah malam."
+      },
+      {
+        "type": "Verbal Tanya",
+        "sentence": "Will you have memorized all three hundred English verbs by the end of this month?",
+        "meaning": "Apakah kamu akan sudah menghafal seluruh tiga ratus kata kerja bahasa Inggris menjelang akhir bulan ini?"
+      },
+      {
+        "type": "Nominal Positif",
+        "sentence": "By next year, she will have been a registered physician for a whole decade.",
+        "meaning": "Menjelang tahun depan, dia akan sudah menjadi dokter terdaftar selama genap satu dekade."
+      }
+    ],
+    "tips": "Kata kunci terpenting untuk Future Perfect adalah preposisi 'BY' yang berarti 'menjelang' atau 'sebelum' (misal: 'by tomorrow', 'by next Friday', 'by 2030'). Auxilary selalu 'will have' untuk semua subjek."
+  },
+  {
+    "id": "future_perfect_continuous",
+    "name": "Future Perfect Continuous Tense",
+    "category": "Future",
+    "shortSummary": "Menyatakan durasi aksi yang akan telah berlangsung sampai pada waktu tertentu di masa depan.",
+    "description": "Future Perfect Continuous Tense digunakan untuk memproyeksikan durasi keberlangsungan suatu aksi yang akan terus berjalan hingga titik waktu tertentu di masa mendatang.",
+    "verbFormUsed": "will + have + been + Verb-ing",
+    "functions": [
+      {
+        "title": "Memproyeksikan Durasi Hingga Masa Depan (Projecting Duration to Future Point)",
+        "explanation": "Menghitung berapa lama suatu aktivitas akan telah berlangsung ketika suatu titik masa depan tiba.",
+        "example": "In December, I will have been working at this software company for five years.",
+        "meaning": "Pada bulan Desember nanti, saya akan telah bekerja di perusahaan perangkat lunak ini selama lima tahun."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + will + have + been + Verb-ing + Object / Complement",
+        "negative": "Subject + will + not + have + been + Verb-ing + Object / Complement",
+        "interrogative": "Will + Subject + have + been + Verb-ing + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + will + have + been + being + Non-verb (sangat jarang digunakan)",
+        "negative": "Subject + will + not + have + been + being + Non-verb",
+        "interrogative": "Will + Subject + have + been + being + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "by next year ... for ... (menjelang tahun depan ... selama ...)",
+      "by the time ... for ... (menjelang saat ... selama ...)",
+      "for + durasi waktu"
+    ],
+    "examples": [
+      {
+        "type": "Positif",
+        "sentence": "By next semester, they will have been studying international relations for two years.",
+        "meaning": "Menjelang semester depan, mereka akan telah mempelajari hubungan internasional selama dua tahun."
+      },
+      {
+        "type": "Negatif",
+        "sentence": "He will not have been teaching long enough to qualify for early retirement.",
+        "meaning": "Dia belum akan telah mengajar cukup lama untuk memenuhi syarat pensiun dini."
+      },
+      {
+        "type": "Tanya",
+        "sentence": "Will you have been living here for a decade by the time you turn thirty?",
+        "meaning": "Apakah kamu akan telah tinggal di sini selama satu dekade saat kamu berusia tiga puluh tahun?"
+      }
+    ],
+    "tips": "Ciri khas tense ini selalu menggabungkan dua penanda waktu: batas masa depan ('by...') dan durasi pengerjaan ('for...')."
+  },
+  {
+    "id": "past_future",
+    "name": "Past Future Tense (Simple Past Future)",
+    "category": "Past Future",
+    "shortSummary": "Menyatakan rencana atau peristiwa yang AKAN dilakukan di masa lampau namun seringkali tidak terlaksana.",
+    "description": "Past Future Tense digunakan untuk menyatakan suatu tindakan yang direncanakan atau diperkirakan akan terjadi di masa lalu dari sudut pandang masa lampau itu sendiri, atau digunakan dalam pengandaian masa kini (Conditional Type 2).",
+    "verbFormUsed": "would / should + Verb 1",
+    "functions": [
+      {
+        "title": "Rencana di Masa Lampau yang Batal / Tidak Terlaksana (Unfulfilled Past Intention)",
+        "explanation": "Menyatakan niat yang dahulu ingin dilakukan namun terkendala hal lain.",
+        "example": "She said she would call me, but she forgot.",
+        "meaning": "Dia mengatakan dia akan menelepon saya, tetapi dia lupa."
+      },
+      {
+        "title": "Kalimat Pengandaian Tipe 2 (Conditional Sentence Type 2)",
+        "explanation": "Menyatakan hal yang bertentangan dengan kenyataan saat ini.",
+        "example": "If I had enough savings, I would buy that new laptop.",
+        "meaning": "Jika saya memiliki cukup tabungan, saya akan membeli laptop baru itu (faktanya saat ini tabungan belum cukup)."
+      },
+      {
+        "title": "Permohonan atau Permintaan Sangat Sopan (Polite Request)",
+        "explanation": "Meminta sesuatu secara halus dan beradab.",
+        "example": "Would you please explain the rule of irregular verbs again?",
+        "meaning": "Maukah Anda menjelaskan kembali aturan kata kerja tak beraturan itu?"
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + would / should + Verb 1 + Object / Complement",
+        "negative": "Subject + would / should + not + Verb 1 + Object / Complement",
+        "interrogative": "Would / Should + Subject + Verb 1 + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + would / should + be + Non-verb (Adjective / Noun / Adverb)",
+        "negative": "Subject + would / should + not + be + Non-verb",
+        "interrogative": "Would / Should + Subject + be + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "the next day (keesokan harinya)",
+      "the following week (minggu berikutnya)",
+      "if + Simple Past (jika ...)",
+      "that day (hari itu)"
+    ],
+    "examples": [
+      {
+        "type": "Verbal Positif",
+        "sentence": "He promised that he would help his brother practice English conversation.",
+        "meaning": "Dia berjanji bahwa dia akan membantu saudaranya berlatih percakapan bahasa Inggris."
+      },
+      {
+        "type": "Verbal Negatif",
+        "sentence": "I told them that I would not join the party because of my fever.",
+        "meaning": "Saya memberi tahu mereka bahwa saya tidak akan menghadiri pesta itu karena saya demam."
+      },
+      {
+        "type": "Verbal Tanya",
+        "sentence": "Would you attend the overseas scholarship seminar if you received an invitation?",
+        "meaning": "Apakah kamu akan menghadiri seminar beasiswa luar negeri jika kamu menerima undangan?"
+      },
+      {
+        "type": "Nominal Positif",
+        "sentence": "I knew that the test would be difficult, so I prepared thoroughly.",
+        "meaning": "Saya tahu bahwa ujian itu akan sulit, jadi saya mempersiapkannya dengan matang."
+      }
+    ],
+    "tips": "Past Future adalah bentuk lampau dari Simple Future (kata 'will' diganti menjadi 'would'). Setelah 'would', kata kerja SELALU kembali ke Verb 1 dasar."
+  },
+  {
+    "id": "past_future_continuous",
+    "name": "Past Future Continuous Tense",
+    "category": "Past Future",
+    "shortSummary": "Menyatakan aksi yang AKAN SEDANG berlangsung pada waktu tertentu di masa lampau.",
+    "description": "Past Future Continuous Tense digunakan untuk menyatakan suatu tindakan yang dibayangkan atau direncanakan akan sedang berlangsung pada jam tertentu di masa lalu, namun terhalang atau gagal terwujud.",
+    "verbFormUsed": "would + be + Verb-ing",
+    "functions": [
+      {
+        "title": "Aksi yang Seharusnya Sedang Terjadi di Masa Lalu (Action Supposed to be in Progress in Past)",
+        "explanation": "Menyatakan apa yang semestinya sedang kita lakukan di masa lalu jika tidak ada halangan.",
+        "example": "I would be studying in the library at 3 PM yesterday, but my car broke down.",
+        "meaning": "Saya semestinya sedang belajar di perpustakaan pada pukul 3 sore kemarin, tetapi mobil saya mogok."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + would + be + Verb-ing + Object / Complement",
+        "negative": "Subject + would + not + be + Verb-ing + Object / Complement",
+        "interrogative": "Would + Subject + be + Verb-ing + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + would + be + being + Non-verb (sangat jarang digunakan)",
+        "negative": "Subject + would + not + be + being + Non-verb",
+        "interrogative": "Would + Subject + be + being + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "at that time yesterday (pada waktu itu kemarin)",
+      "the following morning at 9 AM (keesokan paginya pada pukul 9)"
+    ],
+    "examples": [
+      {
+        "type": "Positif",
+        "sentence": "She thought she would be traveling across Europe during that summer month.",
+        "meaning": "Dia mengira dia akan sedang bepergian melintasi Eropa selama bulan musim panas itu."
+      },
+      {
+        "type": "Negatif",
+        "sentence": "We would not be waiting under the rain if the bus had arrived punctually.",
+        "meaning": "Kami tidak akan sedang menunggu di bawah hujan jika bus tiba tepat waktu."
+      },
+      {
+        "type": "Tanya",
+        "sentence": "Would you be taking the advanced exam if the registration was still open?",
+        "meaning": "Apakah kamu akan sedang mengikuti ujian lanjutan jika pendaftaran masih dibuka?"
+      }
+    ],
+    "tips": "Bentuk ini merupakan pergeseran lampau dari Future Continuous Tense ('will be + V-ing' menjadi 'would be + V-ing')."
+  },
+  {
+    "id": "past_future_perfect",
+    "name": "Past Future Perfect Tense",
+    "category": "Past Future",
+    "shortSummary": "Menyatakan aksi yang AKAN TELAH SELESAI di masa lampau jika syarat masa lalu terpenuhi (penyesalan).",
+    "description": "Past Future Perfect Tense digunakan untuk menyatakan suatu tindakan yang seharusnya sudah selesai terjadi di masa lalu, namun pada kenyataannya TIDAK terjadi karena syaratnya tidak terpenuhi. Sering digunakan pada main clause Conditional Sentence Type 3.",
+    "verbFormUsed": "would + have + Verb 3 (Past Participle)",
+    "functions": [
+      {
+        "title": "Pengandaian Masa Lampau yang Tidak Terwujud (Unreal Past / Conditional Type 3)",
+        "explanation": "Menyatakan hasil yang mestinya sudah terwujud di masa lampau jika kondisinya berbeda.",
+        "example": "If she had studied harder, she would have passed the English examination.",
+        "meaning": "Jika dia belajar lebih giat, dia pasti sudah lulus ujian bahasa Inggris itu (faktanya dia tidak belajar giat dan tidak lulus)."
+      },
+      {
+        "title": "Peristiwa yang Semestinya Sudah Tuntas di Masa Lalu (Past Expected Completion)",
+        "explanation": "Menyatakan perkiraan bahwa sesuatu semestinya sudah selesai pada waktu lampau.",
+        "example": "By 2022, I thought our company would have launched the global mobile platform.",
+        "meaning": "Menjelang tahun 2022, saya mengira perusahaan kami pasti sudah meluncurkan platform seluler global."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + would + have + Verb 3 + Object / Complement",
+        "negative": "Subject + would + not + have + Verb 3 + Object / Complement",
+        "interrogative": "Would + Subject + have + Verb 3 + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + would + have + been + Non-verb (Adjective / Noun / Adverb)",
+        "negative": "Subject + would + not + have + been + Non-verb",
+        "interrogative": "Would + Subject + have + been + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "if + Past Perfect (had + V3)",
+      "by that time (menjelang waktu itu di masa lampau)",
+      "by the end of last year (menjelang akhir tahun lalu)"
+    ],
+    "examples": [
+      {
+        "type": "Verbal Positif",
+        "sentence": "He would have caught the early morning flight if he had set his alarm properly.",
+        "meaning": "Dia pasti sudah mengejar penerbangan pagi itu jika dia memasang alarmnya dengan benar."
+      },
+      {
+        "type": "Verbal Negatif",
+        "sentence": "I would not have made that grammatical error if I had reviewed the verb rules.",
+        "meaning": "Saya tidak akan membuat kesalahan tata bahasa itu jika saya meninjau aturan kata kerja tersebut."
+      },
+      {
+        "type": "Verbal Tanya",
+        "sentence": "Would they have won the debate competition if they had prepared more evidence?",
+        "meaning": "Apakah mereka akan telah memenangkan lomba debat itu jika mereka menyiapkan lebih banyak bukti?"
+      },
+      {
+        "type": "Nominal Positif",
+        "sentence": "She would have been much happier if her parents had attended her graduation.",
+        "meaning": "Dia pasti sudah jauh lebih bahagia jika orang tuanya menghadiri wisudanya."
+      }
+    ],
+    "tips": "Rumus utamanya selalu 'would have + Verb 3'. Dalam pengucapan lisan santai penutur asli, 'would have' sering disingkat menjadi 'would've' atau terdengar seperti /wʊdəv/."
+  },
+  {
+    "id": "past_future_perfect_continuous",
+    "name": "Past Future Perfect Continuous Tense",
+    "category": "Past Future",
+    "shortSummary": "Menyatakan durasi aksi yang seharusnya sudah dan sedang berlangsung di masa lampau jika kondisinya terpenuhi.",
+    "description": "Past Future Perfect Continuous Tense adalah bentuk waktu yang paling kompleks dalam tata bahasa Inggris. Tense ini digunakan untuk menyatakan suatu tindakan yang seharusnya sudah dan sedang berlangsung selama kurun waktu tertentu pada waktu lampau jika syarat di masa lalu terpenuhi.",
+    "verbFormUsed": "would + have + been + Verb-ing",
+    "functions": [
+      {
+        "title": "Durasi Pengandaian di Masa Lampau (Hypothetical Past Duration)",
+        "explanation": "Menyatakan berapa lama suatu aksi semestinya telah berjalan di masa lampau seandainya tidak ada kendala.",
+        "example": "By last December, she would have been working at the hospital for ten years if she had not resigned.",
+        "meaning": "Menjelang Desember lalu, dia semestinya telah bekerja di rumah sakit itu selama sepuluh tahun seandainya dia tidak mengundurkan diri."
+      }
+    ],
+    "formulas": {
+      "verbal": {
+        "positive": "Subject + would + have + been + Verb-ing + Object / Complement",
+        "negative": "Subject + would + not + have + been + Verb-ing + Object / Complement",
+        "interrogative": "Would + Subject + have + been + Verb-ing + Object / Complement ?"
+      },
+      "nominal": {
+        "positive": "Subject + would + have + been + being + Non-verb (hampir tidak pernah ditemui dalam bahasa Inggris alami)",
+        "negative": "Subject + would + not + have + been + being + Non-verb",
+        "interrogative": "Would + Subject + have + been + being + Non-verb ?"
+      }
+    },
+    "timeSignals": [
+      "by the end of last month ... for ... (menjelang akhir bulan lalu ... selama ...)",
+      "if + Past Perfect ... for ..."
+    ],
+    "examples": [
+      {
+        "type": "Positif",
+        "sentence": "He would have been teaching at the university for twenty years by last autumn if he had stayed.",
+        "meaning": "Dia semestinya telah mengajar di universitas itu selama dua puluh tahun menjelang musim gugur lalu jika dia tetap tinggal."
+      },
+      {
+        "type": "Negatif",
+        "sentence": "They would not have been living in such difficult conditions if the project had succeeded.",
+        "meaning": "Mereka tidak akan telah hidup dalam kondisi sesulit itu seandainya proyek tersebut berhasil."
+      },
+      {
+        "type": "Tanya",
+        "sentence": "Would you have been studying in the United States for two years by now if your visa had been approved?",
+        "meaning": "Apakah kamu semestinya telah kuliah di Amerika Serikat selama dua tahun saat ini jika visa kamu disetujui waktu itu?"
+      }
+    ],
+    "tips": "Tense ke-16 ini merupakan kombinasi dari Past + Future + Perfect + Continuous. Penggunaannya umumnya ditemukan dalam teks sastra formal, penulisan tingkat lanjut (advanced writing), atau analisis kondisional retrospektif."
+  }
+]

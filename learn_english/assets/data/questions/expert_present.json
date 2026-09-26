@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q_pres_19",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The programmer is exhausted because he _______ coding all night.",
+    "options": [
+      "has been",
+      "is",
+      "was",
+      "had"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Rumus Present Perfect Continuous untuk subjek 'he' adalah has + been + Verb-ing (has been coding).",
+    "translation": "Programmer itu kelelahan karena dia telah memprogram sepanjang malam.",
+    "targetSentence": "The programmer is exhausted because he has been coding all night.",
+    "indonesianPrompt": "Programmer itu kelelahan karena dia telah memprogram sepanjang malam.",
+    "acceptedAnswers": [
+      "The programmer is exhausted because he has been coding all night."
+    ]
+  },
+  {
+    "id": "q_pres_20",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "How long have you _______ English grammar with this application?",
+    "options": [
+      "been studying",
+      "study",
+      "studied",
+      "being study"
+    ],
+    "correctAnswer": "been studying",
+    "explanation": "Pertanyaan durasi 'How long have you...' pada kegiatan yang masih berlanjut menggunakan 'been + Verb-ing'.",
+    "translation": "Sudah berapa lama kamu mempelajari tata bahasa Inggris dengan aplikasi ini?",
+    "targetSentence": "How long have you been studying English grammar with this application?",
+    "indonesianPrompt": "Sudah berapa lama kamu mempelajari tata bahasa Inggris dengan aplikasi ini?",
+    "acceptedAnswers": [
+      "How long have you been studying English grammar with this application?"
+    ]
+  },
+  {
+    "id": "q_pres_21",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "It has been _______ continuously since early morning, so streets are flooded.",
+    "options": [
+      "raining",
+      "rained",
+      "rain",
+      "rains"
+    ],
+    "correctAnswer": "raining",
+    "explanation": "Struktur 'has been' dalam Present Perfect Continuous wajib diikuti kata kerja berakhiran -ing: raining.",
+    "translation": "Hujan telah turun terus-menerus sejak pagi buta, sehingga jalan-jalan tergenang.",
+    "targetSentence": "It has been raining continuously since early morning, so streets are flooded.",
+    "indonesianPrompt": "Hujan telah turun terus-menerus sejak pagi buta, sehingga jalan-jalan tergenang.",
+    "acceptedAnswers": [
+      "It has been raining continuously since early morning, so streets are flooded."
+    ]
+  },
+  {
+    "id": "q_pres_22",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "They _______ waiting for the departure announcement for nearly two hours.",
+    "options": [
+      "have been",
+      "has been",
+      "are being",
+      "were been"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Subjek 'They' jamak berpasangan dengan 'have been' dalam Present Perfect Continuous Tense.",
+    "translation": "Mereka telah menunggu pengumuman keberangkatan selama hampir dua jam.",
+    "targetSentence": "They have been waiting for the departure announcement for nearly two hours.",
+    "indonesianPrompt": "Mereka telah menunggu pengumuman keberangkatan selama hampir dua jam.",
+    "acceptedAnswers": [
+      "They have been waiting for the departure announcement for nearly two hours."
+    ]
+  },
+  {
+    "id": "exp_pres_01",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The lead engineer _______ on this complex architectural problem for five consecutive hours.",
+    "options": [
+      "has been working",
+      "have been working",
+      "is working",
+      "had worked"
+    ],
+    "correctAnswer": "has been working",
+    "explanation": "Subjek tunggal 'The lead engineer' dipadukan dengan 'has been + Verb-ing' untuk menekankan durasi tindakan yang berlangsung terus-menerus hingga saat ini (for five consecutive hours).",
+    "translation": "Insinyur utama itu telah mengerjakan masalah arsitektur yang kompleks ini selama lima jam berturut-turut.",
+    "targetSentence": "The lead engineer has been working on this complex architectural problem for five consecutive hours.",
+    "indonesianPrompt": "Insinyur kepala itu telah mengerjakan masalah arsitektur rumit ini selama lima jam berturut-turut.",
+    "acceptedAnswers": [
+      "The lead engineer has been working on this complex architectural problem for five consecutive hours."
+    ]
+  },
+  {
+    "id": "exp_pres_02",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Her eyes are red and puffy because she _______ crying.",
+    "options": [
+      "has been",
+      "have been",
+      "was",
+      "is"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Present Perfect Continuous digunakan ketika tindakan baru saja berhenti tetapi dampak atau bukti fisiknya masih jelas terlihat saat ini (Her eyes are red). Rumus: has + been + V-ing.",
+    "translation": "Matanya merah dan bengkak karena dia telah menangis.",
+    "targetSentence": "Her eyes are red and puffy because she has been crying.",
+    "indonesianPrompt": "Matanya merah dan sembap karena dia telah menangis.",
+    "acceptedAnswers": [
+      "Her eyes are red and puffy because she has been crying."
+    ]
+  },
+  {
+    "id": "exp_pres_03",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "How long have the scientists _______ the effects of microplastics on marine ecosystems?",
+    "options": [
+      "been investigating",
+      "investigate",
+      "investigated",
+      "being investigated"
+    ],
+    "correctAnswer": "been investigating",
+    "explanation": "Kalimat tanya 'How long have [subject] been + V-ing' menanyakan durasi suatu penyelidikan ilmiah yang masih terus berjalan hingga sekarang.",
+    "translation": "Sudah berapa lama para ilmuwan menyelidiki dampak mikroplastik pada ekosistem laut?",
+    "targetSentence": "How long have the scientists been investigating the effects of microplastics on marine ecosystems?",
+    "indonesianPrompt": "Sudah berapa lama para ilmuwan meneliti efek mikroplastik pada ekosistem laut?",
+    "acceptedAnswers": [
+      "How long have the scientists been investigating the effects of microplastics on marine ecosystems?"
+    ]
+  },
+  {
+    "id": "exp_pres_04",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "We _______ renovating our old house since early November, and it is still unfinished.",
+    "options": [
+      "have been",
+      "has been",
+      "are",
+      "had been"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Subjek jamak 'We' menggunakan 'have been' diikuti Verb-ing (renovating) untuk menyatakan pekerjaan yang dimulai di masa lalu dan masih berlangsung saat ini (still unfinished).",
+    "translation": "Kami telah merenovasi rumah tua kami sejak awal November, dan itu masih belum selesai.",
+    "targetSentence": "We have been renovating our old house since early November, and it is still unfinished.",
+    "indonesianPrompt": "Kami telah merenovasi rumah tua kami sejak awal November, dan itu masih belum selesai.",
+    "acceptedAnswers": [
+      "We have been renovating our old house since early November, and it is still unfinished."
+    ]
+  },
+  {
+    "id": "exp_pres_05",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Why are your hands so dirty? What have you _______ doing in the garden?",
+    "options": [
+      "been",
+      "being",
+      "be",
+      "are"
+    ],
+    "correctAnswer": "been",
+    "explanation": "Rumus Present Perfect Continuous untuk kalimat tanya adalah 'What + have + subject + been + Verb-ing?'.",
+    "translation": "Mengapa tanganmu begitu kotor? Apa yang telah kamu lakukan di taman?",
+    "targetSentence": "Why are your hands so dirty? What have you been doing in the garden?",
+    "indonesianPrompt": "Mengapa tanganmu begitu kotor? Apa yang sudah kamu lakukan di taman?",
+    "acceptedAnswers": [
+      "Why are your hands so dirty? What have you been doing in the garden?"
+    ]
+  },
+  {
+    "id": "exp_pres_06",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The organization _______ campaigning tirelessly for indigenous land rights throughout the past decade.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek tunggal institusional 'The organization' dipadukan dengan 'has been + campaigning' untuk menunjukkan aksi advokasi yang berkesinambungan.",
+    "translation": "Organisasi tersebut telah berkampanye tanpa kenal lelah untuk hak-hak tanah adat sepanjang dekade terakhir.",
+    "targetSentence": "The organization has been campaigning tirelessly for indigenous land rights throughout the past decade.",
+    "indonesianPrompt": "Organisasi itu telah berkampanye tanpa lelah untuk hak tanah adat sepanjang dekade terakhir.",
+    "acceptedAnswers": [
+      "The organization has been campaigning tirelessly for indigenous land rights throughout the past decade."
+    ]
+  },
+  {
+    "id": "exp_pres_07",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "He smells of petrol because he _______ repairing his motorcycle engine all afternoon.",
+    "options": [
+      "has been",
+      "is",
+      "was",
+      "had been"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Keterangan 'all afternoon' dan aroma bensin saat ini mengindikasikan kegiatan baru saja atau sedang berlangsung lama (has been repairing).",
+    "translation": "Dia berbau bensin karena dia telah memperbaiki mesin sepeda motornya sepanjang sore.",
+    "targetSentence": "He smells of petrol because he has been repairing his motorcycle engine all afternoon.",
+    "indonesianPrompt": "Dia berbau bensin karena dia telah memperbaiki mesin motornya sepanjang sore.",
+    "acceptedAnswers": [
+      "He smells of petrol because he has been repairing his motorcycle engine all afternoon."
+    ]
+  },
+  {
+    "id": "exp_pres_08",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "How many months have you been _______ violin lessons at the music academy?",
+    "options": [
+      "taking",
+      "take",
+      "taken",
+      "took"
+    ],
+    "correctAnswer": "taking",
+    "explanation": "Setelah struktur 'have you been', kata kerja utama wajib berbentuk present participle (Verb-ing: taking).",
+    "translation": "Sudah berapa bulan kamu mengambil pelajaran biola di akademi musik?",
+    "targetSentence": "How many months have you been taking violin lessons at the music academy?",
+    "indonesianPrompt": "Sudah berapa bulan kamu mengambil les biola di akademi musik?",
+    "acceptedAnswers": [
+      "How many months have you been taking violin lessons at the music academy?"
+    ]
+  },
+  {
+    "id": "exp_pres_09",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Economists _______ warning about inflationary pressures since interest rates began dropping.",
+    "options": [
+      "have been",
+      "has been",
+      "are being",
+      "were"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Subjek jamak 'Economists' menggunakan 'have been' ditambah Verb-ing ('warning') untuk menjelaskan peringatan yang berlangsung sejak masa lampau hingga saat ini.",
+    "translation": "Para ekonom telah memperingatkan tentang tekanan inflasi sejak suku bunga mulai turun.",
+    "targetSentence": "Economists have been warning about inflationary pressures since interest rates began dropping.",
+    "indonesianPrompt": "Para ekonom telah memperingatkan tentang tekanan inflasi sejak suku bunga mulai turun.",
+    "acceptedAnswers": [
+      "Economists have been warning about inflationary pressures since interest rates began dropping."
+    ]
+  },
+  {
+    "id": "exp_pres_10",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "She _______ trying to master recursive algorithms all day without much success.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Keterangan 'all day' yang menunjukkan durasi usaha terus menerus dari subjek tunggal 'She' membutuhkan pola 'has been trying'.",
+    "translation": "Dia telah mencoba menguasai algoritma rekursif sepanjang hari tanpa banyak keberhasilan.",
+    "targetSentence": "She has been trying to master recursive algorithms all day without much success.",
+    "indonesianPrompt": "Dia telah mencoba menguasai algoritma rekursif seharian tanpa banyak hasil.",
+    "acceptedAnswers": [
+      "She has been trying to master recursive algorithms all day without much success."
+    ]
+  },
+  {
+    "id": "exp_pres_11",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "My neighbor's dog has been _______ incessantly for the past thirty minutes.",
+    "options": [
+      "barking",
+      "bark",
+      "barks",
+      "barked"
+    ],
+    "correctAnswer": "barking",
+    "explanation": "Frasa 'has been' diikuti oleh kata kerja Verb-ing (barking) untuk menunjukkan kebisingan yang berlangsung tanpa henti (incessantly).",
+    "translation": "Anjing tetangga saya telah menggonggong tanpa henti selama tiga puluh menit terakhir.",
+    "targetSentence": "My neighbor's dog has been barking incessantly for the past thirty minutes.",
+    "indonesianPrompt": "Anjing tetangga saya telah menggonggong tanpa henti selama tiga puluh menit terakhir.",
+    "acceptedAnswers": [
+      "My neighbor's dog has been barking incessantly for the past thirty minutes."
+    ]
+  },
+  {
+    "id": "exp_pres_12",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "They are out of breath because they _______ sprinting up the steep hill.",
+    "options": [
+      "have been",
+      "has been",
+      "are",
+      "had been"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "'They are out of breath' adalah bukti fisik masa kini (present result) dari aktivitas berlari kencang yang baru saja dilakukan secara intensif (have been sprinting).",
+    "translation": "Mereka terengah-engah karena mereka telah berlari cepat mendaki bukit yang curam.",
+    "targetSentence": "They are out of breath because they have been sprinting up the steep hill.",
+    "indonesianPrompt": "Mereka terengah-engah karena mereka baru saja berlari sprint mendaki bukit yang curam.",
+    "acceptedAnswers": [
+      "They are out of breath because they have been sprinting up the steep hill."
+    ]
+  },
+  {
+    "id": "exp_pres_13",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The investigative journalists _______ following the money trail across multiple offshore shell companies.",
+    "options": [
+      "have been",
+      "has been",
+      "are been",
+      "were being"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Subjek jamak 'The investigative journalists' dipadukan dengan 'have been following' untuk menyatakan investigasi pelacakan yang terus berlangsung secara intensif.",
+    "translation": "Para jurnalis investigasi telah mengikuti jejak uang melintasi berbagai perusahaan cangkang luar negeri.",
+    "targetSentence": "The investigative journalists have been following the money trail across multiple offshore shell companies.",
+    "indonesianPrompt": "Para jurnalis investigasi telah mengikuti jejak aliran uang melintasi beberapa perusahaan cangkang di luar negeri.",
+    "acceptedAnswers": [
+      "The investigative journalists have been following the money trail across multiple offshore shell companies."
+    ]
+  },
+  {
+    "id": "exp_pres_14",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The pharmaceutical firm has been _______ clinical trials on the experimental vaccine for over eighteen months.",
+    "options": [
+      "conducting",
+      "conduct",
+      "conducted",
+      "conducts"
+    ],
+    "correctAnswer": "conducting",
+    "explanation": "Bentuk kontinu berdurasi panjang dalam Present Perfect Continuous dibentuk dengan 'has been + Verb-ing' (conducting).",
+    "translation": "Perusahaan farmasi itu telah melakukan uji klinis terhadap vaksin eksperimental tersebut selama lebih dari delapan belas bulan.",
+    "targetSentence": "The pharmaceutical firm has been conducting clinical trials on the experimental vaccine for over eighteen months.",
+    "indonesianPrompt": "Perusahaan farmasi itu telah melakukan uji klinis pada vaksin eksperimental tersebut selama lebih dari 18 bulan.",
+    "acceptedAnswers": [
+      "The pharmaceutical firm has been conducting clinical trials on the experimental vaccine for over eighteen months."
+    ]
+  },
+  {
+    "id": "exp_pres_15",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Why is the road closed? _______ the municipal workers been resurfacing the asphalt all morning?",
+    "options": [
+      "Have",
+      "Has",
+      "Did",
+      "Are"
+    ],
+    "correctAnswer": "Have",
+    "explanation": "Subjek kalimat tanya adalah bentuk jamak 'the municipal workers', sehingga auxiliary verb di depan adalah 'Have'.",
+    "translation": "Mengapa jalan itu ditutup? Apakah para pekerja kota telah melapis ulang aspal sepanjang pagi?",
+    "targetSentence": "Why is the road closed? Have the municipal workers been resurfacing the asphalt all morning?",
+    "indonesianPrompt": "Mengapa jalanan ditutup? Apakah para pekerja kota telah mengaspal ulang jalan sepanjang pagi?",
+    "acceptedAnswers": [
+      "Why is the road closed? Have the municipal workers been resurfacing the asphalt all morning?"
+    ]
+  },
+  {
+    "id": "exp_pres_16",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Deep-sea oceanographers _______ mapping the tectonic fault lines near the underwater volcano.",
+    "options": [
+      "have been",
+      "has been",
+      "is being",
+      "had been"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Subjek jamak 'Deep-sea oceanographers' menggunakan 'have been + mapping' untuk kegiatan penelitian ilmiah bawah laut yang terus berlangsung.",
+    "translation": "Oseanografer laut dalam telah memetakan garis patahan tektonik di dekat gunung berapi bawah laut.",
+    "targetSentence": "Deep-sea oceanographers have been mapping the tectonic fault lines near the underwater volcano.",
+    "indonesianPrompt": "Para oseanografer laut dalam telah memetakan garis patahan tektonik di dekat gunung berapi bawah laut.",
+    "acceptedAnswers": [
+      "Deep-sea oceanographers have been mapping the tectonic fault lines near the underwater volcano."
+    ]
+  }
+]

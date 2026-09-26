@@ -1,0 +1,112 @@
+[
+  {
+    "id": "q_fut_19",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "future",
+    "tenseName": "Future Perfect Continuous Tense",
+    "question": "In December, she will have _______ working at this academic institution for twenty years.",
+    "options": [
+      "been",
+      "being",
+      "be",
+      "is"
+    ],
+    "correctAnswer": "been",
+    "explanation": "Rumus Future Perfect Continuous adalah will have + been + Verb-ing (working) untuk menyatakan durasi hingga titik masa depan.",
+    "translation": "Pada bulan Desember nanti, dia akan telah bekerja di institusi akademik ini selama dua puluh tahun.",
+    "targetSentence": "In December, she will have been working at this academic institution for twenty years.",
+    "indonesianPrompt": "Pada bulan Desember nanti, dia akan telah bekerja di institusi akademik ini selama dua puluh tahun.",
+    "acceptedAnswers": [
+      "In December, she will have been working at this academic institution for twenty years."
+    ]
+  },
+  {
+    "id": "q_fut_20",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "future",
+    "tenseName": "Future Perfect Continuous Tense",
+    "question": "By midnight, the marathon runners will have been _______ for more than eight consecutive hours.",
+    "options": [
+      "running",
+      "ran",
+      "run",
+      "runs"
+    ],
+    "correctAnswer": "running",
+    "explanation": "Setelah 'will have been', kata kerja wajib berakhiran -ing: running.",
+    "translation": "Menjelang tengah malam, para pelari maraton akan telah berlari selama lebih dari delapan jam berturut-turut.",
+    "targetSentence": "By midnight, the marathon runners will have been running for more than eight consecutive hours.",
+    "indonesianPrompt": "Menjelang tengah malam, para pelari maraton akan telah berlari selama lebih dari delapan jam berturut-turut.",
+    "acceptedAnswers": [
+      "By midnight, the marathon runners will have been running for more than eight consecutive hours."
+    ]
+  },
+  {
+    "id": "q_fut_21",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "future",
+    "tenseName": "Future Perfect Continuous Tense",
+    "question": "By the time he turns thirty, he _______ have been studying medical science for a decade.",
+    "options": [
+      "will",
+      "would",
+      "shall",
+      "is"
+    ],
+    "correctAnswer": "will",
+    "explanation": "Rumus utama Future Perfect Continuous diawali dengan modal 'will' + have been + Verb-ing.",
+    "translation": "Saat dia menginjak usia tiga puluh tahun, dia akan telah mempelajari ilmu kedokteran selama satu dekade.",
+    "targetSentence": "By the time he turns thirty, he will have been studying medical science for a decade.",
+    "indonesianPrompt": "Saat dia menginjak usia tiga puluh tahun, dia akan telah mempelajari ilmu kedokteran selama satu dekade.",
+    "acceptedAnswers": [
+      "By the time he turns thirty, he will have been studying medical science for a decade."
+    ]
+  },
+  {
+    "id": "q_fut_22",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "If you practice your irregular verbs consistently, you _______ master English much faster.",
+    "options": [
+      "will",
+      "would",
+      "had",
+      "did"
+    ],
+    "correctAnswer": "will",
+    "explanation": "Pada kalimat pengandaian Tipe 1 (First Conditional), klausa utama menggunakan Simple Future (will + Verb 1).",
+    "translation": "Jika kamu melatih kata kerja tak beraturanmu secara konsisten, kamu akan menguasai bahasa Inggris jauh lebih cepat.",
+    "targetSentence": "If you practice your irregular verbs consistently, you will master English much faster.",
+    "indonesianPrompt": "Jika kamu melatih kata kerja tak beraturanmu secara konsisten, kamu akan menguasai bahasa Inggris jauh lebih cepat.",
+    "acceptedAnswers": [
+      "If you practice your irregular verbs consistently, you will master English much faster."
+    ]
+  },
+  {
+    "id": "q_fut_25",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "future",
+    "tenseName": "Future Perfect Continuous Tense",
+    "question": "By the end of next month, we will have been _______ in this modern apartment for two years.",
+    "options": [
+      "living",
+      "lived",
+      "live",
+      "lives"
+    ],
+    "correctAnswer": "living",
+    "explanation": "Menggabungkan batas waktu masa depan dan durasi 'for two years' menggunakan 'will have been living'.",
+    "translation": "Menjelang akhir bulan depan, kami akan telah tinggal di apartemen modern ini selama dua tahun.",
+    "targetSentence": "By the end of next month, we will have been living in this modern apartment for two years.",
+    "indonesianPrompt": "Menjelang akhir bulan depan, kami akan telah tinggal di apartemen modern ini selama dua tahun.",
+    "acceptedAnswers": [
+      "By the end of next month, we will have been living in this modern apartment for two years."
+    ]
+  }
+]

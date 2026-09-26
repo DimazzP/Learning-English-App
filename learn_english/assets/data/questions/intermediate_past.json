@@ -1,0 +1,466 @@
+[
+  {
+    "id": "q_past_01",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Last night, my brother _______ a very interesting documentary about deep sea creatures.",
+    "options": [
+      "watched",
+      "watches",
+      "watching",
+      "is watching"
+    ],
+    "correctAnswer": "watched",
+    "explanation": "Keterangan waktu lampau 'Last night' menandakan Simple Past Tense yang mewajibkan kata kerja bentuk kedua (Verb 2): watch -> watched.",
+    "translation": "Tadi malam, saudara laki-laki saya menonton film dokumenter yang sangat menarik tentang makhluk laut dalam.",
+    "targetSentence": "Last night, my brother watched a very interesting documentary about deep sea creatures.",
+    "indonesianPrompt": "Tadi malam, saudara laki-laki saya menonton film dokumenter yang sangat menarik tentang makhluk laut dalam.",
+    "acceptedAnswers": [
+      "Last night, my brother watched a very interesting documentary about deep sea creatures."
+    ]
+  },
+  {
+    "id": "q_past_02",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "They _______ to Bali for their annual family vacation two weeks ago.",
+    "options": [
+      "went",
+      "go",
+      "gone",
+      "were going"
+    ],
+    "correctAnswer": "went",
+    "explanation": "'Two weeks ago' adalah sinyal waktu Simple Past. Kata kerja tak beraturan (irregular verb) 'go' berubah menjadi 'went' di Verb 2.",
+    "translation": "Mereka pergi ke Bali untuk liburan keluarga tahunan mereka dua minggu yang lalu.",
+    "targetSentence": "They went to Bali for their annual family vacation two weeks ago.",
+    "indonesianPrompt": "Mereka pergi ke Bali untuk liburan keluarga tahunan mereka dua minggu yang lalu.",
+    "acceptedAnswers": [
+      "They went to Bali for their annual family vacation two weeks ago."
+    ]
+  },
+  {
+    "id": "q_past_03",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Did you _______ your flight ticket online yesterday?",
+    "options": [
+      "buy",
+      "bought",
+      "buying",
+      "buys"
+    ],
+    "correctAnswer": "buy",
+    "explanation": "Setelah kata kerja bantu 'Did' pada kalimat tanya Simple Past, kata kerja WAJIB kembali ke bentuk dasar Verb 1: buy.",
+    "translation": "Apakah kamu membeli tiket pesawatmu secara daring kemarin?",
+    "targetSentence": "Did you buy your flight ticket online yesterday?",
+    "indonesianPrompt": "Apakah kamu membeli tiket pesawatmu secara daring kemarin?",
+    "acceptedAnswers": [
+      "Did you buy your flight ticket online yesterday?"
+    ]
+  },
+  {
+    "id": "q_past_04",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "The students _______ not understand the complex formula until the teacher demonstrated it.",
+    "options": [
+      "did",
+      "do",
+      "does",
+      "were"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Bentuk negatif kalimat verbal pada masa lampau (Simple Past Tense) menggunakan kata bantu 'did not' (didn't).",
+    "translation": "Para siswa tidak memahami rumus rumit itu sampai guru mendemonstrasikannya.",
+    "targetSentence": "The students did not understand the complex formula until the teacher demonstrated it.",
+    "indonesianPrompt": "Para siswa tidak memahami rumus rumit itu sampai guru mendemonstrasikannya.",
+    "acceptedAnswers": [
+      "The students didn't understand the complex formula until the teacher demonstrated it.",
+      "The students did not understand the complex formula until the teacher demonstrated it."
+    ]
+  },
+  {
+    "id": "q_past_05",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "She _______ very nervous during her first public speech last Friday.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "been"
+    ],
+    "correctAnswer": "was",
+    "explanation": "Kalimat nominal lampau untuk subjek tunggal 'She' menggunakan to be lampau 'was'.",
+    "translation": "Dia sangat gugup selama pidato publik pertamanya Jumat lalu.",
+    "targetSentence": "She was very nervous during her first public speech last Friday.",
+    "indonesianPrompt": "Dia sangat gugup selama pidato publik pertamanya Jumat lalu.",
+    "acceptedAnswers": [
+      "She was very nervous during her first public speech last Friday."
+    ]
+  },
+  {
+    "id": "q_past_06",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "We _______ at the meeting room on time, but the speaker was delayed.",
+    "options": [
+      "arrived",
+      "arrive",
+      "arriving",
+      "have arrived"
+    ],
+    "correctAnswer": "arrived",
+    "explanation": "Peristiwa yang tuntas pada waktu lampau menggunakan bentuk Verb 2: arrive -> arrived.",
+    "translation": "Kami tiba di ruang rapat tepat waktu, namun pembicara mengalami keterlambatan.",
+    "targetSentence": "We arrived at the meeting room on time, but the speaker was delayed.",
+    "indonesianPrompt": "Kami tiba di ruang rapat tepat waktu, namun pembicara mengalami keterlambatan.",
+    "acceptedAnswers": [
+      "We arrived at the meeting room on time, but the speaker was delayed."
+    ]
+  },
+  {
+    "id": "q_past_07",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "I was studying English grammar when the sudden power blackout _______.",
+    "options": [
+      "occurred",
+      "occurring",
+      "was occurring",
+      "occurs"
+    ],
+    "correctAnswer": "occurred",
+    "explanation": "Aksi pendek yang memotong aksi yang sedang berlangsung (Past Continuous) di masa lalu menggunakan Simple Past Tense (Verb 2): occurred.",
+    "translation": "Saya sedang belajar tata bahasa Inggris ketika pemadaman listrik tiba-tiba terjadi.",
+    "targetSentence": "I was studying English grammar when the sudden power blackout occurred.",
+    "indonesianPrompt": "Saya sedang belajar tata bahasa Inggris ketika pemadaman listrik tiba-tiba terjadi.",
+    "acceptedAnswers": [
+      "I was studying English grammar when the sudden power blackout occurred."
+    ]
+  },
+  {
+    "id": "q_past_08",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "While mother was cooking dinner, the children _______ in the backyard.",
+    "options": [
+      "were playing",
+      "played",
+      "are playing",
+      "was playing"
+    ],
+    "correctAnswer": "were playing",
+    "explanation": "Dua kegiatan yang sedang berlangsung bersamaan di masa lampau (dihubungkan kata 'while') keduanya memakai Past Continuous: were playing untuk subjek jamak children.",
+    "translation": "Sementara ibu sedang memasak makan malam, anak-anak sedang bermain di halaman belakang.",
+    "targetSentence": "While mother was cooking dinner, the children were playing in the backyard.",
+    "indonesianPrompt": "Sementara ibu sedang memasak makan malam, anak-anak sedang bermain di halaman belakang.",
+    "acceptedAnswers": [
+      "While mother was cooking dinner, the children were playing in the backyard."
+    ]
+  },
+  {
+    "id": "q_past_09",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "At eight o'clock yesterday evening, we _______ our favorite quiz show on television.",
+    "options": [
+      "were watching",
+      "watched",
+      "are watching",
+      "have watched"
+    ],
+    "correctAnswer": "were watching",
+    "explanation": "Waktu spesifik di masa lalu ('At eight o'clock yesterday evening') menuntut Past Continuous Tense: were watching.",
+    "translation": "Pada pukul delapan kemarin malam, kami sedang menonton acara kuis favorit kami di televisi.",
+    "targetSentence": "At eight o'clock yesterday evening, we were watching our favorite quiz show on television.",
+    "indonesianPrompt": "Pada pukul delapan kemarin malam, kami sedang menonton acara kuis favorit kami di televisi.",
+    "acceptedAnswers": [
+      "At eight o'clock yesterday evening, we were watching our favorite quiz show on television."
+    ]
+  },
+  {
+    "id": "q_past_10",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "He was not _______ attention when the instructor gave the laboratory safety guidelines.",
+    "options": [
+      "paying",
+      "paid",
+      "pay",
+      "pays"
+    ],
+    "correctAnswer": "paying",
+    "explanation": "Setelah to be lampau 'was not', kata kerja harus berbentuk -ing (Present Participle): paying.",
+    "translation": "Dia tidak sedang memperhatikan ketika instruktur memberikan panduan keselamatan laboratorium.",
+    "targetSentence": "He was not paying attention when the instructor gave the laboratory safety guidelines.",
+    "indonesianPrompt": "Dia tidak sedang memperhatikan ketika instruktur memberikan panduan keselamatan laboratorium.",
+    "acceptedAnswers": [
+      "He was not paying attention when the instructor gave the laboratory safety guidelines.",
+      "He wasn't paying attention when the instructor gave the laboratory safety guidelines."
+    ]
+  },
+  {
+    "id": "q_past_11",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "What _______ they discussing when the manager walked into the room?",
+    "options": [
+      "were",
+      "did",
+      "was",
+      "are"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Pada kalimat tanya Past Continuous untuk subjek jamak 'they', kata bantu to be adalah 'were'.",
+    "translation": "Apa yang sedang mereka diskusikan ketika manajer masuk ke dalam ruangan?",
+    "targetSentence": "What were they discussing when the manager walked into the room?",
+    "indonesianPrompt": "Apa yang sedang mereka diskusikan ketika manajer masuk ke dalam ruangan?",
+    "acceptedAnswers": [
+      "What were they discussing when the manager walked into the room?"
+    ]
+  },
+  {
+    "id": "q_past_12",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "A gentle breeze was _______ through the pine trees as we set up our camping tent.",
+    "options": [
+      "blowing",
+      "blew",
+      "blown",
+      "blows"
+    ],
+    "correctAnswer": "blowing",
+    "explanation": "Bentuk kata kerja tak beraturan 'blow' pada Past Continuous adalah was blowing.",
+    "translation": "Semilir angin sejuk sedang berhembus melalui pepohonan pinus saat kami mendirikan tenda kemah kami.",
+    "targetSentence": "A gentle breeze was blowing through the pine trees as we set up our camping tent.",
+    "indonesianPrompt": "Semilir angin sejuk sedang berhembus melalui pepohonan pinus saat kami mendirikan tenda kemah kami.",
+    "acceptedAnswers": [
+      "A gentle breeze was blowing through the pine trees as we set up our camping tent."
+    ]
+  },
+  {
+    "id": "q_past_13",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "The train _______ already left the platform before we reached the central station.",
+    "options": [
+      "had",
+      "has",
+      "have",
+      "was"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Aksi yang telah selesai lebih awal di masa lampau sebelum aksi lampau lainnya terjadi wajib menggunakan Past Perfect: had + Verb 3.",
+    "translation": "Kereta itu sudah meninggalkan peron sebelum kami tiba di stasiun pusat.",
+    "targetSentence": "The train had already left the platform before we reached the central station.",
+    "indonesianPrompt": "Kereta itu sudah meninggalkan peron sebelum kami tiba di stasiun pusat.",
+    "acceptedAnswers": [
+      "The train had already left the platform before we reached the central station."
+    ]
+  },
+  {
+    "id": "q_past_15",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "She had never _______ such a magnificent waterfall before visiting East Java.",
+    "options": [
+      "seen",
+      "saw",
+      "see",
+      "seeing"
+    ],
+    "correctAnswer": "seen",
+    "explanation": "Setelah kata bantu 'had', kata kerja tak beraturan 'see' harus berbentuk Verb 3: seen.",
+    "translation": "Dia belum pernah melihat air terjun semegah itu sebelum berkunjung ke Jawa Timur.",
+    "targetSentence": "She had never seen such a magnificent waterfall before visiting East Java.",
+    "indonesianPrompt": "Dia belum pernah melihat air terjun semegah itu sebelum berkunjung ke Jawa Timur.",
+    "acceptedAnswers": [
+      "She had never seen such a magnificent waterfall before visiting East Java."
+    ]
+  },
+  {
+    "id": "q_past_16",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "He felt confident during the interview because he _______ prepared extensively.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Persiapan terjadi sebelum wawancara berlangsung di masa lampau, sehingga menggunakan Past Perfect: had prepared.",
+    "translation": "Dia merasa percaya diri selama wawancara karena dia telah melakukan persiapan secara mendalam.",
+    "targetSentence": "He felt confident during the interview because he had prepared extensively.",
+    "indonesianPrompt": "Dia merasa percaya diri selama wawancara karena dia telah melakukan persiapan secara mendalam.",
+    "acceptedAnswers": [
+      "He felt confident during the interview because he had prepared extensively."
+    ]
+  },
+  {
+    "id": "q_past_17",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Had the research team _______ the laboratory data before submitting the journal article?",
+    "options": [
+      "verified",
+      "verify",
+      "verifying",
+      "verifies"
+    ],
+    "correctAnswer": "verified",
+    "explanation": "Kalimat tanya Past Perfect diawali 'Had' dan diikuti Verb 3 (Past Participle): verified.",
+    "translation": "Apakah tim peneliti sudah memverifikasi data laboratorium sebelum menyerahkan artikel jurnal tersebut?",
+    "targetSentence": "Had the research team verified the laboratory data before submitting the journal article?",
+    "indonesianPrompt": "Apakah tim peneliti sudah memverifikasi data laboratorium sebelum menyerahkan artikel jurnal tersebut?",
+    "acceptedAnswers": [
+      "Had the research team verified the laboratory data before submitting the journal article?"
+    ]
+  },
+  {
+    "id": "q_past_18",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "They had _______ friends for a decade before they became business partners.",
+    "options": [
+      "been",
+      "being",
+      "be",
+      "were"
+    ],
+    "correctAnswer": "been",
+    "explanation": "Bentuk nominal Past Perfect Tense menggunakan rumus: had + been + noun/adjective.",
+    "translation": "Mereka telah bersahabat selama satu dekade sebelum mereka menjadi mitra bisnis.",
+    "targetSentence": "They had been friends for a decade before they became business partners.",
+    "indonesianPrompt": "Mereka telah bersahabat selama satu dekade sebelum mereka menjadi mitra bisnis.",
+    "acceptedAnswers": [
+      "They had been friends for a decade before they became business partners."
+    ]
+  },
+  {
+    "id": "q_past_22",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "The antique vase accidentally _______ from the shelf and shattered into pieces.",
+    "options": [
+      "fell",
+      "fall",
+      "fallen",
+      "falls"
+    ],
+    "correctAnswer": "fell",
+    "explanation": "Bentuk Verb 2 dari kata kerja tak beraturan 'fall' adalah 'fell'.",
+    "translation": "Vas antik itu tidak sengaja jatuh dari rak dan hancur berkeping-keping.",
+    "targetSentence": "The antique vase accidentally fell from the shelf and shattered into pieces.",
+    "indonesianPrompt": "Vas antik itu tidak sengaja jatuh dari rak dan hancur berkeping-keping.",
+    "acceptedAnswers": [
+      "The antique vase accidentally fell from the shelf and shattered into pieces."
+    ]
+  },
+  {
+    "id": "q_past_23",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Neither of the witnesses _______ willing to testify in court yesterday morning.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "are"
+    ],
+    "correctAnswer": "was",
+    "explanation": "Secara gramatikal baku, subjek 'Neither of...' bermakna tunggal sehingga pada waktu lampau menggunakan 'was'.",
+    "translation": "Tak satu pun dari kedua saksi itu yang bersedia bersaksi di pengadilan kemarin pagi.",
+    "targetSentence": "Neither of the witnesses was willing to testify in court yesterday morning.",
+    "indonesianPrompt": "Tak satu pun dari kedua saksi itu yang bersedia bersaksi di pengadilan kemarin pagi.",
+    "acceptedAnswers": [
+      "Neither of the witnesses was willing to testify in court yesterday morning."
+    ]
+  },
+  {
+    "id": "q_past_24",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "While the technicians were fixing the server, employees _______ to access their emails.",
+    "options": [
+      "were trying",
+      "tried",
+      "are trying",
+      "try"
+    ],
+    "correctAnswer": "were trying",
+    "explanation": "Aksi simultan yang bersamaan sedang berlangsung di masa lampau menggunakan Past Continuous: were trying.",
+    "translation": "Sementara para teknisi sedang memperbaiki server, para karyawan sedang berusaha mengakses email mereka.",
+    "targetSentence": "While the technicians were fixing the server, employees were trying to access their emails.",
+    "indonesianPrompt": "Sementara para teknisi sedang memperbaiki server, para karyawan sedang berusaha mengakses email mereka.",
+    "acceptedAnswers": [
+      "While the technicians were fixing the server, employees were trying to access their emails."
+    ]
+  },
+  {
+    "id": "q_past_25",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "After the delegates had _______ all key resolutions, the summit was formally concluded.",
+    "options": [
+      "signed",
+      "sign",
+      "signing",
+      "signs"
+    ],
+    "correctAnswer": "signed",
+    "explanation": "Klausa 'After + Past Perfect' menggunakan rumus: had + Verb 3 (signed).",
+    "translation": "Setelah para delegasi menandatangani semua resolusi penting, pertemuan puncak itu secara resmi ditutup.",
+    "targetSentence": "After the delegates had signed all key resolutions, the summit was formally concluded.",
+    "indonesianPrompt": "Setelah para delegasi menandatangani semua resolusi penting, pertemuan puncak itu secara resmi ditutup.",
+    "acceptedAnswers": [
+      "After the delegates had signed all key resolutions, the summit was formally concluded."
+    ]
+  }
+]

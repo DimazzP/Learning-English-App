@@ -1,0 +1,447 @@
+[
+  {
+    "id": "q_fut_01",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "I am confident that our project team _______ the international deadline tomorrow.",
+    "options": [
+      "will meet",
+      "meets",
+      "met",
+      "has met"
+    ],
+    "correctAnswer": "will meet",
+    "explanation": "Keterangan waktu 'tomorrow' dan keyakinan masa depan dinyatakan dengan Simple Future: will + Verb 1 (meet).",
+    "translation": "Saya yakin tim proyek kita akan memenuhi tenggat waktu internasional tersebut besok.",
+    "targetSentence": "I am confident that our project team will meet the international deadline tomorrow.",
+    "indonesianPrompt": "Saya yakin tim proyek kita akan memenuhi tenggat waktu internasional tersebut besok.",
+    "acceptedAnswers": [
+      "I am confident that our project team will meet the international deadline tomorrow."
+    ]
+  },
+  {
+    "id": "q_fut_02",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "It is very chilly outside; I _______ a warm cup of herbal tea.",
+    "options": [
+      "will make",
+      "make",
+      "made",
+      "am making"
+    ],
+    "correctAnswer": "will make",
+    "explanation": "Keputusan spontan yang diambil seketika saat berbicara dinyatakan menggunakan modal 'will' + Verb 1.",
+    "translation": "Di luar sangat dingin; saya akan membuat secangkir teh herbal hangat.",
+    "targetSentence": "It is very chilly outside; I will make a warm cup of herbal tea.",
+    "indonesianPrompt": "Di luar sangat dingin; saya akan membuat secangkir teh herbal hangat.",
+    "acceptedAnswers": [
+      "It is very chilly outside; I will make a warm cup of herbal tea."
+    ]
+  },
+  {
+    "id": "q_fut_03",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "Look at those dark thunderstorm clouds! It _______ rain very heavily soon.",
+    "options": [
+      "is going to",
+      "will be",
+      "was going to",
+      "has to"
+    ],
+    "correctAnswer": "is going to",
+    "explanation": "Prediksi masa depan yang didukung oleh bukti visual nyata saat ini (dark clouds) lazim memakai 'be going to'.",
+    "translation": "Lihatlah awan badai gelap itu! Hujan lebat akan segera turun.",
+    "targetSentence": "Look at those dark thunderstorm clouds! It is going to rain very heavily soon.",
+    "indonesianPrompt": "Lihatlah awan badai gelap itu! Hujan lebat akan segera turun.",
+    "acceptedAnswers": [
+      "Look at those dark thunderstorm clouds! It is going to rain very heavily soon."
+    ]
+  },
+  {
+    "id": "q_fut_04",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "Don't worry about the heavy suitcases; I _______ you carry them upstairs.",
+    "options": [
+      "will help",
+      "help",
+      "helped",
+      "am helping"
+    ],
+    "correctAnswer": "will help",
+    "explanation": "Menawarkan bantuan secara sukarela kepada orang lain dinyatakan dengan Simple Future (will + Verb 1).",
+    "translation": "Jangan khawatir tentang koper-koper berat itu; saya akan membantumu membawanya ke atas.",
+    "targetSentence": "Don't worry about the heavy suitcases; I will help you carry them upstairs.",
+    "indonesianPrompt": "Jangan khawatir tentang koper-koper berat itu; saya akan membantumu membawanya ke atas.",
+    "acceptedAnswers": [
+      "Do not worry about the heavy suitcases; I will help you carry them upstairs.",
+      "Don't worry about the heavy suitcases; I will help you carry them upstairs."
+    ]
+  },
+  {
+    "id": "q_fut_05",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "The newly elected president _______ announce the cabinet ministers next Monday.",
+    "options": [
+      "will",
+      "is",
+      "did",
+      "has"
+    ],
+    "correctAnswer": "will",
+    "explanation": "Menyatakan agenda atau pengumuman masa depan menggunakan modal 'will' yang diikuti Verb 1 dasar ('announce').",
+    "translation": "Presiden yang baru terpilih akan mengumumkan para menteri kabinet Senin depan.",
+    "targetSentence": "The newly elected president will announce the cabinet ministers next Monday.",
+    "indonesianPrompt": "Presiden yang baru terpilih akan mengumumkan para menteri kabinet Senin depan.",
+    "acceptedAnswers": [
+      "The newly elected president will announce the cabinet ministers next Monday."
+    ]
+  },
+  {
+    "id": "q_fut_06",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Simple Future Tense",
+    "question": "Will they _______ to the annual linguistics conference in Bali next month?",
+    "options": [
+      "come",
+      "came",
+      "coming",
+      "comes"
+    ],
+    "correctAnswer": "come",
+    "explanation": "Setelah modal 'Will' pada kalimat tanya, kata kerja WAJIB selalu berbentuk dasar Verb 1 tanpa imbuhan apapun: come.",
+    "translation": "Apakah mereka akan datang ke konferensi linguistik tahunan di Bali bulan depan?",
+    "targetSentence": "Will they come to the annual linguistics conference in Bali next month?",
+    "indonesianPrompt": "Apakah mereka akan datang ke konferensi linguistik tahunan di Bali bulan depan?",
+    "acceptedAnswers": [
+      "Will they come to the annual linguistics conference in Bali next month?"
+    ]
+  },
+  {
+    "id": "q_fut_07",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Continuous Tense",
+    "question": "At this exact time tomorrow, we _______ over the Indian Ocean toward Europe.",
+    "options": [
+      "will be flying",
+      "will fly",
+      "fly",
+      "are flown"
+    ],
+    "correctAnswer": "will be flying",
+    "explanation": "Menyatakan kegiatan yang akan SEDANG berlangsung pada titik waktu spesifik di masa depan menggunakan: will + be + Verb-ing.",
+    "translation": "Pada waktu yang tepat seperti ini besok, kami akan sedang terbang melintasi Samudra Hindia menuju Eropa.",
+    "targetSentence": "At this exact time tomorrow, we will be flying over the Indian Ocean toward Europe.",
+    "indonesianPrompt": "Pada waktu yang tepat seperti ini besok, kami akan sedang terbang melintasi Samudra Hindia menuju Eropa.",
+    "acceptedAnswers": [
+      "At this exact time tomorrow, we will be flying over the Indian Ocean toward Europe."
+    ]
+  },
+  {
+    "id": "q_fut_08",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Continuous Tense",
+    "question": "Please don't call me at nine o'clock tonight; I _______ my weekly live webinar.",
+    "options": [
+      "will be hosting",
+      "will host",
+      "host",
+      "hosted"
+    ],
+    "correctAnswer": "will be hosting",
+    "explanation": "Aksi yang akan sedang dikerjakan pada jam tertentu di masa depan diungkapkan dengan Future Continuous: will be hosting.",
+    "translation": "Tolong jangan telepon saya pukul sembilan malam nanti; saya akan sedang memandu webinar langsung mingguan saya.",
+    "targetSentence": "Please don't call me at nine o'clock tonight; I will be hosting my weekly live webinar.",
+    "indonesianPrompt": "Tolong jangan telepon saya pukul sembilan malam nanti; saya akan sedang memandu webinar langsung mingguan saya.",
+    "acceptedAnswers": [
+      "Please don't call me at nine o'clock tonight; I will be hosting my weekly live webinar.",
+      "Please do not call me at nine o'clock tonight; I will be hosting my weekly live webinar."
+    ]
+  },
+  {
+    "id": "q_fut_09",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Continuous Tense",
+    "question": "Will you _______ your laptop this afternoon, or may I borrow it for an hour?",
+    "options": [
+      "be using",
+      "use",
+      "using",
+      "have used"
+    ],
+    "correctAnswer": "be using",
+    "explanation": "Bentuk pertanyaan sopan untuk menanyakan rencana seseorang di masa depan menggunakan: Will you be using...?",
+    "translation": "Apakah kamu akan sedang menggunakan laptopmu siang ini, atau bolehkah saya meminjamnya selama satu jam?",
+    "targetSentence": "Will you be using your laptop this afternoon, or may I borrow it for an hour?",
+    "indonesianPrompt": "Apakah kamu akan sedang menggunakan laptopmu siang ini, atau bolehkah saya meminjamnya selama satu jam?",
+    "acceptedAnswers": [
+      "Will you be using your laptop this afternoon, or may I borrow it for an hour?"
+    ]
+  },
+  {
+    "id": "q_fut_10",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Continuous Tense",
+    "question": "The students _______ taking their standardized English test from 08:00 to 11:00 tomorrow.",
+    "options": [
+      "will be",
+      "will",
+      "are",
+      "shall"
+    ],
+    "correctAnswer": "will be",
+    "explanation": "Rumus Future Continuous adalah will + be + Verb-ing ('taking').",
+    "translation": "Para siswa akan sedang mengikuti tes bahasa Inggris standar dari jam 08:00 sampai 11:00 besok.",
+    "targetSentence": "The students will be taking their standardized English test from 08:00 to 11:00 tomorrow.",
+    "indonesianPrompt": "Para siswa akan sedang mengikuti tes bahasa Inggris standar dari jam 08:00 sampai 11:00 besok.",
+    "acceptedAnswers": [
+      "The students will be taking their standardized English test from 08:00 to 11:00 tomorrow."
+    ]
+  },
+  {
+    "id": "q_fut_11",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Continuous Tense",
+    "question": "When you arrive at the airport terminal, I _______ waiting for you near the exit gate.",
+    "options": [
+      "will be",
+      "am",
+      "was",
+      "will have"
+    ],
+    "correctAnswer": "will be",
+    "explanation": "Menyatakan aksi yang akan sedang berlangsung saat aksi lain terjadi di masa depan: will be waiting.",
+    "translation": "Ketika kamu tiba di terminal bandara, saya akan sedang menunggumu di dekat pintu keluar.",
+    "targetSentence": "When you arrive at the airport terminal, I will be waiting for you near the exit gate.",
+    "indonesianPrompt": "Ketika kamu tiba di terminal bandara, saya akan sedang menunggumu di dekat pintu keluar.",
+    "acceptedAnswers": [
+      "When you arrive at the airport terminal, I will be waiting for you near the exit gate."
+    ]
+  },
+  {
+    "id": "q_fut_12",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Continuous Tense",
+    "question": "They will not _______ traveling during the rainy season due to road repairs.",
+    "options": [
+      "be",
+      "been",
+      "being",
+      "are"
+    ],
+    "correctAnswer": "be",
+    "explanation": "Bentuk negatif Future Continuous adalah will not + be + Verb-ing.",
+    "translation": "Mereka tidak akan sedang bepergian selama musim hujan karena adanya perbaikan jalan.",
+    "targetSentence": "They will not be traveling during the rainy season due to road repairs.",
+    "indonesianPrompt": "Mereka tidak akan sedang bepergian selama musim hujan karena adanya perbaikan jalan.",
+    "acceptedAnswers": [
+      "They won't be traveling during the rainy season due to road repairs.",
+      "They will not be traveling during the rainy season due to road repairs."
+    ]
+  },
+  {
+    "id": "q_fut_13",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Perfect Tense",
+    "question": "By next month, our developers _______ launched the updated version of the learning app.",
+    "options": [
+      "will have",
+      "will",
+      "have",
+      "had"
+    ],
+    "correctAnswer": "will have",
+    "explanation": "Keterangan waktu 'By next month' menandakan aksi akan SUDAH selesai sebelum batas waktu masa depan: will have + Verb 3.",
+    "translation": "Menjelang bulan depan, para pengembang kami akan sudah meluncurkan versi terbaru aplikasi pembelajaran tersebut.",
+    "targetSentence": "By next month, our developers will have launched the updated version of the learning app.",
+    "indonesianPrompt": "Menjelang bulan depan, para pengembang kami akan sudah meluncurkan versi terbaru aplikasi pembelajaran tersebut.",
+    "acceptedAnswers": [
+      "By next month, our developers will have launched the updated version of the learning app."
+    ]
+  },
+  {
+    "id": "q_fut_14",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Perfect Tense",
+    "question": "By the end of this year, she will have _______ her medical internship in Surabaya.",
+    "options": [
+      "completed",
+      "complete",
+      "completing",
+      "completes"
+    ],
+    "correctAnswer": "completed",
+    "explanation": "Setelah 'will have' dalam Future Perfect, kata kerja WAJIB berbentuk Verb 3: completed.",
+    "translation": "Menjelang akhir tahun ini, dia akan sudah menyelesaikan masa magang medisnya di Surabaya.",
+    "targetSentence": "By the end of this year, she will have completed her medical internship in Surabaya.",
+    "indonesianPrompt": "Menjelang akhir tahun ini, dia akan sudah menyelesaikan masa magang medisnya di Surabaya.",
+    "acceptedAnswers": [
+      "By the end of this year, she will have completed her medical internship in Surabaya."
+    ]
+  },
+  {
+    "id": "q_fut_15",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Perfect Tense",
+    "question": "Will you have _______ all the chapters before the semester final examination begins?",
+    "options": [
+      "read",
+      "reading",
+      "reads",
+      "are reading"
+    ],
+    "correctAnswer": "read",
+    "explanation": "Bentuk Verb 3 dari kata kerja 'read' memiliki ejaan yang sama (read), dibaca seperti kata 'red'.",
+    "translation": "Apakah kamu akan sudah membaca semua bab sebelum ujian akhir semester dimulai?",
+    "targetSentence": "Will you have read all the chapters before the semester final examination begins?",
+    "indonesianPrompt": "Apakah kamu akan sudah membaca semua bab sebelum ujian akhir semester dimulai?",
+    "acceptedAnswers": [
+      "Will you have read all the chapters before the semester final examination begins?"
+    ]
+  },
+  {
+    "id": "q_fut_16",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Perfect Tense",
+    "question": "By 2030, scientists predict that humanity _______ developed cleaner alternative fuels.",
+    "options": [
+      "will have",
+      "has",
+      "had",
+      "will be"
+    ],
+    "correctAnswer": "will have",
+    "explanation": "Menyatakan pencapaian yang diproyeksikan telah terwujud sebelum tahun 2030 menggunakan Future Perfect: will have developed.",
+    "translation": "Menjelang tahun 2030, para ilmuwan memprediksi bahwa umat manusia akan sudah mengembangkan bahan bakar alternatif yang lebih bersih.",
+    "targetSentence": "By 2030, scientists predict that humanity will have developed cleaner alternative fuels.",
+    "indonesianPrompt": "Menjelang tahun 2030, para ilmuwan memprediksi bahwa umat manusia akan sudah mengembangkan bahan bakar alternatif yang lebih bersih.",
+    "acceptedAnswers": [
+      "By 2030, scientists predict that humanity will have developed cleaner alternative fuels."
+    ]
+  },
+  {
+    "id": "q_fut_17",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Perfect Tense",
+    "question": "The contractor will not have _______ the bridge construction before the rainy season arrives.",
+    "options": [
+      "finished",
+      "finish",
+      "finishing",
+      "finishes"
+    ],
+    "correctAnswer": "finished",
+    "explanation": "Bentuk negatif Future Perfect (will not have) tetap diikuti oleh bentuk Verb 3: finished.",
+    "translation": "Kontraktor tersebut belum akan menyelesaikan pembangunan jembatan sebelum musim hujan tiba.",
+    "targetSentence": "The contractor will not have finished the bridge construction before the rainy season arrives.",
+    "indonesianPrompt": "Kontraktor tersebut belum akan menyelesaikan pembangunan jembatan sebelum musim hujan tiba.",
+    "acceptedAnswers": [
+      "The contractor will not have finished the bridge construction before the rainy season arrives.",
+      "The contractor won't have finished the bridge construction before the rainy season arrives."
+    ]
+  },
+  {
+    "id": "q_fut_18",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Perfect Tense",
+    "question": "By tomorrow morning, the package _______ been safely delivered to your doorstep.",
+    "options": [
+      "will have",
+      "will",
+      "has",
+      "had"
+    ],
+    "correctAnswer": "will have",
+    "explanation": "Bentuk pasif Future Perfect Tense menggunakan rumus: will have been + Verb 3 (delivered).",
+    "translation": "Menjelang besok pagi, paket tersebut akan sudah diantarkan dengan aman ke depan pintu rumahmu.",
+    "targetSentence": "By tomorrow morning, the package will have been safely delivered to your doorstep.",
+    "indonesianPrompt": "Menjelang besok pagi, paket tersebut akan sudah diantarkan dengan aman ke depan pintu rumahmu.",
+    "acceptedAnswers": [
+      "By tomorrow morning, the package will have been safely delivered to your doorstep."
+    ]
+  },
+  {
+    "id": "q_fut_23",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Continuous Tense",
+    "question": "Don't visit their home around 7 PM because they _______ having dinner with their grandparents.",
+    "options": [
+      "will be",
+      "are",
+      "were",
+      "will have"
+    ],
+    "correctAnswer": "will be",
+    "explanation": "Menyatakan kegiatan yang diperkirakan akan sedang berlangsung pada jam 7 malam: will be having.",
+    "translation": "Jangan kunjungi rumah mereka sekitar jam 7 malam karena mereka akan sedang makan malam bersama kakek-nenek mereka.",
+    "targetSentence": "Don't visit their home around 7 PM because they will be having dinner with their grandparents.",
+    "indonesianPrompt": "Jangan kunjungi rumah mereka sekitar jam 7 malam karena mereka akan sedang makan malam bersama kakek-nenek mereka.",
+    "acceptedAnswers": [
+      "Don't visit their home around 7 PM because they will be having dinner with their grandparents.",
+      "Do not visit their home around 7 PM because they will be having dinner with their grandparents."
+    ]
+  },
+  {
+    "id": "q_fut_24",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "future",
+    "tenseName": "Future Perfect Tense",
+    "question": "By next Friday afternoon, I _______ written all the documentation for the software module.",
+    "options": [
+      "will have",
+      "will",
+      "have",
+      "had"
+    ],
+    "correctAnswer": "will have",
+    "explanation": "Penanda batas waktu 'By next Friday' mewajibkan Future Perfect: will have + written (V3).",
+    "translation": "Menjelang Jumat sore depan, saya akan sudah menulis semua dokumentasi untuk modul perangkat lunak tersebut.",
+    "targetSentence": "By next Friday afternoon, I will have written all the documentation for the software module.",
+    "indonesianPrompt": "Menjelang Jumat sore depan, saya akan sudah menulis semua dokumentasi untuk modul perangkat lunak tersebut.",
+    "acceptedAnswers": [
+      "By next Friday afternoon, I will have written all the documentation for the software module."
+    ]
+  }
+]

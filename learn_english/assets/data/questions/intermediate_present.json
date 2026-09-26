@@ -1,0 +1,886 @@
+[
+  {
+    "id": "q_pres_01",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "My sister _______ English with her tutor every Tuesday evening.",
+    "options": [
+      "studies",
+      "study",
+      "studying",
+      "is study"
+    ],
+    "correctAnswer": "studies",
+    "explanation": "Subjek orang ketiga tunggal (My sister / She) pada Simple Present Tense membutuhkan akhiran -es pada kata kerja (study -> studies).",
+    "translation": "Saudara perempuan saya belajar bahasa Inggris dengan tutornya setiap Selasa malam.",
+    "targetSentence": "My sister studies English with her tutor every Tuesday evening.",
+    "indonesianPrompt": "Saudara perempuan saya belajar bahasa Inggris dengan tutornya setiap Selasa malam.",
+    "acceptedAnswers": [
+      "My sister studies English with her tutor every Tuesday evening."
+    ]
+  },
+  {
+    "id": "q_pres_02",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The sun _______ in the east and sets in the west.",
+    "options": [
+      "rises",
+      "rose",
+      "is rising",
+      "risen"
+    ],
+    "correctAnswer": "rises",
+    "explanation": "Kebenaran umum atau fakta ilmiah (general truth) selalu menggunakan Simple Present Tense dengan Verb 1 + s/es.",
+    "translation": "Matahari terbit di timur dan terbenam di barat.",
+    "targetSentence": "The sun rises in the east and sets in the west.",
+    "indonesianPrompt": "Matahari terbit di timur dan terbenam di barat.",
+    "acceptedAnswers": [
+      "The sun rises in the east and sets in the west."
+    ]
+  },
+  {
+    "id": "q_pres_03",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Water _______ at 100 degrees Celsius under standard atmospheric pressure.",
+    "options": [
+      "boils",
+      "boiled",
+      "is boiling",
+      "boil"
+    ],
+    "correctAnswer": "boils",
+    "explanation": "Fakta ilmiah alamiah menggunakan Simple Present Tense dengan kata kerja berakhiran -s untuk subjek tak terhitung (water).",
+    "translation": "Air mendidih pada suhu 100 derajat Celsius di bawah tekanan atmosfer standar.",
+    "targetSentence": "Water boils at 100 degrees Celsius under standard atmospheric pressure.",
+    "indonesianPrompt": "Air mendidih pada suhu 100 derajat Celsius di bawah tekanan atmosfer standar.",
+    "acceptedAnswers": [
+      "Water boils at 100 degrees Celsius under standard atmospheric pressure."
+    ]
+  },
+  {
+    "id": "q_pres_04",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "They _______ like spicy food, so they always order mild soup.",
+    "options": [
+      "do not",
+      "does not",
+      "are not",
+      "did not"
+    ],
+    "correctAnswer": "do not",
+    "explanation": "Subjek jamak 'They' pada kalimat verbal negatif Simple Present menggunakan kata bantu 'do not' (don't).",
+    "translation": "Mereka tidak menyukai makanan pedas, jadi mereka selalu memesan sup yang tidak pedas.",
+    "targetSentence": "They do not like spicy food, so they always order mild soup.",
+    "indonesianPrompt": "Mereka tidak menyukai makanan pedas, jadi mereka selalu memesan sup yang tidak pedas.",
+    "acceptedAnswers": [
+      "They do not like spicy food, so they always order mild soup.",
+      "They don't like spicy food, so they always order mild soup."
+    ]
+  },
+  {
+    "id": "q_pres_05",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "_______ your brother speak French as well as English?",
+    "options": [
+      "Does",
+      "Do",
+      "Is",
+      "Are"
+    ],
+    "correctAnswer": "Does",
+    "explanation": "Untuk subjek tunggal orang ketiga (your brother / He) pada kalimat tanya verbal, gunakan kata bantu 'Does'.",
+    "translation": "Apakah saudaramu berbicara bahasa Prancis sebaik bahasa Inggris?",
+    "targetSentence": "Does your brother speak French as well as English?",
+    "indonesianPrompt": "Apakah saudaramu berbicara bahasa Prancis sebaik bahasa Inggris?",
+    "acceptedAnswers": [
+      "Does your brother speak French as well as English?"
+    ]
+  },
+  {
+    "id": "q_pres_06",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The morning commuter train _______ at exactly 06:45 AM.",
+    "options": [
+      "departs",
+      "departed",
+      "departing",
+      "is depart"
+    ],
+    "correctAnswer": "departs",
+    "explanation": "Jadwal resmi transportasi umum (fixed schedule) dinyatakan menggunakan Simple Present Tense.",
+    "translation": "Kereta komuter pagi berangkat tepat pada pukul 06:45.",
+    "targetSentence": "The morning commuter train departs at exactly 06:45 AM.",
+    "indonesianPrompt": "Kereta komuter pagi berangkat tepat pada pukul 06:45.",
+    "acceptedAnswers": [
+      "The morning commuter train departs at exactly 06:45 AM."
+    ]
+  },
+  {
+    "id": "q_pres_07",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Listen! The baby _______ in the adjoining room.",
+    "options": [
+      "is crying",
+      "cries",
+      "cried",
+      "cry"
+    ],
+    "correctAnswer": "is crying",
+    "explanation": "Tanda seru penarik perhatian 'Listen!' menandakan aksi sedang berlangsung saat ini juga, sehingga menggunakan to be + Verb-ing.",
+    "translation": "Dengarkan! Bayi itu sedang menangis di kamar sebelah.",
+    "targetSentence": "Listen! The baby is crying in the adjoining room.",
+    "indonesianPrompt": "Dengarkan! Bayi itu sedang menangis di kamar sebelah.",
+    "acceptedAnswers": [
+      "Listen! The baby is crying in the adjoining room."
+    ]
+  },
+  {
+    "id": "q_pres_08",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Right now, we _______ our final semester project in the library.",
+    "options": [
+      "are completing",
+      "complete",
+      "completed",
+      "have completed"
+    ],
+    "correctAnswer": "are completing",
+    "explanation": "Keterangan waktu 'Right now' menuntut penggunaan Present Continuous Tense: subjek 'we' + to be 'are' + Verb-ing.",
+    "translation": "Saat ini, kami sedang menyelesaikan proyek semester akhir kami di perpustakaan.",
+    "targetSentence": "Right now, we are completing our final semester project in the library.",
+    "indonesianPrompt": "Saat ini, kami sedang menyelesaikan proyek semester akhir kami di perpustakaan.",
+    "acceptedAnswers": [
+      "Right now, we are completing our final semester project in the library."
+    ]
+  },
+  {
+    "id": "q_pres_09",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Why _______ you wearing a heavy jacket in this hot room?",
+    "options": [
+      "are",
+      "do",
+      "is",
+      "have"
+    ],
+    "correctAnswer": "are",
+    "explanation": "Bentuk pertanyaan Present Continuous untuk subjek 'you' menggunakan to be 'are' diikuti Verb-ing ('wearing').",
+    "translation": "Mengapa kamu sedang mengenakan jaket tebal di ruangan yang panas ini?",
+    "targetSentence": "Why are you wearing a heavy jacket in this hot room?",
+    "indonesianPrompt": "Mengapa kamu sedang mengenakan jaket tebal di ruangan yang panas ini?",
+    "acceptedAnswers": [
+      "Why are you wearing a heavy jacket in this hot room?"
+    ]
+  },
+  {
+    "id": "q_pres_10",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "My father _______ to Singapore next Monday for a medical checkup.",
+    "options": [
+      "is flying",
+      "fly",
+      "flown",
+      "flew"
+    ],
+    "correctAnswer": "is flying",
+    "explanation": "Present Continuous dapat digunakan untuk rencana masa depan yang sudah teratur dan pasti (definite arrangement).",
+    "translation": "Ayah saya akan terbang ke Singapura Senin depan untuk pemeriksaan medis.",
+    "targetSentence": "My father is flying to Singapore next Monday for a medical checkup.",
+    "indonesianPrompt": "Ayah saya akan terbang ke Singapura Senin depan untuk pemeriksaan medis.",
+    "acceptedAnswers": [
+      "My father is flying to Singapore next Monday for a medical checkup."
+    ]
+  },
+  {
+    "id": "q_pres_11",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "I _______ this grammar rule now, so you can test me.",
+    "options": [
+      "understand",
+      "am understanding",
+      "have understood",
+      "understood"
+    ],
+    "correctAnswer": "understand",
+    "explanation": "Kata kerja 'understand' merupakan stative verb (kata kerja pemahaman pikiran) yang tidak lazim menggunakan bentuk -ing, gunakan Simple Present.",
+    "translation": "Saya memahami aturan tata bahasa ini sekarang, jadi kamu boleh menguji saya.",
+    "targetSentence": "I understand this grammar rule now, so you can test me.",
+    "indonesianPrompt": "Saya memahami aturan tata bahasa ini sekarang, jadi kamu boleh menguji saya.",
+    "acceptedAnswers": [
+      "I understand this grammar rule now, so you can test me."
+    ]
+  },
+  {
+    "id": "q_pres_12",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Look at the sky! The dark clouds _______ across the horizon.",
+    "options": [
+      "are gathering",
+      "gathers",
+      "gathered",
+      "gather"
+    ],
+    "correctAnswer": "are gathering",
+    "explanation": "Frasa 'Look at the sky!' menunjukkan aksi visual yang sedang berlangsung saat pembicara berkata, subjek 'clouds' jamak memakai 'are gathering'.",
+    "translation": "Lihatlah langit! Awan gelap sedang berkumpul di sepanjang cakrawala.",
+    "targetSentence": "Look at the sky! The dark clouds are gathering across the horizon.",
+    "indonesianPrompt": "Lihatlah langit! Awan gelap sedang berkumpul di sepanjang cakrawala.",
+    "acceptedAnswers": [
+      "Look at the sky! The dark clouds are gathering across the horizon."
+    ]
+  },
+  {
+    "id": "q_pres_13",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "I have _______ my keys, so I cannot unlock the front door.",
+    "options": [
+      "lost",
+      "lose",
+      "losing",
+      "loosened"
+    ],
+    "correctAnswer": "lost",
+    "explanation": "Setelah kata bantu 'have' dalam Present Perfect Tense, kata kerja wajib berbentuk Verb 3 (Past Participle): lose -> lost.",
+    "translation": "Saya telah kehilangan kunci saya, sehingga saya tidak bisa membuka pintu depan.",
+    "targetSentence": "I have lost my keys, so I cannot unlock the front door.",
+    "indonesianPrompt": "Saya telah kehilangan kunci saya, sehingga saya tidak bisa membuka pintu depan.",
+    "acceptedAnswers": [
+      "I have lost my keys, so I can't unlock the front door.",
+      "I have lost my keys, so I cannot unlock the front door."
+    ]
+  },
+  {
+    "id": "q_pres_14",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "She _______ in this company for over seven years.",
+    "options": [
+      "has worked",
+      "works",
+      "is working",
+      "worked"
+    ],
+    "correctAnswer": "has worked",
+    "explanation": "Keterangan waktu 'for over seven years' yang menyatakan aksi dimulai di masa lampau dan masih berlanjut menuntut Present Perfect (has + V3).",
+    "translation": "Dia telah bekerja di perusahaan ini selama lebih dari tujuh tahun.",
+    "targetSentence": "She has worked in this company for over seven years.",
+    "indonesianPrompt": "Dia telah bekerja di perusahaan ini selama lebih dari tujuh tahun.",
+    "acceptedAnswers": [
+      "She has worked in this company for over seven years."
+    ]
+  },
+  {
+    "id": "q_pres_15",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Have you ever _______ Japanese sushi before?",
+    "options": [
+      "eaten",
+      "ate",
+      "eat",
+      "eating"
+    ],
+    "correctAnswer": "eaten",
+    "explanation": "Pertanyaan mengenai pengalaman hidup 'Have you ever...' wajib diikuti bentuk Verb 3: eat -> eaten.",
+    "translation": "Pernahkah kamu memakan sushi Jepang sebelumnya?",
+    "targetSentence": "Have you ever eaten Japanese sushi before?",
+    "indonesianPrompt": "Pernahkah kamu memakan sushi Jepang sebelumnya?",
+    "acceptedAnswers": [
+      "Have you ever eaten Japanese sushi before?"
+    ]
+  },
+  {
+    "id": "q_pres_16",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "The technician has _______ repaired the broken projector.",
+    "options": [
+      "already",
+      "yet",
+      "ever",
+      "still"
+    ],
+    "correctAnswer": "already",
+    "explanation": "Kata 'already' (sudah) disisipkan di antara have/has dan Verb 3 untuk kalimat positif Present Perfect.",
+    "translation": "Teknisi tersebut sudah memperbaiki proyektor yang rusak itu.",
+    "targetSentence": "The technician has already repaired the broken projector.",
+    "indonesianPrompt": "Teknisi tersebut sudah memperbaiki proyektor yang rusak itu.",
+    "acceptedAnswers": [
+      "The technician has already repaired the broken projector."
+    ]
+  },
+  {
+    "id": "q_pres_17",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "We have not received any response from the admissions committee _______.",
+    "options": [
+      "yet",
+      "already",
+      "since",
+      "just"
+    ],
+    "correctAnswer": "yet",
+    "explanation": "Kata 'yet' (belum) diletakkan di akhir kalimat negatif atau tanya Present Perfect Tense.",
+    "translation": "Kami belum menerima respons apa pun dari komite penerimaan.",
+    "targetSentence": "We have not received any response from the admissions committee yet.",
+    "indonesianPrompt": "Kami belum menerima respons apa pun dari komite penerimaan.",
+    "acceptedAnswers": [
+      "We haven't received any response from the admissions committee yet.",
+      "We have not received any response from the admissions committee yet."
+    ]
+  },
+  {
+    "id": "q_pres_18",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Doctor Andi _______ several successful heart surgeries this month.",
+    "options": [
+      "has performed",
+      "have performed",
+      "performing",
+      "performed"
+    ],
+    "correctAnswer": "has performed",
+    "explanation": "Subjek tunggal 'Doctor Andi' (He) menggunakan kata kerja bantu 'has' + Verb 3 ('performed').",
+    "translation": "Dokter Andi telah melakukan beberapa operasi jantung yang sukses bulan ini.",
+    "targetSentence": "Doctor Andi has performed several successful heart surgeries this month.",
+    "indonesianPrompt": "Dokter Andi telah melakukan beberapa operasi jantung yang sukses bulan ini.",
+    "acceptedAnswers": [
+      "Doctor Andi has performed several successful heart surgeries this month."
+    ]
+  },
+  {
+    "id": "q_pres_23",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Neither of the candidates _______ enough experience for the leadership role.",
+    "options": [
+      "has",
+      "have",
+      "are having",
+      "having"
+    ],
+    "correctAnswer": "has",
+    "explanation": "Kata 'Neither of' dianggap tunggal dalam tata bahasa formal baku, sehingga menggunakan kata kerja tunggal 'has'.",
+    "translation": "Tak satu pun dari kedua kandidat tersebut memiliki cukup pengalaman untuk peran kepemimpinan.",
+    "targetSentence": "Neither of the candidates has enough experience for the leadership role.",
+    "indonesianPrompt": "Tak satu pun dari kedua kandidat tersebut memiliki cukup pengalaman untuk peran kepemimpinan.",
+    "acceptedAnswers": [
+      "Neither of the candidates has enough experience for the leadership role."
+    ]
+  },
+  {
+    "id": "q_pres_24",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Prices of fresh vegetables _______ rapidly due to the prolonged dry season.",
+    "options": [
+      "are rising",
+      "is rising",
+      "rises",
+      "rise"
+    ],
+    "correctAnswer": "are rising",
+    "explanation": "Subjek kalimat adalah 'Prices' (jamak), sehingga to be yang tepat adalah 'are' + rising untuk menyatakan tren perubahan yang sedang berlangsung.",
+    "translation": "Harga sayuran segar sedang naik dengan cepat akibat musim kemarau yang berkepanjangan.",
+    "targetSentence": "Prices of fresh vegetables are rising rapidly due to the prolonged dry season.",
+    "indonesianPrompt": "Harga sayuran segar sedang naik dengan cepat akibat musim kemarau yang berkepanjangan.",
+    "acceptedAnswers": [
+      "Prices of fresh vegetables are rising rapidly due to the prolonged dry season."
+    ]
+  },
+  {
+    "id": "q_pres_25",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Since 2015, our university _______ international accreditations for all faculties.",
+    "options": [
+      "has obtained",
+      "obtained",
+      "obtains",
+      "is obtaining"
+    ],
+    "correctAnswer": "has obtained",
+    "explanation": "Klausa 'Since 2015' menandakan kurun waktu dari masa lampau hingga kini, sehingga induk kalimat menggunakan Present Perfect: has obtained.",
+    "translation": "Sejak tahun 2015, universitas kami telah memperoleh akreditasi internasional untuk semua fakultas.",
+    "targetSentence": "Since 2015, our university has obtained international accreditations for all faculties.",
+    "indonesianPrompt": "Sejak tahun 2015, universitas kami telah memperoleh akreditasi internasional untuk semua fakultas.",
+    "acceptedAnswers": [
+      "Since 2015, our university has obtained international accreditations for all faculties."
+    ]
+  },
+  {
+    "id": "q_pres_26",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "This soup _______ delicious; what herbs did you add?",
+    "options": [
+      "tastes",
+      "is tasting",
+      "taste",
+      "tasted"
+    ],
+    "correctAnswer": "tastes",
+    "explanation": "Kata kerja panca indra (sense verb) seperti 'taste' berfungsi sebagai stative verb yang tidak umum digunakan dalam bentuk continuous jika menyatakan keadaan atau rasa makanan.",
+    "translation": "Sup ini terasa lezat; bumbu herba apa yang kamu tambahkan?",
+    "targetSentence": "This soup tastes delicious; what herbs did you add?",
+    "indonesianPrompt": "Sup ini terasa lezat; bumbu apa yang kamu tambahkan?",
+    "acceptedAnswers": [
+      "This soup tastes delicious; what herbs did you add?"
+    ]
+  },
+  {
+    "id": "q_pres_27",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Our flight to Tokyo _______ at 10:15 tomorrow morning.",
+    "options": [
+      "departs",
+      "is departing",
+      "departed",
+      "depart"
+    ],
+    "correctAnswer": "departs",
+    "explanation": "Jadwal resmi transportasi publik atau penerbangan di masa depan menggunakan Simple Present Tense (timetabled future).",
+    "translation": "Penerbangan kami ke Tokyo berangkat pukul 10:15 besok pagi.",
+    "targetSentence": "Our flight to Tokyo departs at 10:15 tomorrow morning.",
+    "indonesianPrompt": "Penerbangan kita ke Tokyo berangkat jam 10:15 besok pagi.",
+    "acceptedAnswers": [
+      "Our flight to Tokyo departs at 10:15 tomorrow morning."
+    ]
+  },
+  {
+    "id": "q_pres_28",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "He seldom _______ late for our weekly team meetings.",
+    "options": [
+      "arrives",
+      "arrive",
+      "is arriving",
+      "has arrived"
+    ],
+    "correctAnswer": "arrives",
+    "explanation": "Adverb of frequency 'seldom' diikuti kata kerja Verb 1 dengan akhiran -s untuk subjek orang ketiga tunggal 'He' (arrives).",
+    "translation": "Dia jarang datang terlambat untuk rapat tim mingguan kami.",
+    "targetSentence": "He seldom arrives late for our weekly team meetings.",
+    "indonesianPrompt": "Dia jarang datang terlambat untuk rapat tim mingguan kami.",
+    "acceptedAnswers": [
+      "He seldom arrives late for our weekly team meetings."
+    ]
+  },
+  {
+    "id": "q_pres_29",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "My brother is constantly _______ his keys around the house.",
+    "options": [
+      "losing",
+      "lose",
+      "loses",
+      "lost"
+    ],
+    "correctAnswer": "losing",
+    "explanation": "Present Continuous Tense bersama adverb 'constantly' atau 'always' digunakan untuk mengekspresikan kebiasaan berulang yang menjengkelkan (annoying habit).",
+    "translation": "Saudara laki-laki saya terus-menerus menghilangkan kuncinya di sekitar rumah.",
+    "targetSentence": "My brother is constantly losing his keys around the house.",
+    "indonesianPrompt": "Saudara laki-laki saya terus-menerus menghilangkan kuncinya di sekitar rumah.",
+    "acceptedAnswers": [
+      "My brother is constantly losing his keys around the house."
+    ]
+  },
+  {
+    "id": "q_pres_30",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Global temperatures _______ steadily every decade.",
+    "options": [
+      "are rising",
+      "rise",
+      "has risen",
+      "rose"
+    ],
+    "correctAnswer": "are rising",
+    "explanation": "Perubahan tren bertahap yang sedang berlangsung (developing trends) diekspresikan dengan Present Continuous Tense (are rising).",
+    "translation": "Suhu global meningkat secara stabil setiap dekade.",
+    "targetSentence": "Global temperatures are rising steadily every decade.",
+    "indonesianPrompt": "Suhu global sedang meningkat secara bertahap setiap dekade.",
+    "acceptedAnswers": [
+      "Global temperatures are rising steadily every decade."
+    ]
+  },
+  {
+    "id": "q_pres_31",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "I am temporarily _______ with my cousin until my new apartment is ready.",
+    "options": [
+      "staying",
+      "stay",
+      "stays",
+      "stayed"
+    ],
+    "correctAnswer": "staying",
+    "explanation": "Situasi sementara (temporary situation) yang ditandai dengan kata 'temporarily' membutuhkan bentuk Present Continuous (am staying).",
+    "translation": "Saya untuk sementara tinggal bersama sepupu saya sampai apartemen baru saya siap.",
+    "targetSentence": "I am temporarily staying with my cousin until my new apartment is ready.",
+    "indonesianPrompt": "Saya untuk sementara tinggal bersama sepupu saya sampai apartemen baru saya siap.",
+    "acceptedAnswers": [
+      "I am temporarily staying with my cousin until my new apartment is ready."
+    ]
+  },
+  {
+    "id": "q_pres_32",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "I have _______ this thrilling documentary three times already.",
+    "options": [
+      "watched",
+      "watch",
+      "watching",
+      "watches"
+    ],
+    "correctAnswer": "watched",
+    "explanation": "Present Perfect Tense menggunakan pola have/has + Past Participle (Verb 3) untuk menyatakan pengalaman yang berulang sejauh ini.",
+    "translation": "Saya sudah menonton dokumenter yang mendebarkan ini tiga kali.",
+    "targetSentence": "I have watched this thrilling documentary three times already.",
+    "indonesianPrompt": "Saya sudah menonton film dokumenter yang mendebarkan ini tiga kali.",
+    "acceptedAnswers": [
+      "I have watched this thrilling documentary three times already."
+    ]
+  },
+  {
+    "id": "q_pres_33",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "She has not received the official confirmation email _______.",
+    "options": [
+      "yet",
+      "already",
+      "still",
+      "just"
+    ],
+    "correctAnswer": "yet",
+    "explanation": "Kata keterangan waktu 'yet' ditempatkan pada akhir kalimat negatif Present Perfect Tense untuk menyatakan 'belum'.",
+    "translation": "Dia belum menerima email konfirmasi resmi tersebut.",
+    "targetSentence": "She has not received the official confirmation email yet.",
+    "indonesianPrompt": "Dia belum menerima email konfirmasi resmi itu.",
+    "acceptedAnswers": [
+      "She has not received the official confirmation email yet.",
+      "She hasn't received the official confirmation email yet."
+    ]
+  },
+  {
+    "id": "q_pres_34",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "We have known each other _______ our early school days in elementary school.",
+    "options": [
+      "since",
+      "for",
+      "from",
+      "during"
+    ],
+    "correctAnswer": "since",
+    "explanation": "Preposisi 'since' digunakan dalam Present Perfect Tense untuk menandai titik awal suatu peristiwa di masa lalu.",
+    "translation": "Kami sudah saling kenal sejak masa-masa awal sekolah dasar kami.",
+    "targetSentence": "We have known each other since our early school days in elementary school.",
+    "indonesianPrompt": "Kami sudah saling kenal sejak masa sekolah dasar kami.",
+    "acceptedAnswers": [
+      "We have known each other since our early school days in elementary school."
+    ]
+  },
+  {
+    "id": "q_pres_35",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Mr. Anwar has worked at the financial consulting firm _______ fifteen years.",
+    "options": [
+      "for",
+      "since",
+      "during",
+      "in"
+    ],
+    "correctAnswer": "for",
+    "explanation": "Preposisi 'for' digunakan dalam Present Perfect Tense untuk menyatakan rentang durasi waktu ('fifteen years').",
+    "translation": "Pak Anwar telah bekerja di perusahaan konsultan keuangan itu selama lima belas tahun.",
+    "targetSentence": "Mr. Anwar has worked at the financial consulting firm for fifteen years.",
+    "indonesianPrompt": "Pak Anwar telah bekerja di firma konsultan keuangan itu selama lima belas tahun.",
+    "acceptedAnswers": [
+      "Mr. Anwar has worked at the financial consulting firm for fifteen years."
+    ]
+  },
+  {
+    "id": "q_pres_36",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Have you _______ tried scuba diving in Bunaken National Park?",
+    "options": [
+      "ever",
+      "never",
+      "yet",
+      "already"
+    ],
+    "correctAnswer": "ever",
+    "explanation": "Kata keterangan 'ever' digunakan dalam kalimat tanya Present Perfect Tense untuk menanyakan apakah seseorang pernah memiliki pengalaman tersebut seumur hidupnya.",
+    "translation": "Pernahkah kamu mencoba menyelam di Taman Nasional Bunaken?",
+    "targetSentence": "Have you ever tried scuba diving in Bunaken National Park?",
+    "indonesianPrompt": "Pernahkah kamu mencoba scuba diving di Taman Nasional Bunaken?",
+    "acceptedAnswers": [
+      "Have you ever tried scuba diving in Bunaken National Park?"
+    ]
+  },
+  {
+    "id": "q_pres_37",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "He has _______ finished writing his research paper and submitted it.",
+    "options": [
+      "just",
+      "yet",
+      "ever",
+      "never"
+    ],
+    "correctAnswer": "just",
+    "explanation": "Kata keterangan 'just' diletakkan di antara kata kerja bantu (has) dan past participle (finished) untuk menunjukkan tindakan yang baru saja selesai sesaat yang lalu.",
+    "translation": "Dia baru saja selesai menulis makalah penelitiannya dan mengumpulkannya.",
+    "targetSentence": "He has just finished writing his research paper and submitted it.",
+    "indonesianPrompt": "Dia baru saja selesai menulis makalah risetnya dan mengumpulkannya.",
+    "acceptedAnswers": [
+      "He has just finished writing his research paper and submitted it."
+    ]
+  },
+  {
+    "id": "q_pres_38",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Neither the manager nor the employees _______ satisfied with the new policy.",
+    "options": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ],
+    "correctAnswer": "are",
+    "explanation": "Pada aturan 'neither... nor...', kata kerja harus berkesesuaian (subject-verb agreement) dengan subjek yang paling dekat ('the employees' -> jamak, maka to be adalah 'are').",
+    "translation": "Baik manajer maupun para karyawan tidak puas dengan kebijakan baru itu.",
+    "targetSentence": "Neither the manager nor the employees are satisfied with the new policy.",
+    "indonesianPrompt": "Baik manajer maupun karyawan tidak puas dengan kebijakan baru itu.",
+    "acceptedAnswers": [
+      "Neither the manager nor the employees are satisfied with the new policy."
+    ]
+  },
+  {
+    "id": "q_pres_39",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "They are currently _______ a comprehensive market research study.",
+    "options": [
+      "conducting",
+      "conduct",
+      "conducts",
+      "conducted"
+    ],
+    "correctAnswer": "conducting",
+    "explanation": "Kata keterangan waktu 'currently' menandakan tindakan yang tengah berlangsung pada periode waktu sekarang, sehingga menggunakan Present Continuous (are conducting).",
+    "translation": "Mereka saat ini sedang melakukan studi riset pasar yang komprehensif.",
+    "targetSentence": "They are currently conducting a comprehensive market research study.",
+    "indonesianPrompt": "Mereka saat ini sedang melakukan studi riset pasar yang komprehensif.",
+    "acceptedAnswers": [
+      "They are currently conducting a comprehensive market research study."
+    ]
+  },
+  {
+    "id": "q_pres_40",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Maya has _______ to Japan twice on business trips.",
+    "options": [
+      "been",
+      "gone",
+      "went",
+      "going"
+    ],
+    "correctAnswer": "been",
+    "explanation": "'Has been to' menandakan pengalaman bepergian dan sudah kembali pulang, sedangkan 'has gone to' berarti orang tersebut masih berada di tujuan dan belum kembali.",
+    "translation": "Maya sudah pernah ke Jepang dua kali dalam perjalanan bisnis.",
+    "targetSentence": "Maya has been to Japan twice on business trips.",
+    "indonesianPrompt": "Maya pernah ke Jepang dua kali untuk urusan bisnis.",
+    "acceptedAnswers": [
+      "Maya has been to Japan twice on business trips."
+    ]
+  },
+  {
+    "id": "q_pres_41",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "The government has _______ new regulations to support green energy development.",
+    "options": [
+      "introduced",
+      "introduce",
+      "introducing",
+      "introduces"
+    ],
+    "correctAnswer": "introduced",
+    "explanation": "Subjek tunggal 'The government' diikuti kata kerja bantu 'has' dan Past Participle Verb 3 'introduced' dalam Present Perfect Tense.",
+    "translation": "Pemerintah telah memperkenalkan peraturan baru untuk mendukung pengembangan energi hijau.",
+    "targetSentence": "The government has introduced new regulations to support green energy development.",
+    "indonesianPrompt": "Pemerintah telah memperkenalkan regulasi baru untuk mendukung pengembangan energi hijau.",
+    "acceptedAnswers": [
+      "The government has introduced new regulations to support green energy development."
+    ]
+  },
+  {
+    "id": "q_pres_42",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Everyone in the organization _______ access to the shared digital library.",
+    "options": [
+      "has",
+      "have",
+      "having",
+      "are having"
+    ],
+    "correctAnswer": "has",
+    "explanation": "Indefinite pronoun seperti 'Everyone' dan 'Everybody' selalu dianggap tunggal (singular subject), sehingga memakai kata kerja 'has'.",
+    "translation": "Setiap orang di organisasi ini memiliki akses ke perpustakaan digital bersama.",
+    "targetSentence": "Everyone in the organization has access to the shared digital library.",
+    "indonesianPrompt": "Setiap orang di dalam organisasi memiliki akses ke perpustakaan digital bersama.",
+    "acceptedAnswers": [
+      "Everyone in the organization has access to the shared digital library."
+    ]
+  },
+  {
+    "id": "q_pres_43",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "More and more young entrepreneurs are _______ innovative technology startups.",
+    "options": [
+      "launching",
+      "launch",
+      "launches",
+      "launched"
+    ],
+    "correctAnswer": "launching",
+    "explanation": "Frasa komparatif ganda 'More and more...' menunjukkan perubahan dinamis dan tren yang sedang berkembang, sehingga memakai bentuk continuous (are launching).",
+    "translation": "Semakin banyak wirausahawan muda yang meluncurkan perusahaan rintisan teknologi yang inovatif.",
+    "targetSentence": "More and more young entrepreneurs are launching innovative technology startups.",
+    "indonesianPrompt": "Semakin banyak wirausahawan muda meluncurkan startup teknologi yang inovatif.",
+    "acceptedAnswers": [
+      "More and more young entrepreneurs are launching innovative technology startups."
+    ]
+  },
+  {
+    "id": "q_pres_44",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "How many chapters of the textbook have you _______ so far?",
+    "options": [
+      "read",
+      "reading",
+      "reads",
+      "red"
+    ],
+    "correctAnswer": "read",
+    "explanation": "Bentuk Past Participle (Verb 3) dari kata kerja 'read' tetap ditulis 'read' (walaupun dilafalkan /red/). Keterangan 'so far' menandakan Present Perfect Tense.",
+    "translation": "Berapa banyak bab dari buku teks yang sudah kamu baca sejauh ini?",
+    "targetSentence": "How many chapters of the textbook have you read so far?",
+    "indonesianPrompt": "Berapa banyak bab dari buku teks itu yang sudah kamu baca sejauh ini?",
+    "acceptedAnswers": [
+      "How many chapters of the textbook have you read so far?"
+    ]
+  }
+]

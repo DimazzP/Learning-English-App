@@ -1,0 +1,290 @@
+[
+  {
+    "id": "q_pfut_01",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "She promised that she _______ call me as soon as she landed in London.",
+    "options": [
+      "would",
+      "will",
+      "can",
+      "shall"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Dalam kalimat tak langsung (indirect speech) dengan kalimat pengantar lampau ('promised'), kata 'will' bergeser menjadi 'would'.",
+    "translation": "Dia berjanji bahwa dia akan menelepon saya segera setelah mendarat di London.",
+    "targetSentence": "She promised that she would call me as soon as she landed in London.",
+    "indonesianPrompt": "Dia berjanji bahwa dia akan menelepon saya segera setelah mendarat di London.",
+    "acceptedAnswers": [
+      "She promised that she would call me as soon as she landed in London."
+    ]
+  },
+  {
+    "id": "q_pfut_03",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "He told the team that the final report _______ be ready by five o'clock that day.",
+    "options": [
+      "would",
+      "will",
+      "is",
+      "shall"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Menyatakan niat masa depan dari sudut pandang masa lalu ('told') menggunakan modal lampau 'would'.",
+    "translation": "Dia memberi tahu tim bahwa laporan akhir akan siap menjelang jam lima pada hari itu.",
+    "targetSentence": "He told the team that the final report would be ready by five o'clock that day.",
+    "indonesianPrompt": "Dia memberi tahu tim bahwa laporan akhir akan siap menjelang jam lima pada hari itu.",
+    "acceptedAnswers": [
+      "He told the team that the final report would be ready by five o'clock that day."
+    ]
+  },
+  {
+    "id": "q_pfut_04",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "If she studied harder, she _______ achieve the top score in the English exam.",
+    "options": [
+      "would",
+      "will",
+      "had",
+      "can"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Klausa 'If she studied (V2)' merupakan pengandaian tipe 2 yang pasangannya adalah would + V1 (achieve).",
+    "translation": "Jika dia belajar lebih giat, dia akan meraih nilai tertinggi dalam ujian bahasa Inggris itu.",
+    "targetSentence": "If she studied harder, she would achieve the top score in the English exam.",
+    "indonesianPrompt": "Jika dia belajar lebih giat, dia akan meraih nilai tertinggi dalam ujian bahasa Inggris itu.",
+    "acceptedAnswers": [
+      "If she studied harder, she would achieve the top score in the English exam."
+    ]
+  },
+  {
+    "id": "q_pfut_05",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "_______ you please send me the latest PDF documentation when you get a chance?",
+    "options": [
+      "Would",
+      "Did",
+      "Shall",
+      "Should be"
+    ],
+    "correctAnswer": "Would",
+    "explanation": "Penggunaan 'Would you please...' adalah ungkapan permohonan yang sangat sopan (polite request).",
+    "translation": "Maukah Anda mengirimi saya dokumentasi PDF terbaru ketika Anda memiliki kesempatan?",
+    "targetSentence": "Would you please send me the latest PDF documentation when you get a chance?",
+    "indonesianPrompt": "Maukah Anda mengirimi saya dokumentasi PDF terbaru ketika Anda memiliki kesempatan?",
+    "acceptedAnswers": [
+      "Would you please send me the latest PDF documentation when you get a chance?"
+    ]
+  },
+  {
+    "id": "q_pfut_06",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "We knew that the mountain climbing expedition _______ be challenging.",
+    "options": [
+      "would",
+      "will",
+      "is",
+      "can"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Induk kalimat bermasa lampau ('knew') menuntut klausa anak bergeser ke bentuk past future: would be.",
+    "translation": "Kami tahu bahwa ekspedisi pendakian gunung itu akan menjadi hal yang menantang.",
+    "targetSentence": "We knew that the mountain climbing expedition would be challenging.",
+    "indonesianPrompt": "Kami tahu bahwa ekspedisi pendakian gunung itu akan menjadi hal yang menantang.",
+    "acceptedAnswers": [
+      "We knew that the mountain climbing expedition would be challenging."
+    ]
+  },
+  {
+    "id": "q_pfut_07",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Continuous Tense",
+    "question": "I would be _______ in the quiet library right now if my motorcycle had not broken down.",
+    "options": [
+      "studying",
+      "study",
+      "studied",
+      "studies"
+    ],
+    "correctAnswer": "studying",
+    "explanation": "Rumus Past Future Continuous adalah would + be + Verb-ing (studying) untuk menyatakan aksi yang semestinya sedang berlangsung.",
+    "translation": "Saya semestinya sedang belajar di perpustakaan yang tenang saat ini jika sepeda motor saya tidak mogok.",
+    "targetSentence": "I would be studying in the quiet library right now if my motorcycle had not broken down.",
+    "indonesianPrompt": "Saya semestinya sedang belajar di perpustakaan yang tenang saat ini jika sepeda motor saya tidak mogok.",
+    "acceptedAnswers": [
+      "I would be studying in the quiet library right now if my motorcycle had not broken down.",
+      "I would be studying in the quiet library right now if my motorcycle hadn't broken down."
+    ]
+  },
+  {
+    "id": "q_pfut_08",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Continuous Tense",
+    "question": "She believed that at this hour yesterday, her friends _______ be flying to Tokyo.",
+    "options": [
+      "would",
+      "will",
+      "are",
+      "shall"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Past Future Continuous menyatakan bayangan aksi yang sedang berlangsung di masa lampau: would be flying.",
+    "translation": "Dia mengira bahwa pada jam seperti ini kemarin, teman-temannya akan sedang terbang ke Tokyo.",
+    "targetSentence": "She believed that at this hour yesterday, her friends would be flying to Tokyo.",
+    "indonesianPrompt": "Dia mengira bahwa pada jam seperti ini kemarin, teman-temannya akan sedang terbang ke Tokyo.",
+    "acceptedAnswers": [
+      "She believed that at this hour yesterday, her friends would be flying to Tokyo."
+    ]
+  },
+  {
+    "id": "q_pfut_09",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Continuous Tense",
+    "question": "We _______ not be waiting under this heavy rain if the driver had arrived punctually.",
+    "options": [
+      "would",
+      "will",
+      "are",
+      "shall"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Bentuk negatif Past Future Continuous menggunakan would not be + Verb-ing.",
+    "translation": "Kami tidak akan sedang menunggu di bawah hujan lebat ini jika sopir tiba tepat waktu.",
+    "targetSentence": "We would not be waiting under this heavy rain if the driver had arrived punctually.",
+    "indonesianPrompt": "Kami tidak akan sedang menunggu di bawah hujan lebat ini jika sopir tiba tepat waktu.",
+    "acceptedAnswers": [
+      "We would not be waiting under this heavy rain if the driver had arrived punctually.",
+      "We wouldn't be waiting under this heavy rain if the driver had arrived punctually."
+    ]
+  },
+  {
+    "id": "q_pfut_10",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Continuous Tense",
+    "question": "He told me he would _______ attending the symposium if his visa had been processed in time.",
+    "options": [
+      "be",
+      "been",
+      "being",
+      "is"
+    ],
+    "correctAnswer": "be",
+    "explanation": "Setelah modal 'would', bentuk to be wajib dasar 'be' sebelum kata kerja berakhiran -ing ('attending').",
+    "translation": "Dia memberi tahu saya bahwa dia semestinya akan sedang menghadiri simposium itu jika visanya diproses tepat waktu.",
+    "targetSentence": "He told me he would be attending the symposium if his visa had been processed in time.",
+    "indonesianPrompt": "Dia memberi tahu saya bahwa dia semestinya akan sedang menghadiri simposium itu jika visanya diproses tepat waktu.",
+    "acceptedAnswers": [
+      "He told me he would be attending the symposium if his visa had been processed in time."
+    ]
+  },
+  {
+    "id": "q_pfut_11",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Continuous Tense",
+    "question": "Would you be _______ in that multinational firm if they had offered you a promotion?",
+    "options": [
+      "working",
+      "worked",
+      "work",
+      "works"
+    ],
+    "correctAnswer": "working",
+    "explanation": "Pertanyaan Past Future Continuous mengikuti pola: Would you be + Verb-ing: working.",
+    "translation": "Apakah kamu akan sedang bekerja di perusahaan multinasional itu seandainya mereka menawarimu promosi?",
+    "targetSentence": "Would you be working in that multinational firm if they had offered you a promotion?",
+    "indonesianPrompt": "Apakah kamu akan sedang bekerja di perusahaan multinasional itu seandainya mereka menawarimu promosi?",
+    "acceptedAnswers": [
+      "Would you be working in that multinational firm if they had offered you a promotion?"
+    ]
+  },
+  {
+    "id": "q_pfut_12",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Continuous Tense",
+    "question": "The athletes knew they would be _______ against national champions the following morning.",
+    "options": [
+      "competing",
+      "competed",
+      "compete",
+      "competes"
+    ],
+    "correctAnswer": "competing",
+    "explanation": "Bentuk 'would be' diikuti kata kerja berakhiran -ing: competing.",
+    "translation": "Para atlet itu tahu bahwa mereka akan sedang bertanding melawan para juara nasional keesokan paginya.",
+    "targetSentence": "The athletes knew they would be competing against national champions the following morning.",
+    "indonesianPrompt": "Para atlet itu tahu bahwa mereka akan sedang bertanding melawan para juara nasional keesokan paginya.",
+    "acceptedAnswers": [
+      "The athletes knew they would be competing against national champions the following morning."
+    ]
+  },
+  {
+    "id": "q_pfut_22",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Tense",
+    "question": "If I were in your position, I _______ consult an experienced education counselor.",
+    "options": [
+      "would",
+      "will",
+      "had",
+      "can"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Kalimat pengandaian Tipe 2 dengan 'If I were...' berpasangan dengan would + Verb 1: consult.",
+    "translation": "Jika saya berada di posisimu, saya akan berkonsultasi dengan konselor pendidikan yang berpengalaman.",
+    "targetSentence": "If I were in your position, I would consult an experienced education counselor.",
+    "indonesianPrompt": "Jika saya berada di posisimu, saya akan berkonsultasi dengan konselor pendidikan yang berpengalaman.",
+    "acceptedAnswers": [
+      "If I were in your position, I would consult an experienced education counselor."
+    ]
+  },
+  {
+    "id": "q_pfut_24",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past_future",
+    "tenseName": "Past Future Continuous Tense",
+    "question": "At this time yesterday, we thought we _______ be celebrating our team victory.",
+    "options": [
+      "would",
+      "will",
+      "are",
+      "have"
+    ],
+    "correctAnswer": "would",
+    "explanation": "Ekspektasi masa lampau yang bergeser dari future continuous: would be celebrating.",
+    "translation": "Pada waktu seperti ini kemarin, kami mengira kami akan sedang merayakan kemenangan tim kami.",
+    "targetSentence": "At this time yesterday, we thought we would be celebrating our team victory.",
+    "indonesianPrompt": "Pada waktu seperti ini kemarin, kami mengira kami akan sedang merayakan kemenangan tim kami.",
+    "acceptedAnswers": [
+      "At this time yesterday, we thought we would be celebrating our team victory."
+    ]
+  }
+]

@@ -1,0 +1,267 @@
+[
+  {
+    "id": "b_past_01",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "I _______ a funny movie yesterday.",
+    "options": [
+      "watched",
+      "watch",
+      "watches",
+      "watching"
+    ],
+    "correctAnswer": "watched",
+    "explanation": "Keterangan waktu 'yesterday' menandakan Simple Past, kata kerja beraturan 'watch' ditambah -ed menjadi 'watched'.",
+    "translation": "Saya menonton film lucu kemarin.",
+    "targetSentence": "I watched a funny movie yesterday.",
+    "indonesianPrompt": "Saya menonton film lucu kemarin.",
+    "acceptedAnswers": [
+      "I watched a funny movie yesterday."
+    ]
+  },
+  {
+    "id": "b_past_02",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "She _______ to the market this morning.",
+    "options": [
+      "went",
+      "go",
+      "goes",
+      "gone"
+    ],
+    "correctAnswer": "went",
+    "explanation": "Bentuk Verb 2 dari kata kerja tak beraturan 'go' adalah 'went'.",
+    "translation": "Dia pergi ke pasar tadi pagi.",
+    "targetSentence": "She went to the market this morning.",
+    "indonesianPrompt": "Dia pergi ke pasar tadi pagi.",
+    "acceptedAnswers": [
+      "She went to the market this morning."
+    ]
+  },
+  {
+    "id": "b_past_03",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "They _______ basketball yesterday afternoon.",
+    "options": [
+      "played",
+      "play",
+      "plays",
+      "playing"
+    ],
+    "correctAnswer": "played",
+    "explanation": "Simple Past untuk kata kerja 'play' adalah 'played' (Verb 2).",
+    "translation": "Mereka bermain bola basket kemarin sore.",
+    "targetSentence": "They played basketball yesterday afternoon.",
+    "indonesianPrompt": "Mereka bermain bola basket kemarin sore.",
+    "acceptedAnswers": [
+      "They played basketball yesterday afternoon."
+    ]
+  },
+  {
+    "id": "b_past_04",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "He did not _______ to school yesterday because he was sick.",
+    "options": [
+      "come",
+      "came",
+      "comes",
+      "coming"
+    ],
+    "correctAnswer": "come",
+    "explanation": "Setelah kata bantu negatif lampau 'did not' (didn't), kata kerja WAJIB kembali ke Verb 1: come.",
+    "translation": "Dia tidak datang ke sekolah kemarin karena dia sakit.",
+    "targetSentence": "He did not come to school yesterday because he was sick.",
+    "indonesianPrompt": "Dia tidak datang ke sekolah kemarin karena dia sakit.",
+    "acceptedAnswers": [
+      "He didn't come to school yesterday because he was sick.",
+      "He did not come to school yesterday because he was sick."
+    ]
+  },
+  {
+    "id": "b_past_05",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Did you _______ the new shoes yesterday?",
+    "options": [
+      "buy",
+      "bought",
+      "buys",
+      "buying"
+    ],
+    "correctAnswer": "buy",
+    "explanation": "Setelah kata bantu tanya 'Did', kata kerja kembali ke bentuk dasar Verb 1: buy.",
+    "translation": "Apakah kamu membeli sepatu baru itu kemarin?",
+    "targetSentence": "Did you buy the new shoes yesterday?",
+    "indonesianPrompt": "Apakah kamu membeli sepatu baru itu kemarin?",
+    "acceptedAnswers": [
+      "Did you buy the new shoes yesterday?"
+    ]
+  },
+  {
+    "id": "b_past_06",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "We _______ pizza for dinner last night.",
+    "options": [
+      "ate",
+      "eat",
+      "eats",
+      "eaten"
+    ],
+    "correctAnswer": "ate",
+    "explanation": "Keterangan waktu 'last night' menuntut Verb 2: kata kerja tak beraturan 'eat' menjadi 'ate'.",
+    "translation": "Kami makan piza untuk makan malam tadi malam.",
+    "targetSentence": "We ate pizza for dinner last night.",
+    "indonesianPrompt": "Kami makan piza untuk makan malam tadi malam.",
+    "acceptedAnswers": [
+      "We ate pizza for dinner last night."
+    ]
+  },
+  {
+    "id": "b_past_07",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "My father _______ a new car last month.",
+    "options": [
+      "bought",
+      "buy",
+      "buys",
+      "buying"
+    ],
+    "correctAnswer": "bought",
+    "explanation": "Bentuk lampau (Verb 2) dari kata kerja 'buy' adalah 'bought'.",
+    "translation": "Ayah saya membeli mobil baru bulan lalu.",
+    "targetSentence": "My father bought a new car last month.",
+    "indonesianPrompt": "Ayah saya membeli mobil baru bulan lalu.",
+    "acceptedAnswers": [
+      "My father bought a new car last month."
+    ]
+  },
+  {
+    "id": "b_past_08",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "I was _______ when you called me.",
+    "options": [
+      "sleeping",
+      "sleep",
+      "slept",
+      "sleeps"
+    ],
+    "correctAnswer": "sleeping",
+    "explanation": "Past Continuous Tense menggunakan was/were + Verb-ing: was sleeping.",
+    "translation": "Saya sedang tidur ketika kamu menelepon saya.",
+    "targetSentence": "I was sleeping when you called me.",
+    "indonesianPrompt": "Saya sedang tidur ketika kamu menelepon saya.",
+    "acceptedAnswers": [
+      "I was sleeping when you called me."
+    ]
+  },
+  {
+    "id": "b_past_09",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "They were _______ when it started to rain.",
+    "options": [
+      "playing",
+      "play",
+      "played",
+      "plays"
+    ],
+    "correctAnswer": "playing",
+    "explanation": "Subjek jamak 'They' pada aksi lampau yang sedang berlangsung menggunakan were + playing.",
+    "translation": "Mereka sedang bermain ketika hujan mulai turun.",
+    "targetSentence": "They were playing when it started to rain.",
+    "indonesianPrompt": "Mereka sedang bermain ketika hujan mulai turun.",
+    "acceptedAnswers": [
+      "They were playing when it started to rain."
+    ]
+  },
+  {
+    "id": "b_past_10",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "She was very _______ yesterday.",
+    "options": [
+      "happy",
+      "happily",
+      "happiness",
+      "happier"
+    ],
+    "correctAnswer": "happy",
+    "explanation": "Kalimat nominal Simple Past: Subject + was + kata sifat (happy).",
+    "translation": "Dia sangat bahagia kemarin.",
+    "targetSentence": "She was very happy yesterday.",
+    "indonesianPrompt": "Dia sangat bahagia kemarin.",
+    "acceptedAnswers": [
+      "She was very happy yesterday."
+    ]
+  },
+  {
+    "id": "b_past_11",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "I _______ my keys in the car.",
+    "options": [
+      "left",
+      "leave",
+      "leaves",
+      "leaving"
+    ],
+    "correctAnswer": "left",
+    "explanation": "Bentuk Verb 2 dari 'leave' (meninggalkan/ketinggalan) adalah 'left'.",
+    "translation": "Kunci saya tertinggal di dalam mobil.",
+    "targetSentence": "I left my keys in the car.",
+    "indonesianPrompt": "Kunci saya tertinggal di dalam mobil.",
+    "acceptedAnswers": [
+      "I left my keys in the car."
+    ]
+  },
+  {
+    "id": "b_past_12",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "We _______ very tired after the trip.",
+    "options": [
+      "were",
+      "was",
+      "are",
+      "is"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Subjek jamak 'We' menggunakan to be lampau 'were'.",
+    "translation": "Kami sangat lelah setelah perjalanan itu.",
+    "targetSentence": "We were very tired after the trip.",
+    "indonesianPrompt": "Kami sangat lelah setelah perjalanan itu.",
+    "acceptedAnswers": [
+      "We were very tired after the trip."
+    ]
+  }
+]
