@@ -526,5 +526,137 @@
     "acceptedAnswers": [
       "How long has the cybersecurity unit been investigating these unauthorized network intrusions?"
     ]
+  },
+  {
+    "id": "exp_pres_21",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The regulatory authority has been _______ stringent audits on financial institutions.",
+    "options": [
+      "imposing",
+      "imposed",
+      "impose",
+      "imposes"
+    ],
+    "correctAnswer": "imposing",
+    "explanation": "Present Perfect Continuous Tense (has been + Verb-ing: imposing) menunjukkan otoritas terus-menerus memberlakukan audit ketat.",
+    "translation": "Otoritas pengawas telah memberlakukan audit ketat terhadap lembaga-lembaga keuangan.",
+    "targetSentence": "The regulatory authority has been imposing stringent audits on financial institutions.",
+    "indonesianPrompt": "Otoritas pengawas telah memberlakukan audit ketat terhadap lembaga-lembaga keuangan.",
+    "acceptedAnswers": [
+      "The regulatory authority has been imposing stringent audits on financial institutions."
+    ]
+  },
+  {
+    "id": "exp_pres_22",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "All morning, analysts _______ been scrutinizing the volatile fluctuations in currency markets.",
+    "options": [
+      "have",
+      "has",
+      "had",
+      "are"
+    ],
+    "correctAnswer": "have",
+    "explanation": "Subjek jamak \"analysts\" dengan keterangan durasi \"All morning\" memerlukan auxiliary \"have\" (have been scrutinizing).",
+    "translation": "Sepanjang pagi, para analis telah meneliti fluktuasi yang tidak menentu di pasar mata uang.",
+    "targetSentence": "All morning, analysts have been scrutinizing the volatile fluctuations in currency markets.",
+    "indonesianPrompt": "Sepanjang pagi, para analis telah meneliti fluktuasi yang tidak menentu di pasar mata uang.",
+    "acceptedAnswers": [
+      "All morning, analysts have been scrutinizing the volatile fluctuations in currency markets."
+    ]
+  },
+  {
+    "id": "exp_pres_23",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "How many months _______ she been collaborating with that international think tank?",
+    "options": [
+      "has",
+      "have",
+      "is",
+      "did"
+    ],
+    "correctAnswer": "has",
+    "explanation": "Struktur interogatif Present Perfect Continuous dengan subjek tunggal \"she\": How many months + has + she + been + collaborating?",
+    "translation": "Sudah berapa bulan dia berkolaborasi dengan wadah pemikir internasional itu?",
+    "targetSentence": "How many months has she been collaborating with that international think tank?",
+    "indonesianPrompt": "Sudah berapa bulan dia berkolaborasi dengan wadah pemikir internasional itu?",
+    "acceptedAnswers": [
+      "How many months has she been collaborating with that international think tank?"
+    ]
+  },
+  {
+    "id": "exp_pres_24",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The diplomatic envoy has been tirelessly _______ toward a bilateral trade agreement.",
+    "options": [
+      "striving",
+      "strived",
+      "strive",
+      "strives"
+    ],
+    "correctAnswer": "striving",
+    "explanation": "Present Perfect Continuous (has been + adverb + Verb-ing: striving) menekankan perjuangan tanpa henti yang masih berlangsung.",
+    "translation": "Utusan diplomatik itu telah tanpa lelah berusaha menuju tercapainya perjanjian perdagangan bilateral.",
+    "targetSentence": "The diplomatic envoy has been tirelessly striving toward a bilateral trade agreement.",
+    "indonesianPrompt": "Utusan diplomatik itu telah tanpa lelah berusaha menuju tercapainya perjanjian perdagangan bilateral.",
+    "acceptedAnswers": [
+      "The diplomatic envoy has been tirelessly striving toward a bilateral trade agreement."
+    ]
+  },
+  {
+    "id": "exp_pres_25",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Meteorologists have been _______ the trajectory of the Category 5 hurricane.",
+    "options": [
+      "monitoring",
+      "monitored",
+      "monitor",
+      "monitors"
+    ],
+    "correctAnswer": "monitoring",
+    "explanation": "Bentuk Present Perfect Continuous (have been + Verb-ing: monitoring) menggambarkan pemantauan jalur badai yang terus berlangsung.",
+    "translation": "Para ahli meteorologi telah memantau lintasan badai Kategori 5 tersebut.",
+    "targetSentence": "Meteorologists have been monitoring the trajectory of the Category 5 hurricane.",
+    "indonesianPrompt": "Para ahli meteorologi telah memantau lintasan badai Kategori 5 tersebut.",
+    "acceptedAnswers": [
+      "Meteorologists have been monitoring the trajectory of the Category 5 hurricane."
+    ]
+  },
+  {
+    "id": "exp_pres_26",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Since daybreak, volunteers _______ been distributing essential supplies to disaster victims.",
+    "options": [
+      "have",
+      "has",
+      "are",
+      "were"
+    ],
+    "correctAnswer": "have",
+    "explanation": "Subjek jamak \"volunteers\" dengan klausa waktu \"Since daybreak\" menggunakan auxiliary \"have\" (have been distributing).",
+    "translation": "Sejak fajar, para relawan telah mendistribusikan kebutuhan pokok kepada para korban bencana.",
+    "targetSentence": "Since daybreak, volunteers have been distributing essential supplies to disaster victims.",
+    "indonesianPrompt": "Sejak fajar, para relawan telah mendistribusikan kebutuhan pokok kepada para korban bencana.",
+    "acceptedAnswers": [
+      "Since daybreak, volunteers have been distributing essential supplies to disaster victims."
+    ]
   }
 ]

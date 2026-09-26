@@ -772,5 +772,225 @@
     "acceptedAnswers": [
       "The sun rises in the east."
     ]
+  },
+  {
+    "id": "b_pres_36",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "My parents _______ in a quiet neighborhood.",
+    "options": [
+      "live",
+      "lives",
+      "living",
+      "lived"
+    ],
+    "correctAnswer": "live",
+    "explanation": "Subjek jamak \"My parents\" dalam Simple Present menggunakan kata kerja bentuk dasar tanpa tambahan -s (live).",
+    "translation": "Orang tua saya tinggal di lingkungan yang tenang.",
+    "targetSentence": "My parents live in a quiet neighborhood.",
+    "indonesianPrompt": "Orang tua saya tinggal di lingkungan yang tenang.",
+    "acceptedAnswers": [
+      "My parents live in a quiet neighborhood."
+    ]
+  },
+  {
+    "id": "b_pres_37",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Does he _______ his teeth twice a day?",
+    "options": [
+      "brush",
+      "brushes",
+      "brushing",
+      "brushed"
+    ],
+    "correctAnswer": "brush",
+    "explanation": "Dalam kalimat tanya Simple Present yang diawali \"Does\", kata kerja utama kembali ke bentuk dasar Verb 1 (brush).",
+    "translation": "Apakah dia menyikat giginya dua kali sehari?",
+    "targetSentence": "Does he brush his teeth twice a day?",
+    "indonesianPrompt": "Apakah dia menyikat giginya dua kali sehari?",
+    "acceptedAnswers": [
+      "Does he brush his teeth twice a day?"
+    ]
+  },
+  {
+    "id": "b_pres_38",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "They are _______ their bags for the upcoming trip.",
+    "options": [
+      "packing",
+      "pack",
+      "packs",
+      "packed"
+    ],
+    "correctAnswer": "packing",
+    "explanation": "Present Continuous Tense: are + Verb-ing (packing) menunjukkan aktivitas yang sedang berlangsung.",
+    "translation": "Mereka sedang mengemasi tas mereka untuk perjalanan yang akan datang.",
+    "targetSentence": "They are packing their bags for the upcoming trip.",
+    "indonesianPrompt": "Mereka sedang mengemasi tas mereka untuk perjalanan yang akan datang.",
+    "acceptedAnswers": [
+      "They are packing their bags for the upcoming trip."
+    ]
+  },
+  {
+    "id": "b_pres_39",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "She _______ speak Spanish very fluently.",
+    "options": [
+      "does not",
+      "do not",
+      "is not",
+      "are not"
+    ],
+    "correctAnswer": "does not",
+    "explanation": "Kalimat negatif Simple Present untuk subjek orang ketiga tunggal \"She\" menggunakan \"does not\".",
+    "translation": "Dia tidak berbicara bahasa Spanyol dengan sangat lancar.",
+    "targetSentence": "She does not speak Spanish very fluently.",
+    "indonesianPrompt": "Dia tidak berbicara bahasa Spanyol dengan sangat lancar.",
+    "acceptedAnswers": [
+      "She does not speak Spanish very fluently."
+    ]
+  },
+  {
+    "id": "b_pres_40",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Be quiet! The baby is _______ right now.",
+    "options": [
+      "sleeping",
+      "sleep",
+      "sleeps",
+      "slept"
+    ],
+    "correctAnswer": "sleeping",
+    "explanation": "Perintah \"Be quiet!\" dan penanda \"right now\" menandakan Present Continuous: is + sleeping.",
+    "translation": "Harap tenang! Bayi itu sedang tidur sekarang.",
+    "targetSentence": "Be quiet! The baby is sleeping right now.",
+    "indonesianPrompt": "Harap tenang! Bayi itu sedang tidur sekarang.",
+    "acceptedAnswers": [
+      "Be quiet! The baby is sleeping right now."
+    ]
+  },
+  {
+    "id": "b_pres_41",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "We _______ ready to start the lesson.",
+    "options": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ],
+    "correctAnswer": "are",
+    "explanation": "Subjek \"We\" berpasangan dengan to-be \"are\" dalam kalimat nominal Simple Present.",
+    "translation": "Kami siap untuk memulai pelajaran.",
+    "targetSentence": "We are ready to start the lesson.",
+    "indonesianPrompt": "Kami siap untuk memulai pelajaran.",
+    "acceptedAnswers": [
+      "We are ready to start the lesson."
+    ]
+  },
+  {
+    "id": "b_pres_42",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "He always _______ a helmet when riding a motorcycle.",
+    "options": [
+      "wears",
+      "wear",
+      "wearing",
+      "wore"
+    ],
+    "correctAnswer": "wears",
+    "explanation": "Adverb of frequency \"always\" dengan subjek tunggal \"He\" menggunakan kata kerja berakhiran -s (wears).",
+    "translation": "Dia selalu mengenakan helm saat mengendarai sepeda motor.",
+    "targetSentence": "He always wears a helmet when riding a motorcycle.",
+    "indonesianPrompt": "Dia selalu mengenakan helm saat mengendarai sepeda motor.",
+    "acceptedAnswers": [
+      "He always wears a helmet when riding a motorcycle."
+    ]
+  },
+  {
+    "id": "b_pres_43",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Why _______ you crying?",
+    "options": [
+      "are",
+      "is",
+      "do",
+      "does"
+    ],
+    "correctAnswer": "are",
+    "explanation": "Kalimat tanya Present Continuous dengan subjek \"you\" menggunakan to-be \"are\" (Why are you crying?).",
+    "translation": "Mengapa kamu sedang menangis?",
+    "targetSentence": "Why are you crying?",
+    "indonesianPrompt": "Mengapa kamu sedang menangis?",
+    "acceptedAnswers": [
+      "Why are you crying?"
+    ]
+  },
+  {
+    "id": "b_pres_44",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The library _______ at 5:00 PM every weekday.",
+    "options": [
+      "closes",
+      "close",
+      "closing",
+      "closed"
+    ],
+    "correctAnswer": "closes",
+    "explanation": "Subjek tunggal \"The library\" menyatakan jadwal rutin sehari-hari, menggunakan Verb 1 + s (closes).",
+    "translation": "Perpustakaan itu tutup pada pukul 5:00 sore setiap hari kerja.",
+    "targetSentence": "The library closes at 5:00 PM every weekday.",
+    "indonesianPrompt": "Perpustakaan itu tutup pada pukul 5:00 sore setiap hari kerja.",
+    "acceptedAnswers": [
+      "The library closes at 5:00 PM every weekday."
+    ]
+  },
+  {
+    "id": "b_pres_45",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "I am not _______ today because I feel unwell.",
+    "options": [
+      "working",
+      "work",
+      "works",
+      "worked"
+    ],
+    "correctAnswer": "working",
+    "explanation": "Pola negatif Present Continuous: am not + Verb-ing (working).",
+    "translation": "Saya tidak sedang bekerja hari ini karena merasa kurang enak badan.",
+    "targetSentence": "I am not working today because I feel unwell.",
+    "indonesianPrompt": "Saya tidak sedang bekerja hari ini karena merasa kurang enak badan.",
+    "acceptedAnswers": [
+      "I am not working today because I feel unwell."
+    ]
   }
 ]

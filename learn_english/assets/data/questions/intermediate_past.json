@@ -594,5 +594,225 @@
     "acceptedAnswers": [
       "The company exceeded its sales targets by 20 percent last quarter."
     ]
+  },
+  {
+    "id": "q_past_32",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "I was walking home when it _______ to rain heavily.",
+    "options": [
+      "started",
+      "was starting",
+      "starts",
+      "start"
+    ],
+    "correctAnswer": "started",
+    "explanation": "Peristiwa yang menginterupsi kejadian yang sedang berlangsung di masa lampau (was walking) menggunakan Simple Past (started).",
+    "translation": "Saya sedang berjalan pulang ketika hujan mulai turun dengan lebat.",
+    "targetSentence": "I was walking home when it started to rain heavily.",
+    "indonesianPrompt": "Saya sedang berjalan pulang ketika hujan mulai turun dengan lebat.",
+    "acceptedAnswers": [
+      "I was walking home when it started to rain heavily."
+    ]
+  },
+  {
+    "id": "q_past_33",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "What were you _______ when the earthquake occurred?",
+    "options": [
+      "doing",
+      "did",
+      "do",
+      "done"
+    ],
+    "correctAnswer": "doing",
+    "explanation": "Pola pertanyaan Past Continuous: What + were + Subject + Verb-ing (doing)?",
+    "translation": "Apa yang sedang kamu lakukan ketika gempa bumi terjadi?",
+    "targetSentence": "What were you doing when the earthquake occurred?",
+    "indonesianPrompt": "Apa yang sedang kamu lakukan ketika gempa bumi terjadi?",
+    "acceptedAnswers": [
+      "What were you doing when the earthquake occurred?"
+    ]
+  },
+  {
+    "id": "q_past_34",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "After he _______ dinner, he went out for a brisk walk.",
+    "options": [
+      "had finished",
+      "finished",
+      "has finished",
+      "was finishing"
+    ],
+    "correctAnswer": "had finished",
+    "explanation": "Konektor \"After\" pada dua aksi lampau mengawali aksi yang lebih dulu selesai menggunakan Past Perfect (had finished).",
+    "translation": "Setelah dia selesai makan malam, dia pergi keluar untuk berjalan cepat.",
+    "targetSentence": "After he had finished dinner, he went out for a brisk walk.",
+    "indonesianPrompt": "Setelah dia selesai makan malam, dia pergi keluar untuk berjalan cepat.",
+    "acceptedAnswers": [
+      "After he had finished dinner, he went out for a brisk walk."
+    ]
+  },
+  {
+    "id": "q_past_35",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "The thief _______ escaped before the security guards arrived.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Pencuri sudah kabur sebelum satpam tiba; kejadian pertama di masa lampau menggunakan Past Perfect: had + Verb 3 (had escaped).",
+    "translation": "Pencuri itu telah melarikan diri sebelum petugas keamanan tiba.",
+    "targetSentence": "The thief had escaped before the security guards arrived.",
+    "indonesianPrompt": "Pencuri itu telah melarikan diri sebelum petugas keamanan tiba.",
+    "acceptedAnswers": [
+      "The thief had escaped before the security guards arrived."
+    ]
+  },
+  {
+    "id": "q_past_36",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "The children _______ sleeping peacefully when their parents returned.",
+    "options": [
+      "were",
+      "was",
+      "are",
+      "did"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Subjek jamak \"The children\" memerlukan to-be \"were\" dalam kalimat Past Continuous (were sleeping).",
+    "translation": "Anak-anak sedang tidur dengan lelap ketika orang tua mereka kembali.",
+    "targetSentence": "The children were sleeping peacefully when their parents returned.",
+    "indonesianPrompt": "Anak-anak sedang tidur dengan lelap ketika orang tua mereka kembali.",
+    "acceptedAnswers": [
+      "The children were sleeping peacefully when their parents returned."
+    ]
+  },
+  {
+    "id": "q_past_37",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "I did not recognize Andy because I _______ not seen him for over ten years.",
+    "options": [
+      "had",
+      "have",
+      "was",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Kondisi tidak melihatnya berlangsung mendahului momen tidak mengenalinya di masa lampau, memerlukan Past Perfect: had not seen.",
+    "translation": "Saya tidak mengenali Andy karena saya sudah tidak melihatnya selama lebih dari sepuluh tahun.",
+    "targetSentence": "I did not recognize Andy because I had not seen him for over ten years.",
+    "indonesianPrompt": "Saya tidak mengenali Andy karena saya sudah tidak melihatnya selama lebih dari sepuluh tahun.",
+    "acceptedAnswers": [
+      "I did not recognize Andy because I had not seen him for over ten years."
+    ]
+  },
+  {
+    "id": "q_past_38",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "She hurt her wrist while she _______ playing badminton.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "did"
+    ],
+    "correctAnswer": "was",
+    "explanation": "Klausa \"while she was playing\" menggunakan to-be tunggal \"was\" untuk subjek \"she\" dalam Past Continuous.",
+    "translation": "Dia melukai pergelangan tangannya saat dia sedang bermain bulu tangkis.",
+    "targetSentence": "She hurt her wrist while she was playing badminton.",
+    "indonesianPrompt": "Dia melukai pergelangan tangannya saat dia sedang bermain bulu tangkis.",
+    "acceptedAnswers": [
+      "She hurt her wrist while she was playing badminton."
+    ]
+  },
+  {
+    "id": "q_past_39",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Neither the teacher nor the students _______ happy with the exam results yesterday.",
+    "options": [
+      "were",
+      "was",
+      "are",
+      "is"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Pada struktur \"Neither ... nor ...\", kata kerja mengikuti subjek terdekat (\"the students\" yang berbentuk jamak), sehingga menggunakan \"were\".",
+    "translation": "Baik guru maupun para murid tidak merasa senang dengan hasil ujian kemarin.",
+    "targetSentence": "Neither the teacher nor the students were happy with the exam results yesterday.",
+    "indonesianPrompt": "Baik guru maupun para murid tidak merasa senang dengan hasil ujian kemarin.",
+    "acceptedAnswers": [
+      "Neither the teacher nor the students were happy with the exam results yesterday."
+    ]
+  },
+  {
+    "id": "q_past_40",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "They were exhausted because they had been _______ the mountain all morning.",
+    "options": [
+      "climbing",
+      "climbed",
+      "climb",
+      "climbs"
+    ],
+    "correctAnswer": "climbing",
+    "explanation": "Durasi aktivitas lampau yang menimbulkan dampak di masa lampau diungkapkan dengan Past Perfect Continuous: had been + Verb-ing (climbing).",
+    "translation": "Mereka kelelahan karena mereka telah mendaki gunung tersebut sepanjang pagi.",
+    "targetSentence": "They were exhausted because they had been climbing the mountain all morning.",
+    "indonesianPrompt": "Mereka kelelahan karena mereka telah mendaki gunung tersebut sepanjang pagi.",
+    "acceptedAnswers": [
+      "They were exhausted because they had been climbing the mountain all morning."
+    ]
+  },
+  {
+    "id": "q_past_41",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Until yesterday, she _______ never tasted authentic Italian pizza.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Frasa batas waktu \"Until yesterday\" menandakan bahwa sampai titik waktu lampau tersebut, peristiwa lampau belum pernah terjadi (had never tasted).",
+    "translation": "Hingga kemarin, dia belum pernah mencicipi piza Italia yang autentik.",
+    "targetSentence": "Until yesterday, she had never tasted authentic Italian pizza.",
+    "indonesianPrompt": "Hingga kemarin, dia belum pernah mencicipi piza Italia yang autentik.",
+    "acceptedAnswers": [
+      "Until yesterday, she had never tasted authentic Italian pizza."
+    ]
   }
 ]

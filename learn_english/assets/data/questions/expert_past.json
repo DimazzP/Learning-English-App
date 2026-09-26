@@ -262,5 +262,137 @@
     "acceptedAnswers": [
       "The archeologist realized that the ancient tomb had been pillaged centuries earlier."
     ]
+  },
+  {
+    "id": "exp_past_09",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "The engine finally gave out after it had been _______ continuously for forty-eight hours.",
+    "options": [
+      "running",
+      "run",
+      "ran",
+      "runs"
+    ],
+    "correctAnswer": "running",
+    "explanation": "Rumus Past Perfect Continuous (had been + Verb-ing: running) menunjukkan kerja mesin yang berlangsung tanpa henti sebelum akhirnya mogok (gave out).",
+    "translation": "Mesin itu akhirnya rusak setelah bekerja terus-menerus selama empat puluh delapan jam.",
+    "targetSentence": "The engine finally gave out after it had been running continuously for forty-eight hours.",
+    "indonesianPrompt": "Mesin itu akhirnya rusak setelah bekerja terus-menerus selama empat puluh delapan jam.",
+    "acceptedAnswers": [
+      "The engine finally gave out after it had been running continuously for forty-eight hours."
+    ]
+  },
+  {
+    "id": "exp_past_10",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Little did the travelers know that the bridge had _______ washed away hours earlier.",
+    "options": [
+      "been",
+      "being",
+      "be",
+      "was"
+    ],
+    "correctAnswer": "been",
+    "explanation": "Bentuk pasif Past Perfect Tense dalam subordinasi lampau: had + been + Verb 3 (had been washed away).",
+    "translation": "Para pelancong sama sekali tidak tahu bahwa jembatan itu telah hanyut beberapa jam sebelumnya.",
+    "targetSentence": "Little did the travelers know that the bridge had been washed away hours earlier.",
+    "indonesianPrompt": "Para pelancong sama sekali tidak tahu bahwa jembatan itu telah hanyut beberapa jam sebelumnya.",
+    "acceptedAnswers": [
+      "Little did the travelers know that the bridge had been washed away hours earlier."
+    ]
+  },
+  {
+    "id": "exp_past_11",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "Before the merger fell through, both corporations had been _______ financial disclosures.",
+    "options": [
+      "exchanging",
+      "exchanged",
+      "exchange",
+      "exchanges"
+    ],
+    "correctAnswer": "exchanging",
+    "explanation": "Past Perfect Continuous (had been + Verb-ing: exchanging) menjelaskan proses pertukaran dokumen keuangan yang berlangsung sebelum pembatalan merger.",
+    "translation": "Sebelum merger tersebut batal, kedua korporasi telah saling bertukar keterbukaan informasi keuangan.",
+    "targetSentence": "Before the merger fell through, both corporations had been exchanging financial disclosures.",
+    "indonesianPrompt": "Sebelum merger tersebut batal, kedua korporasi telah saling bertukar keterbukaan informasi keuangan.",
+    "acceptedAnswers": [
+      "Before the merger fell through, both corporations had been exchanging financial disclosures."
+    ]
+  },
+  {
+    "id": "exp_past_12",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Seldom had the community _______ such overwhelming generosity prior to the crisis.",
+    "options": [
+      "witnessed",
+      "witness",
+      "witnessing",
+      "witnesses"
+    ],
+    "correctAnswer": "witnessed",
+    "explanation": "Inversi negatif \"Seldom had + Subject + Verb 3 (witnessed)\" menekankan kelangkaan peristiwa di masa lampau sebelum krisis.",
+    "translation": "Jarang sekali komunitas itu menyaksikan kemurahan hati yang begitu luar biasa sebelum krisis tersebut.",
+    "targetSentence": "Seldom had the community witnessed such overwhelming generosity prior to the crisis.",
+    "indonesianPrompt": "Jarang sekali komunitas itu menyaksikan kemurahan hati yang begitu luar biasa sebelum krisis tersebut.",
+    "acceptedAnswers": [
+      "Seldom had the community witnessed such overwhelming generosity prior to the crisis."
+    ]
+  },
+  {
+    "id": "exp_past_13",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "The botanist _______ been tracking the endangered orchid species for a decade before publishing her catalog.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "have"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Pola Past Perfect Continuous (had + been + tracking) mendeskripsikan aktivitas riset sepuluh tahun sebelum publikasi katalog di masa lampau.",
+    "translation": "Ahli botani itu telah melacak spesies anggrek langka tersebut selama satu dekade sebelum menerbitkan katalognya.",
+    "targetSentence": "The botanist had been tracking the endangered orchid species for a decade before publishing her catalog.",
+    "indonesianPrompt": "Ahli botani itu telah melacak spesies anggrek langka tersebut selama satu dekade sebelum menerbitkan katalognya.",
+    "acceptedAnswers": [
+      "The botanist had been tracking the endangered orchid species for a decade before publishing her catalog."
+    ]
+  },
+  {
+    "id": "exp_past_14",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Hardly had the keynote speaker _______ when a standing ovation erupted.",
+    "options": [
+      "concluded",
+      "conclude",
+      "concluding",
+      "concludes"
+    ],
+    "correctAnswer": "concluded",
+    "explanation": "Struktur inversi \"Hardly had + Subject + Past Participle (concluded) ... when\" menyatakan peristiwa yang langsung disambut tepuk tangan meriah.",
+    "translation": "Pembicara utama baru saja menyudahi pidatonya ketika tepuk tangan meriah langsung bergemuruh.",
+    "targetSentence": "Hardly had the keynote speaker concluded when a standing ovation erupted.",
+    "indonesianPrompt": "Pembicara utama baru saja menyudahi pidatonya ketika tepuk tangan meriah langsung bergemuruh.",
+    "acceptedAnswers": [
+      "Hardly had the keynote speaker concluded when a standing ovation erupted."
+    ]
   }
 ]

@@ -992,5 +992,181 @@
     "acceptedAnswers": [
       "How many chapters of the textbook have you read so far?"
     ]
+  },
+  {
+    "id": "q_pres_50",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "I have _______ this software update three times this week.",
+    "options": [
+      "installed",
+      "install",
+      "installing",
+      "installs"
+    ],
+    "correctAnswer": "installed",
+    "explanation": "Present Perfect Tense: have + Verb 3 (installed) menyatakan frekuensi kejadian dalam kurun waktu saat ini (this week).",
+    "translation": "Saya telah memasang pembaruan perangkat lunak ini tiga kali minggu ini.",
+    "targetSentence": "I have installed this software update three times this week.",
+    "indonesianPrompt": "Saya telah memasang pembaruan perangkat lunak ini tiga kali minggu ini.",
+    "acceptedAnswers": [
+      "I have installed this software update three times this week."
+    ]
+  },
+  {
+    "id": "q_pres_51",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "My computer is constantly _______ without any warning.",
+    "options": [
+      "crashing",
+      "crashes",
+      "crash",
+      "crashed"
+    ],
+    "correctAnswer": "crashing",
+    "explanation": "Present Continuous digabungkan dengan adverb \"constantly\" / \"always\" (is constantly crashing) mengekspresikan keluhan atau kejengkelan atas kebiasaan buruk yang berulang.",
+    "translation": "Komputer saya terus-menerus mengalami crash tanpa peringatan apa pun.",
+    "targetSentence": "My computer is constantly crashing without any warning.",
+    "indonesianPrompt": "Komputer saya terus-menerus mengalami crash tanpa peringatan apa pun.",
+    "acceptedAnswers": [
+      "My computer is constantly crashing without any warning."
+    ]
+  },
+  {
+    "id": "q_pres_52",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Have you ever _______ a speech in front of a thousand people?",
+    "options": [
+      "given",
+      "give",
+      "gave",
+      "giving"
+    ],
+    "correctAnswer": "given",
+    "explanation": "Pertanyaan pengalaman hidup menggunakan Present Perfect: Have you ever + Past Participle (given).",
+    "translation": "Pernahkah kamu berpidato di hadapan seribu orang?",
+    "targetSentence": "Have you ever given a speech in front of a thousand people?",
+    "indonesianPrompt": "Pernahkah kamu berpidato di hadapan seribu orang?",
+    "acceptedAnswers": [
+      "Have you ever given a speech in front of a thousand people?"
+    ]
+  },
+  {
+    "id": "q_pres_53",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "The manager has not reviewed our proposal _______ .",
+    "options": [
+      "yet",
+      "already",
+      "still",
+      "just"
+    ],
+    "correctAnswer": "yet",
+    "explanation": "Adverb \"yet\" diletakkan di akhir kalimat negatif Present Perfect untuk menyatakan \"belum hingga saat ini\".",
+    "translation": "Manajer tersebut belum meninjau proposal kami hingga saat ini.",
+    "targetSentence": "The manager has not reviewed our proposal yet.",
+    "indonesianPrompt": "Manajer tersebut belum meninjau proposal kami hingga saat ini.",
+    "acceptedAnswers": [
+      "The manager has not reviewed our proposal yet."
+    ]
+  },
+  {
+    "id": "q_pres_54",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Neither the manager nor his assistants _______ present today.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "were"
+    ],
+    "correctAnswer": "are",
+    "explanation": "Pada pola \"Neither ... nor ...\", kata kerja ditentukan oleh subjek kedua (\"his assistants\" jamak) dalam waktu saat ini (today): \"are\".",
+    "translation": "Baik manajer maupun para asistennya tidak hadir hari ini.",
+    "targetSentence": "Neither the manager nor his assistants are present today.",
+    "indonesianPrompt": "Baik manajer maupun para asistennya tidak hadir hari ini.",
+    "acceptedAnswers": [
+      "Neither the manager nor his assistants are present today."
+    ]
+  },
+  {
+    "id": "q_pres_55",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "The parcel _______ just arrived at the front desk.",
+    "options": [
+      "has",
+      "have",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has",
+    "explanation": "Subjek tunggal \"The parcel\" berpasangan dengan auxiliary \"has\" + just + Verb 3 (has just arrived) untuk menyatakan aksi yang baru saja tuntas.",
+    "translation": "Paket tersebut baru saja tiba di meja resepsionis.",
+    "targetSentence": "The parcel has just arrived at the front desk.",
+    "indonesianPrompt": "Paket tersebut baru saja tiba di meja resepsionis.",
+    "acceptedAnswers": [
+      "The parcel has just arrived at the front desk."
+    ]
+  },
+  {
+    "id": "q_pres_56",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "The cost of living _______ rising rapidly around the globe.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Subjek non-count \"The cost of living\" merupakan singular, sehingga membutuhkan to-be \"is\" dalam Present Continuous (is rising).",
+    "translation": "Biaya hidup sedang meningkat pesat di seluruh dunia.",
+    "targetSentence": "The cost of living is rising rapidly around the globe.",
+    "indonesianPrompt": "Biaya hidup sedang meningkat pesat di seluruh dunia.",
+    "acceptedAnswers": [
+      "The cost of living is rising rapidly around the globe."
+    ]
+  },
+  {
+    "id": "q_pres_57",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "So far, our team _______ conducted ten comprehensive surveys.",
+    "options": [
+      "has",
+      "have",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has",
+    "explanation": "Subjek kolektif tunggal \"our team\" dengan penanda \"So far\" menggunakan has + Past Participle (has conducted).",
+    "translation": "Sejauh ini, tim kami telah melaksanakan sepuluh survei komprehensif.",
+    "targetSentence": "So far, our team has conducted ten comprehensive surveys.",
+    "indonesianPrompt": "Sejauh ini, tim kami telah melaksanakan sepuluh survei komprehensif.",
+    "acceptedAnswers": [
+      "So far, our team has conducted ten comprehensive surveys."
+    ]
   }
 ]

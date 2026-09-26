@@ -395,5 +395,225 @@
     "acceptedAnswers": [
       "I read an interesting novel yesterday."
     ]
+  },
+  {
+    "id": "b_past_19",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "She _______ a letter to her pen pal yesterday.",
+    "options": [
+      "wrote",
+      "write",
+      "writes",
+      "writing"
+    ],
+    "correctAnswer": "wrote",
+    "explanation": "Bentuk Verb 2 (lampau) dari kata kerja tidak beraturan \"write\" adalah \"wrote\".",
+    "translation": "Dia menulis sepucuk surat untuk sahabat penanya kemarin.",
+    "targetSentence": "She wrote a letter to her pen pal yesterday.",
+    "indonesianPrompt": "Dia menulis sepucuk surat untuk sahabat penanya kemarin.",
+    "acceptedAnswers": [
+      "She wrote a letter to her pen pal yesterday."
+    ]
+  },
+  {
+    "id": "b_past_20",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "He _______ eat lunch because he was not hungry.",
+    "options": [
+      "did not",
+      "does not",
+      "do not",
+      "is not"
+    ],
+    "correctAnswer": "did not",
+    "explanation": "Kalimat negatif Simple Past bentuk verbal memerlukan kata bantu \"did not\" + Verb 1 (eat).",
+    "translation": "Dia tidak makan siang karena dia tidak lapar.",
+    "targetSentence": "He did not eat lunch because he was not hungry.",
+    "indonesianPrompt": "Dia tidak makan siang karena dia tidak lapar.",
+    "acceptedAnswers": [
+      "He did not eat lunch because he was not hungry."
+    ]
+  },
+  {
+    "id": "b_past_21",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Where _______ you go for your holiday last month?",
+    "options": [
+      "did",
+      "do",
+      "does",
+      "were"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Pertanyaan masa lampau (last month) dengan kata kerja \"go\" menggunakan auxiliary \"did\".",
+    "translation": "Ke mana kamu pergi untuk liburanmu bulan lalu?",
+    "targetSentence": "Where did you go for your holiday last month?",
+    "indonesianPrompt": "Ke mana kamu pergi untuk liburanmu bulan lalu?",
+    "acceptedAnswers": [
+      "Where did you go for your holiday last month?"
+    ]
+  },
+  {
+    "id": "b_past_22",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "The cat _______ up the tall tree an hour ago.",
+    "options": [
+      "climbed",
+      "climb",
+      "climbs",
+      "climbing"
+    ],
+    "correctAnswer": "climbed",
+    "explanation": "Keterangan waktu \"an hour ago\" menunjukkan Simple Past, kata kerja beraturan \"climb\" menjadi \"climbed\".",
+    "translation": "Kucing itu memanjat pohon yang tinggi satu jam yang lalu.",
+    "targetSentence": "The cat climbed up the tall tree an hour ago.",
+    "indonesianPrompt": "Kucing itu memanjat pohon yang tinggi satu jam yang lalu.",
+    "acceptedAnswers": [
+      "The cat climbed up the tall tree an hour ago."
+    ]
+  },
+  {
+    "id": "b_past_23",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "We _______ some delicious fried chicken last Sunday.",
+    "options": [
+      "ate",
+      "eat",
+      "eats",
+      "eaten"
+    ],
+    "correctAnswer": "ate",
+    "explanation": "Bentuk Verb 2 dari kata kerja tidak beraturan \"eat\" adalah \"ate\".",
+    "translation": "Kami memakan ayam goreng yang lezat hari Minggu lalu.",
+    "targetSentence": "We ate some delicious fried chicken last Sunday.",
+    "indonesianPrompt": "Kami memakan ayam goreng yang lezat hari Minggu lalu.",
+    "acceptedAnswers": [
+      "We ate some delicious fried chicken last Sunday."
+    ]
+  },
+  {
+    "id": "b_past_24",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "The weather _______ very cold last night.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "are"
+    ],
+    "correctAnswer": "was",
+    "explanation": "Subjek tunggal tidak dapat dihitung \"The weather\" dalam Simple Past nominal menggunakan to-be \"was\".",
+    "translation": "Cuacanya sangat dingin tadi malam.",
+    "targetSentence": "The weather was very cold last night.",
+    "indonesianPrompt": "Cuacanya sangat dingin tadi malam.",
+    "acceptedAnswers": [
+      "The weather was very cold last night."
+    ]
+  },
+  {
+    "id": "b_past_25",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "They _______ their uncle in Surabaya last week.",
+    "options": [
+      "visited",
+      "visit",
+      "visits",
+      "visiting"
+    ],
+    "correctAnswer": "visited",
+    "explanation": "Kata kerja beraturan \"visit\" diubah menjadi bentuk lampau (Verb 2) dengan menambahkan akhiran -ed: \"visited\".",
+    "translation": "Mereka mengunjungi paman mereka di Surabaya minggu lalu.",
+    "targetSentence": "They visited their uncle in Surabaya last week.",
+    "indonesianPrompt": "Mereka mengunjungi paman mereka di Surabaya minggu lalu.",
+    "acceptedAnswers": [
+      "They visited their uncle in Surabaya last week."
+    ]
+  },
+  {
+    "id": "b_past_26",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "I _______ a strange noise outside my room at midnight.",
+    "options": [
+      "heard",
+      "hear",
+      "hears",
+      "hearing"
+    ],
+    "correctAnswer": "heard",
+    "explanation": "Bentuk lampau (Verb 2) dari kata kerja \"hear\" adalah \"heard\".",
+    "translation": "Saya mendengar suara aneh di luar kamar saya pada tengah malam.",
+    "targetSentence": "I heard a strange noise outside my room at midnight.",
+    "indonesianPrompt": "Saya mendengar suara aneh di luar kamar saya pada tengah malam.",
+    "acceptedAnswers": [
+      "I heard a strange noise outside my room at midnight."
+    ]
+  },
+  {
+    "id": "b_past_27",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "_______ she angry with you yesterday?",
+    "options": [
+      "Was",
+      "Were",
+      "Did",
+      "Is"
+    ],
+    "correctAnswer": "Was",
+    "explanation": "Pertanyaan nominal Simple Past dengan subjek \"she\" dan kata sifat \"angry\" diawali to-be \"Was\".",
+    "translation": "Apakah dia marah kepadamu kemarin?",
+    "targetSentence": "Was she angry with you yesterday?",
+    "indonesianPrompt": "Apakah dia marah kepadamu kemarin?",
+    "acceptedAnswers": [
+      "Was she angry with you yesterday?"
+    ]
+  },
+  {
+    "id": "b_past_28",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "My father _______ a brand new car last year.",
+    "options": [
+      "bought",
+      "buys",
+      "buy",
+      "buying"
+    ],
+    "correctAnswer": "bought",
+    "explanation": "Keterangan waktu \"last year\" menunjukkan masa lampau, bentuk Verb 2 dari \"buy\" adalah \"bought\".",
+    "translation": "Ayah saya membeli sebuah mobil baru tahun lalu.",
+    "targetSentence": "My father bought a brand new car last year.",
+    "indonesianPrompt": "Ayah saya membeli sebuah mobil baru tahun lalu.",
+    "acceptedAnswers": [
+      "My father bought a brand new car last year."
+    ]
   }
 ]
