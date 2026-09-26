@@ -882,5 +882,115 @@
     "acceptedAnswers": [
       "How many chapters of the textbook have you read so far?"
     ]
+  },
+  {
+    "id": "q_pres_45",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "She has _______ in five different countries since 2018.",
+    "options": [
+      "lived",
+      "lives",
+      "living",
+      "live"
+    ],
+    "correctAnswer": "lived",
+    "explanation": "Present Perfect Tense (has + Verb 3: lived) menunjukkan pengalaman hidup yang relevan hingga saat ini dengan penanda \"since\".",
+    "translation": "Dia telah tinggal di lima negara berbeda sejak 2018.",
+    "targetSentence": "She has lived in five different countries since 2018.",
+    "indonesianPrompt": "Dia telah tinggal di lima negara berbeda sejak 2018.",
+    "acceptedAnswers": [
+      "She has lived in five different countries since 2018."
+    ]
+  },
+  {
+    "id": "q_pres_46",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "We have _______ seen such a magnificent performance before.",
+    "options": [
+      "never",
+      "ever",
+      "yet",
+      "still"
+    ],
+    "correctAnswer": "never",
+    "explanation": "Adverb \"never\" ditempatkan di antara auxiliary \"have\" dan past participle \"seen\" untuk menyatakan belum pernah sama sekali.",
+    "translation": "Kami belum pernah melihat penampilan yang sebegitu megah sebelumnya.",
+    "targetSentence": "We have never seen such a magnificent performance before.",
+    "indonesianPrompt": "Kami belum pernah melihat penampilan yang sebegitu megah sebelumnya.",
+    "acceptedAnswers": [
+      "We have never seen such a magnificent performance before."
+    ]
+  },
+  {
+    "id": "q_pres_47",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "More and more people are _______ eco-friendly vehicles these days.",
+    "options": [
+      "choosing",
+      "choose",
+      "chose",
+      "chosen"
+    ],
+    "correctAnswer": "choosing",
+    "explanation": "Present Continuous (are choosing) digunakan untuk menyatakan tren atau perubahan situasi bertahap (More and more people...).",
+    "translation": "Semakin banyak orang memilih kendaraan ramah lingkungan saat ini.",
+    "targetSentence": "More and more people are choosing eco-friendly vehicles these days.",
+    "indonesianPrompt": "Semakin banyak orang memilih kendaraan ramah lingkungan saat ini.",
+    "acceptedAnswers": [
+      "More and more people are choosing eco-friendly vehicles these days."
+    ]
+  },
+  {
+    "id": "q_pres_48",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The flight from Tokyo _______ at 9:30 tonight according to the schedule.",
+    "options": [
+      "arrives",
+      "is arriving",
+      "will be arrived",
+      "arrived"
+    ],
+    "correctAnswer": "arrives",
+    "explanation": "Jadwal tetap resmi (timetables/schedules) seperti penerbangan dan kereta api menggunakan Simple Present Tense (arrives).",
+    "translation": "Penerbangan dari Tokyo tiba pukul 9:30 malam ini menurut jadwal.",
+    "targetSentence": "The flight from Tokyo arrives at 9:30 tonight according to the schedule.",
+    "indonesianPrompt": "Penerbangan dari Tokyo tiba pukul 9:30 malam ini menurut jadwal.",
+    "acceptedAnswers": [
+      "The flight from Tokyo arrives at 9:30 tonight according to the schedule."
+    ]
+  },
+  {
+    "id": "q_pres_49",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "How many chapters of the textbook have you _______ so far?",
+    "options": [
+      "read",
+      "reads",
+      "reading",
+      "reader"
+    ],
+    "correctAnswer": "read",
+    "explanation": "Pertanyaan Present Perfect dengan penanda \"so far\" menggunakan auxiliary have + Subject + Past Participle (read).",
+    "translation": "Berapa banyak bab dari buku teks itu yang telah kamu baca sejauh ini?",
+    "targetSentence": "How many chapters of the textbook have you read so far?",
+    "indonesianPrompt": "Berapa banyak bab dari buku teks itu yang telah kamu baca sejauh ini?",
+    "acceptedAnswers": [
+      "How many chapters of the textbook have you read so far?"
+    ]
   }
 ]

@@ -662,5 +662,115 @@
     "acceptedAnswers": [
       "Why is the baby crying so loudly?"
     ]
+  },
+  {
+    "id": "b_pres_31",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "My sister _______ two cups of green tea every day.",
+    "options": [
+      "drinks",
+      "drink",
+      "drinking",
+      "drank"
+    ],
+    "correctAnswer": "drinks",
+    "explanation": "Subjek tunggal orang ketiga \"My sister\" pada Simple Present memerlukan akhiran -s pada kata kerja (drinks).",
+    "translation": "Saudara perempuan saya meminum dua cangkir teh hijau setiap hari.",
+    "targetSentence": "My sister drinks two cups of green tea every day.",
+    "indonesianPrompt": "Saudara perempuan saya meminum dua cangkir teh hijau setiap hari.",
+    "acceptedAnswers": [
+      "My sister drinks two cups of green tea every day."
+    ]
+  },
+  {
+    "id": "b_pres_32",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "They _______ not know the answer to this question.",
+    "options": [
+      "do",
+      "does",
+      "are",
+      "is"
+    ],
+    "correctAnswer": "do",
+    "explanation": "Subjek jamak \"They\" dalam kalimat negatif Simple Present verbal menggunakan kata bantu \"do not\".",
+    "translation": "Mereka tidak mengetahui jawaban dari pertanyaan ini.",
+    "targetSentence": "They do not know the answer to this question.",
+    "indonesianPrompt": "Mereka tidak mengetahui jawaban dari pertanyaan ini.",
+    "acceptedAnswers": [
+      "They do not know the answer to this question."
+    ]
+  },
+  {
+    "id": "b_pres_33",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Listen! The birds are _______ in the trees.",
+    "options": [
+      "singing",
+      "sing",
+      "sings",
+      "sang"
+    ],
+    "correctAnswer": "singing",
+    "explanation": "Penanda \"Listen!\" menunjukkan kejadian yang sedang berlangsung sekarang, menggunakan are + singing (Verb-ing).",
+    "translation": "Dengarkan! Burung-burung sedang bernyanyi di pepohonan.",
+    "targetSentence": "Listen! The birds are singing in the trees.",
+    "indonesianPrompt": "Dengarkan! Burung-burung sedang bernyanyi di pepohonan.",
+    "acceptedAnswers": [
+      "Listen! The birds are singing in the trees."
+    ]
+  },
+  {
+    "id": "b_pres_34",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "I am _______ an email to my teacher right now.",
+    "options": [
+      "writing",
+      "write",
+      "writes",
+      "wrote"
+    ],
+    "correctAnswer": "writing",
+    "explanation": "Subjek \"I\" dengan keterangan \"right now\" menggunakan pola Present Continuous: am + writing.",
+    "translation": "Saya sedang menulis email kepada guru saya sekarang.",
+    "targetSentence": "I am writing an email to my teacher right now.",
+    "indonesianPrompt": "Saya sedang menulis email kepada guru saya sekarang.",
+    "acceptedAnswers": [
+      "I am writing an email to my teacher right now."
+    ]
+  },
+  {
+    "id": "b_pres_35",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The sun _______ in the east.",
+    "options": [
+      "rises",
+      "rise",
+      "rising",
+      "rose"
+    ],
+    "correctAnswer": "rises",
+    "explanation": "Kebenaran umum (general truth) dinyatakan dengan Simple Present Tense: The sun (singular) + rises.",
+    "translation": "Matahari terbit di sebelah timur.",
+    "targetSentence": "The sun rises in the east.",
+    "indonesianPrompt": "Matahari terbit di sebelah timur.",
+    "acceptedAnswers": [
+      "The sun rises in the east."
+    ]
   }
 ]

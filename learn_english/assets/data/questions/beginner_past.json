@@ -263,5 +263,137 @@
     "acceptedAnswers": [
       "We were very tired after the trip."
     ]
+  },
+  {
+    "id": "b_past_13",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "He _______ his homework before dinner last night.",
+    "options": [
+      "finished",
+      "finish",
+      "finishing",
+      "finishes"
+    ],
+    "correctAnswer": "finished",
+    "explanation": "Keterangan waktu lampau \"last night\" menggunakan Simple Past (Verb 2: finished).",
+    "translation": "Dia menyelesaikan PR-nya sebelum makan malam kemarin malam.",
+    "targetSentence": "He finished his homework before dinner last night.",
+    "indonesianPrompt": "Dia menyelesaikan PR-nya sebelum makan malam kemarin malam.",
+    "acceptedAnswers": [
+      "He finished his homework before dinner last night."
+    ]
+  },
+  {
+    "id": "b_past_14",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "They _______ a new laptop two days ago.",
+    "options": [
+      "bought",
+      "buy",
+      "buys",
+      "buying"
+    ],
+    "correctAnswer": "bought",
+    "explanation": "Bentuk Verb 2 (lampau) dari kata kerja tidak beraturan \"buy\" adalah \"bought\".",
+    "translation": "Mereka membeli sebuah laptop baru dua hari yang lalu.",
+    "targetSentence": "They bought a new laptop two days ago.",
+    "indonesianPrompt": "Mereka membeli sebuah laptop baru dua hari yang lalu.",
+    "acceptedAnswers": [
+      "They bought a new laptop two days ago."
+    ]
+  },
+  {
+    "id": "b_past_15",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "We _______ not visit our grandparents last weekend.",
+    "options": [
+      "did",
+      "do",
+      "does",
+      "were"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Bentuk kalimat negatif Simple Past verbal menggunakan kata kerja bantu \"did not\" + Verb 1.",
+    "translation": "Kami tidak mengunjungi kakek-nenek kami akhir pekan lalu.",
+    "targetSentence": "We did not visit our grandparents last weekend.",
+    "indonesianPrompt": "Kami tidak mengunjungi kakek-nenek kami akhir pekan lalu.",
+    "acceptedAnswers": [
+      "We did not visit our grandparents last weekend."
+    ]
+  },
+  {
+    "id": "b_past_16",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "_______ you drink the warm milk this morning?",
+    "options": [
+      "Did",
+      "Do",
+      "Does",
+      "Are"
+    ],
+    "correctAnswer": "Did",
+    "explanation": "Kalimat tanya Simple Past verbal diawali kata bantu \"Did\" + Subject + Verb 1.",
+    "translation": "Apakah kamu meminum susu hangat tadi pagi?",
+    "targetSentence": "Did you drink the warm milk this morning?",
+    "indonesianPrompt": "Apakah kamu meminum susu hangat tadi pagi?",
+    "acceptedAnswers": [
+      "Did you drink the warm milk this morning?"
+    ]
+  },
+  {
+    "id": "b_past_17",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "The children _______ in the garden yesterday.",
+    "options": [
+      "were",
+      "was",
+      "are",
+      "is"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Subjek jamak \"The children\" dalam kalimat nominal Simple Past menggunakan to-be \"were\".",
+    "translation": "Anak-anak berada di kebun kemarin.",
+    "targetSentence": "The children were in the garden yesterday.",
+    "indonesianPrompt": "Anak-anak berada di kebun kemarin.",
+    "acceptedAnswers": [
+      "The children were in the garden yesterday."
+    ]
+  },
+  {
+    "id": "b_past_18",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "I _______ an interesting novel yesterday.",
+    "options": [
+      "read",
+      "reads",
+      "reading",
+      "readed"
+    ],
+    "correctAnswer": "read",
+    "explanation": "Bentuk Verb 2 dari \"read\" tetap ditulis \"read\" (dilafalkan /red/).",
+    "translation": "Saya membaca sebuah novel yang menarik kemarin.",
+    "targetSentence": "I read an interesting novel yesterday.",
+    "indonesianPrompt": "Saya membaca sebuah novel yang menarik kemarin.",
+    "acceptedAnswers": [
+      "I read an interesting novel yesterday."
+    ]
   }
 ]

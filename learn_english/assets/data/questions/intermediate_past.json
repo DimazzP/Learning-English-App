@@ -462,5 +462,137 @@
     "acceptedAnswers": [
       "After the delegates had signed all key resolutions, the summit was formally concluded."
     ]
+  },
+  {
+    "id": "q_past_26",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "While I was cooking in the kitchen, my sister _______ the living room.",
+    "options": [
+      "was cleaning",
+      "cleaned",
+      "cleans",
+      "is cleaning"
+    ],
+    "correctAnswer": "was cleaning",
+    "explanation": "Dua aktivitas yang berlangsung bersamaan di masa lampau (konektor \"While\") menggunakan Past Continuous (was/were + Verb-ing).",
+    "translation": "Sementara saya sedang memasak di dapur, saudara perempuan saya sedang membersihkan ruang tamu.",
+    "targetSentence": "While I was cooking in the kitchen, my sister was cleaning the living room.",
+    "indonesianPrompt": "Sementara saya sedang memasak di dapur, saudara perempuan saya sedang membersihkan ruang tamu.",
+    "acceptedAnswers": [
+      "While I was cooking in the kitchen, my sister was cleaning the living room."
+    ]
+  },
+  {
+    "id": "q_past_27",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "When the power went out, we _______ talking about our vacation plans.",
+    "options": [
+      "were",
+      "was",
+      "are",
+      "did"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Kombinasi Past Continuous dan Simple Past: subjek jamak \"we\" menggunakan to-be \"were\" (were talking) saat diinterupsi Simple Past.",
+    "translation": "Ketika listrik padam, kami sedang berbicara tentang rencana liburan kami.",
+    "targetSentence": "When the power went out, we were talking about our vacation plans.",
+    "indonesianPrompt": "Ketika listrik padam, kami sedang berbicara tentang rencana liburan kami.",
+    "acceptedAnswers": [
+      "When the power went out, we were talking about our vacation plans."
+    ]
+  },
+  {
+    "id": "q_past_28",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "She _______ already finished her report before the deadline arrived.",
+    "options": [
+      "had",
+      "has",
+      "have",
+      "was"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Past Perfect menggunakan auxiliary \"had\" + Verb 3 (had finished) untuk aksi yang sudah selesai sebelum titik waktu lampau.",
+    "translation": "Dia sudah menyelesaikan laporannya sebelum batas waktu tiba.",
+    "targetSentence": "She had already finished her report before the deadline arrived.",
+    "indonesianPrompt": "Dia sudah menyelesaikan laporannya sebelum batas waktu tiba.",
+    "acceptedAnswers": [
+      "She had already finished her report before the deadline arrived."
+    ]
+  },
+  {
+    "id": "q_past_29",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "They missed the train because they _______ forgotten their tickets at home.",
+    "options": [
+      "had",
+      "have",
+      "were",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Peristiwa ketinggalan tiket terjadi lebih dulu sebelum peristiwa tertinggal kereta (Simple Past), sehingga memerlukan Past Perfect (had forgotten).",
+    "translation": "Mereka ketinggalan kereta karena mereka telah melupakan tiket mereka di rumah.",
+    "targetSentence": "They missed the train because they had forgotten their tickets at home.",
+    "indonesianPrompt": "Mereka ketinggalan kereta karena mereka telah melupakan tiket mereka di rumah.",
+    "acceptedAnswers": [
+      "They missed the train because they had forgotten their tickets at home."
+    ]
+  },
+  {
+    "id": "q_past_30",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "At seven o'clock yesterday evening, what _______ you doing?",
+    "options": [
+      "were",
+      "did",
+      "was",
+      "are"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Pertanyaan Past Continuous untuk titik waktu spesifik di masa lalu (yesterday at seven o'clock) dengan subjek \"you\" menggunakan \"were\".",
+    "translation": "Pada pukul tujuh kemarin malam, apa yang sedang kamu lakukan?",
+    "targetSentence": "At seven o'clock yesterday evening, what were you doing?",
+    "indonesianPrompt": "Pada pukul tujuh kemarin malam, apa yang sedang kamu lakukan?",
+    "acceptedAnswers": [
+      "At seven o'clock yesterday evening, what were you doing?"
+    ]
+  },
+  {
+    "id": "q_past_31",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "The company _______ its sales targets by 20 percent last quarter.",
+    "options": [
+      "exceeded",
+      "exceed",
+      "exceeds",
+      "exceeding"
+    ],
+    "correctAnswer": "exceeded",
+    "explanation": "Keterangan waktu \"last quarter\" menunjukkan peristiwa lampau pasti, memerlukan Simple Past (Verb 2: exceeded).",
+    "translation": "Perusahaan itu melampaui target penjualannya sebesar 20 persen kuartal lalu.",
+    "targetSentence": "The company exceeded its sales targets by 20 percent last quarter.",
+    "indonesianPrompt": "Perusahaan itu melampaui target penjualannya sebesar 20 persen kuartal lalu.",
+    "acceptedAnswers": [
+      "The company exceeded its sales targets by 20 percent last quarter."
+    ]
   }
 ]

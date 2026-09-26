@@ -438,5 +438,93 @@
     "acceptedAnswers": [
       "Deep-sea oceanographers have been mapping the tectonic fault lines near the underwater volcano."
     ]
+  },
+  {
+    "id": "exp_pres_17",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "For the past three hours, the committee has been _______ various economic policies.",
+    "options": [
+      "debating",
+      "debated",
+      "debate",
+      "debates"
+    ],
+    "correctAnswer": "debating",
+    "explanation": "Keterangan waktu \"For the past three hours\" dipadukan dengan Present Perfect Continuous (has been + Verb-ing: debating) menekankan durasi proses yang masih berlangsung.",
+    "translation": "Selama tiga jam terakhir, komite telah memperdebatkan berbagai kebijakan ekonomi.",
+    "targetSentence": "For the past three hours, the committee has been debating various economic policies.",
+    "indonesianPrompt": "Selama tiga jam terakhir, komite telah memperdebatkan berbagai kebijakan ekonomi.",
+    "acceptedAnswers": [
+      "For the past three hours, the committee has been debating various economic policies."
+    ]
+  },
+  {
+    "id": "exp_pres_18",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Lately, economists have been _______ the validity of conventional market indicators.",
+    "options": [
+      "questioning",
+      "questioned",
+      "question",
+      "questions"
+    ],
+    "correctAnswer": "questioning",
+    "explanation": "Penanda waktu \"Lately\" sering berpasangan dengan Present Perfect Continuous (have been + Verb-ing: questioning) untuk aksi bertahap yang terus berlangsung akhir-akhir ini.",
+    "translation": "Akhir-akhir ini, para ekonom telah mempertanyakan validitas indikator pasar konvensional.",
+    "targetSentence": "Lately, economists have been questioning the validity of conventional market indicators.",
+    "indonesianPrompt": "Akhir-akhir ini, para ekonom telah mempertanyakan validitas indikator pasar konvensional.",
+    "acceptedAnswers": [
+      "Lately, economists have been questioning the validity of conventional market indicators."
+    ]
+  },
+  {
+    "id": "exp_pres_19",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The research facility has _______ developing sustainable energy solutions since its inception.",
+    "options": [
+      "been",
+      "being",
+      "be",
+      "was"
+    ],
+    "correctAnswer": "been",
+    "explanation": "Struktur baku Present Perfect Continuous membutuhkan has + been + Verb-ing (developing).",
+    "translation": "Fasilitas penelitian tersebut telah mengembangkan solusi energi berkelanjutan sejak awal pendiriannya.",
+    "targetSentence": "The research facility has been developing sustainable energy solutions since its inception.",
+    "indonesianPrompt": "Fasilitas penelitian tersebut telah mengembangkan solusi energi berkelanjutan sejak awal pendiriannya.",
+    "acceptedAnswers": [
+      "The research facility has been developing sustainable energy solutions since its inception."
+    ]
+  },
+  {
+    "id": "exp_pres_20",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "How long has the cybersecurity unit been _______ these unauthorized network intrusions?",
+    "options": [
+      "investigating",
+      "investigated",
+      "investigate",
+      "investigates"
+    ],
+    "correctAnswer": "investigating",
+    "explanation": "Pertanyaan durasi (How long has + Subject + been + Verb-ing: investigating) menguji penguasaan rumus interogatif Present Perfect Continuous.",
+    "translation": "Berapa lama unit keamanan siber telah menyelidiki intrusi jaringan tanpa izin ini?",
+    "targetSentence": "How long has the cybersecurity unit been investigating these unauthorized network intrusions?",
+    "indonesianPrompt": "Berapa lama unit keamanan siber telah menyelidiki intrusi jaringan tanpa izin ini?",
+    "acceptedAnswers": [
+      "How long has the cybersecurity unit been investigating these unauthorized network intrusions?"
+    ]
   }
 ]

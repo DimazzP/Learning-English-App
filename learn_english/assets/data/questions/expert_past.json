@@ -86,5 +86,181 @@
     "acceptedAnswers": [
       "How long had the orchestra been rehearsing before the concert hall opened its doors?"
     ]
+  },
+  {
+    "id": "exp_past_01",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Hardly had the meeting _______ when the fire alarm began to ring.",
+    "options": [
+      "started",
+      "start",
+      "starting",
+      "starts"
+    ],
+    "correctAnswer": "started",
+    "explanation": "Inversi negatif \"Hardly had + Subject + Verb 3 (started) ... when\" digunakan dalam Past Perfect untuk menyatakan peristiwa yang segera disusul peristiwa lampau lain.",
+    "translation": "Rapat itu baru saja dimulai ketika alarm kebakaran mulai berbunyi.",
+    "targetSentence": "Hardly had the meeting started when the fire alarm began to ring.",
+    "indonesianPrompt": "Rapat itu baru saja dimulai ketika alarm kebakaran mulai berbunyi.",
+    "acceptedAnswers": [
+      "Hardly had the meeting started when the fire alarm began to ring."
+    ]
+  },
+  {
+    "id": "exp_past_02",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Scarcely had the plane _______ when the storm hit the runway.",
+    "options": [
+      "landed",
+      "land",
+      "landing",
+      "lands"
+    ],
+    "correctAnswer": "landed",
+    "explanation": "Struktur inversi \"Scarcely had + Subject + Past Participle (landed) ... when\" menunjukkan aksi Past Perfect sesaat sebelum aksi lampau berikutnya.",
+    "translation": "Pesawat itu baru saja mendarat ketika badai menerjang landasan pacu.",
+    "targetSentence": "Scarcely had the plane landed when the storm hit the runway.",
+    "indonesianPrompt": "Pesawat itu baru saja mendarat ketika badai menerjang landasan pacu.",
+    "acceptedAnswers": [
+      "Scarcely had the plane landed when the storm hit the runway."
+    ]
+  },
+  {
+    "id": "exp_past_03",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "No sooner had she _______ the contract than new regulations were enacted.",
+    "options": [
+      "signed",
+      "sign",
+      "signing",
+      "signs"
+    ],
+    "correctAnswer": "signed",
+    "explanation": "Pola inversi \"No sooner had + Subject + Verb 3 (signed) ... than\" memerlukan kata kerja bentuk Past Participle.",
+    "translation": "Tiada lekas ia menandatangani kontrak itu daripada peraturan baru diberlakukan.",
+    "targetSentence": "No sooner had she signed the contract than new regulations were enacted.",
+    "indonesianPrompt": "Tiada lekas ia menandatangani kontrak itu daripada peraturan baru diberlakukan.",
+    "acceptedAnswers": [
+      "No sooner had she signed the contract than new regulations were enacted."
+    ]
+  },
+  {
+    "id": "exp_past_04",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "The scientists had been _______ the virus mutation for months before finding the cure.",
+    "options": [
+      "analyzing",
+      "analyzed",
+      "analyze",
+      "analyzes"
+    ],
+    "correctAnswer": "analyzing",
+    "explanation": "Past Perfect Continuous menekankan durasi proses lampau (had been + Verb-ing: analyzing) sebelum peristiwa lampau lainnya terjadi.",
+    "translation": "Para ilmuwan telah menganalisis mutasi virus itu selama berbulan-bulan sebelum menemukan obatnya.",
+    "targetSentence": "The scientists had been analyzing the virus mutation for months before finding the cure.",
+    "indonesianPrompt": "Para ilmuwan telah menganalisis mutasi virus itu selama berbulan-bulan sebelum menemukan obatnya.",
+    "acceptedAnswers": [
+      "The scientists had been analyzing the virus mutation for months before finding the cure."
+    ]
+  },
+  {
+    "id": "exp_past_05",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "He had been _______ negotiations all night, which explained his exhaustion.",
+    "options": [
+      "conducting",
+      "conducted",
+      "conduct",
+      "conducts"
+    ],
+    "correctAnswer": "conducting",
+    "explanation": "Past Perfect Continuous Tense (had been + Verb-ing: conducting) menjelaskan aktivitas berdurasi panjang yang menjadi penyebab kondisi di masa lampau.",
+    "translation": "Dia telah memimpin negosiasi sepanjang malam, yang menjelaskan mengapa dia sangat kelelahan.",
+    "targetSentence": "He had been conducting negotiations all night, which explained his exhaustion.",
+    "indonesianPrompt": "Dia telah memimpin negosiasi sepanjang malam, yang menjelaskan mengapa dia sangat kelelahan.",
+    "acceptedAnswers": [
+      "He had been conducting negotiations all night, which explained his exhaustion."
+    ]
+  },
+  {
+    "id": "exp_past_06",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Had they _______ the warnings earlier, the disaster might have been averted.",
+    "options": [
+      "heeded",
+      "heed",
+      "heeding",
+      "heeds"
+    ],
+    "correctAnswer": "heeded",
+    "explanation": "Bentuk inversi conditional type 3 (Had + Subject + Verb 3: heeded) mengindikasikan pengandaian di masa lampau yang tidak terwujud.",
+    "translation": "Seandainya mereka mengindahkan peringatan itu lebih awal, bencana tersebut mungkin bisa dicegah.",
+    "targetSentence": "Had they heeded the warnings earlier, the disaster might have been averted.",
+    "indonesianPrompt": "Seandainya mereka mengindahkan peringatan itu lebih awal, bencana tersebut mungkin bisa dicegah.",
+    "acceptedAnswers": [
+      "Had they heeded the warnings earlier, the disaster might have been averted."
+    ]
+  },
+  {
+    "id": "exp_past_07",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "They had been _______ to resolve the dispute peacefully before formal lawsuits were filed.",
+    "options": [
+      "attempting",
+      "attempted",
+      "attempt",
+      "attempts"
+    ],
+    "correctAnswer": "attempting",
+    "explanation": "Rumus had been + Verb-ing (attempting) digunakan untuk menyatakan upaya berkelanjutan di masa lampau sebelum peristiwa lampau lain.",
+    "translation": "Mereka telah berusaha menyelesaikan sengketa tersebut secara damai sebelum gugatan resmi diajukan.",
+    "targetSentence": "They had been attempting to resolve the dispute peacefully before formal lawsuits were filed.",
+    "indonesianPrompt": "Mereka telah berusaha menyelesaikan sengketa tersebut secara damai sebelum gugatan resmi diajukan.",
+    "acceptedAnswers": [
+      "They had been attempting to resolve the dispute peacefully before formal lawsuits were filed."
+    ]
+  },
+  {
+    "id": "exp_past_08",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "The archeologist realized that the ancient tomb had _______ pillaged centuries earlier.",
+    "options": [
+      "been",
+      "being",
+      "be",
+      "was"
+    ],
+    "correctAnswer": "been",
+    "explanation": "Bentuk pasif Past Perfect Tense membutuhkan auxiliary had + been + Verb 3 (had been pillaged).",
+    "translation": "Arkeolog itu menyadari bahwa makam kuno tersebut telah dijarah berabad-abad sebelumnya.",
+    "targetSentence": "The archeologist realized that the ancient tomb had been pillaged centuries earlier.",
+    "indonesianPrompt": "Arkeolog itu menyadari bahwa makam kuno tersebut telah dijarah berabad-abad sebelumnya.",
+    "acceptedAnswers": [
+      "The archeologist realized that the ancient tomb had been pillaged centuries earlier."
+    ]
   }
 ]

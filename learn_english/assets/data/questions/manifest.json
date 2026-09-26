@@ -1,5 +1,5 @@
 {
-  "totalQuestions": 202,
+  "totalQuestions": 236,
   "files": [
     {
       "file": "assets/data/questions/beginner_future.json",
@@ -11,7 +11,7 @@
       "file": "assets/data/questions/beginner_past.json",
       "level": "beginner",
       "tenseType": "past",
-      "count": 12
+      "count": 18
     },
     {
       "file": "assets/data/questions/beginner_past_future.json",
@@ -23,7 +23,7 @@
       "file": "assets/data/questions/beginner_present.json",
       "level": "beginner",
       "tenseType": "present",
-      "count": 30
+      "count": 35
     },
     {
       "file": "assets/data/questions/expert_future.json",
@@ -35,7 +35,7 @@
       "file": "assets/data/questions/expert_past.json",
       "level": "expert",
       "tenseType": "past",
-      "count": 4
+      "count": 12
     },
     {
       "file": "assets/data/questions/expert_past_future.json",
@@ -47,7 +47,7 @@
       "file": "assets/data/questions/expert_present.json",
       "level": "expert",
       "tenseType": "present",
-      "count": 20
+      "count": 24
     },
     {
       "file": "assets/data/questions/intermediate_future.json",
@@ -59,7 +59,7 @@
       "file": "assets/data/questions/intermediate_past.json",
       "level": "intermediate",
       "tenseType": "past",
-      "count": 21
+      "count": 27
     },
     {
       "file": "assets/data/questions/intermediate_past_future.json",
@@ -71,7 +71,7 @@
       "file": "assets/data/questions/intermediate_present.json",
       "level": "intermediate",
       "tenseType": "present",
-      "count": 40
+      "count": 45
     }
   ]
 }

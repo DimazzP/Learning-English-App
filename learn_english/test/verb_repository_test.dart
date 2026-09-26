@@ -134,8 +134,8 @@ void main() {
       expect(repo.allTenses.any((t) => t.id == 'simple_present'), isTrue);
       expect(repo.allTenses.any((t) => t.id == 'past_perfect_continuous'), isTrue);
 
-      // Test 202 grammar questions loaded
-      expect(repo.allGrammarQuestions.length, 202);
+      // Test 236 grammar questions loaded
+      expect(repo.allGrammarQuestions.length, 236);
 
       // Test filter by level
       final qBeginner = repo.generateGrammarQuizQuestion(level: 'beginner');
