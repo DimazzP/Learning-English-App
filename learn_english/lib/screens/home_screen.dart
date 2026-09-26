@@ -7,6 +7,7 @@ import 'tabs/favorites_tab.dart';
 import 'tabs/flashcards_tab.dart';
 import 'tabs/grammar_guide_tab.dart';
 import 'tabs/quiz_tab.dart';
+import 'tabs/to_be_guide_tab.dart';
 import 'tabs/universal_dictionary_tab.dart';
 import 'tabs/verb_list_tab.dart';
 
@@ -76,6 +77,11 @@ class _HomeScreenState extends State<HomeScreen> {
       label: 'Kata Kerja Favorit',
       icon: Icons.favorite_rounded,
       color: Colors.redAccent,
+    ),
+    'to_be': (
+      label: 'Belajar To Be',
+      icon: Icons.psychology_rounded,
+      color: Colors.purple,
     ),
   };
 
@@ -178,6 +184,8 @@ class _HomeScreenState extends State<HomeScreen> {
         return const FlashcardsTab();
       case 'favorit':
         return FavoritesTab(onExplore: () => setState(() => _activeNav = 'kamus'));
+      case 'to_be':
+        return const ToBeGuideTab();
       default:
         return const VerbListTab();
     }
@@ -303,6 +311,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     id: 'favorit',
                     label: 'Favorit (${repo.favoriteVerbs.length})',
                     icon: Icons.favorite_rounded,
+                    isDark: isDark,
+                  ),
+                  const SizedBox(width: 6),
+
+                  // 6. Belajar To Be
+                  _buildNavTabButton(
+                    id: 'to_be',
+                    label: 'Belajar To Be',
+                    icon: Icons.psychology_rounded,
                     isDark: isDark,
                   ),
                   const SizedBox(width: 12),
