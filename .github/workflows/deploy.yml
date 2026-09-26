@@ -28,15 +28,17 @@ jobs:
           cache: true
 
       - name: Install dependencies
+        working-directory: learn_english
         run: flutter pub get
 
       - name: Build Web
+        working-directory: learn_english
         run: flutter build web --release --base-href "/${{ github.event.repository.name }}/"
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build/web
+          path: learn_english/build/web
 
   deploy:
     needs: build
