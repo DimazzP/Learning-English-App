@@ -1065,7 +1065,7 @@
     "level": "intermediate",
     "tenseType": "present",
     "tenseName": "Present Perfect Tense",
-    "question": "The manager has not reviewed our proposal _______ .",
+    "question": "The manager has not reviewed our proposal _______.",
     "options": [
       "yet",
       "already",
@@ -1167,6 +1167,351 @@
     "indonesianPrompt": "Sejauh ini, tim kami telah melaksanakan sepuluh survei komprehensif.",
     "acceptedAnswers": [
       "So far, our team has conducted ten comprehensive surveys."
+    ]
+  },
+  {
+    "id": "q_pres_58",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "She has lived in this historic neighborhood _______ more than fifteen years.",
+    "options": [
+      "for",
+      "since",
+      "during",
+      "in"
+    ],
+    "correctAnswer": "for",
+    "explanation": "Dalam Present Perfect Tense, preposisi \"for\" digunakan untuk menunjukkan durasi rentang waktu (\"more than fifteen years\"), sedangkan \"since\" digunakan untuk titik awal waktu.",
+    "translation": "Dia telah tinggal di lingkungan bersejarah ini selama lebih dari lima belas tahun.",
+    "targetSentence": "She has lived in this historic neighborhood for more than fifteen years.",
+    "indonesianPrompt": "Dia telah tinggal di lingkungan bersejarah ini selama lebih dari lima belas tahun.",
+    "acceptedAnswers": [
+      "She has lived in this historic neighborhood for more than fifteen years.",
+      "She has lived in this historic neighborhood for more than fifteen years"
+    ]
+  },
+  {
+    "id": "q_pres_59",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "This antique cabinet _______ to my great-grandmother.",
+    "options": [
+      "belongs",
+      "is belonging",
+      "belong",
+      "has belonged"
+    ],
+    "correctAnswer": "belongs",
+    "explanation": "Kata kerja kepemilikan \"belong\" merupakan stative verb yang tidak lazim digunakan dalam bentuk continuous (-ing). Subjek tunggal membutuhkan akhiran -s (belongs).",
+    "translation": "Lemari antik ini milik buyut perempuan saya.",
+    "targetSentence": "This antique cabinet belongs to my great-grandmother.",
+    "indonesianPrompt": "Lemari antik ini adalah milik nenek buyut saya.",
+    "acceptedAnswers": [
+      "This antique cabinet belongs to my great-grandmother.",
+      "This antique cabinet belongs to my great-grandmother"
+    ]
+  },
+  {
+    "id": "q_pres_60",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Have you _______ attended an international technology conference?",
+    "options": [
+      "ever",
+      "never",
+      "already",
+      "yet"
+    ],
+    "correctAnswer": "ever",
+    "explanation": "Adverb \"ever\" digunakan dalam kalimat tanya Present Perfect untuk menanyakan apakah suatu pengalaman pernah dialami seumur hidup (Have you ever...?).",
+    "translation": "Pernahkah kamu menghadiri konferensi teknologi internasional?",
+    "targetSentence": "Have you ever attended an international technology conference?",
+    "indonesianPrompt": "Apakah kamu pernah menghadiri konferensi teknologi internasional?",
+    "acceptedAnswers": [
+      "Have you ever attended an international technology conference?",
+      "Have you ever attended an international technology conference"
+    ]
+  },
+  {
+    "id": "q_pres_61",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "My cousin _______ at a local hotel this week while his apartment is being renovated.",
+    "options": [
+      "is staying",
+      "stays",
+      "stayed",
+      "has stayed"
+    ],
+    "correctAnswer": "is staying",
+    "explanation": "Present Continuous dapat digunakan untuk menggambarkan situasi sementara (temporary situation) dengan penanda \"this week\".",
+    "translation": "Sepupu saya sedang tinggal di hotel lokal minggu ini saat apartemennya sedang direnovasi.",
+    "targetSentence": "My cousin is staying at a local hotel this week while his apartment is being renovated.",
+    "indonesianPrompt": "Sepupu saya tinggal di hotel lokal minggu ini sementara apartemennya direnovasi.",
+    "acceptedAnswers": [
+      "My cousin is staying at a local hotel this week while his apartment is being renovated.",
+      "My cousin is staying at a local hotel this week while his apartment is being renovated"
+    ]
+  },
+  {
+    "id": "q_pres_62",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "The financial analyst has not submitted the quarterly budget report _______.",
+    "options": [
+      "yet",
+      "already",
+      "still",
+      "just"
+    ],
+    "correctAnswer": "yet",
+    "explanation": "Dalam Present Perfect Tense, \"yet\" diletakkan di akhir kalimat negatif atau interogatif untuk menunjukkan sesuatu yang belum terjadi sampai saat ini.",
+    "translation": "Analis keuangan tersebut belum menyerahkan laporan anggaran triwulanan.",
+    "targetSentence": "The financial analyst has not submitted the quarterly budget report yet.",
+    "indonesianPrompt": "Analis keuangan itu belum menyerahkan laporan anggaran triwulanan.",
+    "acceptedAnswers": [
+      "The financial analyst has not submitted the quarterly budget report yet.",
+      "The financial analyst has not submitted the quarterly budget report yet"
+    ]
+  },
+  {
+    "id": "q_pres_63",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "We _______ just received confirmation that our visa application was approved.",
+    "options": [
+      "have",
+      "has",
+      "had",
+      "are"
+    ],
+    "correctAnswer": "have",
+    "explanation": "Subjek jamak \"We\" berpasangan dengan auxiliary \"have\" dalam Present Perfect. Penanda \"just\" menandakan kejadian yang baru saja terjadi.",
+    "translation": "Kami baru saja menerima konfirmasi bahwa permohonan visa kami telah disetujui.",
+    "targetSentence": "We have just received confirmation that our visa application was approved.",
+    "indonesianPrompt": "Kami baru saja menerima konfirmasi bahwa aplikasi visa kami disetujui.",
+    "acceptedAnswers": [
+      "We have just received confirmation that our visa application was approved.",
+      "We have just received confirmation that our visa application was approved"
+    ]
+  },
+  {
+    "id": "q_pres_64",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The chemical solution _______ several rare mineral compounds.",
+    "options": [
+      "contains",
+      "is containing",
+      "contain",
+      "contained"
+    ],
+    "correctAnswer": "contains",
+    "explanation": "Kata kerja \"contain\" menyatakan komposisi (stative verb), sehingga tidak menggunakan continuous aspect (-ing). Subjek tunggal menggunakan akhiran -s (contains).",
+    "translation": "Larutan kimia tersebut mengandung beberapa senyawa mineral langka.",
+    "targetSentence": "The chemical solution contains several rare mineral compounds.",
+    "indonesianPrompt": "Larutan kimia itu mengandung beberapa senyawa mineral langka.",
+    "acceptedAnswers": [
+      "The chemical solution contains several rare mineral compounds.",
+      "The chemical solution contains several rare mineral compounds"
+    ]
+  },
+  {
+    "id": "q_pres_65",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "How many chapters of that novel _______ you completed so far?",
+    "options": [
+      "have",
+      "has",
+      "did",
+      "are"
+    ],
+    "correctAnswer": "have",
+    "explanation": "Penanda waktu \"so far\" (sejauh ini) dan subjek \"you\" membutuhkan bentuk Present Perfect: How many chapters + have + you + completed?",
+    "translation": "Berapa banyak bab dari novel itu yang telah kamu selesaikan sejauh ini?",
+    "targetSentence": "How many chapters of that novel have you completed so far?",
+    "indonesianPrompt": "Berapa banyak bab novel itu yang sudah kamu selesaikan sejauh ini?",
+    "acceptedAnswers": [
+      "How many chapters of that novel have you completed so far?",
+      "How many chapters of that novel have you completed so far"
+    ]
+  },
+  {
+    "id": "q_pres_66",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Global temperatures are _______ higher every single decade.",
+    "options": [
+      "getting",
+      "get",
+      "got",
+      "gotten"
+    ],
+    "correctAnswer": "getting",
+    "explanation": "Present Continuous (are + getting) lazim digunakan untuk menggambarkan tren atau proses perubahan gradual yang sedang terjadi secara bertahap.",
+    "translation": "Suhu global semakin tinggi setiap dekadenya.",
+    "targetSentence": "Global temperatures are getting higher every single decade.",
+    "indonesianPrompt": "Suhu global menjadi semakin tinggi setiap dekade.",
+    "acceptedAnswers": [
+      "Global temperatures are getting higher every single decade.",
+      "Global temperatures are getting higher every single decade"
+    ]
+  },
+  {
+    "id": "q_pres_67",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Dr. Aris has been a chief surgeon at the central hospital _______ 2015.",
+    "options": [
+      "since",
+      "for",
+      "from",
+      "in"
+    ],
+    "correctAnswer": "since",
+    "explanation": "Tahun \"2015\" merupakan titik awal waktu lampau spesifik, sehingga preposisi yang digunakan dalam Present Perfect adalah \"since\".",
+    "translation": "Dr. Aris telah menjadi kepala ahli bedah di rumah sakit pusat sejak tahun 2015.",
+    "targetSentence": "Dr. Aris has been a chief surgeon at the central hospital since 2015.",
+    "indonesianPrompt": "Dr. Aris telah menjadi kepala ahli bedah di rumah sakit pusat sejak 2015.",
+    "acceptedAnswers": [
+      "Dr. Aris has been a chief surgeon at the central hospital since 2015.",
+      "Dr. Aris has been a chief surgeon at the central hospital since 2015"
+    ]
+  },
+  {
+    "id": "q_pres_68",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "According to the university calendar, the new semester _______ on the first of September.",
+    "options": [
+      "begins",
+      "is beginning",
+      "began",
+      "has begun"
+    ],
+    "correctAnswer": "begins",
+    "explanation": "Jadwal resmi, agenda, atau kalender tetap (timetables/schedules) dinyatakan dengan Simple Present Tense (begins).",
+    "translation": "Berdasarkan kalender universitas, semester baru dimulai pada tanggal satu September.",
+    "targetSentence": "According to the university calendar, the new semester begins on the first of September.",
+    "indonesianPrompt": "Menurut kalender universitas, semester baru dimulai pada tanggal satu September.",
+    "acceptedAnswers": [
+      "According to the university calendar, the new semester begins on the first of September.",
+      "According to the university calendar, the new semester begins on the first of September"
+    ]
+  },
+  {
+    "id": "q_pres_69",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "The government _______ announced a series of renewable energy incentives.",
+    "options": [
+      "has already",
+      "already has",
+      "have already",
+      "is already"
+    ],
+    "correctAnswer": "has already",
+    "explanation": "Subjek institusi tunggal \"The government\" menggunakan \"has\". Posisi adverb \"already\" berada di antara auxiliary dan past participle (has already announced).",
+    "translation": "Pemerintah telah mengumumkan serangkaian insentif energi terbarukan.",
+    "targetSentence": "The government has already announced a series of renewable energy incentives.",
+    "indonesianPrompt": "Pemerintah telah mengumumkan serangkaian insentif energi terbarukan.",
+    "acceptedAnswers": [
+      "The government has already announced a series of renewable energy incentives.",
+      "The government has already announced a series of renewable energy incentives"
+    ]
+  },
+  {
+    "id": "q_pres_70",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Why _______ you constantly interrupting me during team meetings?",
+    "options": [
+      "are",
+      "do",
+      "have",
+      "were"
+    ],
+    "correctAnswer": "are",
+    "explanation": "Present Continuous dengan adverb of frequency \"constantly\" atau \"always\" (Why are you constantly interrupting...?) digunakan untuk mengekspresikan kejengkelan terhadap kebiasaan yang berulang.",
+    "translation": "Mengapa kamu terus-menerus memotong pembicaraan saya selama rapat tim?",
+    "targetSentence": "Why are you constantly interrupting me during team meetings?",
+    "indonesianPrompt": "Mengapa kamu selalu memotong pembicaraan saya saat rapat tim?",
+    "acceptedAnswers": [
+      "Why are you constantly interrupting me during team meetings?",
+      "Why are you constantly interrupting me during team meetings"
+    ]
+  },
+  {
+    "id": "q_pres_71",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "They have _______ visited that secluded mountain resort twice before.",
+    "options": [
+      "already",
+      "yet",
+      "still",
+      "never"
+    ],
+    "correctAnswer": "already",
+    "explanation": "Penanda pengalaman masa lalu yang telah terjadi sebelum saat ini menggunakan \"already\".",
+    "translation": "Mereka telah mengunjungi resor pegunungan terpencil itu dua kali sebelumnya.",
+    "targetSentence": "They have already visited that secluded mountain resort twice before.",
+    "indonesianPrompt": "Mereka sudah mengunjungi resor pegunungan terpencil itu dua kali sebelumnya.",
+    "acceptedAnswers": [
+      "They have already visited that secluded mountain resort twice before.",
+      "They have already visited that secluded mountain resort twice before"
+    ]
+  },
+  {
+    "id": "q_pres_72",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Neither the professor nor his assistants _______ able to replicate the experiment results.",
+    "options": [
+      "are",
+      "is",
+      "be",
+      "was"
+    ],
+    "correctAnswer": "are",
+    "explanation": "Dalam pola korelasi \"Neither... nor...\", bentuk kata kerja atau to-be diselaraskan dengan subjek yang paling dekat. Subjek terdekat adalah jamak (\"his assistants\"), sehingga to-be yang benar adalah \"are\".",
+    "translation": "Baik sang profesor maupun para asistennya tidak dapat meniru hasil percobaan tersebut.",
+    "targetSentence": "Neither the professor nor his assistants are able to replicate the experiment results.",
+    "indonesianPrompt": "Baik profesor maupun asistennya tidak mampu mereplikasi hasil eksperimen tersebut.",
+    "acceptedAnswers": [
+      "Neither the professor nor his assistants are able to replicate the experiment results.",
+      "Neither the professor nor his assistants are able to replicate the experiment results"
     ]
   }
 ]

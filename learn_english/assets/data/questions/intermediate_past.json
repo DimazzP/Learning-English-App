@@ -814,5 +814,534 @@
     "acceptedAnswers": [
       "Until yesterday, she had never tasted authentic Italian pizza."
     ]
+  },
+  {
+    "id": "q_past_42",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "While the technicians were checking the servers, the main generator suddenly _______.",
+    "options": [
+      "stopped",
+      "was stopping",
+      "had stopped",
+      "stops"
+    ],
+    "correctAnswer": "stopped",
+    "explanation": "Ketika suatu aksi sedang berlangsung di masa lampau (Past Continuous: were checking) disela oleh peristiwa singkat tiba-tiba, klausa interupsi menggunakan Simple Past (stopped).",
+    "translation": "Ketika para teknisi sedang memeriksa server, generator utama tiba-tiba mati.",
+    "targetSentence": "While the technicians were checking the servers, the main generator suddenly stopped.",
+    "indonesianPrompt": "Saat para teknisi sedang memeriksa server, generator utama tiba-tiba berhenti.",
+    "acceptedAnswers": [
+      "While the technicians were checking the servers, the main generator suddenly stopped.",
+      "While the technicians were checking the servers, the main generator suddenly stopped"
+    ]
+  },
+  {
+    "id": "q_past_43",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "By the time the rescue team arrived, the hikers _______ shelter inside a cave.",
+    "options": [
+      "had found",
+      "found",
+      "were finding",
+      "have found"
+    ],
+    "correctAnswer": "had found",
+    "explanation": "Klausa waktu \"By the time + Simple Past (arrived)\" menunjukkan aksi kedua. Aksi pertama yang sudah selesai sebelum titik lampau itu dinyatakan dengan Past Perfect (had found).",
+    "translation": "Pada saat tim penyelamat tiba, para pendaki telah menemukan tempat berlindung di dalam gua.",
+    "targetSentence": "By the time the rescue team arrived, the hikers had found shelter inside a cave.",
+    "indonesianPrompt": "Menjelang tim penyelamat tiba, para pendaki telah menemukan perlindungan di dalam gua.",
+    "acceptedAnswers": [
+      "By the time the rescue team arrived, the hikers had found shelter inside a cave.",
+      "By the time the rescue team arrived, the hikers had found shelter inside a cave"
+    ]
+  },
+  {
+    "id": "q_past_44",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "When she was a child, she _______ spend her summer holidays at her grandmother's cottage.",
+    "options": [
+      "used to",
+      "was used to",
+      "is used to",
+      "use to"
+    ],
+    "correctAnswer": "used to",
+    "explanation": "Pola \"used to + Verb 1\" mengekspresikan kebiasaan atau rutinitas masa lalu yang sudah tidak dilakukan lagi di masa sekarang.",
+    "translation": "Ketika dia masih anak-anak, dia biasa menghabiskan liburan musim panasnya di pondok neneknya.",
+    "targetSentence": "When she was a child, she used to spend her summer holidays at her grandmother's cottage.",
+    "indonesianPrompt": "Ketika masih kecil, dia biasa menghabiskan liburan musim panas di pondok neneknya.",
+    "acceptedAnswers": [
+      "When she was a child, she used to spend her summer holidays at her grandmother's cottage.",
+      "When she was a child, she used to spend her summer holidays at her grandmother's cottage"
+    ]
+  },
+  {
+    "id": "q_past_45",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "What _______ you thinking about when the lecturer mentioned your name?",
+    "options": [
+      "were",
+      "was",
+      "did",
+      "had"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Kalimat tanya Past Continuous untuk menanyakan apa yang sedang dipikirkan saat peristiwa lain terjadi (were + you + thinking).",
+    "translation": "Apa yang sedang kamu pikirkan ketika dosen itu menyebutkan namamu?",
+    "targetSentence": "What were you thinking about when the lecturer mentioned your name?",
+    "indonesianPrompt": "Apa yang sedang kamu pikirkan ketika dosen menyebutkan namamu?",
+    "acceptedAnswers": [
+      "What were you thinking about when the lecturer mentioned your name?",
+      "What were you thinking about when the lecturer mentioned your name"
+    ]
+  },
+  {
+    "id": "q_past_46",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "The flight _______ already departed before we even reached the boarding gate.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Peristiwa yang terjadi lebih awal di masa lampau (pesawat berangkat) dibanding peristiwa lampau lainnya (mencapai gerbang keberangkatan) dinyatakan dengan Past Perfect (had already departed).",
+    "translation": "Penerbangan itu sudah berangkat sebelum kami bahkan mencapai gerbang keberangkatan.",
+    "targetSentence": "The flight had already departed before we even reached the boarding gate.",
+    "indonesianPrompt": "Penerbangan sudah berangkat sebelum kami bahkan tiba di gerbang keberangkatan.",
+    "acceptedAnswers": [
+      "The flight had already departed before we even reached the boarding gate.",
+      "The flight had already departed before we even reached the boarding gate"
+    ]
+  },
+  {
+    "id": "q_past_47",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "While Samuel was preparing the presentation slides, his colleagues _______ analyzing the survey data.",
+    "options": [
+      "were",
+      "was",
+      "are",
+      "had"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Dua tindakan lampau yang berlangsung beriringan (parallel past continuous actions). Subjek jamak \"his colleagues\" menggunakan to-be \"were\".",
+    "translation": "Sementara Samuel sedang menyiapkan salindia presentasi, rekan-rekannya sedang menganalisis data survei.",
+    "targetSentence": "While Samuel was preparing the presentation slides, his colleagues were analyzing the survey data.",
+    "indonesianPrompt": "Sementara Samuel menyiapkan slide presentasi, rekan-rekannya sedang menganalisis data survei.",
+    "acceptedAnswers": [
+      "While Samuel was preparing the presentation slides, his colleagues were analyzing the survey data.",
+      "While Samuel was preparing the presentation slides, his colleagues were analyzing the survey data"
+    ]
+  },
+  {
+    "id": "q_past_48",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "She recognized the novelist immediately because she _______ read all of his previous publications.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "would"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Alasan di masa lampau yang terjadi sebelum pengenalan (recognized): tindakan membaca buku-buku sebelumnya sudah tuntas lebih dulu (had read).",
+    "translation": "Dia langsung mengenali novelis itu karena dia telah membaca seluruh publikasi sebelumnya.",
+    "targetSentence": "She recognized the novelist immediately because she had read all of his previous publications.",
+    "indonesianPrompt": "Dia segera mengenali novelis itu karena dia telah membaca semua publikasi sebelumnya.",
+    "acceptedAnswers": [
+      "She recognized the novelist immediately because she had read all of his previous publications.",
+      "She recognized the novelist immediately because she had read all of his previous publications"
+    ]
+  },
+  {
+    "id": "q_past_49",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Despite the heavy rain, the athletic team _______ to postpone their scheduled practice.",
+    "options": [
+      "refused",
+      "refuses",
+      "refusing",
+      "had refused"
+    ],
+    "correctAnswer": "refused",
+    "explanation": "Tindakan lampau berurutan yang langsung terjadi dinyatakan dengan bentuk Simple Past (refused).",
+    "translation": "Meskipun hujan lebat, tim atletik itu menolak untuk menunda latihan terjadwal mereka.",
+    "targetSentence": "Despite the heavy rain, the athletic team refused to postpone their scheduled practice.",
+    "indonesianPrompt": "Meskipun hujan deras, tim atletik itu menolak menunda latihan terjadwal mereka.",
+    "acceptedAnswers": [
+      "Despite the heavy rain, the athletic team refused to postpone their scheduled practice.",
+      "Despite the heavy rain, the athletic team refused to postpone their scheduled practice"
+    ]
+  },
+  {
+    "id": "q_past_50",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "The audience was _______ attentively as the keynote speaker delivered his speech.",
+    "options": [
+      "listening",
+      "listened",
+      "listens",
+      "listen"
+    ],
+    "correctAnswer": "listening",
+    "explanation": "Pola Past Continuous (was + listening) menggambarkan audiens yang sedang fokus mendengarkan selama pidato berlangsung.",
+    "translation": "Para penonton sedang mendengarkan dengan saksama saat pembicara utama menyampaikan pidatonya.",
+    "targetSentence": "The audience was listening attentively as the keynote speaker delivered his speech.",
+    "indonesianPrompt": "Hadirin sedang mendengarkan dengan penuh perhatian saat pembicara utama menyampaikan pidatonya.",
+    "acceptedAnswers": [
+      "The audience was listening attentively as the keynote speaker delivered his speech.",
+      "The audience was listening attentively as the keynote speaker delivered his speech"
+    ]
+  },
+  {
+    "id": "q_past_51",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "They _______ never encountered such an intricate engineering problem before that incident.",
+    "options": [
+      "had",
+      "have",
+      "were",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Frasa \"before that incident\" menandakan batas peristiwa lampau. Pengalaman yang belum pernah dialami sebelum titik tersebut dinyatakan dengan had + never + encountered.",
+    "translation": "Mereka belum pernah menemui masalah rekayasa yang begitu rumit sebelum insiden tersebut.",
+    "targetSentence": "They had never encountered such an intricate engineering problem before that incident.",
+    "indonesianPrompt": "Mereka belum pernah menghadapi masalah teknik serumit itu sebelum insiden tersebut.",
+    "acceptedAnswers": [
+      "They had never encountered such an intricate engineering problem before that incident.",
+      "They had never encountered such an intricate engineering problem before that incident"
+    ]
+  },
+  {
+    "id": "q_past_52",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "As soon as the fire alarm sounded, everyone _______ the building calmly.",
+    "options": [
+      "evacuated",
+      "was evacuating",
+      "had evacuated",
+      "evacuates"
+    ],
+    "correctAnswer": "evacuated",
+    "explanation": "Penanda \"As soon as\" untuk dua peristiwa masa lampau yang terjadi secara berurutan dan cepat umumnya menggunakan Simple Past pada kedua klausa.",
+    "translation": "Segera setelah alarm kebakaran berbunyi, semua orang mengevakuasi gedung dengan tenang.",
+    "targetSentence": "As soon as the fire alarm sounded, everyone evacuated the building calmly.",
+    "indonesianPrompt": "Segera setelah alarm kebakaran berbunyi, semua orang mengungsi dari gedung dengan tenang.",
+    "acceptedAnswers": [
+      "As soon as the fire alarm sounded, everyone evacuated the building calmly.",
+      "As soon as the fire alarm sounded, everyone evacuated the building calmly"
+    ]
+  },
+  {
+    "id": "q_past_53",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "The sun was _______ brightly behind the mountains when our bus crossed the border.",
+    "options": [
+      "shining",
+      "shined",
+      "shone",
+      "shines"
+    ],
+    "correctAnswer": "shining",
+    "explanation": "Latar suasana masa lampau diungkapkan dengan Past Continuous (was shining) ketika peristiwa spesifik terjadi (bus crossed the border).",
+    "translation": "Matahari sedang bersinar terang di balik pegunungan ketika bus kami melintasi perbatasan.",
+    "targetSentence": "The sun was shining brightly behind the mountains when our bus crossed the border.",
+    "indonesianPrompt": "Matahari sedang bersinar terang di balik pegunungan saat bus kami melintasi perbatasan.",
+    "acceptedAnswers": [
+      "The sun was shining brightly behind the mountains when our bus crossed the border.",
+      "The sun was shining brightly behind the mountains when our bus crossed the border"
+    ]
+  },
+  {
+    "id": "q_past_54",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "How long _______ you worked for that multinational company before you decided to resign?",
+    "options": [
+      "had",
+      "have",
+      "were",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Menanyakan rentang durasi aksi yang terjadi sebelum peristiwa pengunduran diri di masa lampau (before you decided): How long + had + you + worked...?",
+    "translation": "Berapa lama kamu telah bekerja untuk perusahaan multinasional itu sebelum kamu memutuskan untuk mengundurkan diri?",
+    "targetSentence": "How long had you worked for that multinational company before you decided to resign?",
+    "indonesianPrompt": "Berapa lama kamu telah bekerja untuk perusahaan multinasional itu sebelum memutuskan untuk mengundurkan diri?",
+    "acceptedAnswers": [
+      "How long had you worked for that multinational company before you decided to resign?",
+      "How long had you worked for that multinational company before you decided to resign"
+    ]
+  },
+  {
+    "id": "q_past_55",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "The manager _______ the contract terms thoroughly before signing the final document.",
+    "options": [
+      "reviewed",
+      "reviews",
+      "reviewing",
+      "is reviewing"
+    ],
+    "correctAnswer": "reviewed",
+    "explanation": "Aksi lampau terdefinisi (reviewed) sebelum penandatanganan dokumen masa lampau menggunakan Simple Past.",
+    "translation": "Manajer tersebut meninjau klausul kontrak secara menyeluruh sebelum menandatangani dokumen akhir.",
+    "targetSentence": "The manager reviewed the contract terms thoroughly before signing the final document.",
+    "indonesianPrompt": "Manajer itu meninjau syarat kontrak dengan saksama sebelum menandatangani dokumen final.",
+    "acceptedAnswers": [
+      "The manager reviewed the contract terms thoroughly before signing the final document.",
+      "The manager reviewed the contract terms thoroughly before signing the final document"
+    ]
+  },
+  {
+    "id": "q_past_56",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "When we arrived at the concert venue, the opening band _______ already finished their set.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "were"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Grup musik pembuka sudah selesai tampil sebelum kedatangan kami di tempat konser (Past Perfect: had already finished).",
+    "translation": "Ketika kami tiba di lokasi konser, grup musik pembuka sudah menyelesaikan penampilan mereka.",
+    "targetSentence": "When we arrived at the concert venue, the opening band had already finished their set.",
+    "indonesianPrompt": "Ketika kami tiba di tempat konser, band pembuka sudah menyelesaikan penampilannya.",
+    "acceptedAnswers": [
+      "When we arrived at the concert venue, the opening band had already finished their set.",
+      "When we arrived at the concert venue, the opening band had already finished their set"
+    ]
+  },
+  {
+    "id": "q_past_57",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "At this exact hour yesterday, the surgeons _______ performing a delicate brain surgery.",
+    "options": [
+      "were",
+      "was",
+      "had",
+      "are"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Keterangan waktu titik lampau yang sangat spesifik (\"At this exact hour yesterday\") dengan subjek jamak \"the surgeons\" memerlukan to-be \"were\" (were performing).",
+    "translation": "Pada jam yang persis sama kemarin, para ahli bedah sedang melakukan operasi otak yang rumit.",
+    "targetSentence": "At this exact hour yesterday, the surgeons were performing a delicate brain surgery.",
+    "indonesianPrompt": "Pada jam yang persis seperti ini kemarin, para dokter bedah sedang melakukan operasi otak yang rumit.",
+    "acceptedAnswers": [
+      "At this exact hour yesterday, the surgeons were performing a delicate brain surgery.",
+      "At this exact hour yesterday, the surgeons were performing a delicate brain surgery"
+    ]
+  },
+  {
+    "id": "q_past_58",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "The detective realized that the suspect _______ left the country under an assumed alias.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "is"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Tindakan melarikan diri ke luar negeri telah selesai terjadi sebelum detektif menyadarinya (Past Perfect: had left).",
+    "translation": "Detektif itu menyadari bahwa sang tersangka telah meninggalkan negara itu menggunakan nama samaran.",
+    "targetSentence": "The detective realized that the suspect had left the country under an assumed alias.",
+    "indonesianPrompt": "Detektif itu menyadari bahwa tersangka telah meninggalkan negara tersebut dengan nama samaran.",
+    "acceptedAnswers": [
+      "The detective realized that the suspect had left the country under an assumed alias.",
+      "The detective realized that the suspect had left the country under an assumed alias"
+    ]
+  },
+  {
+    "id": "q_past_59",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Neither of the proposals _______ accepted by the executive committee last month.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "are"
+    ],
+    "correctAnswer": "was",
+    "explanation": "Frasa \"Neither of + plural noun\" secara gramatikal baku diperlakukan sebagai singular dalam Simple Past kalimat pasif (was accepted).",
+    "translation": "Tak satu pun dari proposal tersebut yang diterima oleh komite eksekutif bulan lalu.",
+    "targetSentence": "Neither of the proposals was accepted by the executive committee last month.",
+    "indonesianPrompt": "Tak satu pun dari proposal itu diterima oleh komite eksekutif bulan lalu.",
+    "acceptedAnswers": [
+      "Neither of the proposals was accepted by the executive committee last month.",
+      "Neither of the proposals was accepted by the executive committee last month"
+    ]
+  },
+  {
+    "id": "q_past_60",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "He broke his leg while he _______ skiing in the Swiss Alps.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "had"
+    ],
+    "correctAnswer": "was",
+    "explanation": "Klausa latar aksi yang sedang berlangsung saat kecelakaan terjadi (while he was skiing) menggunakan Past Continuous.",
+    "translation": "Kakinya patah saat dia sedang bermain ski di Pegunungan Alpen Swiss.",
+    "targetSentence": "He broke his leg while he was skiing in the Swiss Alps.",
+    "indonesianPrompt": "Kakinya patah ketika dia sedang bermain ski di Pegunungan Alpen Swiss.",
+    "acceptedAnswers": [
+      "He broke his leg while he was skiing in the Swiss Alps.",
+      "He broke his leg while he was skiing in the Swiss Alps"
+    ]
+  },
+  {
+    "id": "q_past_61",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "She was disappointed because she _______ studied diligently for the examination but still got a mediocre grade.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Tindakan belajar keras terjadi sebelum kekecewaan di masa lampau (Past Perfect: had studied).",
+    "translation": "Dia merasa kecewa karena dia telah belajar dengan rajin untuk ujian tersebut tetapi masih mendapatkan nilai biasa-biasa saja.",
+    "targetSentence": "She was disappointed because she had studied diligently for the examination but still got a mediocre grade.",
+    "indonesianPrompt": "Dia kecewa karena telah belajar dengan rajin untuk ujian tetapi tetap mendapat nilai pas-pasan.",
+    "acceptedAnswers": [
+      "She was disappointed because she had studied diligently for the examination but still got a mediocre grade.",
+      "She was disappointed because she had studied diligently for the examination but still got a mediocre grade"
+    ]
+  },
+  {
+    "id": "q_past_62",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Where _______ the archaeologists uncover those ancient bronze artifacts?",
+    "options": [
+      "did",
+      "were",
+      "had",
+      "do"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Pertanyaan masa lampau dengan kata kerja dasar \"uncover\" menggunakan kata bantu \"did\" (Where + did + subject + Verb 1?).",
+    "translation": "Di mana para arkeolog menemukan artefak perunggu kuno tersebut?",
+    "targetSentence": "Where did the archaeologists uncover those ancient bronze artifacts?",
+    "indonesianPrompt": "Di mana para arkeolog menemukan artefak perunggu kuno itu?",
+    "acceptedAnswers": [
+      "Where did the archaeologists uncover those ancient bronze artifacts?",
+      "Where did the archaeologists uncover those ancient bronze artifacts"
+    ]
+  },
+  {
+    "id": "q_past_63",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "The wind _______ howling ferociously throughout the entire thunderstorm.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "did"
+    ],
+    "correctAnswer": "was",
+    "explanation": "Subjek tunggal \"The wind\" dalam Past Continuous untuk menggambarkan suara angin yang terus menderu sepanjang badai menggunakan to-be \"was\".",
+    "translation": "Angin sedang menderu kencang di sepanjang berlangsungnya badai petir.",
+    "targetSentence": "The wind was howling ferociously throughout the entire thunderstorm.",
+    "indonesianPrompt": "Angin menderu dengan ganas di sepanjang badai petir.",
+    "acceptedAnswers": [
+      "The wind was howling ferociously throughout the entire thunderstorm.",
+      "The wind was howling ferociously throughout the entire thunderstorm"
+    ]
+  },
+  {
+    "id": "q_past_64",
+    "category": "grammarly",
+    "level": "intermediate",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Hardly _______ the plane landed when the storm caused a severe power blackout.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Struktur inversi masa lampau dengan \"Hardly... when\" menggunakan pola Past Perfect: Hardly + had + subject + past participle.",
+    "translation": "Pesawat itu baru saja mendarat ketika badai menyebabkan pemadaman listrik yang parah.",
+    "targetSentence": "Hardly had the plane landed when the storm caused a severe power blackout.",
+    "indonesianPrompt": "Baru saja pesawat mendarat ketika badai menyebabkan pemadaman listrik parah.",
+    "acceptedAnswers": [
+      "Hardly had the plane landed when the storm caused a severe power blackout.",
+      "Hardly had the plane landed when the storm caused a severe power blackout"
+    ]
   }
 ]

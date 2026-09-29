@@ -658,5 +658,465 @@
     "acceptedAnswers": [
       "Since daybreak, volunteers have been distributing essential supplies to disaster victims."
     ]
+  },
+  {
+    "id": "exp_pres_27",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The climatology institute _______ analyzing regional glacial retreat for nearly three decades.",
+    "options": [
+      "has been",
+      "have been",
+      "is being",
+      "was being"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek institusi tunggal \"The climatology institute\" dengan penanda durasi \"for nearly three decades\" memerlukan bentuk Present Perfect Continuous (has been + Verb-ing).",
+    "translation": "Institut klimatologi tersebut telah menganalisis kemunduran gletser regional selama hampir tiga dekade.",
+    "targetSentence": "The climatology institute has been analyzing regional glacial retreat for nearly three decades.",
+    "indonesianPrompt": "Institut klimatologi telah menganalisis penyusutan gletser regional selama hampir tiga dekade.",
+    "acceptedAnswers": [
+      "The climatology institute has been analyzing regional glacial retreat for nearly three decades.",
+      "The climatology institute has been analyzing regional glacial retreat for nearly three decades"
+    ]
+  },
+  {
+    "id": "exp_pres_28",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Only when the lead architect _______ the revised blueprint will construction commence.",
+    "options": [
+      "approves",
+      "approve",
+      "will approve",
+      "is approving"
+    ],
+    "correctAnswer": "approves",
+    "explanation": "Dalam klausa waktu atau syarat pengantar inversi (\"Only when...\"), bentuk waktu yang merujuk pada masa depan dinyatakan dengan Simple Present Tense (approves).",
+    "translation": "Hanya ketika kepala arsitek menyetujui cetak biru yang direvisi, konstruksi akan dimulai.",
+    "targetSentence": "Only when the lead architect approves the revised blueprint will construction commence.",
+    "indonesianPrompt": "Hanya ketika kepala arsitek menyetujui cetak biru yang direvisi barulah konstruksi dimulai.",
+    "acceptedAnswers": [
+      "Only when the lead architect approves the revised blueprint will construction commence.",
+      "Only when the lead architect approves the revised blueprint will construction commence"
+    ]
+  },
+  {
+    "id": "exp_pres_29",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "How long _______ the defense attorneys been deliberating over this controversial piece of evidence?",
+    "options": [
+      "have",
+      "has",
+      "had",
+      "are"
+    ],
+    "correctAnswer": "have",
+    "explanation": "Pola kalimat tanya Present Perfect Continuous dengan subjek jamak \"the defense attorneys\": How long + have + subject + been + Verb-ing?",
+    "translation": "Sudah berapa lama para pengacara pembela mempertimbangkan barang bukti kontroversial ini?",
+    "targetSentence": "How long have the defense attorneys been deliberating over this controversial piece of evidence?",
+    "indonesianPrompt": "Sudah berapa lama pengacara pembela mempertimbangkan bukti kontroversial ini?",
+    "acceptedAnswers": [
+      "How long have the defense attorneys been deliberating over this controversial piece of evidence?",
+      "How long have the defense attorneys been deliberating over this controversial piece of evidence"
+    ]
+  },
+  {
+    "id": "exp_pres_30",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "I _______ of taking a sabbatical next semester to conduct anthropological field research.",
+    "options": [
+      "am thinking",
+      "think",
+      "thought",
+      "have thought"
+    ],
+    "correctAnswer": "am thinking",
+    "explanation": "Ketika kata kerja \"think\" bermakna mempertimbangkan atau menimbang suatu rencana aktif dalam benak (\"considering\"), kata kerja tersebut berfungsi dinamis dan menggunakan Present Continuous (am thinking).",
+    "translation": "Saya sedang mempertimbangkan untuk mengambil cuti panjang semester depan demi melakukan penelitian lapangan antropologi.",
+    "targetSentence": "I am thinking of taking a sabbatical next semester to conduct anthropological field research.",
+    "indonesianPrompt": "Saya sedang mempertimbangkan untuk mengambil cuti panjang semester depan untuk riset lapangan antropologi.",
+    "acceptedAnswers": [
+      "I am thinking of taking a sabbatical next semester to conduct anthropological field research.",
+      "I am thinking of taking a sabbatical next semester to conduct anthropological field research"
+    ]
+  },
+  {
+    "id": "exp_pres_31",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "This is the first time the United Nations _______ adopted such an uncompromising resolution on cyber warfare.",
+    "options": [
+      "has",
+      "have",
+      "had",
+      "is"
+    ],
+    "correctAnswer": "has",
+    "explanation": "Frasa superlatif urutan \"This is the first time...\" secara baku diikuti oleh klausa Present Perfect Tense (has adopted). Subjek institusi tunggal menggunakan \"has\".",
+    "translation": "Ini adalah pertama kalinya Perserikatan Bangsa-Bangsa mengadopsi resolusi tanpa kompromi mengenai perang siber.",
+    "targetSentence": "This is the first time the United Nations has adopted such an uncompromising resolution on cyber warfare.",
+    "indonesianPrompt": "Ini pertama kalinya Perserikatan Bangsa-Bangsa mengadopsi resolusi tanpa kompromi tentang perang siber.",
+    "acceptedAnswers": [
+      "This is the first time the United Nations has adopted such an uncompromising resolution on cyber warfare.",
+      "This is the first time the United Nations has adopted such an uncompromising resolution on cyber warfare"
+    ]
+  },
+  {
+    "id": "exp_pres_32",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The biomedical laboratory has been _______ clinical trials under strict federal supervision.",
+    "options": [
+      "conducting",
+      "conducted",
+      "conducts",
+      "conduct"
+    ],
+    "correctAnswer": "conducting",
+    "explanation": "Bentuk Present Perfect Continuous (has been + Verb-ing: conducting) menekankan keberlanjutan proses uji klinis yang masih berlangsung secara terus-menerus.",
+    "translation": "Laboratorium biomedis tersebut telah melakukan uji klinis di bawah pengawasan ketat pemerintah federal.",
+    "targetSentence": "The biomedical laboratory has been conducting clinical trials under strict federal supervision.",
+    "indonesianPrompt": "Laboratorium biomedis itu telah melakukan uji klinis di bawah pengawasan ketat pemerintah.",
+    "acceptedAnswers": [
+      "The biomedical laboratory has been conducting clinical trials under strict federal supervision.",
+      "The biomedical laboratory has been conducting clinical trials under strict federal supervision"
+    ]
+  },
+  {
+    "id": "exp_pres_33",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Scarcely _______ an economist predict market volatility with infallible certainty.",
+    "options": [
+      "does",
+      "do",
+      "is",
+      "has"
+    ],
+    "correctAnswer": "does",
+    "explanation": "Inversi negatif dengan adverb pembatas \"Scarcely\" pada Simple Present Tense: Scarcely + does + singular subject (an economist) + Verb 1.",
+    "translation": "Jarang sekali seorang ekonom memperkirakan volatilitas pasar dengan kepastian mutlak.",
+    "targetSentence": "Scarcely does an economist predict market volatility with infallible certainty.",
+    "indonesianPrompt": "Jarang sekali seorang ekonom memprediksi volatilitas pasar dengan kepastian tanpa cela.",
+    "acceptedAnswers": [
+      "Scarcely does an economist predict market volatility with infallible certainty.",
+      "Scarcely does an economist predict market volatility with infallible certainty"
+    ]
+  },
+  {
+    "id": "exp_pres_34",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Since the policy change, consumers _______ increasingly turning to decentralized finance platforms.",
+    "options": [
+      "have been",
+      "has been",
+      "are being",
+      "were being"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Klausa waktu \"Since the policy change\" dengan subjek jamak \"consumers\" menggunakan auxiliary jamak Present Perfect Continuous: have been + turning.",
+    "translation": "Sejak perubahan kebijakan tersebut, para konsumen semakin beralih ke platform keuangan terdesentralisasi.",
+    "targetSentence": "Since the policy change, consumers have been increasingly turning to decentralized finance platforms.",
+    "indonesianPrompt": "Sejak perubahan kebijakan, konsumen kian beralih ke platform keuangan terdesentralisasi.",
+    "acceptedAnswers": [
+      "Since the policy change, consumers have been increasingly turning to decentralized finance platforms.",
+      "Since the policy change, consumers have been increasingly turning to decentralized finance platforms"
+    ]
+  },
+  {
+    "id": "exp_pres_35",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "The head diplomat is currently _______ with overseas ministers to de-escalate maritime tensions.",
+    "options": [
+      "meeting",
+      "met",
+      "meets",
+      "meet"
+    ],
+    "correctAnswer": "meeting",
+    "explanation": "Penanda \"currently\" dengan to-be \"is\" mengindikasikan aksi yang sedang aktif berlangsung (Present Continuous: is meeting).",
+    "translation": "Kepala diplomat tersebut saat ini sedang bertemu dengan menteri-menteri luar negeri untuk meredakan ketegangan maritim.",
+    "targetSentence": "The head diplomat is currently meeting with overseas ministers to de-escalate maritime tensions.",
+    "indonesianPrompt": "Kepala diplomat saat ini sedang bertemu dengan menteri luar negeri untuk meredakan ketegangan laut.",
+    "acceptedAnswers": [
+      "The head diplomat is currently meeting with overseas ministers to de-escalate maritime tensions.",
+      "The head diplomat is currently meeting with overseas ministers to de-escalate maritime tensions"
+    ]
+  },
+  {
+    "id": "exp_pres_36",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Seldom _______ such an unprecedented diplomatic breakthrough occurred in modern geopolitical history.",
+    "options": [
+      "has",
+      "have",
+      "is",
+      "does"
+    ],
+    "correctAnswer": "has",
+    "explanation": "Inversi negatif dengan adverb \"Seldom\" dalam Present Perfect: Seldom + has + singular subject (such an unprecedented diplomatic breakthrough) + occurred.",
+    "translation": "Jarang sekali terobosan diplomatik yang belum pernah terjadi sebelumnya terwujud dalam sejarah geopolitik modern.",
+    "targetSentence": "Seldom has such an unprecedented diplomatic breakthrough occurred in modern geopolitical history.",
+    "indonesianPrompt": "Jarang sekali terobosan diplomatik yang belum pernah terjadi sebelumnya terwujud dalam sejarah geopolitik modern.",
+    "acceptedAnswers": [
+      "Seldom has such an unprecedented diplomatic breakthrough occurred in modern geopolitical history.",
+      "Seldom has such an unprecedented diplomatic breakthrough occurred in modern geopolitical history"
+    ]
+  },
+  {
+    "id": "exp_pres_37",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The aerospace startup _______ prototyping reusable propulsion engines all year round.",
+    "options": [
+      "has been",
+      "have been",
+      "was being",
+      "is being"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek korporasi tunggal \"The aerospace startup\" dengan penanda durasi \"all year round\" menggunakan has been + Verb-ing.",
+    "translation": "Perusahaan rintisan kedirgantaraan tersebut telah membuat purwarupa mesin propulsi pakai ulang sepanjang tahun.",
+    "targetSentence": "The aerospace startup has been prototyping reusable propulsion engines all year round.",
+    "indonesianPrompt": "Startup kedirgantaraan itu telah memvalidasi purwarupa mesin propulsi pakai ulang sepanjang tahun.",
+    "acceptedAnswers": [
+      "The aerospace startup has been prototyping reusable propulsion engines all year round.",
+      "The aerospace startup has been prototyping reusable propulsion engines all year round"
+    ]
+  },
+  {
+    "id": "exp_pres_38",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Provided that the fiscal stimulus package _______ parliamentary approval, interest rates will remain stable.",
+    "options": [
+      "receives",
+      "receive",
+      "will receive",
+      "received"
+    ],
+    "correctAnswer": "receives",
+    "explanation": "Dalam klausa kondisional pembuka (\"Provided that...\"), pengandaian masa depan dinyatakan dengan Simple Present Tense (receives).",
+    "translation": "Asalkan paket stimulus fiskal tersebut menerima persetujuan parlemen, suku bunga akan tetap stabil.",
+    "targetSentence": "Provided that the fiscal stimulus package receives parliamentary approval, interest rates will remain stable.",
+    "indonesianPrompt": "Asalkan paket stimulus fiskal menerima persetujuan parlemen, suku bunga akan tetap stabil.",
+    "acceptedAnswers": [
+      "Provided that the fiscal stimulus package receives parliamentary approval, interest rates will remain stable.",
+      "Provided that the fiscal stimulus package receives parliamentary approval, interest rates will remain stable"
+    ]
+  },
+  {
+    "id": "exp_pres_39",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Deep-sea oceanographers _______ mapping the Mariana Trench since the late 1990s.",
+    "options": [
+      "have been",
+      "has been",
+      "are being",
+      "were being"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Subjek jamak \"Deep-sea oceanographers\" dengan klausa awal \"since the late 1990s\" membutuhkan auxiliary jamak Present Perfect Continuous: have been mapping.",
+    "translation": "Para ahli kelautan laut dalam telah memetakan Palung Mariana sejak akhir tahun 1990-an.",
+    "targetSentence": "Deep-sea oceanographers have been mapping the Mariana Trench since the late 1990s.",
+    "indonesianPrompt": "Para oseanografer laut dalam telah memetakan Palung Mariana sejak akhir 1990-an.",
+    "acceptedAnswers": [
+      "Deep-sea oceanographers have been mapping the Mariana Trench since the late 1990s.",
+      "Deep-sea oceanographers have been mapping the Mariana Trench since the late 1990s"
+    ]
+  },
+  {
+    "id": "exp_pres_40",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Why is the chief executive constantly _______ the strategic roadmap without consulting the board?",
+    "options": [
+      "modifying",
+      "modified",
+      "modifies",
+      "modify"
+    ],
+    "correctAnswer": "modifying",
+    "explanation": "Bentuk Present Continuous progresif dengan adverb \"constantly\" (is + constantly + modifying) mengungkapkan kritisisme terhadap perilaku yang terus berulang.",
+    "translation": "Mengapa direktur utama terus-menerus memodifikasi peta jalan strategis tanpa berkonsultasi dengan dewan direksi?",
+    "targetSentence": "Why is the chief executive constantly modifying the strategic roadmap without consulting the board?",
+    "indonesianPrompt": "Mengapa direktur utama terus-menerus mengubah peta jalan strategis tanpa berkonsultasi dengan dewan?",
+    "acceptedAnswers": [
+      "Why is the chief executive constantly modifying the strategic roadmap without consulting the board?",
+      "Why is the chief executive constantly modifying the strategic roadmap without consulting the board"
+    ]
+  },
+  {
+    "id": "exp_pres_41",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Under no circumstances _______ the authorities compromised user privacy data.",
+    "options": [
+      "have",
+      "has",
+      "did",
+      "are"
+    ],
+    "correctAnswer": "have",
+    "explanation": "Inversi negatif dengan frasa preposisional \"Under no circumstances\" untuk subjek jamak \"the authorities\": Under no circumstances + have + the authorities + past participle (compromised).",
+    "translation": "Dalam keadaan apa pun, pihak berwenang tidak pernah mengorbankan data privasi pengguna.",
+    "targetSentence": "Under no circumstances have the authorities compromised user privacy data.",
+    "indonesianPrompt": "Dalam situasi apa pun, pihak berwenang tidak pernah mengorbankan data privasi pengguna.",
+    "acceptedAnswers": [
+      "Under no circumstances have the authorities compromised user privacy data.",
+      "Under no circumstances have the authorities compromised user privacy data"
+    ]
+  },
+  {
+    "id": "exp_pres_42",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Cryptographers _______ refining post-quantum encryption standards throughout the entire fiscal year.",
+    "options": [
+      "have been",
+      "has been",
+      "are being",
+      "were being"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Subjek jamak \"Cryptographers\" dengan rentang waktu menyeluruh \"throughout the entire fiscal year\" membutuhkan have been + Verb-ing (refining).",
+    "translation": "Para kriptografer telah menyempurnakan standar enkripsi pascakuantum sepanjang tahun fiskal ini.",
+    "targetSentence": "Cryptographers have been refining post-quantum encryption standards throughout the entire fiscal year.",
+    "indonesianPrompt": "Kriptografer telah menyempurnakan standar enkripsi pasca-kuantum sepanjang tahun fiskal.",
+    "acceptedAnswers": [
+      "Cryptographers have been refining post-quantum encryption standards throughout the entire fiscal year.",
+      "Cryptographers have been refining post-quantum encryption standards throughout the entire fiscal year"
+    ]
+  },
+  {
+    "id": "exp_pres_43",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The moment the ambassador _______ in the capital city, the peace treaty will take effect.",
+    "options": [
+      "arrives",
+      "arrive",
+      "will arrive",
+      "arrived"
+    ],
+    "correctAnswer": "arrives",
+    "explanation": "Klausa waktu pembuka \"The moment...\" yang menyatakan prasyarat sebelum masa depan menggunakan Simple Present Tense (arrives).",
+    "translation": "Saat duta besar itu tiba di ibu kota, perjanjian perdamaian akan mulai berlaku.",
+    "targetSentence": "The moment the ambassador arrives in the capital city, the peace treaty will take effect.",
+    "indonesianPrompt": "Saat duta besar tiba di ibu kota, traktat perdamaian akan berlaku.",
+    "acceptedAnswers": [
+      "The moment the ambassador arrives in the capital city, the peace treaty will take effect.",
+      "The moment the ambassador arrives in the capital city, the peace treaty will take effect"
+    ]
+  },
+  {
+    "id": "exp_pres_44",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The constitutional committee _______ deliberating over the proposed amendment for several consecutive weeks.",
+    "options": [
+      "has been",
+      "have been",
+      "is being",
+      "was being"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek badan tunggal \"The constitutional committee\" dengan penanda durasi \"for several consecutive weeks\" menggunakan has been + deliberating.",
+    "translation": "Komite konstitusi tersebut telah mempertimbangkan usulan amandemen itu selama beberapa minggu berturut-turut.",
+    "targetSentence": "The constitutional committee has been deliberating over the proposed amendment for several consecutive weeks.",
+    "indonesianPrompt": "Komite konstitusi telah mempertimbangkan usulan amandemen selama beberapa pekan berturut-turut.",
+    "acceptedAnswers": [
+      "The constitutional committee has been deliberating over the proposed amendment for several consecutive weeks.",
+      "The constitutional committee has been deliberating over the proposed amendment for several consecutive weeks"
+    ]
+  },
+  {
+    "id": "exp_pres_45",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "The board of directors _______ currently reassessing their overseas capital investments.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Subjek kolektif tunggal \"The board of directors\" bertindak sebagai satu kesatuan dalam Present Continuous (is + currently + reassessing).",
+    "translation": "Dewan direksi saat ini sedang menilai kembali investasi modal luar negeri mereka.",
+    "targetSentence": "The board of directors is currently reassessing their overseas capital investments.",
+    "indonesianPrompt": "Dewan direksi saat ini sedang menilai kembali investasi modal luar negeri mereka.",
+    "acceptedAnswers": [
+      "The board of directors is currently reassessing their overseas capital investments.",
+      "The board of directors is currently reassessing their overseas capital investments"
+    ]
+  },
+  {
+    "id": "exp_pres_46",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "Not only _______ the tech conglomerate revolutionized semiconductor architecture, but it has also halved power consumption.",
+    "options": [
+      "has",
+      "have",
+      "is",
+      "did"
+    ],
+    "correctAnswer": "has",
+    "explanation": "Inversi negatif dengan \"Not only\" dalam Present Perfect untuk subjek tunggal \"the tech conglomerate\": Not only + has + subject + past participle (revolutionized).",
+    "translation": "Konglomerat teknologi itu tidak hanya telah merevolusi arsitektur semikonduktor, tetapi juga memangkas separuh konsumsi daya.",
+    "targetSentence": "Not only has the tech conglomerate revolutionized semiconductor architecture, but it has also halved power consumption.",
+    "indonesianPrompt": "Konglomerat teknologi itu tidak hanya merevolusi arsitektur semikonduktor, tetapi juga memangkas separuh konsumsi daya.",
+    "acceptedAnswers": [
+      "Not only has the tech conglomerate revolutionized semiconductor architecture, but it has also halved power consumption.",
+      "Not only has the tech conglomerate revolutionized semiconductor architecture, but it has also halved power consumption"
+    ]
   }
 ]

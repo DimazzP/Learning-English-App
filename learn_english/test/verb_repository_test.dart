@@ -134,8 +134,8 @@ void main() {
       expect(repo.allTenses.any((t) => t.id == 'simple_present'), isTrue);
       expect(repo.allTenses.any((t) => t.id == 'past_perfect_continuous'), isTrue);
 
-      // Test 286 grammar questions loaded
-      expect(repo.allGrammarQuestions.length, 286);
+      // Test 403 grammar questions loaded
+      expect(repo.allGrammarQuestions.length, 403);
 
       // Test filter by level
       final qBeginner = repo.generateGrammarQuizQuestion(level: 'beginner');
@@ -185,6 +185,22 @@ void main() {
       seenVerbs.add(firstVerb.verb.id);
       final secondVerb = repo.generateQuizQuestion(mode: 'v2', excludeIds: seenVerbs);
       expect(secondVerb.verb.id, isNot(equals(firstVerb.verb.id)));
+
+      // Test progress tracking & persistence
+      await repo.markGrammarQuestionAnswered('b_pres_01');
+      expect(repo.answeredGrammarQuestionIds.contains('b_pres_01'), isTrue);
+      expect(repo.getAnsweredGrammarCount(level: 'beginner', tenseType: 'present') >= 1, isTrue);
+
+      await repo.markVerbAnswered(mode: 'v2', verbId: firstVerb.verb.id);
+      expect(repo.getAnsweredVerbCount('v2') >= 1, isTrue);
+      expect(repo.getAnsweredVerbIds('v2').contains(firstVerb.verb.id), isTrue);
+
+      // Test reset progress
+      await repo.resetGrammarProgress(level: 'beginner', tenseType: 'present');
+      expect(repo.answeredGrammarQuestionIds.contains('b_pres_01'), isFalse);
+
+      await repo.resetVerbProgress('v2');
+      expect(repo.getAnsweredVerbCount('v2'), 0);
     });
   });
 }

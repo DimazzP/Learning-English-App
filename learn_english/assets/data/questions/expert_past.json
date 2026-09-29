@@ -394,5 +394,511 @@
     "acceptedAnswers": [
       "Hardly had the keynote speaker concluded when a standing ovation erupted."
     ]
+  },
+  {
+    "id": "exp_past_15",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "The diplomatic negotiators _______ drafting the terms for months before an agreement was formalized.",
+    "options": [
+      "had been",
+      "have been",
+      "were being",
+      "was being"
+    ],
+    "correctAnswer": "had been",
+    "explanation": "Durasi aksi lampau yang terus berlangsung (for months) sebelum peristiwa lampau lain terwujud (was formalized) diungkapkan dengan Past Perfect Continuous: had been + Verb-ing.",
+    "translation": "Para negosiator diplomatik telah menyusun ketentuan-ketentuan itu selama berbulan-bulan sebelum sebuah perjanjian diresmikan.",
+    "targetSentence": "The diplomatic negotiators had been drafting the terms for months before an agreement was formalized.",
+    "indonesianPrompt": "Negosiator diplomatik telah merumuskan ketentuan selama berbulan-bulan sebelum perjanjian diresmikan.",
+    "acceptedAnswers": [
+      "The diplomatic negotiators had been drafting the terms for months before an agreement was formalized.",
+      "The diplomatic negotiators had been drafting the terms for months before an agreement was formalized"
+    ]
+  },
+  {
+    "id": "exp_past_16",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "No sooner _______ the CEO announced the merger than the stock value surged dramatically.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Struktur inversi masa lampau berpasangan \"No sooner... than\" menuntut pola Past Perfect: No sooner + had + subject + past participle.",
+    "translation": "Baru saja CEO itu mengumumkan merger tersebut, nilai saham langsung melonjak secara drastis.",
+    "targetSentence": "No sooner had the CEO announced the merger than the stock value surged dramatically.",
+    "indonesianPrompt": "Baru saja CEO mengumumkan penggabungan perusahaan, nilai saham langsung melonjak drastis.",
+    "acceptedAnswers": [
+      "No sooner had the CEO announced the merger than the stock value surged dramatically.",
+      "No sooner had the CEO announced the merger than the stock value surged dramatically"
+    ]
+  },
+  {
+    "id": "exp_past_17",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "The forensic team was fatigued because they had been _______ the crime scene uninterrupted since dawn.",
+    "options": [
+      "examining",
+      "examined",
+      "examines",
+      "examine"
+    ],
+    "correctAnswer": "examining",
+    "explanation": "Past Perfect Continuous (had been + Verb-ing: examining) menerangkan sebab fisik di masa lampau akibat aktivitas berdurasi intens yang dilakukan sebelumnya.",
+    "translation": "Tim forensik kelelahan karena mereka telah memeriksa tempat kejadian perkara tanpa henti sejak fajar.",
+    "targetSentence": "The forensic team was fatigued because they had been examining the crime scene uninterrupted since dawn.",
+    "indonesianPrompt": "Tim forensik kelelahan karena telah memeriksa tempat kejadian perkara tanpa henti sejak fajar.",
+    "acceptedAnswers": [
+      "The forensic team was fatigued because they had been examining the crime scene uninterrupted since dawn.",
+      "The forensic team was fatigued because they had been examining the crime scene uninterrupted since dawn"
+    ]
+  },
+  {
+    "id": "exp_past_18",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "At the peak of the crisis, several regional banks _______ hemorrhaging liquid assets at an unsustainable pace.",
+    "options": [
+      "were",
+      "was",
+      "are",
+      "had"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Deskripsi situasi kritis lampau dengan subjek jamak \"several regional banks\" menggunakan to-be jamak Past Continuous (were hemorrhaging).",
+    "translation": "Pada puncak krisis, beberapa bank regional mengalami pengurasan aset likuid dengan kecepatan yang tidak berkelanjutan.",
+    "targetSentence": "At the peak of the crisis, several regional banks were hemorrhaging liquid assets at an unsustainable pace.",
+    "indonesianPrompt": "Pada puncak krisis, beberapa bank regional mengalami pengurasan aset likuid yang tak tertahankan.",
+    "acceptedAnswers": [
+      "At the peak of the crisis, several regional banks were hemorrhaging liquid assets at an unsustainable pace.",
+      "At the peak of the crisis, several regional banks were hemorrhaging liquid assets at an unsustainable pace"
+    ]
+  },
+  {
+    "id": "exp_past_19",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Until the audit uncovered the discrepancies, the board _______ suspected any fraudulent bookkeeping.",
+    "options": [
+      "had never",
+      "has never",
+      "never was",
+      "did never"
+    ],
+    "correctAnswer": "had never",
+    "explanation": "Kondisi ketidaktahuan yang berlangsung hingga suatu titik waktu lampau (\"Until the audit uncovered...\") diungkapkan dengan Past Perfect (had never suspected).",
+    "translation": "Hingga audit mengungkap kejanggalan tersebut, dewan direksi sama sekali belum pernah mencurigai adanya pembukuan palsu.",
+    "targetSentence": "Until the audit uncovered the discrepancies, the board had never suspected any fraudulent bookkeeping.",
+    "indonesianPrompt": "Hingga audit mengungkap kejanggalan, dewan tidak pernah mencurigai pembukuan curang.",
+    "acceptedAnswers": [
+      "Until the audit uncovered the discrepancies, the board had never suspected any fraudulent bookkeeping.",
+      "Until the audit uncovered the discrepancies, the board had never suspected any fraudulent bookkeeping"
+    ]
+  },
+  {
+    "id": "exp_past_20",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "How many years _______ the astrophysicists been calibrating the observatory telescope before detecting the pulsar?",
+    "options": [
+      "had",
+      "have",
+      "were",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Pertanyaan durasi lampau sebelum penemuan lampau (before detecting): How many years + had + subject + been + Verb-ing?",
+    "translation": "Sudah berapa tahun para astrofisikawan mengalibrasi teleskop observatorium tersebut sebelum mendeteksi pulsar itu?",
+    "targetSentence": "How many years had the astrophysicists been calibrating the observatory telescope before detecting the pulsar?",
+    "indonesianPrompt": "Berapa tahun astrofisikawan telah mengalibrasi teleskop observatorium sebelum mendeteksi pulsar itu?",
+    "acceptedAnswers": [
+      "How many years had the astrophysicists been calibrating the observatory telescope before detecting the pulsar?",
+      "How many years had the astrophysicists been calibrating the observatory telescope before detecting the pulsar"
+    ]
+  },
+  {
+    "id": "exp_past_21",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Little _______ the intelligence operatives realize that their transmission frequency was intercepted.",
+    "options": [
+      "did",
+      "had",
+      "were",
+      "do"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Inversi negatif masa lampau dengan kata \"Little\" yang memodifikasi kata kerja persepsi: Little + did + subject + bare infinitive (realize).",
+    "translation": "Sama sekali tidak disadari oleh para agen intelijen bahwa frekuensi transmisi mereka telah disadap.",
+    "targetSentence": "Little did the intelligence operatives realize that their transmission frequency was intercepted.",
+    "indonesianPrompt": "Sama sekali tidak disadari oleh agen intelijen bahwa frekuensi transmisi mereka telah disadap.",
+    "acceptedAnswers": [
+      "Little did the intelligence operatives realize that their transmission frequency was intercepted.",
+      "Little did the intelligence operatives realize that their transmission frequency was intercepted"
+    ]
+  },
+  {
+    "id": "exp_past_22",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "The software engineers _______ troubleshooting the memory leak for eighteen hours straight when the server crashed.",
+    "options": [
+      "had been",
+      "have been",
+      "were being",
+      "was being"
+    ],
+    "correctAnswer": "had been",
+    "explanation": "Aktivitas yang sedang berlangsung dengan durasi spesifik (for eighteen hours straight) sebelum terinterupsi oleh insiden server crash di masa lampau dinyatakan dengan Past Perfect Continuous.",
+    "translation": "Para insinyur perangkat lunak telah mengatasi kebocoran memori selama delapan belas jam berturut-turut ketika server mengalami kerusakan.",
+    "targetSentence": "The software engineers had been troubleshooting the memory leak for eighteen hours straight when the server crashed.",
+    "indonesianPrompt": "Para insinyur perangkat lunak telah mencari masalah kebocoran memori selama 18 jam berturut-turut ketika server rusak.",
+    "acceptedAnswers": [
+      "The software engineers had been troubleshooting the memory leak for eighteen hours straight when the server crashed.",
+      "The software engineers had been troubleshooting the memory leak for eighteen hours straight when the server crashed"
+    ]
+  },
+  {
+    "id": "exp_past_23",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Scarcely had the keynote speaker commenced his address _______ an unexpected power outage silenced the auditorium.",
+    "options": [
+      "when",
+      "than",
+      "then",
+      "so"
+    ],
+    "correctAnswer": "when",
+    "explanation": "Pasangan korelasi baku untuk inversi Past Perfect \"Scarcely had...\" adalah \"when\", bukan \"than\".",
+    "translation": "Pembicara utama baru saja memulai pidatonya ketika pemadaman listrik yang tak terduga membungkam auditorium.",
+    "targetSentence": "Scarcely had the keynote speaker commenced his address when an unexpected power outage silenced the auditorium.",
+    "indonesianPrompt": "Baru saja pembicara utama memulai pidatonya ketika pemadaman listrik tak terduga menyunyikan auditorium.",
+    "acceptedAnswers": [
+      "Scarcely had the keynote speaker commenced his address when an unexpected power outage silenced the auditorium.",
+      "Scarcely had the keynote speaker commenced his address when an unexpected power outage silenced the auditorium"
+    ]
+  },
+  {
+    "id": "exp_past_24",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "Throughout that fateful week, rumors of military mobilization _______ circulating across international channels.",
+    "options": [
+      "were",
+      "was",
+      "had",
+      "are"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Subjek jamak \"rumors\" dengan rentang waktu berkesinambungan lampau \"Throughout that fateful week\" menggunakan to-be \"were\" (were circulating).",
+    "translation": "Sepanjang minggu yang menentukan itu, desas-desus mobilisasi militer terus beredar di seluruh saluran internasional.",
+    "targetSentence": "Throughout that fateful week, rumors of military mobilization were circulating across international channels.",
+    "indonesianPrompt": "Sepanjang pekan menentukan itu, desas-desus mobilisasi militer beredar di saluran internasional.",
+    "acceptedAnswers": [
+      "Throughout that fateful week, rumors of military mobilization were circulating across international channels.",
+      "Throughout that fateful week, rumors of military mobilization were circulating across international channels"
+    ]
+  },
+  {
+    "id": "exp_past_25",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "Before securing international accreditation, the medical university had _______ upgrading its laboratory facilities for years.",
+    "options": [
+      "been",
+      "being",
+      "be",
+      "was"
+    ],
+    "correctAnswer": "been",
+    "explanation": "Bentuk Past Perfect Continuous: had + been + Verb-ing (upgrading).",
+    "translation": "Sebelum mengamankan akreditasi internasional, universitas kedokteran itu telah meningkatkan fasilitas laboratoriumnya selama bertahun-tahun.",
+    "targetSentence": "Before securing international accreditation, the medical university had been upgrading its laboratory facilities for years.",
+    "indonesianPrompt": "Sebelum mengamankan akreditasi internasional, universitas kedokteran telah meningkatkan fasilitas laboratoriumnya selama bertahun-tahun.",
+    "acceptedAnswers": [
+      "Before securing international accreditation, the medical university had been upgrading its laboratory facilities for years.",
+      "Before securing international accreditation, the medical university had been upgrading its laboratory facilities for years"
+    ]
+  },
+  {
+    "id": "exp_past_26",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "By the time the maritime salvage tugs reached the wreckage, the cargo vessel _______ completely under the waves.",
+    "options": [
+      "had submerged",
+      "submerged",
+      "was submerging",
+      "has submerged"
+    ],
+    "correctAnswer": "had submerged",
+    "explanation": "Kapal kargo sudah tenggelam tuntas sebelum kapal tunda penyelamat tiba (Past Perfect: had submerged).",
+    "translation": "Pada saat kapal tunda penyelamat maritim mencapai lokasi reruntuhan, kapal kargo tersebut telah tenggelam sepenuhnya di bawah ombak.",
+    "targetSentence": "By the time the maritime salvage tugs reached the wreckage, the cargo vessel had submerged completely under the waves.",
+    "indonesianPrompt": "Pada saat kapal penyelamat maritim tiba di reruntuhan, kapal kargo telah tenggelam sepenuhnya di bawah ombak.",
+    "acceptedAnswers": [
+      "By the time the maritime salvage tugs reached the wreckage, the cargo vessel had submerged completely under the waves.",
+      "By the time the maritime salvage tugs reached the wreckage, the cargo vessel had submerged completely under the waves"
+    ]
+  },
+  {
+    "id": "exp_past_27",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "The activist _______ petitioning the ministry tirelessly before the legislation was finally repealed.",
+    "options": [
+      "had been",
+      "has been",
+      "was being",
+      "were being"
+    ],
+    "correctAnswer": "had been",
+    "explanation": "Aktivitas berulang yang berlanjut hingga undang-undang dicabut di masa lampau (Past Perfect Continuous: had been + petitioning).",
+    "translation": "Aktivis tersebut telah mengajukan petisi ke kementerian tanpa kenal lelah sebelum undang-undang itu akhirnya dicabut.",
+    "targetSentence": "The activist had been petitioning the ministry tirelessly before the legislation was finally repealed.",
+    "indonesianPrompt": "Aktivis itu telah mempetisi kementerian tanpa lelah sebelum undang-undang itu akhirnya dicabut.",
+    "acceptedAnswers": [
+      "The activist had been petitioning the ministry tirelessly before the legislation was finally repealed.",
+      "The activist had been petitioning the ministry tirelessly before the legislation was finally repealed"
+    ]
+  },
+  {
+    "id": "exp_past_28",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Only after the primary witness testified _______ the tribunal understand the full extent of the conspiracy.",
+    "options": [
+      "did",
+      "had",
+      "was",
+      "could"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Inversi klausul pembuka \"Only after + past clause\": Only after the primary witness testified + did + the tribunal + understand.",
+    "translation": "Hanya setelah saksi utama memberikan kesaksian, mahkamah baru memahami skala penuh dari konspirasi tersebut.",
+    "targetSentence": "Only after the primary witness testified did the tribunal understand the full extent of the conspiracy.",
+    "indonesianPrompt": "Hanya setelah saksi utama bersaksi, barulah majelis memahami tingkat konspirasi sepenuhnya.",
+    "acceptedAnswers": [
+      "Only after the primary witness testified did the tribunal understand the full extent of the conspiracy.",
+      "Only after the primary witness testified did the tribunal understand the full extent of the conspiracy"
+    ]
+  },
+  {
+    "id": "exp_past_29",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "Heavy rains _______ battering the hillside for forty-eight hours prior to the catastrophic landslide.",
+    "options": [
+      "had been",
+      "have been",
+      "were being",
+      "was being"
+    ],
+    "correctAnswer": "had been",
+    "explanation": "Hujan deras yang mengguyur tanpa jeda selama 48 jam sebelum peristiwa tanah longsor diungkapkan dengan Past Perfect Continuous: had been + battering.",
+    "translation": "Hujan lebat telah mengguyur lereng bukit tersebut selama empat puluh delapan jam sebelum terjadinya tanah longsor yang dahsyat.",
+    "targetSentence": "Heavy rains had been battering the hillside for forty-eight hours prior to the catastrophic landslide.",
+    "indonesianPrompt": "Hujan deras telah mengguyur lereng bukit selama 48 jam sebelum longsor yang dahsyat terjadi.",
+    "acceptedAnswers": [
+      "Heavy rains had been battering the hillside for forty-eight hours prior to the catastrophic landslide.",
+      "Heavy rains had been battering the hillside for forty-eight hours prior to the catastrophic landslide"
+    ]
+  },
+  {
+    "id": "exp_past_30",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "While the defense ministers _______ negotiating in secret, hostile reconnaissance drones were sighted overhead.",
+    "options": [
+      "were",
+      "was",
+      "had",
+      "are"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Klausa latar aksi Past Continuous dengan subjek jamak \"the defense ministers\": While + they + were + negotiating.",
+    "translation": "Sementara para menteri pertahanan sedang bernegosiasi secara rahasia, pesawat nirawak pengintai musuh terlihat di udara.",
+    "targetSentence": "While the defense ministers were negotiating in secret, hostile reconnaissance drones were sighted overhead.",
+    "indonesianPrompt": "Ketika menteri pertahanan sedang berunding secara rahasia, drone pengintai musuh terlihat di atas.",
+    "acceptedAnswers": [
+      "While the defense ministers were negotiating in secret, hostile reconnaissance drones were sighted overhead.",
+      "While the defense ministers were negotiating in secret, hostile reconnaissance drones were sighted overhead"
+    ]
+  },
+  {
+    "id": "exp_past_31",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Barely _______ the treaty been ratified when border skirmishes flared up anew.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Pola inversi masa lampau dengan \"Barely... when\": Barely + had + subject + been + past participle (ratified).",
+    "translation": "Traktat itu baru saja diratifikasi ketika pertempuran kecil di perbatasan berkobar kembali.",
+    "targetSentence": "Barely had the treaty been ratified when border skirmishes flared up anew.",
+    "indonesianPrompt": "Traktat itu baru saja diratifikasi ketika bentrokan perbatasan kembali berkobar.",
+    "acceptedAnswers": [
+      "Barely had the treaty been ratified when border skirmishes flared up anew.",
+      "Barely had the treaty been ratified when border skirmishes flared up anew"
+    ]
+  },
+  {
+    "id": "exp_past_32",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "The seismologist was confident because his instruments _______ registering micro-tremors all morning.",
+    "options": [
+      "had been",
+      "have been",
+      "were being",
+      "was being"
+    ],
+    "correctAnswer": "had been",
+    "explanation": "Aktivitas pencatatan getaran yang terus berlangsung sepanjang pagi (all morning) sebelum simpulan dibuat di masa lampau: had been + registering.",
+    "translation": "Ahli seismologi itu merasa yakin karena instrumennya telah mencatat getaran mikro sepanjang pagi.",
+    "targetSentence": "The seismologist was confident because his instruments had been registering micro-tremors all morning.",
+    "indonesianPrompt": "Ahli seismologi itu yakin karena peralatannya telah merekam getaran mikro sepanjang pagi.",
+    "acceptedAnswers": [
+      "The seismologist was confident because his instruments had been registering micro-tremors all morning.",
+      "The seismologist was confident because his instruments had been registering micro-tremors all morning"
+    ]
+  },
+  {
+    "id": "exp_past_33",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Not until the morning briefing _______ the commanders disclose the operation's casualty figures.",
+    "options": [
+      "did",
+      "had",
+      "were",
+      "would"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Inversi negatif dengan \"Not until + time expression\": Not until the morning briefing + did + subject + bare infinitive (disclose).",
+    "translation": "Baru pada saat pengarahan pagi hari para komandan mengungkapkan jumlah korban operasi tersebut.",
+    "targetSentence": "Not until the morning briefing did the commanders disclose the operation's casualty figures.",
+    "indonesianPrompt": "Baru pada pengarahan pagi hari para komandan mengungkap angka korban operasi.",
+    "acceptedAnswers": [
+      "Not until the morning briefing did the commanders disclose the operation's casualty figures.",
+      "Not until the morning briefing did the commanders disclose the operation's casualty figures"
+    ]
+  },
+  {
+    "id": "exp_past_34",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Continuous Tense",
+    "question": "She _______ harboring suspicions regarding her business partner's overseas transactions long before the scandal broke.",
+    "options": [
+      "had been",
+      "has been",
+      "was being",
+      "is being"
+    ],
+    "correctAnswer": "had been",
+    "explanation": "Menyimpan rasa curiga yang berlangsung dalam jangka waktu lama sebelum skandal meletus di masa lampau (had been harboring).",
+    "translation": "Dia telah memendam kecurigaan mengenai transaksi luar negeri mitra bisnisnya jauh sebelum skandal itu merebak.",
+    "targetSentence": "She had been harboring suspicions regarding her business partner's overseas transactions long before the scandal broke.",
+    "indonesianPrompt": "Dia telah menaruh kecurigaan atas transaksi luar negeri mitra bisnisnya jauh sebelum skandal merebak.",
+    "acceptedAnswers": [
+      "She had been harboring suspicions regarding her business partner's overseas transactions long before the scandal broke.",
+      "She had been harboring suspicions regarding her business partner's overseas transactions long before the scandal broke"
+    ]
+  },
+  {
+    "id": "exp_past_35",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "The international observers were _______ monitoring the voting procedures when the polling station was evacuated.",
+    "options": [
+      "diligently",
+      "diligent",
+      "diligence",
+      "more diligent"
+    ],
+    "correctAnswer": "diligently",
+    "explanation": "Dalam Past Continuous (were + adverb + monitoring), adverb of manner \"diligently\" memodifikasi kata kerja tindakan \"monitoring\".",
+    "translation": "Para pengamat internasional sedang memantau prosedur pemungutan suara dengan rajin ketika tempat pemungutan suara dievakuasi.",
+    "targetSentence": "The international observers were diligently monitoring the voting procedures when the polling station was evacuated.",
+    "indonesianPrompt": "Para pengamat internasional sedang memantau prosedur pemungutan suara dengan saksama saat TPS dievakuasi.",
+    "acceptedAnswers": [
+      "The international observers were diligently monitoring the voting procedures when the polling station was evacuated.",
+      "The international observers were diligently monitoring the voting procedures when the polling station was evacuated"
+    ]
+  },
+  {
+    "id": "exp_past_36",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "past",
+    "tenseName": "Past Perfect Tense",
+    "question": "Never before _______ the sovereign nation experienced such severe international trade embargoes.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "did"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Inversi negatif dengan \"Never before\" dalam Past Perfect: Never before + had + subject + experienced.",
+    "translation": "Belum pernah sebelumnya negara berdaulat itu mengalami embargo perdagangan internasional yang sedemikian berat.",
+    "targetSentence": "Never before had the sovereign nation experienced such severe international trade embargoes.",
+    "indonesianPrompt": "Belum pernah negara berdaulat itu mengalami embargo perdagangan internasional yang begitu berat.",
+    "acceptedAnswers": [
+      "Never before had the sovereign nation experienced such severe international trade embargoes.",
+      "Never before had the sovereign nation experienced such severe international trade embargoes"
+    ]
   }
 ]

@@ -615,5 +615,514 @@
     "acceptedAnswers": [
       "My father bought a brand new car last year."
     ]
+  },
+  {
+    "id": "b_past_29",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "She _______ a letter to her pen pal two days ago.",
+    "options": [
+      "wrote",
+      "writes",
+      "writing",
+      "written"
+    ],
+    "correctAnswer": "wrote",
+    "explanation": "Penanda waktu \"two days ago\" menunjukkan Simple Past Tense. Bentuk Verb 2 (irregular) dari \"write\" adalah \"wrote\".",
+    "translation": "Dia menulis sebuah surat kepada sahabat penanya dua hari yang lalu.",
+    "targetSentence": "She wrote a letter to her pen pal two days ago.",
+    "indonesianPrompt": "Dia menulis surat kepada sahabat penanya dua hari yang lalu.",
+    "acceptedAnswers": [
+      "She wrote a letter to her pen pal two days ago.",
+      "She wrote a letter to her pen pal two days ago"
+    ]
+  },
+  {
+    "id": "b_past_30",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "They _______ at home yesterday evening.",
+    "options": [
+      "were",
+      "was",
+      "are",
+      "did"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Dalam kalimat nominal Simple Past dengan subjek jamak \"They\", to-be lampau yang digunakan adalah \"were\".",
+    "translation": "Mereka berada di rumah kemarin malam.",
+    "targetSentence": "They were at home yesterday evening.",
+    "indonesianPrompt": "Mereka berada di rumah kemarin malam.",
+    "acceptedAnswers": [
+      "They were at home yesterday evening.",
+      "They were at home yesterday evening"
+    ]
+  },
+  {
+    "id": "b_past_31",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "I _______ not hear the phone because I was in the shower.",
+    "options": [
+      "did",
+      "do",
+      "was",
+      "am"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Kalimat negatif Simple Past Tense menggunakan kata kerja bantu \"did not\" yang diikuti oleh Verb 1 (did not hear).",
+    "translation": "Saya tidak mendengar telepon berdering karena saya sedang mandi.",
+    "targetSentence": "I did not hear the phone because I was in the shower.",
+    "indonesianPrompt": "Saya tidak mendengar telepon karena saya sedang mandi.",
+    "acceptedAnswers": [
+      "I did not hear the phone because I was in the shower.",
+      "I didn't hear the phone because I was in the shower.",
+      "I did not hear the phone because I was in the shower"
+    ]
+  },
+  {
+    "id": "b_past_32",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "Where _______ you go for your summer vacation last July?",
+    "options": [
+      "did",
+      "do",
+      "were",
+      "had"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Kalimat tanya Simple Past Tense dengan kata kerja \"go\" menggunakan auxiliary \"did\" (Where + did + subject + Verb 1?).",
+    "translation": "Ke mana kamu pergi untuk liburan musim panasmu pada bulan Juli lalu?",
+    "targetSentence": "Where did you go for your summer vacation last July?",
+    "indonesianPrompt": "Ke mana kamu pergi untuk liburan musim panasmu bulan Juli lalu?",
+    "acceptedAnswers": [
+      "Where did you go for your summer vacation last July?",
+      "Where did you go for your summer vacation last July"
+    ]
+  },
+  {
+    "id": "b_past_33",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "I _______ watching television when you called me.",
+    "options": [
+      "was",
+      "were",
+      "am",
+      "is"
+    ],
+    "correctAnswer": "was",
+    "explanation": "Pola Past Continuous untuk subjek tunggal \"I\" menggunakan to-be lampau \"was\" (was watching).",
+    "translation": "Saya sedang menonton televisi ketika kamu menelepon saya.",
+    "targetSentence": "I was watching television when you called me.",
+    "indonesianPrompt": "Saya sedang menonton televisi ketika kamu menelepon saya.",
+    "acceptedAnswers": [
+      "I was watching television when you called me.",
+      "I was watching television when you called me"
+    ]
+  },
+  {
+    "id": "b_past_34",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "He _______ his key and could not enter the house.",
+    "options": [
+      "lost",
+      "loses",
+      "losing",
+      "lose"
+    ],
+    "correctAnswer": "lost",
+    "explanation": "Bentuk lampau (Verb 2) dari kata kerja tidak beraturan (irregular verb) \"lose\" adalah \"lost\".",
+    "translation": "Dia kehilangan kuncinya dan tidak bisa masuk ke dalam rumah.",
+    "targetSentence": "He lost his key and could not enter the house.",
+    "indonesianPrompt": "Dia kehilangan kuncinya dan tidak bisa masuk rumah.",
+    "acceptedAnswers": [
+      "He lost his key and could not enter the house.",
+      "He lost his key and could not enter the house"
+    ]
+  },
+  {
+    "id": "b_past_35",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "_______ it rain heavily in your city yesterday?",
+    "options": [
+      "Did",
+      "Was",
+      "Were",
+      "Does"
+    ],
+    "correctAnswer": "Did",
+    "explanation": "Kalimat tanya verbal Simple Past diawali dengan \"Did\" yang diikuti subjek dan Verb 1 (Did it rain...?).",
+    "translation": "Apakah hujan turun dengan lebat di kotamu kemarin?",
+    "targetSentence": "Did it rain heavily in your city yesterday?",
+    "indonesianPrompt": "Apakah kemarin hujan lebat di kotamu?",
+    "acceptedAnswers": [
+      "Did it rain heavily in your city yesterday?",
+      "Did it rain heavily in your city yesterday"
+    ]
+  },
+  {
+    "id": "b_past_36",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "We _______ a delicious chocolate cake for his birthday party.",
+    "options": [
+      "made",
+      "make",
+      "makes",
+      "making"
+    ],
+    "correctAnswer": "made",
+    "explanation": "Bentuk lampau (Verb 2) dari kata kerja tidak beraturan \"make\" adalah \"made\".",
+    "translation": "Kami membuat kue cokelat yang lezat untuk pesta ulang tahunnya.",
+    "targetSentence": "We made a delicious chocolate cake for his birthday party.",
+    "indonesianPrompt": "Kami membuat kue cokelat yang lezat untuk pesta ulang tahunnya.",
+    "acceptedAnswers": [
+      "We made a delicious chocolate cake for his birthday party.",
+      "We made a delicious chocolate cake for his birthday party"
+    ]
+  },
+  {
+    "id": "b_past_37",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "The children _______ playing outside when it suddenly began to snow.",
+    "options": [
+      "were",
+      "was",
+      "are",
+      "did"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Subjek jamak \"The children\" dalam Past Continuous berpasangan dengan to-be lampau \"were\" (were playing).",
+    "translation": "Anak-anak sedang bermain di luar ketika tiba-tiba mulai turun salju.",
+    "targetSentence": "The children were playing outside when it suddenly began to snow.",
+    "indonesianPrompt": "Anak-anak sedang bermain di luar ketika tiba-tiba mulai turun salju.",
+    "acceptedAnswers": [
+      "The children were playing outside when it suddenly began to snow.",
+      "The children were playing outside when it suddenly began to snow"
+    ]
+  },
+  {
+    "id": "b_past_38",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "She _______ late for work because the morning train was delayed.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "did"
+    ],
+    "correctAnswer": "was",
+    "explanation": "Kalimat nominal Simple Past dengan kata sifat \"late\" dan subjek tunggal \"She\" menggunakan to-be \"was\".",
+    "translation": "Dia terlambat bekerja karena kereta pagi mengalami keterlambatan.",
+    "targetSentence": "She was late for work because the morning train was delayed.",
+    "indonesianPrompt": "Dia terlambat bekerja karena kereta pagi tertunda.",
+    "acceptedAnswers": [
+      "She was late for work because the morning train was delayed.",
+      "She was late for work because the morning train was delayed"
+    ]
+  },
+  {
+    "id": "b_past_39",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "I _______ a great movie at the cinema last Saturday night.",
+    "options": [
+      "saw",
+      "see",
+      "seen",
+      "seeing"
+    ],
+    "correctAnswer": "saw",
+    "explanation": "Keterangan waktu lampau \"last Saturday night\" membutuhkan Verb 2. Bentuk lampau dari \"see\" adalah \"saw\".",
+    "translation": "Saya menonton sebuah film bagus di bioskop Sabtu malam lalu.",
+    "targetSentence": "I saw a great movie at the cinema last Saturday night.",
+    "indonesianPrompt": "Saya menonton film bagus di bioskop Sabtu malam lalu.",
+    "acceptedAnswers": [
+      "I saw a great movie at the cinema last Saturday night.",
+      "I saw a great movie at the cinema last Saturday night"
+    ]
+  },
+  {
+    "id": "b_past_40",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "They _______ not visit their aunt during the school holiday.",
+    "options": [
+      "did",
+      "do",
+      "were",
+      "are"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Bentuk negatif Simple Past Tense diawali dengan \"did not\" yang diikuti bentuk dasar kata kerja (did not visit).",
+    "translation": "Mereka tidak mengunjungi bibi mereka selama liburan sekolah.",
+    "targetSentence": "They did not visit their aunt during the school holiday.",
+    "indonesianPrompt": "Mereka tidak mengunjungi bibi mereka selama liburan sekolah.",
+    "acceptedAnswers": [
+      "They did not visit their aunt during the school holiday.",
+      "They didn't visit their aunt during the school holiday.",
+      "They did not visit their aunt during the school holiday"
+    ]
+  },
+  {
+    "id": "b_past_41",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "What _______ you doing yesterday at 3:00 PM?",
+    "options": [
+      "were",
+      "was",
+      "did",
+      "are"
+    ],
+    "correctAnswer": "were",
+    "explanation": "Menanyakan kegiatan yang sedang berlangsung pada titik waktu lampau spesifik menggunakan Past Continuous: What + were + you + doing?",
+    "translation": "Apa yang sedang kamu lakukan kemarin pukul 3:00 sore?",
+    "targetSentence": "What were you doing yesterday at 3:00 PM?",
+    "indonesianPrompt": "Apa yang sedang kamu lakukan kemarin pada pukul 3:00 sore?",
+    "acceptedAnswers": [
+      "What were you doing yesterday at 3:00 PM?",
+      "What were you doing yesterday at 3:00 PM"
+    ]
+  },
+  {
+    "id": "b_past_42",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "He _______ English very quickly when he lived in London.",
+    "options": [
+      "learned",
+      "learns",
+      "learning",
+      "learn"
+    ],
+    "correctAnswer": "learned",
+    "explanation": "Klausa lampau \"when he lived in London\" mengindikasikan Simple Past Tense, kata kerja beraturan \"learn\" menjadi \"learned\".",
+    "translation": "Dia belajar bahasa Inggris dengan sangat cepat ketika dia tinggal di London.",
+    "targetSentence": "He learned English very quickly when he lived in London.",
+    "indonesianPrompt": "Dia belajar bahasa Inggris dengan sangat cepat ketika tinggal di London.",
+    "acceptedAnswers": [
+      "He learned English very quickly when he lived in London.",
+      "He learned English very quickly when he lived in London"
+    ]
+  },
+  {
+    "id": "b_past_43",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "The teacher _______ us a very interesting story yesterday.",
+    "options": [
+      "told",
+      "tells",
+      "telling",
+      "tell"
+    ],
+    "correctAnswer": "told",
+    "explanation": "Bentuk lampau (Verb 2) dari kata kerja tidak beraturan \"tell\" adalah \"told\".",
+    "translation": "Guru itu menceritakan kepada kami sebuah kisah yang sangat menarik kemarin.",
+    "targetSentence": "The teacher told us a very interesting story yesterday.",
+    "indonesianPrompt": "Guru itu menceritakan kepada kami cerita yang sangat menarik kemarin.",
+    "acceptedAnswers": [
+      "The teacher told us a very interesting story yesterday.",
+      "The teacher told us a very interesting story yesterday"
+    ]
+  },
+  {
+    "id": "b_past_44",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "While I was cooking, my brother _______ sleeping on the couch.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "did"
+    ],
+    "correctAnswer": "was",
+    "explanation": "Dua aktivitas lampau yang berlangsung bersamaan (parallel past continuous). Subjek tunggal \"my brother\" menggunakan to-be \"was\".",
+    "translation": "Sementara saya sedang memasak, saudara laki-laki saya sedang tidur di sofa.",
+    "targetSentence": "While I was cooking, my brother was sleeping on the couch.",
+    "indonesianPrompt": "Sementara saya sedang memasak, saudara saya sedang tidur di sofa.",
+    "acceptedAnswers": [
+      "While I was cooking, my brother was sleeping on the couch.",
+      "While I was cooking, my brother was sleeping on the couch"
+    ]
+  },
+  {
+    "id": "b_past_45",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "My family _______ to the beach two weeks ago.",
+    "options": [
+      "drove",
+      "drives",
+      "driving",
+      "drive"
+    ],
+    "correctAnswer": "drove",
+    "explanation": "Penanda \"two weeks ago\" mengindikasikan Simple Past Tense. Bentuk Verb 2 dari \"drive\" adalah \"drove\".",
+    "translation": "Keluarga saya berkendara ke pantai dua minggu yang lalu.",
+    "targetSentence": "My family drove to the beach two weeks ago.",
+    "indonesianPrompt": "Keluarga saya berkendara ke pantai dua minggu yang lalu.",
+    "acceptedAnswers": [
+      "My family drove to the beach two weeks ago.",
+      "My family drove to the beach two weeks ago"
+    ]
+  },
+  {
+    "id": "b_past_46",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "_______ you tired after running in the marathon yesterday?",
+    "options": [
+      "Were",
+      "Was",
+      "Did",
+      "Are"
+    ],
+    "correctAnswer": "Were",
+    "explanation": "Kalimat tanya nominal Simple Past dengan kata sifat \"tired\" dan subjek \"you\" menggunakan to-be \"Were\".",
+    "translation": "Apakah kamu lelah setelah berlari di maraton kemarin?",
+    "targetSentence": "Were you tired after running in the marathon yesterday?",
+    "indonesianPrompt": "Apakah kamu lelah setelah berlari maraton kemarin?",
+    "acceptedAnswers": [
+      "Were you tired after running in the marathon yesterday?",
+      "Were you tired after running in the marathon yesterday"
+    ]
+  },
+  {
+    "id": "b_past_47",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "The thief _______ my purse and ran away into the crowd.",
+    "options": [
+      "took",
+      "takes",
+      "taking",
+      "taken"
+    ],
+    "correctAnswer": "took",
+    "explanation": "Peristiwa berurutan di masa lampau: \"took\" (Verb 2 dari take) dan \"ran\" (Verb 2 dari run).",
+    "translation": "Pencuri itu mengambil dompet saya dan melarikan diri ke dalam kerumunan.",
+    "targetSentence": "The thief took my purse and ran away into the crowd.",
+    "indonesianPrompt": "Pencuri itu mengambil dompet saya dan lari ke dalam kerumunan.",
+    "acceptedAnswers": [
+      "The thief took my purse and ran away into the crowd.",
+      "The thief took my purse and ran away into the crowd"
+    ]
+  },
+  {
+    "id": "b_past_48",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "We _______ not find our hotel until midnight.",
+    "options": [
+      "did",
+      "do",
+      "were",
+      "had"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Bentuk negatif Simple Past Tense menggunakan kata bantu \"did not\" sebelum bentuk kata kerja dasar (did not find).",
+    "translation": "Kami tidak berhasil menemukan hotel kami hingga tengah malam.",
+    "targetSentence": "We did not find our hotel until midnight.",
+    "indonesianPrompt": "Kami tidak menemukan hotel kami sampai tengah malam.",
+    "acceptedAnswers": [
+      "We did not find our hotel until midnight.",
+      "We didn't find our hotel until midnight.",
+      "We did not find our hotel until midnight"
+    ]
+  },
+  {
+    "id": "b_past_49",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Past Continuous Tense",
+    "question": "She _______ walking her dog when she met her old friend.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "did"
+    ],
+    "correctAnswer": "was",
+    "explanation": "Kegiatan yang sedang berlangsung di masa lampau sebelum disela peristiwa lain. Subjek tunggal \"She\" menggunakan to-be \"was\" (was walking).",
+    "translation": "Dia sedang mengajak anjingnya berjalan-jalan ketika dia bertemu teman lamanya.",
+    "targetSentence": "She was walking her dog when she met her old friend.",
+    "indonesianPrompt": "Dia sedang mengajak anjingnya jalan-jalan ketika bertemu teman lamanya.",
+    "acceptedAnswers": [
+      "She was walking her dog when she met her old friend.",
+      "She was walking her dog when she met her old friend"
+    ]
+  },
+  {
+    "id": "b_past_50",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "past",
+    "tenseName": "Simple Past Tense",
+    "question": "The little girl _______ down and scraped her knee.",
+    "options": [
+      "fell",
+      "falls",
+      "falling",
+      "fallen"
+    ],
+    "correctAnswer": "fell",
+    "explanation": "Bentuk lampau (Verb 2) dari kata kerja tidak beraturan \"fall\" adalah \"fell\".",
+    "translation": "Gadis kecil itu jatuh dan lututnya lecet.",
+    "targetSentence": "The little girl fell down and scraped her knee.",
+    "indonesianPrompt": "Anak perempuan kecil itu jatuh dan lututnya lecet.",
+    "acceptedAnswers": [
+      "The little girl fell down and scraped her knee.",
+      "The little girl fell down and scraped her knee"
+    ]
   }
 ]

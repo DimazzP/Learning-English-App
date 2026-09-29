@@ -20,6 +20,8 @@ class VerbRepository extends ChangeNotifier {
   bool _isLoading = true;
   int _quizHighScore = 0;
   bool _isDarkMode = false;
+  Set<String> _answeredGrammarQuestionIds = <String>{};
+  Set<String> _answeredVerbKeys = <String>{};
 
   List<Verb> get allVerbs => _allVerbs;
   List<Tense> get allTenses => _allTenses;
@@ -28,6 +30,8 @@ class VerbRepository extends ChangeNotifier {
   bool get isLoading => _isLoading;
   int get quizHighScore => _quizHighScore;
   bool get isDarkMode => _isDarkMode;
+  Set<String> get answeredGrammarQuestionIds => _answeredGrammarQuestionIds;
+  Set<String> get answeredVerbKeys => _answeredVerbKeys;
 
   List<Verb> get irregularVerbs => _allVerbs.where((v) => v.isIrregular).toList();
   List<Verb> get regularVerbs => _allVerbs.where((v) => v.isRegular).toList();
@@ -43,6 +47,10 @@ class VerbRepository extends ChangeNotifier {
       _favoriteIds = favList.toSet();
       _quizHighScore = prefs.getInt('quiz_high_score') ?? 0;
       _isDarkMode = prefs.getBool('is_dark_mode') ?? false;
+      final answeredQuestions = prefs.getStringList('answered_grammar_question_ids') ?? [];
+      _answeredGrammarQuestionIds = answeredQuestions.toSet();
+      final answeredVerbs = prefs.getStringList('answered_verb_keys') ?? [];
+      _answeredVerbKeys = answeredVerbs.toSet();
 
       final jsonString = await rootBundle.loadString('assets/data/verbs.json');
       final List<dynamic> list = json.decode(jsonString);
@@ -120,6 +128,114 @@ class VerbRepository extends ChangeNotifier {
         if (kDebugMode) {
           debugPrint('Error saving high score: $e');
         }
+      }
+    }
+  }
+
+  Future<void> markGrammarQuestionAnswered(String id) async {
+    if (_answeredGrammarQuestionIds.contains(id)) return;
+    _answeredGrammarQuestionIds.add(id);
+    notifyListeners();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList('answered_grammar_question_ids', _answeredGrammarQuestionIds.toList());
+    } catch (e) {
+      if (kDebugMode) {
+        debugPrint('Error saving answered grammar question: $e');
+      }
+    }
+  }
+
+  Future<void> markVerbAnswered({required String mode, required String verbId}) async {
+    final key = '$mode:$verbId';
+    if (_answeredVerbKeys.contains(key)) return;
+    _answeredVerbKeys.add(key);
+    notifyListeners();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList('answered_verb_keys', _answeredVerbKeys.toList());
+    } catch (e) {
+      if (kDebugMode) {
+        debugPrint('Error saving answered verb: $e');
+      }
+    }
+  }
+
+  List<GrammarQuestion> getFilteredGrammarQuestions({
+    String tenseType = 'all',
+    String level = 'all',
+  }) {
+    return _allGrammarQuestions.where((q) {
+      if (tenseType != 'all' && q.tenseType.toLowerCase() != tenseType.toLowerCase()) {
+        return false;
+      }
+      if (level != 'all' && q.level.toLowerCase() != level.toLowerCase()) {
+        return false;
+      }
+      return true;
+    }).toList();
+  }
+
+  int getTotalGrammarCount({String tenseType = 'all', String level = 'all'}) {
+    return getFilteredGrammarQuestions(tenseType: tenseType, level: level).length;
+  }
+
+  int getAnsweredGrammarCount({String tenseType = 'all', String level = 'all'}) {
+    final pool = getFilteredGrammarQuestions(tenseType: tenseType, level: level);
+    return pool.where((q) => _answeredGrammarQuestionIds.contains(q.id)).length;
+  }
+
+  bool isGrammarPoolExhausted({String tenseType = 'all', String level = 'all'}) {
+    final total = getTotalGrammarCount(tenseType: tenseType, level: level);
+    if (total == 0) return true;
+    return getAnsweredGrammarCount(tenseType: tenseType, level: level) >= total;
+  }
+
+  Future<void> resetGrammarProgress({String tenseType = 'all', String level = 'all'}) async {
+    final pool = getFilteredGrammarQuestions(tenseType: tenseType, level: level);
+    final poolIds = pool.map((q) => q.id).toSet();
+    _answeredGrammarQuestionIds.removeAll(poolIds);
+    notifyListeners();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList('answered_grammar_question_ids', _answeredGrammarQuestionIds.toList());
+    } catch (e) {
+      if (kDebugMode) {
+        debugPrint('Error resetting grammar progress: $e');
+      }
+    }
+  }
+
+  int getTotalVerbCount() => _allVerbs.length;
+
+  int getAnsweredVerbCount(String mode) {
+    final prefix = '$mode:';
+    return _answeredVerbKeys.where((k) => k.startsWith(prefix)).length;
+  }
+
+  bool isVerbPoolExhausted(String mode) {
+    if (_allVerbs.isEmpty) return true;
+    return getAnsweredVerbCount(mode) >= _allVerbs.length;
+  }
+
+  Set<String> getAnsweredVerbIds(String mode) {
+    final prefix = '$mode:';
+    return _answeredVerbKeys
+        .where((k) => k.startsWith(prefix))
+        .map((k) => k.substring(prefix.length))
+        .toSet();
+  }
+
+  Future<void> resetVerbProgress(String mode) async {
+    final prefix = '$mode:';
+    _answeredVerbKeys.removeWhere((k) => k.startsWith(prefix));
+    notifyListeners();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList('answered_verb_keys', _answeredVerbKeys.toList());
+    } catch (e) {
+      if (kDebugMode) {
+        debugPrint('Error resetting verb progress: $e');
       }
     }
   }
@@ -281,7 +397,7 @@ class VerbRepository extends ChangeNotifier {
       if (unspent.isNotEmpty) {
         candidateList = unspent;
       } else {
-        excludeIds.removeAll(sourceList.map((v) => v.id));
+        // Pool exhausted: use all verbs without mutating caller's set
         candidateList = sourceList;
       }
     }
@@ -379,8 +495,8 @@ class VerbRepository extends ChangeNotifier {
       if (unspent.isNotEmpty) {
         available = unspent;
       } else {
-        excludeIds.removeAll(pool.map((q) => q.id));
-        available = pool;
+        // Pool is completely exhausted: return null so UI can display completion banner
+        return null;
       }
     }
 

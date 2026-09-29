@@ -22,26 +22,21 @@ class _HomeScreenState extends State<HomeScreen> {
   // Top navigation active item:
   // 'kamus' (Kamus Verbs), 'kamus_universal' (Kamus Universal KBBI),
   // 'tata_bahasa', 'kuis', 'hafalan', 'favorit', 'split'
-  String _activeNav = 'kamus';
+  String _activeNav = 'split';
 
   // Customizable Split Screen Configuration:
   // Number of features to split: 2, 3, or 4
-  int _splitCount = 3;
+  int _splitCount = 2;
 
   // Layout mode for split screen:
   // For 2 panes: '2_cols' (Kiri & Kanan), '2_rows' (Atas & Bawah)
-  // For 3 panes: '3_left_main' (Kiri Full, Kanan Atas & Bawah - default),
-  //              '3_right_main' (Kanan Full, Kiri Atas & Bawah),
-  //              '3_cols' (3 Kolom Sejajar),
-  //              '3_top_main' (Atas Full, Bawah Kiri & Kanan)
-  // For 4 panes: '4_grid' (Grid 2x2), '4_cols' (4 Kolom Sejajar)
-  String _splitLayoutType = '3_left_main';
+  String _splitLayoutType = '2_cols';
 
   // Selected features for each pane:
   // Options: 'kamus', 'kamus_universal', 'tata_bahasa', 'kuis', 'hafalan', 'favorit'
-  String _pane1Feature = 'tata_bahasa'; // Default Left: Tata Bahasa
-  String _pane2Feature = 'kamus'; // Default Top Right: Kamus Verb
-  String _pane3Feature = 'kuis'; // Default Bottom Right: Kuis
+  String _pane1Feature = 'tata_bahasa'; // Default Left: Tata Bahasa & 16 Tenses
+  String _pane2Feature = 'kuis'; // Default Right: Kuis & Latihan Tenses
+  String _pane3Feature = 'kamus'; // Default 3rd pane: Kamus Verb
   String _pane4Feature = 'kamus_universal'; // Default 4th pane: Kamus Universal
 
   // Maximize a specific pane inside split mode (or null)
@@ -611,14 +606,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: 8),
               ),
               icon: const Icon(Icons.restart_alt_rounded, size: 16),
-              label: const Text('Reset Standar (3 Fitur)', style: TextStyle(fontSize: 12)),
+              label: const Text('Reset Standar (2 Fitur: Tenses & Kuis)', style: TextStyle(fontSize: 12)),
               onPressed: () {
                 setState(() {
-                  _splitCount = 3;
-                  _splitLayoutType = '3_left_main';
+                  _splitCount = 2;
+                  _splitLayoutType = '2_cols';
                   _pane1Feature = 'tata_bahasa';
-                  _pane2Feature = 'kamus';
-                  _pane3Feature = 'kuis';
+                  _pane2Feature = 'kuis';
                   _maximizedPaneIndex = null;
                 });
               },

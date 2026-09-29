@@ -992,5 +992,352 @@
     "acceptedAnswers": [
       "I am not working today because I feel unwell."
     ]
+  },
+  {
+    "id": "b_pres_46",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The sun _______ in the east every morning.",
+    "options": [
+      "rises",
+      "rise",
+      "rose",
+      "rising"
+    ],
+    "correctAnswer": "rises",
+    "explanation": "Kebenaran umum (general truth) menggunakan Simple Present Tense. Subjek tunggal \"The sun\" membutuhkan kata kerja berakhiran -s (rises).",
+    "translation": "Matahari terbit di sebelah timur setiap pagi.",
+    "targetSentence": "The sun rises in the east every morning.",
+    "indonesianPrompt": "Matahari terbit di sebelah timur setiap pagi.",
+    "acceptedAnswers": [
+      "The sun rises in the east every morning.",
+      "The sun rises in the east every morning"
+    ]
+  },
+  {
+    "id": "b_pres_47",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "My younger brother _______ not like spicy food.",
+    "options": [
+      "does",
+      "do",
+      "is",
+      "did"
+    ],
+    "correctAnswer": "does",
+    "explanation": "Dalam kalimat negatif Simple Present Tense dengan subjek tunggal orang ketiga (\"My younger brother\"), kata kerja bantu yang digunakan adalah \"does\" (does not like).",
+    "translation": "Adik laki-laki saya tidak suka makanan pedas.",
+    "targetSentence": "My younger brother does not like spicy food.",
+    "indonesianPrompt": "Adik laki-laki saya tidak suka makanan pedas.",
+    "acceptedAnswers": [
+      "My younger brother does not like spicy food.",
+      "My younger brother doesn't like spicy food.",
+      "My younger brother does not like spicy food"
+    ]
+  },
+  {
+    "id": "b_pres_48",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Listen! Somebody _______ knocking on the front door.",
+    "options": [
+      "is",
+      "are",
+      "am",
+      "be"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Kata seru \"Listen!\" menandakan kejadian sedang berlangsung (Present Continuous). Kata ganti tak tentu \"Somebody\" bersifat tunggal, sehingga to-be yang tepat adalah \"is\".",
+    "translation": "Dengarkan! Seseorang sedang mengetuk pintu depan.",
+    "targetSentence": "Listen! Somebody is knocking on the front door.",
+    "indonesianPrompt": "Dengarkan! Seseorang sedang mengetuk pintu depan.",
+    "acceptedAnswers": [
+      "Listen! Somebody is knocking on the front door.",
+      "Listen! Somebody is knocking on the front door"
+    ]
+  },
+  {
+    "id": "b_pres_49",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Water _______ at 100 degrees Celsius.",
+    "options": [
+      "boils",
+      "boil",
+      "boiled",
+      "boiling"
+    ],
+    "correctAnswer": "boils",
+    "explanation": "Fakta ilmiah menggunakan Simple Present Tense. \"Water\" adalah kata benda yang tidak dapat dihitung (uncountable noun) dan diperlakukan sebagai tunggal (boils).",
+    "translation": "Air mendidih pada suhu 100 derajat Celsius.",
+    "targetSentence": "Water boils at 100 degrees Celsius.",
+    "indonesianPrompt": "Air mendidih pada suhu 100 derajat Celsius.",
+    "acceptedAnswers": [
+      "Water boils at 100 degrees Celsius.",
+      "Water boils at 100 degrees Celsius"
+    ]
+  },
+  {
+    "id": "b_pres_50",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Look at those dark clouds! It _______ raining.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "am"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Frasa \"Look at...\" menunjukkan peristiwa yang terjadi saat ini (Present Continuous). Subjek \"It\" menggunakan to-be \"is\" (It is raining).",
+    "translation": "Lihat awan gelap itu! Hujan sedang turun.",
+    "targetSentence": "Look at those dark clouds! It is raining.",
+    "indonesianPrompt": "Lihat awan gelap itu! Hujan sedang turun.",
+    "acceptedAnswers": [
+      "Look at those dark clouds! It is raining.",
+      "Look at those dark clouds! It is raining"
+    ]
+  },
+  {
+    "id": "b_pres_51",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "How often _______ you visit your grandparents?",
+    "options": [
+      "do",
+      "does",
+      "are",
+      "have"
+    ],
+    "correctAnswer": "do",
+    "explanation": "Pertanyaan kebiasaan Simple Present dengan subjek \"you\" menggunakan kata bantu \"do\" (How often do you visit...?).",
+    "translation": "Seberapa sering kamu mengunjungi kakek-nenekmu?",
+    "targetSentence": "How often do you visit your grandparents?",
+    "indonesianPrompt": "Seberapa sering kamu mengunjungi kakek-nenekmu?",
+    "acceptedAnswers": [
+      "How often do you visit your grandparents?",
+      "How often do you visit your grandparents"
+    ]
+  },
+  {
+    "id": "b_pres_52",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "The students _______ doing their science experiment right now.",
+    "options": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ],
+    "correctAnswer": "are",
+    "explanation": "Subjek jamak \"The students\" dengan penanda waktu \"right now\" (Present Continuous) memerlukan to-be jamak \"are\".",
+    "translation": "Para siswa sedang melakukan percobaan sains mereka saat ini.",
+    "targetSentence": "The students are doing their science experiment right now.",
+    "indonesianPrompt": "Para siswa sedang melakukan percobaan sains mereka saat ini.",
+    "acceptedAnswers": [
+      "The students are doing their science experiment right now.",
+      "The students are doing their science experiment right now"
+    ]
+  },
+  {
+    "id": "b_pres_53",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "A mechanic _______ damaged cars in this workshop.",
+    "options": [
+      "repairs",
+      "repair",
+      "repairing",
+      "repaired"
+    ],
+    "correctAnswer": "repairs",
+    "explanation": "Subjek tunggal \"A mechanic\" menyatakan profesi atau pekerjaan rutin, sehingga kata kerja mendapat imbuhan -s (repairs).",
+    "translation": "Seorang mekanik memperbaiki mobil-mobil yang rusak di bengkel ini.",
+    "targetSentence": "A mechanic repairs damaged cars in this workshop.",
+    "indonesianPrompt": "Seorang mekanik memperbaiki mobil-mobil yang rusak di bengkel ini.",
+    "acceptedAnswers": [
+      "A mechanic repairs damaged cars in this workshop.",
+      "A mechanic repairs damaged cars in this workshop"
+    ]
+  },
+  {
+    "id": "b_pres_54",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "_______ your father speak English fluently?",
+    "options": [
+      "Does",
+      "Do",
+      "Is",
+      "Are"
+    ],
+    "correctAnswer": "Does",
+    "explanation": "Kalimat tanya Simple Present Tense untuk subjek tunggal \"your father\" diawali dengan kata kerja bantu \"Does\".",
+    "translation": "Apakah ayahmu berbicara bahasa Inggris dengan lancar?",
+    "targetSentence": "Does your father speak English fluently?",
+    "indonesianPrompt": "Apakah ayahmu berbicara bahasa Inggris dengan lancar?",
+    "acceptedAnswers": [
+      "Does your father speak English fluently?",
+      "Does your father speak English fluently"
+    ]
+  },
+  {
+    "id": "b_pres_55",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Please be quiet! My mother _______ sleeping in the bedroom.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "am"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Instruksi \"Please be quiet!\" menandakan aktivitas berlangsung saat ini. Subjek tunggal \"My mother\" menggunakan to-be \"is\".",
+    "translation": "Tolong tenang! Ibu saya sedang tidur di kamar tidur.",
+    "targetSentence": "Please be quiet! My mother is sleeping in the bedroom.",
+    "indonesianPrompt": "Tolong tenang! Ibu saya sedang tidur di kamar tidur.",
+    "acceptedAnswers": [
+      "Please be quiet! My mother is sleeping in the bedroom.",
+      "Please be quiet! My mother is sleeping in the bedroom"
+    ]
+  },
+  {
+    "id": "b_pres_56",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "They rarely _______ fast food on weekdays.",
+    "options": [
+      "eat",
+      "eats",
+      "eating",
+      "ate"
+    ],
+    "correctAnswer": "eat",
+    "explanation": "Adverb of frequency \"rarely\" dengan subjek jamak \"They\" menggunakan Verb 1 tanpa akhiran -s (eat).",
+    "translation": "Mereka jarang makan makanan cepat saji pada hari kerja.",
+    "targetSentence": "They rarely eat fast food on weekdays.",
+    "indonesianPrompt": "Mereka jarang makan makanan cepat saji pada hari kerja.",
+    "acceptedAnswers": [
+      "They rarely eat fast food on weekdays.",
+      "They rarely eat fast food on weekdays"
+    ]
+  },
+  {
+    "id": "b_pres_57",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "Where _______ they going with those heavy luggage bags?",
+    "options": [
+      "are",
+      "is",
+      "do",
+      "did"
+    ],
+    "correctAnswer": "are",
+    "explanation": "Pola kalimat tanya Present Continuous dengan subjek jamak \"they\": Where + are + they + Verb-ing (going)?",
+    "translation": "Ke mana mereka sedang pergi dengan tas bagasi yang berat itu?",
+    "targetSentence": "Where are they going with those heavy luggage bags?",
+    "indonesianPrompt": "Ke mana mereka sedang pergi dengan tas bagasi yang berat itu?",
+    "acceptedAnswers": [
+      "Where are they going with those heavy luggage bags?",
+      "Where are they going with those heavy luggage bags"
+    ]
+  },
+  {
+    "id": "b_pres_58",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "She _______ her teeth twice a day.",
+    "options": [
+      "brushes",
+      "brush",
+      "brushing",
+      "brushed"
+    ],
+    "correctAnswer": "brushes",
+    "explanation": "Kata kerja berakhiran bunyi desis \"sh\" mendapat akhiran -es (brushes) saat bersubjek tunggal orang ketiga (\"She\").",
+    "translation": "Dia menyikat giginya dua kali sehari.",
+    "targetSentence": "She brushes her teeth twice a day.",
+    "indonesianPrompt": "Dia menyikat giginya dua kali sehari.",
+    "acceptedAnswers": [
+      "She brushes her teeth twice a day.",
+      "She brushes her teeth twice a day"
+    ]
+  },
+  {
+    "id": "b_pres_59",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "We _______ have any classes on Saturday.",
+    "options": [
+      "do not",
+      "does not",
+      "are not",
+      "is not"
+    ],
+    "correctAnswer": "do not",
+    "explanation": "Bentuk negatif Simple Present Tense untuk subjek \"We\" dengan kata kerja utama \"have\" menggunakan kata bantu \"do not\".",
+    "translation": "Kami tidak ada kelas pada hari Sabtu.",
+    "targetSentence": "We do not have any classes on Saturday.",
+    "indonesianPrompt": "Kami tidak memiliki kelas apa pun pada hari Sabtu.",
+    "acceptedAnswers": [
+      "We do not have any classes on Saturday.",
+      "We don't have any classes on Saturday.",
+      "We do not have any classes on Saturday"
+    ]
+  },
+  {
+    "id": "b_pres_60",
+    "category": "grammarly",
+    "level": "beginner",
+    "tenseType": "present",
+    "tenseName": "Present Continuous Tense",
+    "question": "At the moment, our teacher _______ explaining a new grammar topic.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "am"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Penanda waktu \"At the moment\" (saat ini) menunjukkan Present Continuous. Subjek tunggal \"our teacher\" membutuhkan to-be \"is\".",
+    "translation": "Saat ini, guru kami sedang menjelaskan topik tata bahasa yang baru.",
+    "targetSentence": "At the moment, our teacher is explaining a new grammar topic.",
+    "indonesianPrompt": "Saat ini, guru kami sedang menjelaskan topik tata bahasa yang baru.",
+    "acceptedAnswers": [
+      "At the moment, our teacher is explaining a new grammar topic.",
+      "At the moment, our teacher is explaining a new grammar topic"
+    ]
   }
 ]

@@ -30,9 +30,9 @@ class _QuizTabState extends State<QuizTab> {
   final TextEditingController _translationController = TextEditingController();
   TranslationAnalysis? _translationAnalysis;
 
-  // Track seen question IDs so random generator does not repeat questions until pool is exhausted
-  final Set<String> _usedGrammarQuestionIds = <String>{};
-  final Set<String> _usedVerbIds = <String>{};
+  // Track skipped question IDs for the current session (shuffle button)
+  final Set<String> _sessionSkippedGrammarIds = <String>{};
+  final Set<String> _sessionSkippedVerbIds = <String>{};
 
   // For Verb mode:
   String _verbMode = 'v2';
@@ -66,27 +66,65 @@ class _QuizTabState extends State<QuizTab> {
 
       if (_quizCategory == 'grammarly') {
         if (repo.allGrammarQuestions.isNotEmpty) {
-          _currentGrammarQuestion = repo.generateGrammarQuizQuestion(
+          final combinedExclusions = <String>{
+            ...repo.answeredGrammarQuestionIds,
+            ..._sessionSkippedGrammarIds,
+          };
+
+          var q = repo.generateGrammarQuizQuestion(
             tenseType: _tenseTypeFilter,
             level: _levelFilter,
-            excludeIds: _usedGrammarQuestionIds,
+            excludeIds: combinedExclusions,
           );
-          if (_currentGrammarQuestion != null) {
-            _usedGrammarQuestionIds.add(_currentGrammarQuestion!.question.id);
+
+          if (q == null && _sessionSkippedGrammarIds.isNotEmpty) {
+            _sessionSkippedGrammarIds.clear();
+            q = repo.generateGrammarQuizQuestion(
+              tenseType: _tenseTypeFilter,
+              level: _levelFilter,
+              excludeIds: repo.answeredGrammarQuestionIds,
+            );
           }
+
+          _currentGrammarQuestion = q;
         }
       } else {
         if (repo.allVerbs.isNotEmpty) {
-          _currentVerbQuestion = repo.generateQuizQuestion(
-            mode: _verbMode,
-            excludeIds: _usedVerbIds,
-          );
-          if (_currentVerbQuestion != null) {
-            _usedVerbIds.add(_currentVerbQuestion!.verb.id);
+          final answeredIds = repo.getAnsweredVerbIds(_verbMode);
+          final combinedExclusions = <String>{
+            ...answeredIds,
+            ..._sessionSkippedVerbIds,
+          };
+
+          if (repo.isVerbPoolExhausted(_verbMode)) {
+            _currentVerbQuestion = null;
+          } else {
+            var q = repo.generateQuizQuestion(
+              mode: _verbMode,
+              excludeIds: combinedExclusions,
+            );
+
+            if (answeredIds.contains(q.verb.id) && _sessionSkippedVerbIds.isNotEmpty) {
+              _sessionSkippedVerbIds.clear();
+              q = repo.generateQuizQuestion(
+                mode: _verbMode,
+                excludeIds: answeredIds,
+              );
+            }
+            _currentVerbQuestion = q;
           }
         }
       }
     });
+  }
+
+  void _skipCurrentQuestion() {
+    if (_quizCategory == 'grammarly' && _currentGrammarQuestion != null && !_isAnswered) {
+      _sessionSkippedGrammarIds.add(_currentGrammarQuestion!.question.id);
+    } else if (_quizCategory == 'verbs' && _currentVerbQuestion != null && !_isAnswered) {
+      _sessionSkippedVerbIds.add(_currentVerbQuestion!.verb.id);
+    }
+    _loadNextQuestion();
   }
 
   void _selectChoiceAnswer(String option) {
@@ -96,6 +134,13 @@ class _QuizTabState extends State<QuizTab> {
       _selectedOption = option;
       _isAnswered = true;
     });
+
+    final repo = VerbRepository.instance;
+    if (_quizCategory == 'grammarly' && _currentGrammarQuestion != null) {
+      repo.markGrammarQuestionAnswered(_currentGrammarQuestion!.question.id);
+    } else if (_quizCategory == 'verbs' && _currentVerbQuestion != null) {
+      repo.markVerbAnswered(mode: _verbMode, verbId: _currentVerbQuestion!.verb.id);
+    }
   }
 
   void _checkTranslationAnswer() {
@@ -126,6 +171,9 @@ class _QuizTabState extends State<QuizTab> {
       _translationAnalysis = analysis;
       _isAnswered = true;
     });
+
+    final repo = VerbRepository.instance;
+    repo.markGrammarQuestionAnswered(q.id);
   }
 
   Color _getLevelColor(String level) {
@@ -193,12 +241,6 @@ class _QuizTabState extends State<QuizTab> {
       return const Center(child: CircularProgressIndicator());
     }
 
-    if (_quizCategory == 'grammarly' && _currentGrammarQuestion == null) {
-      _loadNextQuestion();
-    } else if (_quizCategory == 'verbs' && _currentVerbQuestion == null) {
-      _loadNextQuestion();
-    }
-
     return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       child: Center(
@@ -223,7 +265,6 @@ class _QuizTabState extends State<QuizTab> {
                           if (_quizCategory != 'grammarly') {
                             setState(() {
                               _quizCategory = 'grammarly';
-                              _usedGrammarQuestionIds.clear();
                               _loadNextQuestion();
                             });
                           }
@@ -277,7 +318,6 @@ class _QuizTabState extends State<QuizTab> {
                           if (_quizCategory != 'verbs') {
                             setState(() {
                               _quizCategory = 'verbs';
-                              _usedVerbIds.clear();
                               _loadNextQuestion();
                             });
                           }
@@ -349,7 +389,6 @@ class _QuizTabState extends State<QuizTab> {
                         if (val) {
                           setState(() {
                             _grammarlyMode = 'translate';
-                            _usedGrammarQuestionIds.clear();
                             _loadNextQuestion();
                           });
                         }
@@ -370,7 +409,6 @@ class _QuizTabState extends State<QuizTab> {
                         if (val) {
                           setState(() {
                             _grammarlyMode = 'choice';
-                            _usedGrammarQuestionIds.clear();
                             _loadNextQuestion();
                           });
                         }
@@ -437,7 +475,6 @@ class _QuizTabState extends State<QuizTab> {
                           if (val) {
                             setState(() {
                               _tenseTypeFilter = 'all';
-                              _usedGrammarQuestionIds.clear();
                             });
                             _loadNextQuestion();
                           }
@@ -451,7 +488,6 @@ class _QuizTabState extends State<QuizTab> {
                           if (val) {
                             setState(() {
                               _tenseTypeFilter = 'present';
-                              _usedGrammarQuestionIds.clear();
                             });
                             _loadNextQuestion();
                           }
@@ -465,7 +501,6 @@ class _QuizTabState extends State<QuizTab> {
                           if (val) {
                             setState(() {
                               _tenseTypeFilter = 'past';
-                              _usedGrammarQuestionIds.clear();
                             });
                             _loadNextQuestion();
                           }
@@ -479,7 +514,6 @@ class _QuizTabState extends State<QuizTab> {
                           if (val) {
                             setState(() {
                               _tenseTypeFilter = 'future';
-                              _usedGrammarQuestionIds.clear();
                             });
                             _loadNextQuestion();
                           }
@@ -493,7 +527,6 @@ class _QuizTabState extends State<QuizTab> {
                           if (val) {
                             setState(() {
                               _tenseTypeFilter = 'past_future';
-                              _usedGrammarQuestionIds.clear();
                             });
                             _loadNextQuestion();
                           }
@@ -516,7 +549,6 @@ class _QuizTabState extends State<QuizTab> {
                           if (val) {
                             setState(() {
                               _verbMode = 'v2';
-                              _usedVerbIds.clear();
                             });
                             _loadNextQuestion();
                           }
@@ -530,7 +562,6 @@ class _QuizTabState extends State<QuizTab> {
                           if (val) {
                             setState(() {
                               _verbMode = 'v3';
-                              _usedVerbIds.clear();
                             });
                             _loadNextQuestion();
                           }
@@ -544,7 +575,6 @@ class _QuizTabState extends State<QuizTab> {
                           if (val) {
                             setState(() {
                               _verbMode = 'meaning';
-                              _usedVerbIds.clear();
                             });
                             _loadNextQuestion();
                           }
@@ -558,7 +588,6 @@ class _QuizTabState extends State<QuizTab> {
                           if (val) {
                             setState(() {
                               _verbMode = 'mixed';
-                              _usedVerbIds.clear();
                             });
                             _loadNextQuestion();
                           }
@@ -570,31 +599,42 @@ class _QuizTabState extends State<QuizTab> {
               ],
               const SizedBox(height: 16),
 
+              // 4.5. PROGRESS BAR & RESET ACTION
+              _buildProgressBar(context, repo, isDark),
+
               // 5. MAIN QUESTION AREA
-              if (_quizCategory == 'grammarly' && _currentGrammarQuestion != null) ...[
-                if (_grammarlyMode == 'translate') ...[
-                  // MODE A: Indonesian -> English Text Translation & Error Checking
-                  _buildTranslationExercise(
+              if (_quizCategory == 'grammarly') ...[
+                if (_currentGrammarQuestion != null) ...[
+                  if (_grammarlyMode == 'translate') ...[
+                    // MODE A: Indonesian -> English Text Translation & Error Checking
+                    _buildTranslationExercise(
+                      context,
+                      _currentGrammarQuestion!.question,
+                      isDark,
+                    ),
+                  ] else ...[
+                    // MODE B: Multiple Choice Grammarly
+                    _buildGrammarChoiceExercise(
+                      context,
+                      _currentGrammarQuestion!.question,
+                      _currentGrammarQuestion!.shuffledOptions,
+                      isDark,
+                    ),
+                  ],
+                ] else ...[
+                  _buildGrammarCompletionCard(context, isDark, repo),
+                ],
+              ] else if (_quizCategory == 'verbs') ...[
+                if (_currentVerbQuestion != null) ...[
+                  // MODE C: Verb Multiple Choice
+                  _buildVerbChoiceExercise(
                     context,
-                    _currentGrammarQuestion!.question,
+                    _currentVerbQuestion!,
                     isDark,
                   ),
                 ] else ...[
-                  // MODE B: Multiple Choice Grammarly
-                  _buildGrammarChoiceExercise(
-                    context,
-                    _currentGrammarQuestion!.question,
-                    _currentGrammarQuestion!.shuffledOptions,
-                    isDark,
-                  ),
+                  _buildVerbCompletionCard(context, isDark, repo),
                 ],
-              ] else if (_quizCategory == 'verbs' && _currentVerbQuestion != null) ...[
-                // MODE C: Verb Multiple Choice
-                _buildVerbChoiceExercise(
-                  context,
-                  _currentVerbQuestion!,
-                  isDark,
-                ),
               ],
 
               const SizedBox(height: 40),
@@ -614,7 +654,6 @@ class _QuizTabState extends State<QuizTab> {
         if (val) {
           setState(() {
             _levelFilter = levelKey;
-            _usedGrammarQuestionIds.clear();
             _loadNextQuestion();
           });
         }
@@ -684,7 +723,7 @@ class _QuizTabState extends State<QuizTab> {
                   IconButton(
                     tooltip: 'Muat soal lain',
                     icon: const Icon(Icons.shuffle_rounded, size: 20),
-                    onPressed: _loadNextQuestion,
+                    onPressed: _skipCurrentQuestion,
                   ),
                 ],
               ),
@@ -1131,10 +1170,20 @@ class _QuizTabState extends State<QuizTab> {
                       style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: levelColor),
                     ),
                   ),
-                  IconButton(
-                    tooltip: 'Dengarkan kalimat soal',
-                    icon: const Icon(Icons.volume_up_rounded, color: AppTheme.primary, size: 20),
-                    onPressed: () => TtsService.instance.speak(q.question.replaceAll('_______', 'blank')),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      IconButton(
+                        tooltip: 'Muat soal lain',
+                        icon: const Icon(Icons.shuffle_rounded, color: AppTheme.primary, size: 20),
+                        onPressed: _isAnswered ? null : _skipCurrentQuestion,
+                      ),
+                      IconButton(
+                        tooltip: 'Dengarkan kalimat soal',
+                        icon: const Icon(Icons.volume_up_rounded, color: AppTheme.primary, size: 20),
+                        onPressed: () => TtsService.instance.speak(q.question.replaceAll('_______', 'blank')),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -1230,6 +1279,11 @@ class _QuizTabState extends State<QuizTab> {
                     ),
                   ),
                   const SizedBox(width: 8),
+                  IconButton(
+                    tooltip: 'Muat soal lain',
+                    icon: const Icon(Icons.shuffle_rounded, color: AppTheme.primary, size: 20),
+                    onPressed: _isAnswered ? null : _skipCurrentQuestion,
+                  ),
                   IconButton(
                     tooltip: 'Dengarkan',
                     icon: const Icon(Icons.volume_up_rounded, color: AppTheme.primary, size: 20),
@@ -1535,6 +1589,344 @@ class _QuizTabState extends State<QuizTab> {
               style: TextStyle(fontSize: 11, color: Colors.amber.shade700, fontWeight: FontWeight.w500),
             ),
           ],
+        ],
+      ),
+    );
+  }
+
+  Widget _buildProgressBar(BuildContext context, VerbRepository repo, bool isDark) {
+    if (_quizCategory == 'grammarly') {
+      final total = repo.getTotalGrammarCount(tenseType: _tenseTypeFilter, level: _levelFilter);
+      final answered = repo.getAnsweredGrammarCount(tenseType: _tenseTypeFilter, level: _levelFilter);
+      final percent = total > 0 ? (answered / total).clamp(0.0, 1.0) : 0.0;
+
+      return Container(
+        margin: const EdgeInsets.only(bottom: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        decoration: BoxDecoration(
+          color: isDark ? const Color(0xFF1E293B) : Colors.white,
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(
+            color: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
+          ),
+        ),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      Icons.task_alt_rounded,
+                      size: 16,
+                      color: answered == total && total > 0 ? Colors.green : AppTheme.primary,
+                    ),
+                    const SizedBox(width: 6),
+                    Text(
+                      'Progres Selesai: $answered / $total Soal (${(percent * 100).toInt()}%)',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: isDark ? Colors.white : const Color(0xFF0F172A),
+                      ),
+                    ),
+                  ],
+                ),
+                if (answered > 0)
+                  InkWell(
+                    onTap: () => _confirmResetGrammarProgress(context, repo),
+                    borderRadius: BorderRadius.circular(6),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      child: Row(
+                        children: [
+                          Icon(Icons.refresh_rounded, size: 14, color: Colors.grey.shade500),
+                          const SizedBox(width: 4),
+                          Text(
+                            'Reset',
+                            style: TextStyle(fontSize: 11, color: Colors.grey.shade500),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(6),
+              child: LinearProgressIndicator(
+                value: percent,
+                minHeight: 6,
+                backgroundColor: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
+                valueColor: AlwaysStoppedAnimation<Color>(
+                  answered == total && total > 0 ? Colors.green : AppTheme.primary,
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+    } else {
+      final total = repo.getTotalVerbCount();
+      final answered = repo.getAnsweredVerbCount(_verbMode);
+      final percent = total > 0 ? (answered / total).clamp(0.0, 1.0) : 0.0;
+
+      return Container(
+        margin: const EdgeInsets.only(bottom: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        decoration: BoxDecoration(
+          color: isDark ? const Color(0xFF1E293B) : Colors.white,
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(
+            color: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
+          ),
+        ),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      Icons.task_alt_rounded,
+                      size: 16,
+                      color: answered == total && total > 0 ? Colors.green : AppTheme.primary,
+                    ),
+                    const SizedBox(width: 6),
+                    Text(
+                      'Progres Kata Kerja (${_verbMode.toUpperCase()}): $answered / $total (${(percent * 100).toInt()}%)',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: isDark ? Colors.white : const Color(0xFF0F172A),
+                      ),
+                    ),
+                  ],
+                ),
+                if (answered > 0)
+                  InkWell(
+                    onTap: () => _confirmResetVerbProgress(context, repo),
+                    borderRadius: BorderRadius.circular(6),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      child: Row(
+                        children: [
+                          Icon(Icons.refresh_rounded, size: 14, color: Colors.grey.shade500),
+                          const SizedBox(width: 4),
+                          Text(
+                            'Reset',
+                            style: TextStyle(fontSize: 11, color: Colors.grey.shade500),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(6),
+              child: LinearProgressIndicator(
+                value: percent,
+                minHeight: 6,
+                backgroundColor: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
+                valueColor: AlwaysStoppedAnimation<Color>(
+                  answered == total && total > 0 ? Colors.green : AppTheme.primary,
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+  }
+
+  Widget _buildGrammarCompletionCard(BuildContext context, bool isDark, VerbRepository repo) {
+    final total = repo.getTotalGrammarCount(tenseType: _tenseTypeFilter, level: _levelFilter);
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(28),
+      decoration: BoxDecoration(
+        color: isDark ? const Color(0xFF1E293B) : Colors.white,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(
+          color: Colors.amber.withValues(alpha: 0.5),
+          width: 1.5,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.amber.withValues(alpha: 0.1),
+            blurRadius: 16,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: Colors.amber.withValues(alpha: 0.15),
+              shape: BoxShape.circle,
+            ),
+            child: const Icon(Icons.emoji_events_rounded, color: Colors.amber, size: 48),
+          ),
+          const SizedBox(height: 16),
+          const Text(
+            'Luar Biasa! Kategori Telah Selesai',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Anda telah berhasil menjawab seluruh $total soal pada filter ${_formatLevelLabel(_levelFilter)} - ${_formatTenseTypeLabel(_tenseTypeFilter)}. Soal yang sama tidak akan diulang agar Anda dapat fokus ke materi lainnya.',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 13,
+              height: 1.4,
+              color: isDark ? Colors.grey.shade300 : const Color(0xFF475569),
+            ),
+          ),
+          const SizedBox(height: 24),
+          FilledButton.icon(
+            onPressed: () async {
+              await repo.resetGrammarProgress(tenseType: _tenseTypeFilter, level: _levelFilter);
+              _loadNextQuestion();
+            },
+            icon: const Icon(Icons.refresh_rounded),
+            label: const Text('Ulangi Latihan Kategori Ini (Reset)'),
+            style: FilledButton.styleFrom(
+              backgroundColor: AppTheme.primary,
+              minimumSize: const Size(double.infinity, 46),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildVerbCompletionCard(BuildContext context, bool isDark, VerbRepository repo) {
+    final total = repo.getTotalVerbCount();
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(28),
+      decoration: BoxDecoration(
+        color: isDark ? const Color(0xFF1E293B) : Colors.white,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(
+          color: Colors.amber.withValues(alpha: 0.5),
+          width: 1.5,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.amber.withValues(alpha: 0.1),
+            blurRadius: 16,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: Colors.amber.withValues(alpha: 0.15),
+              shape: BoxShape.circle,
+            ),
+            child: const Icon(Icons.military_tech_rounded, color: Colors.amber, size: 48),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            'Luar Biasa! Semua Verb Telah Selesai',
+            textAlign: TextAlign.center,
+            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Anda telah menyelesaikan latihan untuk seluruh $total kata kerja pada mode ${_verbMode.toUpperCase()}.',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 13,
+              height: 1.4,
+              color: isDark ? Colors.grey.shade300 : const Color(0xFF475569),
+            ),
+          ),
+          const SizedBox(height: 24),
+          FilledButton.icon(
+            onPressed: () async {
+              await repo.resetVerbProgress(_verbMode);
+              _loadNextQuestion();
+            },
+            icon: const Icon(Icons.refresh_rounded),
+            label: Text('Ulangi Latihan Verb (${_verbMode.toUpperCase()})'),
+            style: FilledButton.styleFrom(
+              backgroundColor: AppTheme.primary,
+              minimumSize: const Size(double.infinity, 46),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _confirmResetGrammarProgress(BuildContext context, VerbRepository repo) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Reset Progres Kuis?'),
+        content: Text(
+          'Apakah Anda ingin mengulang progres untuk kategori ${_formatLevelLabel(_levelFilter)} - ${_formatTenseTypeLabel(_tenseTypeFilter)}? Soal yang telah diselesaikan akan dapat muncul kembali.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Batal'),
+          ),
+          FilledButton(
+            onPressed: () async {
+              Navigator.pop(ctx);
+              await repo.resetGrammarProgress(tenseType: _tenseTypeFilter, level: _levelFilter);
+              _loadNextQuestion();
+            },
+            style: FilledButton.styleFrom(backgroundColor: Colors.red),
+            child: const Text('Reset'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _confirmResetVerbProgress(BuildContext context, VerbRepository repo) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Reset Progres Verb?'),
+        content: Text(
+          'Apakah Anda ingin mengulang progres untuk mode ${_verbMode.toUpperCase()}? Kata kerja yang telah dijawab akan dapat muncul kembali.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Batal'),
+          ),
+          FilledButton(
+            onPressed: () async {
+              Navigator.pop(ctx);
+              await repo.resetVerbProgress(_verbMode);
+              _loadNextQuestion();
+            },
+            style: FilledButton.styleFrom(backgroundColor: Colors.red),
+            child: const Text('Reset'),
+          ),
         ],
       ),
     );
