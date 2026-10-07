@@ -6,7 +6,16 @@ Dokumen ini mencatat riwayat pembaruan, penambahan fitur, perbaikan bug, dan sta
 
 ## 📌 Ringkasan Pembaruan Terkini
 
-### 1. Penambahan Soal Kuis Tata Bahasa (Present & Past Tense)
+### 1. Penambahan 150 Soal Kuis Present Tense
+- **Ekspansi Bank Soal Present Tense**: Menambahkan **150 soal baru** berkualitas tinggi yang mencakup seluruh tingkat kesukaran:
+  - `beginner_present.json`: +50 soal baru (`b_pres_61` s.d. `b_pres_110`), kini total **110 soal** (Simple Present & Present Continuous).
+  - `intermediate_present.json`: +50 soal baru (`q_pres_73` s.d. `q_pres_122`), kini total **118 soal** (Simple Present, Present Continuous, & Present Perfect).
+  - `expert_present.json`: +50 soal baru (`exp_pres_47` s.d. `exp_pres_96`), kini total **100 soal** (Present Perfect Continuous, Contrast Present Perfect vs Continuous, Time Clauses dengan Present, dan Advanced Subject-Verb Agreement).
+- **Total Soal Saat Ini**: Meningkat dari 403 soal menjadi **553 soal** di seluruh shards JSON (`assets/data/questions/`).
+- **Sinkronisasi**: `manifest.json` diperbarui dengan `totalQuestions: 553` dan verifikasi unit test di `test/verb_repository_test.dart` disesuaikan.
+- **Standar Soal**: Format `GrammarQuestion` lengkap dengan 4 opsi pilihan, kunci jawaban tepat, kalimat target terjemahan, dan penjelasan tata bahasa mendalam dalam Bahasa Indonesia.
+
+### 2. Riwayat Pembaruan Sebelumnya (Present & Past Tense)
 - **Ekspansi Bank Soal**: Menambahkan **117 soal baru** berkualitas tinggi yang mencakup tingkat *Beginner*, *Intermediate*, dan *Expert* untuk kategori Present Tense dan Past Tense.
 - **Total Soal Saat Ini**: Meningkat dari 286 soal menjadi **403 soal** di seluruh shards JSON (`assets/data/questions/`):
   - `beginner_present.json`: +15 soal (total 60 soal)

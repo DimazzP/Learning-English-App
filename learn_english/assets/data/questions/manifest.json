@@ -1,5 +1,5 @@
 {
-  "totalQuestions": 403,
+  "totalQuestions": 553,
   "files": [
     {
       "file": "assets/data/questions/beginner_future.json",
@@ -23,7 +23,7 @@
       "file": "assets/data/questions/beginner_present.json",
       "level": "beginner",
       "tenseType": "present",
-      "count": 60
+      "count": 110
     },
     {
       "file": "assets/data/questions/expert_future.json",
@@ -47,7 +47,7 @@
       "file": "assets/data/questions/expert_present.json",
       "level": "expert",
       "tenseType": "present",
-      "count": 50
+      "count": 100
     },
     {
       "file": "assets/data/questions/intermediate_future.json",
@@ -71,7 +71,7 @@
       "file": "assets/data/questions/intermediate_present.json",
       "level": "intermediate",
       "tenseType": "present",
-      "count": 68
+      "count": 118
     }
   ]
 }

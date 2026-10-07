@@ -1118,5 +1118,1105 @@
       "Not only has the tech conglomerate revolutionized semiconductor architecture, but it has also halved power consumption.",
       "Not only has the tech conglomerate revolutionized semiconductor architecture, but it has also halved power consumption"
     ]
+  },
+  {
+    "id": "exp_pres_47",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The archeologists _______ excavating the ancient temple site since sunrise.",
+    "options": [
+      "have been",
+      "has been",
+      "were",
+      "are"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Subjek jamak 'The archeologists' dengan durasi 'since sunrise' memerlukan auxiliary 'have been' + Verb-ing (have been excavating).",
+    "translation": "Para arkeolog telah sedang mengekskavasi situs kuil kuno tersebut sejak matahari terbit.",
+    "targetSentence": "The archeologists have been excavating the ancient temple site since sunrise.",
+    "indonesianPrompt": "Para arkeolog telah sedang mengekskavasi situs kuil kuno tersebut sejak matahari terbit.",
+    "acceptedAnswers": [
+      "The archeologists have been excavating the ancient temple site since sunrise."
+    ]
+  },
+  {
+    "id": "exp_pres_48",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "She is out of breath because she _______ running up the steep hill.",
+    "options": [
+      "has been",
+      "is",
+      "was",
+      "had been"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Bukti fisik masa kini ('She is out of breath') akibat aktivitas berkelanjutan yang baru saja berhenti menggunakan Present Perfect Continuous (has been running).",
+    "translation": "Dia terengah-engah karena dia baru saja berlari menaiki bukit yang terjal.",
+    "targetSentence": "She is out of breath because she has been running up the steep hill.",
+    "indonesianPrompt": "Dia terengah-engah karena dia baru saja berlari menaiki bukit yang terjal.",
+    "acceptedAnswers": [
+      "She is out of breath because she has been running up the steep hill."
+    ]
+  },
+  {
+    "id": "exp_pres_49",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "How long _______ you been conducting research on neural networks?",
+    "options": [
+      "have",
+      "has",
+      "had",
+      "did"
+    ],
+    "correctAnswer": "have",
+    "explanation": "Pertanyaan durasi 'How long' dengan subjek 'you' pada Present Perfect Continuous menggunakan auxiliary 'have' (How long have you been conducting...).",
+    "translation": "Berapa lama Anda telah melakukan penelitian tentang jaringan saraf tiruan?",
+    "targetSentence": "How long have you been conducting research on neural networks?",
+    "indonesianPrompt": "Berapa lama Anda telah melakukan penelitian tentang jaringan saraf tiruan?",
+    "acceptedAnswers": [
+      "How long have you been conducting research on neural networks?"
+    ]
+  },
+  {
+    "id": "exp_pres_50",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The aviation technicians _______ repairing the aircraft turbine for six continuous hours.",
+    "options": [
+      "have been",
+      "has been",
+      "are",
+      "were"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Subjek jamak 'The aviation technicians' dengan penanda rentang waktu berkesinambungan menggunakan 'have been' + Verb-ing.",
+    "translation": "Teknisi penerbangan telah sedang memperbaiki turbin pesawat selama enam jam tanpa henti.",
+    "targetSentence": "The aviation technicians have been repairing the aircraft turbine for six continuous hours.",
+    "indonesianPrompt": "Teknisi penerbangan telah sedang memperbaiki turbin pesawat selama enam jam tanpa henti.",
+    "acceptedAnswers": [
+      "The aviation technicians have been repairing the aircraft turbine for six continuous hours."
+    ]
+  },
+  {
+    "id": "exp_pres_51",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "His overalls are covered in motor oil because he _______ repairing the engine.",
+    "options": [
+      "has been",
+      "is",
+      "was",
+      "had"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Dampak kasat mata pada saat sekarang (overalls covered in oil) menunjukkan aktivitas yang baru saja berlangsung terus-menerus (has been repairing).",
+    "translation": "Pakaian kerjanya berlumuran oli mesin karena dia baru saja memperbaiki mesin.",
+    "targetSentence": "His overalls are covered in motor oil because he has been repairing the engine.",
+    "indonesianPrompt": "Pakaian kerjanya berlumuran oli mesin karena dia baru saja memperbaiki mesin.",
+    "acceptedAnswers": [
+      "His overalls are covered in motor oil because he has been repairing the engine."
+    ]
+  },
+  {
+    "id": "exp_pres_52",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The senior climatologist _______ analyzing satellite atmospheric data all morning.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek tunggal 'The senior climatologist' dan durasi 'all morning' membutuhkan has + been + Verb-ing (has been analyzing).",
+    "translation": "Klimatolog senior tersebut telah sedang menganalisis data atmosfer satelit sepanjang pagi.",
+    "targetSentence": "The senior climatologist has been analyzing satellite atmospheric data all morning.",
+    "indonesianPrompt": "Klimatolog senior tersebut telah sedang menganalisis data atmosfer satelit sepanjang pagi.",
+    "acceptedAnswers": [
+      "The senior climatologist has been analyzing satellite atmospheric data all morning."
+    ]
+  },
+  {
+    "id": "exp_pres_53",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "We _______ attempting to establish contact with the remote base since dawn.",
+    "options": [
+      "have been",
+      "has been",
+      "are",
+      "were"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Subjek 'We' dengan titik mula 'since dawn' menggunakan rumus have + been + Verb-ing (have been attempting).",
+    "translation": "Kami telah berusaha menghubungi pangkalan terpencil tersebut sejak subuh.",
+    "targetSentence": "We have been attempting to establish contact with the remote base since dawn.",
+    "indonesianPrompt": "Kami telah berusaha menghubungi pangkalan terpencil tersebut sejak subuh.",
+    "acceptedAnswers": [
+      "We have been attempting to establish contact with the remote base since dawn."
+    ]
+  },
+  {
+    "id": "exp_pres_54",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The pianist's hands ache because she _______ practicing Chopin etudes for hours.",
+    "options": [
+      "has been",
+      "is",
+      "was",
+      "had been"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Efek saat ini ('hands ache' present simple) akibat latihan intensif berjam-jam menggunakan Present Perfect Continuous (has been practicing).",
+    "translation": "Tangan pianis itu pegal karena dia telah sedang berlatih etude Chopin selama berjam-jam.",
+    "targetSentence": "The pianist's hands ache because she has been practicing Chopin etudes for hours.",
+    "indonesianPrompt": "Tangan pianis itu pegal karena dia telah sedang berlatih etude Chopin selama berjam-jam.",
+    "acceptedAnswers": [
+      "The pianist's hands ache because she has been practicing Chopin etudes for hours."
+    ]
+  },
+  {
+    "id": "exp_pres_55",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Why are your fingers stained with dirt? I _______ repotting ornamental plants.",
+    "options": [
+      "have been",
+      "has been",
+      "am",
+      "was"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Aktivitas yang baru saja selesai dengan bukti langsung saat ini (stained with dirt) dinyatakan oleh subjek 'I' dengan 'have been' + Verb-ing.",
+    "translation": "Mengapa jari-jarimu kotor terkena tanah? Saya baru saja memindahkan tanaman hias ke pot baru.",
+    "targetSentence": "Why are your fingers stained with dirt? I have been repotting ornamental plants.",
+    "indonesianPrompt": "Mengapa jari-jarimu kotor terkena tanah? Saya baru saja memindahkan tanaman hias ke pot baru.",
+    "acceptedAnswers": [
+      "Why are your fingers stained with dirt? I have been repotting ornamental plants."
+    ]
+  },
+  {
+    "id": "exp_pres_56",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The investigative auditor _______ examining confidential transaction records lately.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Kata keterangan 'lately' (akhir-akhir ini) dengan subjek tunggal 'The investigative auditor' membutuhkan has + been + examining.",
+    "translation": "Auditor investigasi tersebut telah sedang memeriksa catatan transaksi rahasia akhir-akhir ini.",
+    "targetSentence": "The investigative auditor has been examining confidential transaction records lately.",
+    "indonesianPrompt": "Auditor investigasi tersebut telah sedang memeriksa catatan transaksi rahasia akhir-akhir ini.",
+    "acceptedAnswers": [
+      "The investigative auditor has been examining confidential transaction records lately."
+    ]
+  },
+  {
+    "id": "exp_pres_57",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The diplomatic envoys _______ negotiating the ceasefire terms the entire week.",
+    "options": [
+      "have been",
+      "has been",
+      "are",
+      "were"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Subjek jamak 'The diplomatic envoys' dengan durasi 'the entire week' menggunakan have + been + Verb-ing.",
+    "translation": "Utusan diplomatik telah sedang merundingkan syarat-syarat gencatan senjata sepanjang minggu.",
+    "targetSentence": "The diplomatic envoys have been negotiating the ceasefire terms the entire week.",
+    "indonesianPrompt": "Utusan diplomatik telah sedang merundingkan syarat-syarat gencatan senjata sepanjang minggu.",
+    "acceptedAnswers": [
+      "The diplomatic envoys have been negotiating the ceasefire terms the entire week."
+    ]
+  },
+  {
+    "id": "exp_pres_58",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The lead engineer _______ debugging the distributed architecture since midnight.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek tunggal 'The lead engineer' dengan penanda waktu 'since midnight' memerlukan has + been + debugging.",
+    "translation": "Insinyur utama telah sedang men-debug arsitektur terdistribusi tersebut sejak tengah malam.",
+    "targetSentence": "The lead engineer has been debugging the distributed architecture since midnight.",
+    "indonesianPrompt": "Insinyur utama telah sedang men-debug arsitektur terdistribusi tersebut sejak tengah malam.",
+    "acceptedAnswers": [
+      "The lead engineer has been debugging the distributed architecture since midnight."
+    ]
+  },
+  {
+    "id": "exp_pres_59",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "She _______ experiencing frequent migraines recently, so she scheduled an appointment.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Kondisi berkelanjutan akhir-akhir ini (recently) dengan subjek 'She' diekspresikan dengan has + been + experiencing.",
+    "translation": "Dia telah sedang mengalami migrain yang sering akhir-akhir ini, jadi dia menjadwalkan konsultasi dokter.",
+    "targetSentence": "She has been experiencing frequent migraines recently, so she scheduled an appointment.",
+    "indonesianPrompt": "Dia telah sedang mengalami migrain yang sering akhir-akhir ini, jadi dia menjadwalkan konsultasi dokter.",
+    "acceptedAnswers": [
+      "She has been experiencing frequent migraines recently, so she scheduled an appointment."
+    ]
+  },
+  {
+    "id": "exp_pres_60",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The construction consortium _______ building the suspension bridge for two years.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek tunggal kolektif 'The construction consortium' dengan rentang waktu 'for two years' menggunakan has + been + building.",
+    "translation": "Konsorsium konstruksi tersebut telah sedang membangun jembatan gantung itu selama dua tahun.",
+    "targetSentence": "The construction consortium has been building the suspension bridge for two years.",
+    "indonesianPrompt": "Konsorsium konstruksi tersebut telah sedang membangun jembatan gantung itu selama dua tahun.",
+    "acceptedAnswers": [
+      "The construction consortium has been building the suspension bridge for two years."
+    ]
+  },
+  {
+    "id": "exp_pres_61",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "You appear exhausted; _______ you been sleeping poorly this past week?",
+    "options": [
+      "have",
+      "has",
+      "did",
+      "were"
+    ],
+    "correctAnswer": "have",
+    "explanation": "Penampilan lelah saat ini ('You appear exhausted') ditindaklanjuti dengan pertanyaan Present Perfect Continuous: 'have you been sleeping...'.",
+    "translation": "Kamu tampak kelelahan; apakah kamu kurang tidur sepanjang minggu lalu?",
+    "targetSentence": "You appear exhausted; have you been sleeping poorly this past week?",
+    "indonesianPrompt": "Kamu tampak kelelahan; apakah kamu kurang tidur sepanjang minggu lalu?",
+    "acceptedAnswers": [
+      "You appear exhausted; have you been sleeping poorly this past week?"
+    ]
+  },
+  {
+    "id": "exp_pres_62",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The conservationist _______ advocating for wetland preservation since 2012.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek tunggal 'The conservationist' dengan titik waktu awal 'since 2012' menggunakan has + been + advocating.",
+    "translation": "Aktivis konservasi tersebut telah memperjuangkan pelestarian lahan basah sejak tahun 2012.",
+    "targetSentence": "The conservationist has been advocating for wetland preservation since 2012.",
+    "indonesianPrompt": "Aktivis konservasi tersebut telah memperjuangkan pelestarian lahan basah sejak tahun 2012.",
+    "acceptedAnswers": [
+      "The conservationist has been advocating for wetland preservation since 2012."
+    ]
+  },
+  {
+    "id": "exp_pres_63",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "I _______ reviewing peer manuscripts all afternoon, and my vision is blurred.",
+    "options": [
+      "have been",
+      "has been",
+      "am",
+      "was"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Durasi 'all afternoon' yang menghasilkan efek pada penglihatan saat ini dipadukan dengan have + been + reviewing untuk subjek 'I'.",
+    "translation": "Saya telah sedang meninjau naskah telaah sejawat sepanjang sore, dan penglihatan saya menjadi kabur.",
+    "targetSentence": "I have been reviewing peer manuscripts all afternoon, and my vision is blurred.",
+    "indonesianPrompt": "Saya telah sedang meninjau naskah telaah sejawat sepanjang sore, dan penglihatan saya menjadi kabur.",
+    "acceptedAnswers": [
+      "I have been reviewing peer manuscripts all afternoon, and my vision is blurred."
+    ]
+  },
+  {
+    "id": "exp_pres_64",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The lab technician _______ screening water samples for chemical contaminants all day.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek tunggal 'The lab technician' dengan penanda durasi 'all day' membutuhkan has + been + screening.",
+    "translation": "Teknisi laboratorium telah sedang menyaring sampel air untuk kontaminan kimia sepanjang hari.",
+    "targetSentence": "The lab technician has been screening water samples for chemical contaminants all day.",
+    "indonesianPrompt": "Teknisi laboratorium telah sedang menyaring sampel air untuk kontaminan kimia sepanjang hari.",
+    "acceptedAnswers": [
+      "The lab technician has been screening water samples for chemical contaminants all day."
+    ]
+  },
+  {
+    "id": "exp_pres_65",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "We _______ saving funds systematically for our startup expansion.",
+    "options": [
+      "have been",
+      "has been",
+      "are",
+      "were"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Tindakan menabung yang telah berjalan dan masih berlanjut hingga kini dinyatakan dengan have + been + saving.",
+    "translation": "Kami telah sedang menabung dana secara sistematis untuk ekspansi startup kami.",
+    "targetSentence": "We have been saving funds systematically for our startup expansion.",
+    "indonesianPrompt": "Kami telah sedang menabung dana secara sistematis untuk ekspansi startup kami.",
+    "acceptedAnswers": [
+      "We have been saving funds systematically for our startup expansion."
+    ]
+  },
+  {
+    "id": "exp_pres_66",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "How many hours _______ the surgical specialists been performing this operation?",
+    "options": [
+      "have",
+      "has",
+      "had",
+      "did"
+    ],
+    "correctAnswer": "have",
+    "explanation": "Subjek jamak 'the surgical specialists' pada kalimat tanya durasi Present Perfect Continuous diawali oleh auxiliary 'have'.",
+    "translation": "Berapa jam para spesialis bedah tersebut telah sedang melakukan operasi ini?",
+    "targetSentence": "How many hours have the surgical specialists been performing this operation?",
+    "indonesianPrompt": "Berapa jam para spesialis bedah tersebut telah sedang melakukan operasi ini?",
+    "acceptedAnswers": [
+      "How many hours have the surgical specialists been performing this operation?"
+    ]
+  },
+  {
+    "id": "exp_pres_67",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The astrophysicist _______ tracking the comet trajectory through the observatory telescope.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek tunggal 'The astrophysicist' memerlukan has + been + tracking untuk observasi berkesinambungan yang masih berlangsung.",
+    "translation": "Astrofisikawan tersebut telah sedang melacak lintasan komet melalui teleskop observatorium.",
+    "targetSentence": "The astrophysicist has been tracking the comet trajectory through the observatory telescope.",
+    "indonesianPrompt": "Astrofisikawan tersebut telah sedang melacak lintasan komet melalui teleskop observatorium.",
+    "acceptedAnswers": [
+      "The astrophysicist has been tracking the comet trajectory through the observatory telescope."
+    ]
+  },
+  {
+    "id": "exp_pres_68",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "Her throat feels hoarse because she _______ delivering lectures all morning.",
+    "options": [
+      "has been",
+      "is",
+      "was",
+      "had been"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Bukti sekarang ('Her throat feels hoarse') akibat berbicara terus-menerus sepanjang pagi memerlukan 'has been' + Verb-ing.",
+    "translation": "Tenggorokannya terasa serak karena dia baru saja memberikan kuliah sepanjang pagi.",
+    "targetSentence": "Her throat feels hoarse because she has been delivering lectures all morning.",
+    "indonesianPrompt": "Tenggorokannya terasa serak karena dia baru saja memberikan kuliah sepanjang pagi.",
+    "acceptedAnswers": [
+      "Her throat feels hoarse because she has been delivering lectures all morning."
+    ]
+  },
+  {
+    "id": "exp_pres_69",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The financial journalist _______ investigating the corporate embezzlement case for months.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek tunggal 'The financial journalist' dengan durasi 'for months' membutuhkan has + been + investigating.",
+    "translation": "Jurnalis keuangan tersebut telah sedang menyelidiki kasus penggelapan dana perusahaan selama berbulan-bulan.",
+    "targetSentence": "The financial journalist has been investigating the corporate embezzlement case for months.",
+    "indonesianPrompt": "Jurnalis keuangan tersebut telah sedang menyelidiki kasus penggelapan dana perusahaan selama berbulan-bulan.",
+    "acceptedAnswers": [
+      "The financial journalist has been investigating the corporate embezzlement case for months."
+    ]
+  },
+  {
+    "id": "exp_pres_70",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "We _______ debating these regulatory amendments without reaching a mutual consensus.",
+    "options": [
+      "have been",
+      "has been",
+      "are",
+      "were"
+    ],
+    "correctAnswer": "have been",
+    "explanation": "Perdebatan yang berlangsung lama hingga saat ini menggunakan rumus have + been + debating untuk subjek 'We'.",
+    "translation": "Kami telah sedang memperdebatkan amandemen peraturan ini tanpa mencapai konsensus bersama.",
+    "targetSentence": "We have been debating these regulatory amendments without reaching a mutual consensus.",
+    "indonesianPrompt": "Kami telah sedang memperdebatkan amandemen peraturan ini tanpa mencapai konsensus bersama.",
+    "acceptedAnswers": [
+      "We have been debating these regulatory amendments without reaching a mutual consensus."
+    ]
+  },
+  {
+    "id": "exp_pres_71",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "He _______ revising his doctoral thesis relentlessly over the past four weeks.",
+    "options": [
+      "has been",
+      "have been",
+      "is",
+      "was"
+    ],
+    "correctAnswer": "has been",
+    "explanation": "Subjek tunggal 'He' dengan keterangan 'over the past four weeks' membutuhkan has + been + revising.",
+    "translation": "Dia telah sedang merevisi tesis doktoralnya tanpa henti selama empat minggu terakhir.",
+    "targetSentence": "He has been revising his doctoral thesis relentlessly over the past four weeks.",
+    "indonesianPrompt": "Dia telah sedang merevisi tesis doktoralnya tanpa henti selama empat minggu terakhir.",
+    "acceptedAnswers": [
+      "He has been revising his doctoral thesis relentlessly over the past four weeks."
+    ]
+  },
+  {
+    "id": "exp_pres_72",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "The renowned author _______ four bestselling mystery novels during her literary career.",
+    "options": [
+      "has written",
+      "has been writing",
+      "wrote",
+      "writes"
+    ],
+    "correctAnswer": "has written",
+    "explanation": "Ketika menekankan jumlah hasil karya yang telah selesai diproduksi (four novels), digunakan Present Perfect (has written), bukan bentuk continuous.",
+    "translation": "Penulis ternama tersebut telah menulis empat novel misteri terlaris selama karier sastranya.",
+    "targetSentence": "The renowned author has written four bestselling mystery novels during her literary career.",
+    "indonesianPrompt": "Penulis ternama tersebut telah menulis empat novel misteri terlaris selama karier sastranya.",
+    "acceptedAnswers": [
+      "The renowned author has written four bestselling mystery novels during her literary career."
+    ]
+  },
+  {
+    "id": "exp_pres_73",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The author _______ historical fiction novels ever since she graduated from college.",
+    "options": [
+      "has been writing",
+      "has written",
+      "wrote",
+      "writes"
+    ],
+    "correctAnswer": "has been writing",
+    "explanation": "Ketika menekankan proses aktivitas yang terus berjalan tanpa menyebut kuantitas produk selesai, Present Perfect Continuous lebih tepat.",
+    "translation": "Penulis tersebut telah terus menulis novel fiksi sejarah sejak dia lulus dari perguruan tinggi.",
+    "targetSentence": "The author has been writing historical fiction novels ever since she graduated from college.",
+    "indonesianPrompt": "Penulis tersebut telah terus menulis novel fiksi sejarah sejak dia lulus dari perguruan tinggi.",
+    "acceptedAnswers": [
+      "The author has been writing historical fiction novels ever since she graduated from college."
+    ]
+  },
+  {
+    "id": "exp_pres_74",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "I _______ this UNESCO heritage site three times before today.",
+    "options": [
+      "have visited",
+      "have been visiting",
+      "visit",
+      "visited"
+    ],
+    "correctAnswer": "have visited",
+    "explanation": "Pernyataan frekuensi kunjungan yang telah selesai (three times) harus menggunakan Present Perfect (have visited).",
+    "translation": "Saya telah mengunjungi situs warisan UNESCO ini tiga kali sebelum hari ini.",
+    "targetSentence": "I have visited this UNESCO heritage site three times before today.",
+    "indonesianPrompt": "Saya telah mengunjungi situs warisan UNESCO ini tiga kali sebelum hari ini.",
+    "acceptedAnswers": [
+      "I have visited this UNESCO heritage site three times before today."
+    ]
+  },
+  {
+    "id": "exp_pres_75",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "The family _______ this heritage estate ever since their ancestors settled here.",
+    "options": [
+      "has owned",
+      "has been owning",
+      "owns",
+      "owned"
+    ],
+    "correctAnswer": "has owned",
+    "explanation": "Kata kerja kepemilikan 'own' merupakan stative verb yang tidak boleh digunakan dalam bentuk continuous (bukan has been owning).",
+    "translation": "Keluarga tersebut telah memiliki tanah warisan ini sejak nenek moyang mereka menetap di sini.",
+    "targetSentence": "The family has owned this heritage estate ever since their ancestors settled here.",
+    "indonesianPrompt": "Keluarga tersebut telah memiliki tanah warisan ini sejak nenek moyang mereka menetap di sini.",
+    "acceptedAnswers": [
+      "The family has owned this heritage estate ever since their ancestors settled here."
+    ]
+  },
+  {
+    "id": "exp_pres_76",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "The marathon runner _______ three international races so far this competitive season.",
+    "options": [
+      "has completed",
+      "has been completing",
+      "completes",
+      "completed"
+    ],
+    "correctAnswer": "has completed",
+    "explanation": "Hasil akhir yang sudah tuntas dengan jumlah pasti (three races) memerlukan Present Perfect Tense (has completed).",
+    "translation": "Pelari maraton tersebut telah menyelesaikan tiga perlombaan internasional sejauh musim kompetisi ini.",
+    "targetSentence": "The marathon runner has completed three international races so far this competitive season.",
+    "indonesianPrompt": "Pelari maraton tersebut telah menyelesaikan tiga perlombaan internasional sejauh musim kompetisi ini.",
+    "acceptedAnswers": [
+      "The marathon runner has completed three international races so far this competitive season."
+    ]
+  },
+  {
+    "id": "exp_pres_77",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "The marathon runner _______ intensely for the upcoming championship all month.",
+    "options": [
+      "has been training",
+      "has trained",
+      "trains",
+      "trained"
+    ],
+    "correctAnswer": "has been training",
+    "explanation": "Penekanan pada durasi dan proses latihan yang intensif tanpa menyebut jumlah produk jadi menggunakan 'has been training'.",
+    "translation": "Pelari maraton tersebut telah sedang berlatih secara intensif untuk kejuaraan mendatang sepanjang bulan.",
+    "targetSentence": "The marathon runner has been training intensely for the upcoming championship all month.",
+    "indonesianPrompt": "Pelari maraton tersebut telah sedang berlatih secara intensif untuk kejuaraan mendatang sepanjang bulan.",
+    "acceptedAnswers": [
+      "The marathon runner has been training intensely for the upcoming championship all month."
+    ]
+  },
+  {
+    "id": "exp_pres_78",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "We _______ Professor Harrison since our postgraduate studies in London.",
+    "options": [
+      "have known",
+      "have been knowing",
+      "know",
+      "knew"
+    ],
+    "correctAnswer": "have known",
+    "explanation": "Kata kerja kognitif 'know' adalah stative verb yang tidak memiliki bentuk continuous. Gunakan Present Perfect 'have known'.",
+    "translation": "Kami telah mengenal Profesor Harrison sejak masa studi pascasarjana kami di London.",
+    "targetSentence": "We have known Professor Harrison since our postgraduate studies in London.",
+    "indonesianPrompt": "Kami telah mengenal Profesor Harrison sejak masa studi pascasarjana kami di London.",
+    "acceptedAnswers": [
+      "We have known Professor Harrison since our postgraduate studies in London."
+    ]
+  },
+  {
+    "id": "exp_pres_79",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "She _______ fifty customer support inquiries this morning alone.",
+    "options": [
+      "has answered",
+      "has been answering",
+      "answers",
+      "answered"
+    ],
+    "correctAnswer": "has answered",
+    "explanation": "Jumlah capaian selesai yang terhitung (fifty inquiries) menuntut penggunaan Present Perfect (has answered).",
+    "translation": "Dia telah menjawab lima puluh pertanyaan layanan pelanggan pagi ini saja.",
+    "targetSentence": "She has answered fifty customer support inquiries this morning alone.",
+    "indonesianPrompt": "Dia telah menjawab lima puluh pertanyaan layanan pelanggan pagi ini saja.",
+    "acceptedAnswers": [
+      "She has answered fifty customer support inquiries this morning alone."
+    ]
+  },
+  {
+    "id": "exp_pres_80",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Continuous Tense",
+    "question": "She _______ customer support inquiries all morning without taking a single break.",
+    "options": [
+      "has been answering",
+      "has answered",
+      "answers",
+      "answered"
+    ],
+    "correctAnswer": "has been answering",
+    "explanation": "Durasi proses berkelanjutan ('all morning without taking a single break') memerlukan Present Perfect Continuous (has been answering).",
+    "translation": "Dia telah sedang menjawab pertanyaan layanan pelanggan sepanjang pagi tanpa mengambil istirahat sekalipun.",
+    "targetSentence": "She has been answering customer support inquiries all morning without taking a single break.",
+    "indonesianPrompt": "Dia telah sedang menjawab pertanyaan layanan pelanggan sepanjang pagi tanpa mengambil istirahat sekalipun.",
+    "acceptedAnswers": [
+      "She has been answering customer support inquiries all morning without taking a single break."
+    ]
+  },
+  {
+    "id": "exp_pres_81",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Present Perfect Tense",
+    "question": "The board of trustees _______ the endowment proposal after thorough deliberation.",
+    "options": [
+      "has approved",
+      "has been approving",
+      "approves",
+      "approved"
+    ],
+    "correctAnswer": "has approved",
+    "explanation": "Keputusan final yang telah tercapai sebagai hasil tuntas dinyatakan dengan Present Perfect (has approved).",
+    "translation": "Dewan pengawas telah menyetujui usulan dana abadi tersebut setelah pertimbangan mendalam.",
+    "targetSentence": "The board of trustees has approved the endowment proposal after thorough deliberation.",
+    "indonesianPrompt": "Dewan pengawas telah menyetujui usulan dana abadi tersebut setelah pertimbangan mendalam.",
+    "acceptedAnswers": [
+      "The board of trustees has approved the endowment proposal after thorough deliberation."
+    ]
+  },
+  {
+    "id": "exp_pres_82",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The director will inform the stakeholders as soon as the financial audit _______ complete.",
+    "options": [
+      "is",
+      "will be",
+      "was",
+      "has been being"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Dalam klausa waktu masa depan setelah konjungsi 'as soon as', aturan bahasa Inggris melarang 'will' dan mewajibkan Simple Present Tense (is).",
+    "translation": "Direktur akan memberi tahu para pemangku kepentingan segera setelah audit keuangan selesai.",
+    "targetSentence": "The director will inform the stakeholders as soon as the financial audit is complete.",
+    "indonesianPrompt": "Direktur akan memberi tahu para pemangku kepentingan segera setelah audit keuangan selesai.",
+    "acceptedAnswers": [
+      "The director will inform the stakeholders as soon as the financial audit is complete."
+    ]
+  },
+  {
+    "id": "exp_pres_83",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "We cannot execute the contract until the legal adviser _______ every clause.",
+    "options": [
+      "reviews",
+      "will review",
+      "reviewed",
+      "is reviewing"
+    ],
+    "correctAnswer": "reviews",
+    "explanation": "Klausa waktu masa depan yang diawali oleh 'until' menggunakan Simple Present Tense (reviews) dengan subjek orang ketiga tunggal.",
+    "translation": "Kami tidak dapat menandatangani kontrak sampai penasihat hukum meninjau setiap klausul.",
+    "targetSentence": "We cannot execute the contract until the legal adviser reviews every clause.",
+    "indonesianPrompt": "Kami tidak dapat menandatangani kontrak sampai penasihat hukum meninjau setiap klausul.",
+    "acceptedAnswers": [
+      "We cannot execute the contract until the legal adviser reviews every clause."
+    ]
+  },
+  {
+    "id": "exp_pres_84",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "When the delegate _______ at the summit venue, the opening ceremony will begin.",
+    "options": [
+      "arrives",
+      "will arrive",
+      "arrived",
+      "is arriving"
+    ],
+    "correctAnswer": "arrives",
+    "explanation": "Klausa waktu yang diawali kata penghubung 'when' untuk peristiwa masa depan menggunakan Simple Present (arrives), bukan 'will arrive'.",
+    "translation": "Ketika delegasi tiba di tempat pertemuan puncak, upacara pembukaan akan dimulai.",
+    "targetSentence": "When the delegate arrives at the summit venue, the opening ceremony will begin.",
+    "indonesianPrompt": "Ketika delegasi tiba di tempat pertemuan puncak, upacara pembukaan akan dimulai.",
+    "acceptedAnswers": [
+      "When the delegate arrives at the summit venue, the opening ceremony will begin."
+    ]
+  },
+  {
+    "id": "exp_pres_85",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "You should verify all figures before you _______ the final budget report.",
+    "options": [
+      "submit",
+      "will submit",
+      "submitted",
+      "are submitting"
+    ],
+    "correctAnswer": "submit",
+    "explanation": "Klausa waktu yang diawali oleh 'before' menggunakan bentuk Simple Present Tense (submit) untuk subjek 'you'.",
+    "translation": "Anda harus memverifikasi semua angka sebelum Anda menyerahkan laporan anggaran akhir.",
+    "targetSentence": "You should verify all figures before you submit the final budget report.",
+    "indonesianPrompt": "Anda harus memverifikasi semua angka sebelum Anda menyerahkan laporan anggaran akhir.",
+    "acceptedAnswers": [
+      "You should verify all figures before you submit the final budget report."
+    ]
+  },
+  {
+    "id": "exp_pres_86",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The auxiliary generator activates automatically if the municipal power grid _______.",
+    "options": [
+      "fails",
+      "will fail",
+      "failed",
+      "is failing"
+    ],
+    "correctAnswer": "fails",
+    "explanation": "Klausa kondisi ilmiah/teknis dengan 'if' menggunakan Simple Present Tense (fails) untuk subjek tunggal 'the municipal power grid'.",
+    "translation": "Generator cadangan aktif secara otomatis jika jaringan listrik kota padam.",
+    "targetSentence": "The auxiliary generator activates automatically if the municipal power grid fails.",
+    "indonesianPrompt": "Generator cadangan aktif secara otomatis jika jaringan listrik kota padam.",
+    "acceptedAnswers": [
+      "The auxiliary generator activates automatically if the municipal power grid fails."
+    ]
+  },
+  {
+    "id": "exp_pres_87",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Unless the patient _______ positive response to therapy, the specialist will modify the prescription.",
+    "options": [
+      "shows",
+      "will show",
+      "showed",
+      "is showing"
+    ],
+    "correctAnswer": "shows",
+    "explanation": "Klausa pengandaian yang diawali kata 'unless' merujuk masa depan dengan bentuk Simple Present Tense (shows).",
+    "translation": "Kecuali pasien menunjukkan respons positif terhadap terapi, dokter spesialis akan memodifikasi resep obatnya.",
+    "targetSentence": "Unless the patient shows positive response to therapy, the specialist will modify the prescription.",
+    "indonesianPrompt": "Kecuali pasien menunjukkan respons positif terhadap terapi, dokter spesialis akan memodifikasi resep obatnya.",
+    "acceptedAnswers": [
+      "Unless the patient shows positive response to therapy, the specialist will modify the prescription."
+    ]
+  },
+  {
+    "id": "exp_pres_88",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Once the security patch _______ accessible, system administrators will deploy it immediately.",
+    "options": [
+      "becomes",
+      "will become",
+      "became",
+      "is becoming"
+    ],
+    "correctAnswer": "becomes",
+    "explanation": "Klausa waktu masa depan dengan konjungsi 'Once' (segera setelah) menggunakan Simple Present Tense: 'becomes'.",
+    "translation": "Segera setelah tambalan keamanan tersedia, administrator sistem akan langsung menerapkannya.",
+    "targetSentence": "Once the security patch becomes accessible, system administrators will deploy it immediately.",
+    "indonesianPrompt": "Segera setelah tambalan keamanan tersedia, administrator sistem akan langsung menerapkannya.",
+    "acceptedAnswers": [
+      "Once the security patch becomes accessible, system administrators will deploy it immediately."
+    ]
+  },
+  {
+    "id": "exp_pres_89",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Passengers must remain seated until the aircraft _______ to a complete stop.",
+    "options": [
+      "comes",
+      "will come",
+      "came",
+      "is coming"
+    ],
+    "correctAnswer": "comes",
+    "explanation": "Setelah konjungsi waktu 'until', gunakan Simple Present Tense (comes) untuk merujuk pada situasi masa depan saat pesawat berhenti sempurna.",
+    "translation": "Penumpang harus tetap duduk sampai pesawat benar-benar berhenti total.",
+    "targetSentence": "Passengers must remain seated until the aircraft comes to a complete stop.",
+    "indonesianPrompt": "Penumpang harus tetap duduk sampai pesawat benar-benar berhenti total.",
+    "acceptedAnswers": [
+      "Passengers must remain seated until the aircraft comes to a complete stop."
+    ]
+  },
+  {
+    "id": "exp_pres_90",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Neither the manager nor the team members _______ satisfied with the revised policy.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "were"
+    ],
+    "correctAnswer": "are",
+    "explanation": "Aturan 'neither... nor': kata kerja menyesuaikan dengan subjek yang paling dekat. Subjek terdekat adalah 'the team members' (jamak), sehingga menggunakan 'are'.",
+    "translation": "Baik manajer maupun anggota tim tidak puas dengan kebijakan yang direvisi.",
+    "targetSentence": "Neither the manager nor the team members are satisfied with the revised policy.",
+    "indonesianPrompt": "Baik manajer maupun anggota tim tidak puas dengan kebijakan yang direvisi.",
+    "acceptedAnswers": [
+      "Neither the manager nor the team members are satisfied with the revised policy."
+    ]
+  },
+  {
+    "id": "exp_pres_91",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Neither the team members nor the manager _______ willing to compromise on quality.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Pada pola 'neither... nor', kata kerja mengikuti subjek terdekat. Di sini subjek terdekat adalah 'the manager' (tunggal), maka to be yang benar adalah 'is'.",
+    "translation": "Baik anggota tim maupun manajer tidak bersedia berkompromi dalam hal kualitas.",
+    "targetSentence": "Neither the team members nor the manager is willing to compromise on quality.",
+    "indonesianPrompt": "Baik anggota tim maupun manajer tidak bersedia berkompromi dalam hal kualitas.",
+    "acceptedAnswers": [
+      "Neither the team members nor the manager is willing to compromise on quality."
+    ]
+  },
+  {
+    "id": "exp_pres_92",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Each of the participating countries _______ obligated to submit an emissions report.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Frasa 'Each of + plural noun' selalu mengambil kata kerja tunggal (singular verb) pada Simple Present Tense, yaitu 'is'.",
+    "translation": "Masing-masing negara peserta diwajibkan untuk menyerahkan laporan emisi.",
+    "targetSentence": "Each of the participating countries is obligated to submit an emissions report.",
+    "indonesianPrompt": "Masing-masing negara peserta diwajibkan untuk menyerahkan laporan emisi.",
+    "acceptedAnswers": [
+      "Each of the participating countries is obligated to submit an emissions report."
+    ]
+  },
+  {
+    "id": "exp_pres_93",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The ethics committee _______ currently divided in its opinions on the matter.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Kata benda kolektif 'The ethics committee' yang dirujuk dengan kata ganti tunggal 'its' diperlakukan sebagai satu kesatuan tunggal (is).",
+    "translation": "Komite etik saat ini terpecah dalam pandangannya mengenai masalah tersebut.",
+    "targetSentence": "The ethics committee is currently divided in its opinions on the matter.",
+    "indonesianPrompt": "Komite etik saat ini terpecah dalam pandangannya mengenai masalah tersebut.",
+    "acceptedAnswers": [
+      "The ethics committee is currently divided in its opinions on the matter."
+    ]
+  },
+  {
+    "id": "exp_pres_94",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "The lead professor, along with several doctoral researchers, _______ presenting the findings today.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Frasa sisipan seperti 'along with...' tidak mempengaruhi jumlah subjek utama. Subjek utama adalah 'The lead professor' (tunggal), sehingga kata kerjanya adalah 'is'.",
+    "translation": "Profesor utama, bersama dengan beberapa peneliti doktoral, sedang mempresentasikan temuan hari ini.",
+    "targetSentence": "The lead professor, along with several doctoral researchers, is presenting the findings today.",
+    "indonesianPrompt": "Profesor utama, bersama dengan beberapa peneliti doktoral, sedang mempresentasikan temuan hari ini.",
+    "acceptedAnswers": [
+      "The lead professor, along with several doctoral researchers, is presenting the findings today."
+    ]
+  },
+  {
+    "id": "exp_pres_95",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "A substantial amount of research data _______ stored on encrypted cloud servers.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "be"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Kata 'data' ketika diawali oleh 'A substantial amount of' (penunjuk kuantitas benda tak dapat dihitung) menggunakan kata kerja tunggal 'is'.",
+    "translation": "Sejumlah besar data penelitian disimpan di server cloud terenkripsi.",
+    "targetSentence": "A substantial amount of research data is stored on encrypted cloud servers.",
+    "indonesianPrompt": "Sejumlah besar data penelitian disimpan di server cloud terenkripsi.",
+    "acceptedAnswers": [
+      "A substantial amount of research data is stored on encrypted cloud servers."
+    ]
+  },
+  {
+    "id": "exp_pres_96",
+    "category": "grammarly",
+    "level": "expert",
+    "tenseType": "present",
+    "tenseName": "Simple Present Tense",
+    "question": "Not only the department head but also the staff members _______ attending the international symposium.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "be"
+    ],
+    "correctAnswer": "are",
+    "explanation": "Dalam struktur korelasi 'Not only... but also...', kata kerja menyelaraskan diri dengan subjek kedua. Subjek kedua 'the staff members' adalah jamak, sehingga memakai 'are'.",
+    "translation": "Bukan hanya kepala departemen tetapi juga para anggota staf menghadiri simposium internasional tersebut.",
+    "targetSentence": "Not only the department head but also the staff members are attending the international symposium.",
+    "indonesianPrompt": "Bukan hanya kepala departemen tetapi juga para anggota staf menghadiri simposium internasional tersebut.",
+    "acceptedAnswers": [
+      "Not only the department head but also the staff members are attending the international symposium."
+    ]
   }
 ]
