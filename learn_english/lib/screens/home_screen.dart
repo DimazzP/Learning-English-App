@@ -23,6 +23,8 @@ class _HomeScreenState extends State<HomeScreen> {
   // 'kamus' (Kamus Verbs), 'kamus_universal' (Kamus Universal KBBI),
   // 'tata_bahasa', 'kuis', 'hafalan', 'favorit', 'split'
   String _activeNav = 'split';
+  // Sidebar navigation expansion state: true for full mode (icons + text), false for small mode (icons only)
+  bool _isSidebarExpanded = true;
 
   // Customizable Split Screen Configuration:
   // Number of features to split: 2, 3, or 4
@@ -195,220 +197,200 @@ class _HomeScreenState extends State<HomeScreen> {
       animation: repo,
       builder: (context, _) {
         return Scaffold(
-          // TOP NAVIGATION BAR (DI SISI PALING ATAS)
-          appBar: _buildTopNavigationBar(context, repo, isDark),
+          body: Row(
+            children: [
+              // Collapsible Left Navigation Bar
+              _buildLeftSidebar(context, repo, isDark),
 
-          // MAIN BODY:
-          // If 'split' is selected, show the customizable split screen workspace.
-          // Otherwise, show the selected single feature in FULL VIEW (default: 'kamus').
-          body: _activeNav == 'split'
-              ? _buildCustomSplitWorkspace(context, isDark)
-              : _getFeatureWidget(_activeNav),
+              // Vertical divider
+              VerticalDivider(
+                width: 1,
+                thickness: 1,
+                color: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
+              ),
+
+              // Main Content Area (Feature Screen / Split Workspace)
+              Expanded(
+                child: _activeNav == 'split'
+                    ? _buildCustomSplitWorkspace(context, isDark)
+                    : _getFeatureWidget(_activeNav),
+              ),
+            ],
+          ),
         );
       },
     );
   }
 
-  // WIDGET: TOP NAVIGATION BAR ACROSS THE TOP
-  PreferredSizeWidget _buildTopNavigationBar(
-    BuildContext context,
-    VerbRepository repo,
-    bool isDark,
-  ) {
-    return AppBar(
-      titleSpacing: 16,
-      toolbarHeight: 64,
-      title: Row(
-        children: [
-          // Logo
-          Container(
-            padding: const EdgeInsets.all(6),
-            decoration: BoxDecoration(
-              color: AppTheme.primary,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: const Icon(
-              Icons.translate_rounded,
-              color: Colors.white,
-              size: 20,
-            ),
-          ),
-          const SizedBox(width: 10),
-          const Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                'Belajar Verbs',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              Text(
-                'V1 • V2 • V3 & 16 Tenses',
-                style: TextStyle(fontSize: 10, color: Colors.grey),
-              ),
-            ],
-          ),
-          const SizedBox(width: 20),
+  // WIDGET: COLLAPSIBLE LEFT NAVIGATION BAR
+  Widget _buildLeftSidebar(BuildContext context, VerbRepository repo, bool isDark) {
+    final sidebarWidth = _isSidebarExpanded ? 260.0 : 70.0;
 
-          // 6 Nav Items in Top Bar
-          Expanded(
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 200),
+      curve: Curves.easeInOut,
+      width: sidebarWidth,
+      color: isDark ? const Color(0xFF0F172A) : const Color(0xFFF8FAFC),
+      child: SafeArea(
+        right: false,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+              // Sidebar Header / Brand & Collapse Toggle Button
+              Container(
+                height: 60,
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: isDark ? const Color(0xFF1E293B) : const Color(0xFFE2E8F0),
+                    ),
+                  ),
+                ),
+                child: _isSidebarExpanded
+                    ? SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        physics: const NeverScrollableScrollPhysics(),
+                        child: SizedBox(
+                          width: 240,
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 32,
+                                height: 32,
+                                decoration: BoxDecoration(
+                                  color: AppTheme.primary,
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: const Icon(
+                                  Icons.translate_rounded,
+                                  color: Colors.white,
+                                  size: 18,
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                              const Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'Belajar Verbs',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14,
+                                      ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                    Text(
+                                      'V1 • V2 • V3 & Tenses',
+                                      style: TextStyle(fontSize: 10, color: Colors.grey),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              IconButton(
+                                tooltip: 'Perkecil Menu',
+                                padding: EdgeInsets.zero,
+                                constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                                icon: Icon(
+                                  Icons.chevron_left_rounded,
+                                  size: 22,
+                                  color: isDark ? Colors.grey.shade300 : Colors.grey.shade700,
+                                ),
+                                onPressed: () {
+                                  setState(() {
+                                    _isSidebarExpanded = false;
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    : Center(
+                        child: IconButton(
+                          tooltip: 'Perbesar Menu',
+                          padding: EdgeInsets.zero,
+                          constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                          icon: Icon(
+                            Icons.menu_rounded,
+                            size: 22,
+                            color: isDark ? Colors.grey.shade300 : Colors.grey.shade700,
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              _isSidebarExpanded = true;
+                            });
+                          },
+                        ),
+                      ),
+              ),
+
+            // Navigation Items List
+            Expanded(
+              child: ListView(
+                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                 children: [
-                  // 1. Kamus Verbs (English)
-                  _buildNavTabButton(
+                  _buildSidebarItem(
                     id: 'kamus',
                     label: 'Kamus Verbs',
                     icon: Icons.menu_book_rounded,
                     isDark: isDark,
                   ),
-                  const SizedBox(width: 6),
-
-                  // 2. Kamus Universal (KBBI)
-                  _buildNavTabButton(
+                  _buildSidebarItem(
                     id: 'kamus_universal',
                     label: 'Kamus Universal',
                     icon: Icons.auto_stories_rounded,
                     isDark: isDark,
                   ),
-                  const SizedBox(width: 6),
-
-                  // 2. Tata Bahasa
-                  _buildNavTabButton(
+                  _buildSidebarItem(
                     id: 'tata_bahasa',
                     label: 'Tata Bahasa',
                     icon: Icons.school_rounded,
                     isDark: isDark,
                   ),
-                  const SizedBox(width: 6),
-
-                  // 3. Kuis
-                  _buildNavTabButton(
+                  _buildSidebarItem(
                     id: 'kuis',
-                    label: 'Kuis',
+                    label: 'Kuis & Latihan',
                     icon: Icons.quiz_rounded,
                     isDark: isDark,
                   ),
-                  const SizedBox(width: 6),
-
-                  // 4. Hafalan
-                  _buildNavTabButton(
+                  _buildSidebarItem(
                     id: 'hafalan',
                     label: 'Hafalan',
                     icon: Icons.style_rounded,
                     isDark: isDark,
                   ),
-                  const SizedBox(width: 6),
-
-                  // 5. Favorit
-                  _buildNavTabButton(
+                  _buildSidebarItem(
                     id: 'favorit',
                     label: 'Favorit (${repo.favoriteVerbs.length})',
                     icon: Icons.favorite_rounded,
                     isDark: isDark,
                   ),
-                  const SizedBox(width: 6),
-
-                  // 6. Belajar To Be
-                  _buildNavTabButton(
+                  _buildSidebarItem(
                     id: 'to_be',
                     label: 'Belajar To Be',
                     icon: Icons.psychology_rounded,
                     isDark: isDark,
                   ),
-                  const SizedBox(width: 12),
-
-                  // 6. Split Tampilan (Special button)
-                  InkWell(
-                    onTap: () => setState(() => _activeNav = 'split'),
-                    borderRadius: BorderRadius.circular(12),
-                    child: AnimatedContainer(
-                      duration: const Duration(milliseconds: 200),
-                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-                      decoration: BoxDecoration(
-                        gradient: _activeNav == 'split'
-                            ? const LinearGradient(
-                                colors: [Color(0xFF4F46E5), Color(0xFF7C3AED)],
-                              )
-                            : null,
-                        color: _activeNav == 'split'
-                            ? null
-                            : (isDark ? const Color(0xFF1E293B) : const Color(0xFFEEF2FF)),
-                        borderRadius: BorderRadius.circular(12),
-                        border: Border.all(
-                          color: _activeNav == 'split'
-                              ? Colors.transparent
-                              : const Color(0xFF818CF8),
-                          width: 1.5,
-                        ),
-                        boxShadow: _activeNav == 'split'
-                            ? [
-                                BoxShadow(
-                                  color: const Color(0xFF4F46E5).withValues(alpha: 0.35),
-                                  blurRadius: 8,
-                                  offset: const Offset(0, 2),
-                                )
-                              ]
-                            : null,
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Icon(
-                            Icons.splitscreen_rounded,
-                            size: 16,
-                            color: _activeNav == 'split' ? Colors.white : AppTheme.primary,
-                          ),
-                          const SizedBox(width: 6),
-                          Text(
-                            'Split Tampilan',
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.bold,
-                              color: _activeNav == 'split' ? Colors.white : AppTheme.primary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  const SizedBox(height: 8),
+                  _buildSidebarSplitItem(isDark),
                 ],
               ),
             ),
-          ),
-        ],
+            // Bottom Action Buttons (Theme Mode, Random Verb, Info)
+            _buildSidebarBottomActions(context, repo, isDark),
+          ],
+        ),
       ),
-      actions: [
-        // Dark / Light Mode Toggle
-        IconButton(
-          tooltip: repo.isDarkMode ? 'Mode Terang' : 'Mode Gelap',
-          icon: Icon(
-            repo.isDarkMode ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
-            size: 20,
-          ),
-          onPressed: () => repo.toggleThemeMode(),
-        ),
-
-        // Random Verb
-        IconButton(
-          tooltip: 'Kata Kerja Acak',
-          icon: const Icon(Icons.casino_rounded, size: 20),
-          onPressed: () => _showRandomVerb(context),
-        ),
-
-        // Info dialog
-        IconButton(
-          tooltip: 'Info Aplikasi',
-          icon: const Icon(Icons.info_outline_rounded, size: 20),
-          onPressed: () => _showAboutDialog(context),
-        ),
-        const SizedBox(width: 8),
-      ],
     );
   }
 
-  Widget _buildNavTabButton({
+  Widget _buildSidebarItem({
     required String id,
     required String label,
     required IconData icon,
@@ -416,45 +398,223 @@ class _HomeScreenState extends State<HomeScreen> {
   }) {
     final isSelected = _activeNav == id;
 
+    final content = AnimatedContainer(
+      duration: const Duration(milliseconds: 180),
+      margin: const EdgeInsets.symmetric(vertical: 3),
+      padding: const EdgeInsets.symmetric(
+        horizontal: 10,
+        vertical: 10,
+      ),
+      decoration: BoxDecoration(
+        color: isSelected
+            ? AppTheme.primary
+            : (isDark ? const Color(0xFF1E293B).withValues(alpha: 0.4) : Colors.transparent),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(
+          color: isSelected
+              ? AppTheme.primary
+              : (isDark ? const Color(0xFF334155).withValues(alpha: 0.5) : const Color(0xFFE2E8F0)),
+        ),
+      ),
+      child: _isSidebarExpanded
+          ? Row(
+              children: [
+                Icon(
+                  icon,
+                  size: 18,
+                  color: isSelected ? Colors.white : (isDark ? Colors.grey.shade400 : Colors.grey.shade700),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    label,
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+                      color: isSelected ? Colors.white : (isDark ? Colors.grey.shade300 : const Color(0xFF1E293B)),
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            )
+          : SizedBox(
+              width: double.infinity,
+              child: Icon(
+                icon,
+                size: 20,
+                color: isSelected ? Colors.white : (isDark ? Colors.grey.shade400 : Colors.grey.shade700),
+              ),
+            ),
+    );
+
     return InkWell(
       onTap: () => setState(() => _activeNav = id),
       borderRadius: BorderRadius.circular(10),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 180),
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
-        decoration: BoxDecoration(
-          color: isSelected
-              ? AppTheme.primary
-              : (isDark ? const Color(0xFF1E293B) : Colors.transparent),
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(
-            color: isSelected
-                ? AppTheme.primary
-                : (isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0)),
-          ),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(
-              icon,
-              size: 15,
-              color: isSelected ? Colors.white : (isDark ? Colors.grey.shade400 : Colors.grey.shade700),
+      child: _isSidebarExpanded
+          ? content
+          : Tooltip(
+              message: label,
+              waitDuration: const Duration(milliseconds: 300),
+              child: content,
             ),
-            const SizedBox(width: 6),
-            Text(
-              label,
-              style: TextStyle(
-                fontSize: 12,
-                fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-                color: isSelected ? Colors.white : (isDark ? Colors.grey.shade300 : const Color(0xFF1E293B)),
-              ),
-            ),
-          ],
-        ),
-      ),
     );
   }
+
+  Widget _buildSidebarSplitItem(bool isDark) {
+    final isSelected = _activeNav == 'split';
+
+    final content = AnimatedContainer(
+      duration: const Duration(milliseconds: 180),
+      margin: const EdgeInsets.symmetric(vertical: 3),
+      padding: const EdgeInsets.symmetric(
+        horizontal: 10,
+        vertical: 10,
+      ),
+      decoration: BoxDecoration(
+        gradient: isSelected
+            ? const LinearGradient(
+                colors: [Color(0xFF4F46E5), Color(0xFF7C3AED)],
+              )
+            : null,
+        color: isSelected
+            ? null
+            : (isDark ? const Color(0xFF1E293B) : const Color(0xFFEEF2FF)),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(
+          color: isSelected ? Colors.transparent : const Color(0xFF818CF8),
+          width: 1.5,
+        ),
+        boxShadow: isSelected
+            ? [
+                BoxShadow(
+                  color: const Color(0xFF4F46E5).withValues(alpha: 0.35),
+                  blurRadius: 8,
+                  offset: const Offset(0, 2),
+                )
+              ]
+            : null,
+      ),
+      child: _isSidebarExpanded
+          ? Row(
+              children: [
+                Icon(
+                  Icons.splitscreen_rounded,
+                  size: 18,
+                  color: isSelected ? Colors.white : AppTheme.primary,
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    'Split Tampilan',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold,
+                      color: isSelected ? Colors.white : AppTheme.primary,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            )
+          : SizedBox(
+              width: double.infinity,
+              child: Icon(
+                Icons.splitscreen_rounded,
+                size: 20,
+                color: isSelected ? Colors.white : AppTheme.primary,
+              ),
+            ),
+    );
+
+    return InkWell(
+      onTap: () => setState(() => _activeNav = 'split'),
+      borderRadius: BorderRadius.circular(10),
+      child: _isSidebarExpanded
+          ? content
+          : Tooltip(
+              message: 'Split Tampilan',
+              waitDuration: const Duration(milliseconds: 300),
+              child: content,
+            ),
+    );
+  }
+
+  Widget _buildSidebarBottomActions(
+    BuildContext context,
+    VerbRepository repo,
+    bool isDark,
+  ) {
+    final themeButton = IconButton(
+      tooltip: repo.isDarkMode ? 'Mode Terang' : 'Mode Gelap',
+      icon: Icon(
+        repo.isDarkMode ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
+        size: 20,
+        color: repo.isDarkMode ? Colors.amber.shade400 : (isDark ? Colors.grey.shade300 : Colors.grey.shade700),
+      ),
+      onPressed: () => repo.toggleThemeMode(),
+    );
+
+    final randomVerbButton = IconButton(
+      tooltip: 'Kata Kerja Acak',
+      icon: Icon(
+        Icons.casino_rounded,
+        size: 20,
+        color: isDark ? Colors.grey.shade300 : Colors.grey.shade700,
+      ),
+      onPressed: () => _showRandomVerb(context),
+    );
+
+    final infoButton = IconButton(
+      tooltip: 'Info Aplikasi',
+      icon: Icon(
+        Icons.info_outline_rounded,
+        size: 20,
+        color: isDark ? Colors.grey.shade300 : Colors.grey.shade700,
+      ),
+      onPressed: () => _showAboutDialog(context),
+    );
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+      decoration: BoxDecoration(
+        border: Border(
+          top: BorderSide(
+            color: isDark ? const Color(0xFF1E293B) : const Color(0xFFE2E8F0),
+          ),
+        ),
+      ),
+      child: _isSidebarExpanded
+          ? SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: const NeverScrollableScrollPhysics(),
+              child: SizedBox(
+                width: 240,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    themeButton,
+                    randomVerbButton,
+                    infoButton,
+                  ],
+                ),
+              ),
+            )
+          : Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                themeButton,
+                const SizedBox(height: 2),
+                randomVerbButton,
+                const SizedBox(height: 2),
+                infoButton,
+              ],
+            ),
+    );
+  }
+
 
   // WIDGET: CUSTOMIZABLE MULTITASKING SPLIT SCREEN WORKSPACE
   Widget _buildCustomSplitWorkspace(BuildContext context, bool isDark) {

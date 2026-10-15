@@ -297,14 +297,17 @@ class _QuizTabState extends State<QuizTab> {
                                 color: _quizCategory == 'grammarly' ? AppTheme.primary : Colors.grey,
                               ),
                               const SizedBox(width: 6),
-                              Text(
-                                'Grammarly (${repo.allGrammarQuestions.length} Soal)',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12,
-                                  color: _quizCategory == 'grammarly'
-                                      ? (isDark ? Colors.white : const Color(0xFF0F172A))
-                                      : Colors.grey,
+                              Flexible(
+                                child: Text(
+                                  'Grammarly (${repo.allGrammarQuestions.length} Soal)',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: _quizCategory == 'grammarly'
+                                        ? (isDark ? Colors.white : const Color(0xFF0F172A))
+                                        : Colors.grey,
+                                  ),
+                                  overflow: TextOverflow.ellipsis,
                                 ),
                               ),
                             ],
@@ -350,14 +353,17 @@ class _QuizTabState extends State<QuizTab> {
                                 color: _quizCategory == 'verbs' ? AppTheme.primary : Colors.grey,
                               ),
                               const SizedBox(width: 6),
-                              Text(
-                                'Kamus Verb (V1, V2, V3)',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12,
-                                  color: _quizCategory == 'verbs'
-                                      ? (isDark ? Colors.white : const Color(0xFF0F172A))
-                                      : Colors.grey,
+                              Flexible(
+                                child: Text(
+                                  'Kamus Verb (V1, V2, V3)',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: _quizCategory == 'verbs'
+                                        ? (isDark ? Colors.white : const Color(0xFF0F172A))
+                                        : Colors.grey,
+                                  ),
+                                  overflow: TextOverflow.ellipsis,
                                 ),
                               ),
                             ],
@@ -372,18 +378,14 @@ class _QuizTabState extends State<QuizTab> {
 
               // 2. Sub-mode Selector for Grammarly (Terjemahkan Kalimat vs Pilihan Ganda)
               if (_quizCategory == 'grammarly') ...[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                Wrap(
+                  alignment: WrapAlignment.center,
+                  spacing: 8,
+                  runSpacing: 6,
                   children: [
                     ChoiceChip(
-                      label: const Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Icon(Icons.translate_rounded, size: 14),
-                          SizedBox(width: 4),
-                          Text('Terjemahkan Indonesia ➔ Inggris'),
-                        ],
-                      ),
+                      label: const Text('Terjemahkan (ID ➔ EN)'),
+                      avatar: const Icon(Icons.translate_rounded, size: 14),
                       selected: _grammarlyMode == 'translate',
                       onSelected: (val) {
                         if (val) {
@@ -396,14 +398,8 @@ class _QuizTabState extends State<QuizTab> {
                     ),
                     const SizedBox(width: 8),
                     ChoiceChip(
-                      label: const Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Icon(Icons.radio_button_checked_rounded, size: 14),
-                          SizedBox(width: 4),
-                          Text('Pilihan Ganda'),
-                        ],
-                      ),
+                      label: const Text('Pilihan Ganda'),
+                      avatar: const Icon(Icons.radio_button_checked_rounded, size: 14),
                       selected: _grammarlyMode == 'choice',
                       onSelected: (val) {
                         if (val) {
@@ -1615,23 +1611,29 @@ class _QuizTabState extends State<QuizTab> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(
-                  children: [
-                    Icon(
-                      Icons.task_alt_rounded,
-                      size: 16,
-                      color: answered == total && total > 0 ? Colors.green : AppTheme.primary,
-                    ),
-                    const SizedBox(width: 6),
-                    Text(
-                      'Progres Selesai: $answered / $total Soal (${(percent * 100).toInt()}%)',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                        color: isDark ? Colors.white : const Color(0xFF0F172A),
+                Expanded(
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.task_alt_rounded,
+                        size: 16,
+                        color: answered == total && total > 0 ? Colors.green : AppTheme.primary,
                       ),
-                    ),
-                  ],
+                      const SizedBox(width: 6),
+                      Expanded(
+                        child: Text(
+                          'Progres: $answered / $total (${(percent * 100).toInt()}%)',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                            color: isDark ? Colors.white : const Color(0xFF0F172A),
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 if (answered > 0)
                   InkWell(
