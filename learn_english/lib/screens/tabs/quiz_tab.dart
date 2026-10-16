@@ -250,179 +250,180 @@ class _QuizTabState extends State<QuizTab> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // 1. Main Category Switcher (Grammarly vs Kamus Verb)
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(4),
-                decoration: BoxDecoration(
-                  color: isDark ? const Color(0xFF1E293B) : const Color(0xFFE2E8F0),
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: InkWell(
-                        onTap: () {
-                          if (_quizCategory != 'grammarly') {
-                            setState(() {
-                              _quizCategory = 'grammarly';
-                              _loadNextQuestion();
-                            });
-                          }
-                        },
-                        borderRadius: BorderRadius.circular(10),
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(vertical: 8),
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                            color: _quizCategory == 'grammarly'
-                                ? (isDark ? const Color(0xFF334155) : Colors.white)
-                                : Colors.transparent,
-                            borderRadius: BorderRadius.circular(10),
-                            boxShadow: _quizCategory == 'grammarly'
-                                ? [
-                                    BoxShadow(
-                                      color: Colors.black.withValues(alpha: 0.05),
-                                      blurRadius: 4,
-                                      offset: const Offset(0, 2),
-                                    )
-                                  ]
-                                : null,
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(
-                                Icons.school_rounded,
-                                size: 16,
-                                color: _quizCategory == 'grammarly' ? AppTheme.primary : Colors.grey,
-                              ),
-                              const SizedBox(width: 6),
-                              Flexible(
-                                child: Text(
-                                  'Grammarly (${repo.allGrammarQuestions.length} Soal)',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: _quizCategory == 'grammarly'
-                                        ? (isDark ? Colors.white : const Color(0xFF0F172A))
-                                        : Colors.grey,
-                                  ),
-                                  overflow: TextOverflow.ellipsis,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: InkWell(
-                        onTap: () {
-                          if (_quizCategory != 'verbs') {
-                            setState(() {
-                              _quizCategory = 'verbs';
-                              _loadNextQuestion();
-                            });
-                          }
-                        },
-                        borderRadius: BorderRadius.circular(10),
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(vertical: 8),
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                            color: _quizCategory == 'verbs'
-                                ? (isDark ? const Color(0xFF334155) : Colors.white)
-                                : Colors.transparent,
-                            borderRadius: BorderRadius.circular(10),
-                            boxShadow: _quizCategory == 'verbs'
-                                ? [
-                                    BoxShadow(
-                                      color: Colors.black.withValues(alpha: 0.05),
-                                      blurRadius: 4,
-                                      offset: const Offset(0, 2),
-                                    )
-                                  ]
-                                : null,
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(
-                                Icons.menu_book_rounded,
-                                size: 16,
-                                color: _quizCategory == 'verbs' ? AppTheme.primary : Colors.grey,
-                              ),
-                              const SizedBox(width: 6),
-                              Flexible(
-                                child: Text(
-                                  'Kamus Verb (V1, V2, V3)',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: _quizCategory == 'verbs'
-                                        ? (isDark ? Colors.white : const Color(0xFF0F172A))
-                                        : Colors.grey,
-                                  ),
-                                  overflow: TextOverflow.ellipsis,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 12),
+              // Filter & Mode Toggle Header (Initially, ONLY this appears)
+              _buildFilterHeader(isDark, repo),
 
-              // 2. Sub-mode Selector for Grammarly (Terjemahkan Kalimat vs Pilihan Ganda)
-              if (_quizCategory == 'grammarly') ...[
-                Wrap(
-                  alignment: WrapAlignment.center,
-                  crossAxisAlignment: WrapCrossAlignment.center,
-                  spacing: 8,
-                  runSpacing: 6,
-                  children: [
-                    ChoiceChip(
-                      label: const Text('Terjemahkan (ID ➔ EN)'),
-                      avatar: const Icon(Icons.translate_rounded, size: 14),
-                      selected: _grammarlyMode == 'translate',
-                      onSelected: (val) {
-                        if (val) {
-                          setState(() {
-                            _grammarlyMode = 'translate';
-                            _loadNextQuestion();
-                          });
-                        }
-                      },
-                    ),
-                    ChoiceChip(
-                      label: const Text('Pilihan Ganda'),
-                      avatar: const Icon(Icons.radio_button_checked_rounded, size: 14),
-                      selected: _grammarlyMode == 'choice',
-                      onSelected: (val) {
-                        if (val) {
-                          setState(() {
-                            _grammarlyMode = 'choice';
-                            _loadNextQuestion();
-                          });
-                        }
-                      },
-                    ),
-                    _buildFilterToggleButton(isDark),
-                  ],
-                ),
+              // Collapsible Settings & Modes Container
+              AnimatedSize(
+                duration: const Duration(milliseconds: 250),
+                curve: Curves.easeInOut,
+                child: _showFilters
+                    ? Column(
+                        children: [
+                          // 1. Main Category Switcher (Grammarly vs Kamus Verb)
+                          Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.all(4),
+                            decoration: BoxDecoration(
+                              color: isDark ? const Color(0xFF1E293B) : const Color(0xFFE2E8F0),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: InkWell(
+                                    onTap: () {
+                                      if (_quizCategory != 'grammarly') {
+                                        setState(() {
+                                          _quizCategory = 'grammarly';
+                                          _loadNextQuestion();
+                                        });
+                                      }
+                                    },
+                                    borderRadius: BorderRadius.circular(10),
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      alignment: Alignment.center,
+                                      decoration: BoxDecoration(
+                                        color: _quizCategory == 'grammarly'
+                                            ? (isDark ? const Color(0xFF334155) : Colors.white)
+                                            : Colors.transparent,
+                                        borderRadius: BorderRadius.circular(10),
+                                        boxShadow: _quizCategory == 'grammarly'
+                                            ? [
+                                                BoxShadow(
+                                                  color: Colors.black.withValues(alpha: 0.05),
+                                                  blurRadius: 4,
+                                                  offset: const Offset(0, 2),
+                                                )
+                                              ]
+                                            : null,
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Icon(
+                                            Icons.school_rounded,
+                                            size: 16,
+                                            color: _quizCategory == 'grammarly' ? AppTheme.primary : Colors.grey,
+                                          ),
+                                          const SizedBox(width: 6),
+                                          Flexible(
+                                            child: Text(
+                                              'Grammarly (${repo.allGrammarQuestions.length} Soal)',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 12,
+                                                color: _quizCategory == 'grammarly'
+                                                    ? (isDark ? Colors.white : const Color(0xFF0F172A))
+                                                    : Colors.grey,
+                                              ),
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: InkWell(
+                                    onTap: () {
+                                      if (_quizCategory != 'verbs') {
+                                        setState(() {
+                                          _quizCategory = 'verbs';
+                                          _loadNextQuestion();
+                                        });
+                                      }
+                                    },
+                                    borderRadius: BorderRadius.circular(10),
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      alignment: Alignment.center,
+                                      decoration: BoxDecoration(
+                                        color: _quizCategory == 'verbs'
+                                            ? (isDark ? const Color(0xFF334155) : Colors.white)
+                                            : Colors.transparent,
+                                        borderRadius: BorderRadius.circular(10),
+                                        boxShadow: _quizCategory == 'verbs'
+                                            ? [
+                                                BoxShadow(
+                                                  color: Colors.black.withValues(alpha: 0.05),
+                                                  blurRadius: 4,
+                                                  offset: const Offset(0, 2),
+                                                )
+                                              ]
+                                            : null,
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Icon(
+                                            Icons.menu_book_rounded,
+                                            size: 16,
+                                            color: _quizCategory == 'verbs' ? AppTheme.primary : Colors.grey,
+                                          ),
+                                          const SizedBox(width: 6),
+                                          Flexible(
+                                            child: Text(
+                                              'Kamus Verb (V1, V2, V3)',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 12,
+                                                color: _quizCategory == 'verbs'
+                                                    ? (isDark ? Colors.white : const Color(0xFF0F172A))
+                                                    : Colors.grey,
+                                              ),
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 12),
 
-                // Collapsible Filter Section (Tingkat Kesulitan & Tense Type)
-                AnimatedSize(
-                  duration: const Duration(milliseconds: 200),
-                  curve: Curves.easeInOut,
-                  child: _showFilters
-                      ? Column(
-                          children: [
+                          // 2. Sub-mode Selector for Grammarly (Terjemahkan Kalimat vs Pilihan Ganda)
+                          if (_quizCategory == 'grammarly') ...[
+                            Wrap(
+                              alignment: WrapAlignment.center,
+                              spacing: 8,
+                              runSpacing: 6,
+                              children: [
+                                ChoiceChip(
+                                  label: const Text('Terjemahkan (ID ➔ EN)'),
+                                  avatar: const Icon(Icons.translate_rounded, size: 14),
+                                  selected: _grammarlyMode == 'translate',
+                                  onSelected: (val) {
+                                    if (val) {
+                                      setState(() {
+                                        _grammarlyMode = 'translate';
+                                        _loadNextQuestion();
+                                      });
+                                    }
+                                  },
+                                ),
+                                ChoiceChip(
+                                  label: const Text('Pilihan Ganda'),
+                                  avatar: const Icon(Icons.radio_button_checked_rounded, size: 14),
+                                  selected: _grammarlyMode == 'choice',
+                                  onSelected: (val) {
+                                    if (val) {
+                                      setState(() {
+                                        _grammarlyMode = 'choice';
+                                        _loadNextQuestion();
+                                      });
+                                    }
+                                  },
+                                ),
+                              ],
+                            ),
                             const SizedBox(height: 10),
+
                             // 3. Level Filter Selector: Beginner, Intermediate, Expert
                             Container(
                               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
@@ -540,74 +541,73 @@ class _QuizTabState extends State<QuizTab> {
                                 ],
                               ),
                             ),
+                          ] else ...[
+                            // Sub-modes for Verb Quiz
+                            SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  ChoiceChip(
+                                    label: const Text('Tebak V2'),
+                                    selected: _verbMode == 'v2',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _verbMode = 'v2';
+                                        });
+                                        _loadNextQuestion();
+                                      }
+                                    },
+                                  ),
+                                  const SizedBox(width: 6),
+                                  ChoiceChip(
+                                    label: const Text('Tebak V3'),
+                                    selected: _verbMode == 'v3',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _verbMode = 'v3';
+                                        });
+                                        _loadNextQuestion();
+                                      }
+                                    },
+                                  ),
+                                  const SizedBox(width: 6),
+                                  ChoiceChip(
+                                    label: const Text('Tebak Arti'),
+                                    selected: _verbMode == 'meaning',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _verbMode = 'meaning';
+                                        });
+                                        _loadNextQuestion();
+                                      }
+                                    },
+                                  ),
+                                  const SizedBox(width: 6),
+                                  ChoiceChip(
+                                    label: const Text('Campuran'),
+                                    selected: _verbMode == 'mixed',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _verbMode = 'mixed';
+                                        });
+                                        _loadNextQuestion();
+                                      }
+                                    },
+                                  ),
+                                ],
+                              ),
+                            ),
                           ],
-                        )
-                      : const SizedBox.shrink(),
-                ),
-                const SizedBox(height: 12),
-              ] else ...[
-                // Sub-modes for Verb Quiz
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      ChoiceChip(
-                        label: const Text('Tebak V2'),
-                        selected: _verbMode == 'v2',
-                        onSelected: (val) {
-                          if (val) {
-                            setState(() {
-                              _verbMode = 'v2';
-                            });
-                            _loadNextQuestion();
-                          }
-                        },
-                      ),
-                      const SizedBox(width: 6),
-                      ChoiceChip(
-                        label: const Text('Tebak V3'),
-                        selected: _verbMode == 'v3',
-                        onSelected: (val) {
-                          if (val) {
-                            setState(() {
-                              _verbMode = 'v3';
-                            });
-                            _loadNextQuestion();
-                          }
-                        },
-                      ),
-                      const SizedBox(width: 6),
-                      ChoiceChip(
-                        label: const Text('Tebak Arti'),
-                        selected: _verbMode == 'meaning',
-                        onSelected: (val) {
-                          if (val) {
-                            setState(() {
-                              _verbMode = 'meaning';
-                            });
-                            _loadNextQuestion();
-                          }
-                        },
-                      ),
-                      const SizedBox(width: 6),
-                      ChoiceChip(
-                        label: const Text('Campuran'),
-                        selected: _verbMode == 'mixed',
-                        onSelected: (val) {
-                          if (val) {
-                            setState(() {
-                              _verbMode = 'mixed';
-                            });
-                            _loadNextQuestion();
-                          }
-                        },
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-              const SizedBox(height: 16),
+                          const SizedBox(height: 16),
+                        ],
+                      )
+                    : const SizedBox.shrink(),
+              ),
 
               // 4.5. PROGRESS BAR & RESET ACTION
               _buildProgressBar(context, repo, isDark),
@@ -677,67 +677,103 @@ class _QuizTabState extends State<QuizTab> {
     );
   }
 
-  Widget _buildFilterToggleButton(bool isDark) {
-    final hasActiveFilter = _tenseTypeFilter != 'all' || _levelFilter != 'all';
-    return Tooltip(
-      message: _showFilters ? 'Sembunyikan Filter' : 'Tampilkan Filter',
+  Widget _buildFilterHeader(bool isDark, VerbRepository repo) {
+    final summary = _quizCategory == 'grammarly'
+        ? 'Grammarly • ${_grammarlyMode == 'translate' ? 'Terjemahkan' : 'Pilihan Ganda'} • ${_formatLevelLabel(_levelFilter)}${_tenseTypeFilter != 'all' ? ' • ${_formatTenseTypeLabel(_tenseTypeFilter)}' : ''}'
+        : 'Kamus Verb • ${_verbMode.toUpperCase()}';
+
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.only(bottom: 12),
       child: Material(
         color: Colors.transparent,
         child: InkWell(
           onTap: () => setState(() => _showFilters = !_showFilters),
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(12),
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 200),
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
             decoration: BoxDecoration(
-              color: _showFilters
-                  ? AppTheme.primary
-                  : (hasActiveFilter
-                      ? AppTheme.primary.withValues(alpha: 0.15)
-                      : (isDark ? const Color(0xFF1E293B) : Colors.white)),
-              borderRadius: BorderRadius.circular(10),
+              color: isDark ? const Color(0xFF1E293B) : Colors.white,
+              borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: _showFilters || hasActiveFilter
+                color: _showFilters
                     ? AppTheme.primary
                     : (isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0)),
+                width: _showFilters ? 1.5 : 1.0,
               ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: isDark ? 0.2 : 0.04),
+                  blurRadius: 4,
+                  offset: const Offset(0, 2),
+                ),
+              ],
             ),
             child: Row(
-              mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(
-                  _showFilters ? Icons.filter_alt_rounded : Icons.filter_alt_outlined,
-                  size: 16,
-                  color: _showFilters
-                      ? Colors.white
-                      : (hasActiveFilter
-                          ? AppTheme.primary
-                          : (isDark ? Colors.grey.shade300 : Colors.grey.shade700)),
-                ),
-                const SizedBox(width: 4),
-                Text(
-                  'Filter',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
+                Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
                     color: _showFilters
-                        ? Colors.white
-                        : (hasActiveFilter
-                            ? AppTheme.primary
-                            : (isDark ? Colors.grey.shade300 : Colors.grey.shade700)),
+                        ? AppTheme.primary
+                        : AppTheme.primary.withValues(alpha: 0.15),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Icon(
+                    Icons.tune_rounded,
+                    size: 16,
+                    color: _showFilters ? Colors.white : AppTheme.primary,
                   ),
                 ),
-                if (hasActiveFilter) ...[
-                  const SizedBox(width: 4),
-                  Container(
-                    width: 6,
-                    height: 6,
-                    decoration: BoxDecoration(
-                      color: _showFilters ? Colors.white : AppTheme.primary,
-                      shape: BoxShape.circle,
-                    ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Wrap(
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        spacing: 6,
+                        children: [
+                          Text(
+                            'Filter & Mode Kuis',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: isDark ? Colors.white : const Color(0xFF0F172A),
+                            ),
+                          ),
+                          Text(
+                            _showFilters ? '(Tutup menu)' : '(Buka menu)',
+                            style: TextStyle(
+                              fontSize: 11,
+                              color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        summary,
+                        style: const TextStyle(
+                          fontSize: 11,
+                          color: AppTheme.primary,
+                          fontWeight: FontWeight.w600,
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
                   ),
-                ],
+                ),
+                const SizedBox(width: 8),
+                Icon(
+                  _showFilters
+                      ? Icons.keyboard_arrow_up_rounded
+                      : Icons.keyboard_arrow_down_rounded,
+                  color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
+                ),
               ],
             ),
           ),

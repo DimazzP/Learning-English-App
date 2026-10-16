@@ -16,7 +16,7 @@ class _FlashcardsTabState extends State<FlashcardsTab> {
   int _currentIndex = 0;
   bool _isFlipped = false;
   String _category = 'irregular'; // 'irregular', 'regular', 'all', 'favorites'
-
+  bool _showFilters = false;
   List<Verb> _getVerbs(VerbRepository repo) {
     if (_category == 'irregular') return repo.irregularVerbs;
     if (_category == 'regular') return repo.regularVerbs;
@@ -75,71 +75,82 @@ class _FlashcardsTabState extends State<FlashcardsTab> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // Category selector
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ChoiceChip(
-                          label: const Text('Irregular'),
-                          selected: _category == 'irregular',
-                          onSelected: (val) {
-                            if (val) {
-                              setState(() {
-                                _category = 'irregular';
-                                _currentIndex = 0;
-                                _isFlipped = false;
-                              });
-                            }
-                          },
-                        ),
-                        const SizedBox(width: 8),
-                        ChoiceChip(
-                          label: const Text('Regular'),
-                          selected: _category == 'regular',
-                          onSelected: (val) {
-                            if (val) {
-                              setState(() {
-                                _category = 'regular';
-                                _currentIndex = 0;
-                                _isFlipped = false;
-                              });
-                            }
-                          },
-                        ),
-                        const SizedBox(width: 8),
-                        ChoiceChip(
-                          label: const Text('Semua'),
-                          selected: _category == 'all',
-                          onSelected: (val) {
-                            if (val) {
-                              setState(() {
-                                _category = 'all';
-                                _currentIndex = 0;
-                                _isFlipped = false;
-                              });
-                            }
-                          },
-                        ),
-                        const SizedBox(width: 8),
-                        ChoiceChip(
-                          label: Text('Favorit (${repo.favoriteVerbs.length})'),
-                          selected: _category == 'favorites',
-                          onSelected: (val) {
-                            if (val) {
-                              setState(() {
-                                _category = 'favorites';
-                                _currentIndex = 0;
-                                _isFlipped = false;
-                              });
-                            }
-                          },
-                        ),
-                      ],
-                    ),
+                  // Filter & Mode Toggle Header (Initially, ONLY this appears)
+                  _buildFilterHeader(isDark, repo),
+
+                  // Collapsible Category Selector
+                  AnimatedSize(
+                    duration: const Duration(milliseconds: 200),
+                    curve: Curves.easeInOut,
+                    child: _showFilters
+                        ? Padding(
+                            padding: const EdgeInsets.only(bottom: 16),
+                            child: SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  ChoiceChip(
+                                    label: const Text('Irregular'),
+                                    selected: _category == 'irregular',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _category = 'irregular';
+                                          _currentIndex = 0;
+                                          _isFlipped = false;
+                                        });
+                                      }
+                                    },
+                                  ),
+                                  const SizedBox(width: 8),
+                                  ChoiceChip(
+                                    label: const Text('Regular'),
+                                    selected: _category == 'regular',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _category = 'regular';
+                                          _currentIndex = 0;
+                                          _isFlipped = false;
+                                        });
+                                      }
+                                    },
+                                  ),
+                                  const SizedBox(width: 8),
+                                  ChoiceChip(
+                                    label: const Text('Semua'),
+                                    selected: _category == 'all',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _category = 'all';
+                                          _currentIndex = 0;
+                                          _isFlipped = false;
+                                        });
+                                      }
+                                    },
+                                  ),
+                                  const SizedBox(width: 8),
+                                  ChoiceChip(
+                                    label: Text('Favorit (${repo.favoriteVerbs.length})'),
+                                    selected: _category == 'favorites',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _category = 'favorites';
+                                          _currentIndex = 0;
+                                          _isFlipped = false;
+                                        });
+                                      }
+                                    },
+                                  ),
+                                ],
+                              ),
+                            ),
+                          )
+                        : const SizedBox.shrink(),
                   ),
-                  const SizedBox(height: 16),
 
                   if (total == 0)
                     Container(
@@ -494,6 +505,120 @@ class _FlashcardsTabState extends State<FlashcardsTab> {
           ),
         ],
       ],
+    );
+  }
+
+  Widget _buildFilterHeader(bool isDark, VerbRepository repo) {
+    String categoryLabel;
+    switch (_category) {
+      case 'irregular':
+        categoryLabel = 'Irregular Verbs';
+        break;
+      case 'regular':
+        categoryLabel = 'Regular Verbs';
+        break;
+      case 'favorites':
+        categoryLabel = 'Kata Favorit (${repo.favoriteVerbs.length})';
+        break;
+      default:
+        categoryLabel = 'Semua Verbs (${repo.allVerbs.length})';
+    }
+
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.only(bottom: 12),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () => setState(() => _showFilters = !_showFilters),
+          borderRadius: BorderRadius.circular(12),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+            decoration: BoxDecoration(
+              color: isDark ? const Color(0xFF1E293B) : Colors.white,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: _showFilters
+                    ? Colors.teal
+                    : (isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0)),
+                width: _showFilters ? 1.5 : 1.0,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: isDark ? 0.2 : 0.04),
+                  blurRadius: 4,
+                  offset: const Offset(0, 2),
+                ),
+              ],
+            ),
+            child: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                    color: _showFilters
+                        ? Colors.teal
+                        : Colors.teal.withValues(alpha: 0.15),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Icon(
+                    Icons.tune_rounded,
+                    size: 16,
+                    color: _showFilters ? Colors.white : Colors.teal,
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Wrap(
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        spacing: 6,
+                        children: [
+                          Text(
+                            'Kategori Kartu Hafalan',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: isDark ? Colors.white : const Color(0xFF0F172A),
+                            ),
+                          ),
+                          Text(
+                            _showFilters ? '(Tutup menu)' : '(Buka menu)',
+                            style: TextStyle(
+                              fontSize: 11,
+                              color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        'Kategori: $categoryLabel',
+                        style: const TextStyle(
+                          fontSize: 11,
+                          color: Colors.teal,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Icon(
+                  _showFilters
+                      ? Icons.keyboard_arrow_up_rounded
+                      : Icons.keyboard_arrow_down_rounded,
+                  color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

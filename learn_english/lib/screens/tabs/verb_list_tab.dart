@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../services/verb_repository.dart';
+import '../../theme/app_theme.dart';
 import '../../widgets/verb_card.dart';
 
 class VerbListTab extends StatefulWidget {
@@ -14,7 +15,7 @@ class _VerbListTabState extends State<VerbListTab> {
   String _typeFilter = 'all'; // 'all', 'irregular', 'regular'
   String _difficultyFilter = 'all';
   String _languageFilter = 'all'; // 'all', 'en', 'id'
-
+  bool _showFilters = false;
   @override
   void dispose() {
     _searchController.dispose();
@@ -62,121 +63,140 @@ class _VerbListTabState extends State<VerbListTab> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Search bar
-                        TextField(
-                          controller: _searchController,
-                          onChanged: (_) => setState(() {}),
-                          decoration: InputDecoration(
-                            hintText: _languageFilter == 'en'
-                                ? 'Cari kata kerja Inggris (V1, V2, V3, atau V-ing)...'
-                                : (_languageFilter == 'id'
-                                    ? 'Cari arti kata kerja dalam Bahasa Indonesia...'
-                                    : 'Cari kata kerja (V1, V2, V3, atau Arti dalam BI)...'),
-                            prefixIcon: const Icon(Icons.search_rounded),
-                            suffixIcon: _searchController.text.isNotEmpty
-                                ? IconButton(
-                                    icon: const Icon(Icons.clear_rounded),
-                                    onPressed: () {
-                                      _searchController.clear();
-                                      setState(() {});
-                                    },
-                                  )
-                                : null,
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-
-                        // Language Target Filter & Type Filter
-                        SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            children: [
-                              // Language direction filter
-                              _buildFilterChip(
-                                label: 'Semua Bahasa',
-                                selected: _languageFilter == 'all',
-                                onSelected: () => setState(() => _languageFilter = 'all'),
-                              ),
-                              const SizedBox(width: 8),
-                              _buildFilterChip(
-                                label: '🇬🇧 Inggris',
-                                selected: _languageFilter == 'en',
-                                onSelected: () => setState(() => _languageFilter = 'en'),
-                                activeColor: Colors.indigo,
-                              ),
-                              const SizedBox(width: 8),
-                              _buildFilterChip(
-                                label: '🇮🇩 Indonesia',
-                                selected: _languageFilter == 'id',
-                                onSelected: () => setState(() => _languageFilter = 'id'),
-                                activeColor: Colors.teal,
-                              ),
-                              const SizedBox(width: 12),
-                              Container(
-                                width: 1,
-                                height: 24,
-                                color: isDark ? const Color(0xFF334155) : const Color(0xFFCBD5E1),
-                              ),
-                              const SizedBox(width: 12),
-
-                              // Filter Chips: All, Irregular, Regular
-                              _buildFilterChip(
-                                label: 'Semua Jenis ($totalCount)',
-                                selected: _typeFilter == 'all',
-                                onSelected: () => setState(() => _typeFilter = 'all'),
-                              ),
-                              const SizedBox(width: 8),
-                              _buildFilterChip(
-                                label: 'Irregular ($irregularCount)',
-                                selected: _typeFilter == 'irregular',
-                                onSelected: () => setState(() => _typeFilter = 'irregular'),
-                                activeColor: Colors.orange,
-                              ),
-                              const SizedBox(width: 8),
-                              _buildFilterChip(
-                                label: 'Regular ($regularCount)',
-                                selected: _typeFilter == 'regular',
-                                onSelected: () => setState(() => _typeFilter = 'regular'),
-                                activeColor: Colors.blue,
-                              ),
-                              const SizedBox(width: 12),
-                              // Difficulty dropdown / filter
-                              Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 10),
-                                decoration: BoxDecoration(
-                                  color: isDark ? const Color(0xFF1E293B) : Colors.white,
-                                  borderRadius: BorderRadius.circular(10),
-                                  border: Border.all(
-                                    color: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
-                                  ),
+                        // Search bar & Filter Button
+                        Row(
+                          children: [
+                            Expanded(
+                              child: TextField(
+                                controller: _searchController,
+                                onChanged: (_) => setState(() {}),
+                                decoration: InputDecoration(
+                                  hintText: _languageFilter == 'en'
+                                      ? 'Cari kata kerja Inggris (V1, V2, V3, atau V-ing)...'
+                                      : (_languageFilter == 'id'
+                                          ? 'Cari arti kata kerja dalam Bahasa Indonesia...'
+                                          : 'Cari kata kerja (V1, V2, V3, atau Arti dalam BI)...'),
+                                  prefixIcon: const Icon(Icons.search_rounded),
+                                  suffixIcon: _searchController.text.isNotEmpty
+                                      ? IconButton(
+                                          icon: const Icon(Icons.clear_rounded),
+                                          onPressed: () {
+                                            _searchController.clear();
+                                            setState(() {});
+                                          },
+                                        )
+                                      : null,
                                 ),
-                                child: DropdownButtonHideUnderline(
-                                  child: DropdownButton<String>(
-                                    value: _difficultyFilter,
-                                    isDense: true,
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w600,
-                                      color: isDark ? Colors.white : Colors.black87,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            _buildFilterToggleButton(isDark),
+                          ],
+                        ),
+
+                        // Collapsible Filters
+                        AnimatedSize(
+                          duration: const Duration(milliseconds: 200),
+                          curve: Curves.easeInOut,
+                          child: _showFilters
+                              ? Column(
+                                  children: [
+                                    const SizedBox(height: 12),
+                                    SingleChildScrollView(
+                                      scrollDirection: Axis.horizontal,
+                                      child: Row(
+                                        children: [
+                                          // Language direction filter
+                                          _buildFilterChip(
+                                            label: 'Semua Bahasa',
+                                            selected: _languageFilter == 'all',
+                                            onSelected: () => setState(() => _languageFilter = 'all'),
+                                          ),
+                                          const SizedBox(width: 8),
+                                          _buildFilterChip(
+                                            label: '🇬🇧 Inggris',
+                                            selected: _languageFilter == 'en',
+                                            onSelected: () => setState(() => _languageFilter = 'en'),
+                                            activeColor: Colors.indigo,
+                                          ),
+                                          const SizedBox(width: 8),
+                                          _buildFilterChip(
+                                            label: '🇮🇩 Indonesia',
+                                            selected: _languageFilter == 'id',
+                                            onSelected: () => setState(() => _languageFilter = 'id'),
+                                            activeColor: Colors.teal,
+                                          ),
+                                          const SizedBox(width: 12),
+                                          Container(
+                                            width: 1,
+                                            height: 24,
+                                            color: isDark ? const Color(0xFF334155) : const Color(0xFFCBD5E1),
+                                          ),
+                                          const SizedBox(width: 12),
+
+                                          // Filter Chips: All, Irregular, Regular
+                                          _buildFilterChip(
+                                            label: 'Semua Jenis ($totalCount)',
+                                            selected: _typeFilter == 'all',
+                                            onSelected: () => setState(() => _typeFilter = 'all'),
+                                          ),
+                                          const SizedBox(width: 8),
+                                          _buildFilterChip(
+                                            label: 'Irregular ($irregularCount)',
+                                            selected: _typeFilter == 'irregular',
+                                            onSelected: () => setState(() => _typeFilter = 'irregular'),
+                                            activeColor: Colors.orange,
+                                          ),
+                                          const SizedBox(width: 8),
+                                          _buildFilterChip(
+                                            label: 'Regular ($regularCount)',
+                                            selected: _typeFilter == 'regular',
+                                            onSelected: () => setState(() => _typeFilter = 'regular'),
+                                            activeColor: Colors.blue,
+                                          ),
+                                          const SizedBox(width: 12),
+                                          // Difficulty dropdown / filter
+                                          Container(
+                                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                                            decoration: BoxDecoration(
+                                              color: isDark ? const Color(0xFF1E293B) : Colors.white,
+                                              borderRadius: BorderRadius.circular(10),
+                                              border: Border.all(
+                                                color: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
+                                              ),
+                                            ),
+                                            child: DropdownButtonHideUnderline(
+                                              child: DropdownButton<String>(
+                                                value: _difficultyFilter,
+                                                isDense: true,
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.w600,
+                                                  color: isDark ? Colors.white : Colors.black87,
+                                                ),
+                                                items: const [
+                                                  DropdownMenuItem(value: 'all', child: Text('Semua Level')),
+                                                  DropdownMenuItem(value: 'basic', child: Text('Basic')),
+                                                  DropdownMenuItem(value: 'intermediate', child: Text('Intermediate')),
+                                                  DropdownMenuItem(value: 'advanced', child: Text('Advanced')),
+                                                ],
+                                                onChanged: (val) {
+                                                  if (val != null) {
+                                                    setState(() => _difficultyFilter = val);
+                                                  }
+                                                },
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                                     ),
-                                    items: const [
-                                      DropdownMenuItem(value: 'all', child: Text('Semua Level')),
-                                      DropdownMenuItem(value: 'basic', child: Text('Basic')),
-                                      DropdownMenuItem(value: 'intermediate', child: Text('Intermediate')),
-                                      DropdownMenuItem(value: 'advanced', child: Text('Advanced')),
-                                    ],
-                                    onChanged: (val) {
-                                      if (val != null) {
-                                        setState(() => _difficultyFilter = val);
-                                      }
-                                    },
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
+                                  ],
+                                )
+                              : const SizedBox.shrink(),
                         ),
-                        const SizedBox(height: 12),
+
+
 
                         // Result count info
                         Row(
@@ -256,7 +276,7 @@ class _VerbListTabState extends State<VerbListTab> {
                     sliver: SliverGrid(
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: constraints.maxWidth >= 1100 ? 3 : 2,
-                        childAspectRatio: 2.1,
+                        mainAxisExtent: 250,
                         crossAxisSpacing: 16,
                         mainAxisSpacing: 12,
                       ),
@@ -311,6 +331,64 @@ class _VerbListTabState extends State<VerbListTab> {
       showCheckmark: false,
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+    );
+  }
+
+  Widget _buildFilterToggleButton(bool isDark) {
+    final hasActiveFilter = _typeFilter != 'all' || _difficultyFilter != 'all' || _languageFilter != 'all';
+
+    return Tooltip(
+      message: _showFilters ? 'Sembunyikan Filter' : 'Tampilkan Filter',
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () => setState(() => _showFilters = !_showFilters),
+          borderRadius: BorderRadius.circular(12),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+            decoration: BoxDecoration(
+              color: _showFilters
+                  ? AppTheme.primary
+                  : (hasActiveFilter
+                      ? AppTheme.primary.withValues(alpha: 0.15)
+                      : (isDark ? const Color(0xFF1E293B) : Colors.white)),
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: _showFilters || hasActiveFilter
+                    ? AppTheme.primary
+                    : (isDark ? const Color(0xFF334155) : const Color(0xFFCBD5E1)),
+                width: _showFilters ? 1.5 : 1.0,
+              ),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  Icons.tune_rounded,
+                  size: 20,
+                  color: _showFilters
+                      ? Colors.white
+                      : (hasActiveFilter
+                          ? AppTheme.primary
+                          : (isDark ? Colors.grey.shade300 : Colors.grey.shade700)),
+                ),
+                if (hasActiveFilter && !_showFilters) ...[
+                  const SizedBox(width: 4),
+                  Container(
+                    width: 6,
+                    height: 6,
+                    decoration: BoxDecoration(
+                      color: AppTheme.primary,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

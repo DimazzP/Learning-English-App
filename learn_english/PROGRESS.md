@@ -6,10 +6,15 @@ Dokumen ini mencatat riwayat pembaruan, penambahan fitur, perbaikan bug, dan sta
 
 ## 📌 Ringkasan Pembaruan Terkini
 
-### 1. Fitur Toggle & Sembunyikan Filter (Grammar Guide & Kuis)
-- **Collapsible Filters**: Baris filter pada tab *Pembelajaran 16 Tenses* (`grammar_guide_tab.dart`) dan *Kuis Grammarly* (`quiz_tab.dart`) kini dapat disembunyikan (*hide*) dan dimunculkan kembali dengan tombol ikon Filter.
-- **Kondisi Awal Hide**: Filter dalam keadaan tertutup/tersembunyi secara default untuk menjaga tampilan UI tetap lapang dan tidak terasa penuh.
-- **Indikator Aktif**: Tombol Filter dilengkapi animasi transisi, badge/titik status ketika filter tertentu aktif, dan tooltip panduan.
+### 1. Mode & Filter Tersembunyi Penuh di Semua Fitur (Default: Hide)
+- **Penyembunyian Menyeluruh**: Seluruh kontrol pemilihan mode dan filter disembunyikan secara default (`_showFilters = false`) agar tampilan UI tidak terasa penuh dan langsung memberikan ruang maksimal untuk konten utama (soal kuis, tabel perbandingan, kamus, hafalan, dsb.):
+  - **Kuis & Latihan (`quiz_tab.dart`)**: Pilihan *Grammarly vs Kamus Verb*, sub-mode *Terjemahkan vs Pilihan Ganda* (atau mode Verb), filter *Tingkat Kesulitan*, dan filter *Tenses* semuanya tersembunyi.
+  - **Pembelajaran 16 Tenses (`grammar_guide_tab.dart`)**: Mode tampilan (*Tabel Perbandingan*, *Tabel Grid*, *Kartu Penjelasan*) serta filter kategori tenses semuanya tersembunyi.
+  - **Kamus Verbs (`verb_list_tab.dart`)**: Filter bahasa, filter tipe (*Irregular/Regular*), dan level kesulitan tersembunyi di balik tombol filter di samping search bar.
+  - **Kamus Universal (`universal_dictionary_tab.dart`)**: Sub-navigasi (*Terjemahan*, *KBBI*, *Baku*, *Antonim*), arah terjemahan, dan filter kelas kata tersembunyi di balik tombol toggle.
+  - **Belajar To Be (`to_be_guide_tab.dart`)**: Segment bar materi (*Pondasi & Rumus*, *Matriks*, *Kesalahan Umum*, *Kuis*) tersembunyi di balik bilah menu.
+  - **Hafalan Flashcards (`flashcards_tab.dart`)**: Pemilih kategori (*Irregular*, *Regular*, *Semua*, *Favorit*) tersembunyi di balik bilah menu.
+- **Bilah Filter & Ringkasan Mode Aktif**: Tampilan awal hanya menampilkan tombol/bilah filter rapi dengan ringkasan status aktif (contoh: *Grammarly • Terjemahkan • Beginner*), ikon pengaturan, dan panah animasi buka-tutup.
 
 ### 2. Penambahan 150 Soal Kuis Present Tense
 - **Ekspansi Bank Soal Present Tense**: Menambahkan **150 soal baru** berkualitas tinggi yang mencakup seluruh tingkat kesukaran:

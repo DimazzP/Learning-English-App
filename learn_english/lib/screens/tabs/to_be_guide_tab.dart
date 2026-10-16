@@ -12,7 +12,7 @@ class ToBeGuideTab extends StatefulWidget {
 class _ToBeGuideTabState extends State<ToBeGuideTab> {
   // 'rules' (Pondasi & Aturan), 'matrix' (Matriks Subjek), 'mistakes' (Kesalahan Umum), 'quiz' (Latihan Soal)
   String _activeSection = 'rules';
-
+  bool _showFilters = false;
   // Continuous Quiz state (same behavior as Tense Quiz in QuizTab)
   ToBeQuizQuestion? _currentQuizQuestion;
   String? _selectedAnswer;
@@ -82,9 +82,23 @@ class _ToBeGuideTabState extends State<ToBeGuideTab> {
               _buildHeader(isDark),
               const SizedBox(height: 16),
 
-              // Filter Segment Bar
-              _buildSegmentBar(isDark),
-              const SizedBox(height: 20),
+              // Filter & Mode Toggle Header (Initially, ONLY this appears)
+              _buildFilterHeader(isDark),
+
+              // Collapsible Segment Bar
+              AnimatedSize(
+                duration: const Duration(milliseconds: 200),
+                curve: Curves.easeInOut,
+                child: _showFilters
+                    ? Column(
+                        children: [
+                          _buildSegmentBar(isDark),
+                          const SizedBox(height: 16),
+                        ],
+                      )
+                    : const SizedBox.shrink(),
+              ),
+              const SizedBox(height: 4),
 
               // Dynamic Body based on active section
               if (_activeSection == 'rules') _buildRulesSection(isDark),
@@ -127,6 +141,111 @@ class _ToBeGuideTabState extends State<ToBeGuideTab> {
           ),
         ),
       ],
+    );
+  }
+
+  Widget _buildFilterHeader(bool isDark) {
+    final activeLabel = _activeSection == 'rules'
+        ? 'Pondasi & Rumus'
+        : (_activeSection == 'matrix'
+            ? 'Matriks Subjek'
+            : (_activeSection == 'mistakes' ? 'Kesalahan Umum' : 'Latihan Soal'));
+
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.only(bottom: 12),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () => setState(() => _showFilters = !_showFilters),
+          borderRadius: BorderRadius.circular(12),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+            decoration: BoxDecoration(
+              color: isDark ? const Color(0xFF1E293B) : Colors.white,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: _showFilters
+                    ? Colors.purple
+                    : (isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0)),
+                width: _showFilters ? 1.5 : 1.0,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: isDark ? 0.2 : 0.04),
+                  blurRadius: 4,
+                  offset: const Offset(0, 2),
+                ),
+              ],
+            ),
+            child: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                    color: _showFilters
+                        ? Colors.purple
+                        : Colors.purple.withValues(alpha: 0.15),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Icon(
+                    Icons.tune_rounded,
+                    size: 16,
+                    color: _showFilters ? Colors.white : Colors.purple,
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Wrap(
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        spacing: 6,
+                        children: [
+                          Text(
+                            'Pilihan Materi To Be',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: isDark ? Colors.white : const Color(0xFF0F172A),
+                            ),
+                          ),
+                          Text(
+                            _showFilters ? '(Tutup menu)' : '(Buka menu)',
+                            style: TextStyle(
+                              fontSize: 11,
+                              color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        'Materi: $activeLabel',
+                        style: const TextStyle(
+                          fontSize: 11,
+                          color: Colors.purple,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Icon(
+                  _showFilters
+                      ? Icons.keyboard_arrow_up_rounded
+                      : Icons.keyboard_arrow_down_rounded,
+                  color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 

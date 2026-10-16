@@ -20,7 +20,7 @@ class _UniversalDictionaryTabState extends State<UniversalDictionaryTab> {
 
   // Active sub-mode: 'terjemahan', 'kamus', 'baku', 'antonim'
   String _activeMode = 'terjemahan';
-
+  bool _showFilters = false;
   // Translation settings
   TranslationDirection _translationDirection = TranslationDirection.idToEn;
   List<TranslationEntry> _currentTranslations = [];
@@ -156,93 +156,108 @@ class _UniversalDictionaryTabState extends State<UniversalDictionaryTab> {
                   ),
                   child: Column(
                     children: [
-                      // Sub-navigation segmented buttons
-                      SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Row(
-                          children: [
-                            _buildModeButton(
-                              id: 'terjemahan',
-                              label: 'Terjemahan En ⇄ Id (54.073)',
-                              icon: Icons.translate_rounded,
-                              isDark: isDark,
+                      // Search input & Filter Toggle Button
+                      Row(
+                        children: [
+                          Expanded(
+                            child: TextField(
+                              controller: _searchController,
+                              onChanged: _onSearchChanged,
+                              decoration: InputDecoration(
+                                hintText: _getSearchHint(),
+                                prefixIcon: const Icon(Icons.search_rounded),
+                                suffixIcon: _searchController.text.isNotEmpty
+                                    ? IconButton(
+                                        icon: const Icon(Icons.clear_rounded),
+                                        onPressed: () {
+                                          _searchController.clear();
+                                          _onSearchChanged('');
+                                        },
+                                      )
+                                    : null,
+                              ),
                             ),
-                            const SizedBox(width: 8),
-                            _buildModeButton(
-                              id: 'kamus',
-                              label: 'Kamus KBBI (115.978)',
-                              icon: Icons.menu_book_rounded,
-                              isDark: isDark,
-                            ),
-                            const SizedBox(width: 8),
-                            _buildModeButton(
-                              id: 'baku',
-                              label: 'Baku vs Nonbaku (2.847)',
-                              icon: Icons.spellcheck_rounded,
-                              isDark: isDark,
-                            ),
-                            const SizedBox(width: 8),
-                            _buildModeButton(
-                              id: 'antonim',
-                              label: 'Lawan Kata (549)',
-                              icon: Icons.swap_horiz_rounded,
-                              isDark: isDark,
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 12),
-
-                      // Translation direction filter bar (Only in 'terjemahan' mode)
-                      if (_activeMode == 'terjemahan') ...[
-                        _buildTranslationDirectionFilter(isDark),
-                        const SizedBox(height: 10),
-                      ],
-
-                      // Search input
-                      TextField(
-                        controller: _searchController,
-                        onChanged: _onSearchChanged,
-                        decoration: InputDecoration(
-                          hintText: _getSearchHint(),
-                          prefixIcon: const Icon(Icons.search_rounded),
-                          suffixIcon: _searchController.text.isNotEmpty
-                              ? IconButton(
-                                  icon: const Icon(Icons.clear_rounded),
-                                  onPressed: () {
-                                    _searchController.clear();
-                                    _onSearchChanged('');
-                                  },
-                                )
-                              : null,
-                        ),
-                      ),
-
-                      // Category selector for Kamus KBBI mode
-                      if (_activeMode == 'kamus') ...[
-                        const SizedBox(height: 10),
-                        SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            children: _categories.map((cat) {
-                              final isSelected = _selectedCategory == cat;
-                              final label = cat == 'all' ? 'Semua Kelas' : cat;
-
-                              return Padding(
-                                padding: const EdgeInsets.only(right: 6),
-                                child: FilterChip(
-                                  label: Text(label, style: const TextStyle(fontSize: 11)),
-                                  selected: isSelected,
-                                  onSelected: (val) {
-                                    setState(() => _selectedCategory = cat);
-                                    _loadEntries();
-                                  },
-                                ),
-                              );
-                            }).toList(),
                           ),
-                        ),
-                      ],
+                          const SizedBox(width: 8),
+                          _buildFilterToggleButton(isDark),
+                        ],
+                      ),
+
+                      // Collapsible Sub-navigation & Filters
+                      AnimatedSize(
+                        duration: const Duration(milliseconds: 200),
+                        curve: Curves.easeInOut,
+                        child: _showFilters
+                            ? Column(
+                                children: [
+                                  const SizedBox(height: 12),
+                                  // Sub-navigation segmented buttons
+                                  SingleChildScrollView(
+                                    scrollDirection: Axis.horizontal,
+                                    child: Row(
+                                      children: [
+                                        _buildModeButton(
+                                          id: 'terjemahan',
+                                          label: 'Terjemahan En ⇄ Id (54.073)',
+                                          icon: Icons.translate_rounded,
+                                          isDark: isDark,
+                                        ),
+                                        const SizedBox(width: 8),
+                                        _buildModeButton(
+                                          id: 'kamus',
+                                          label: 'Kamus KBBI (115.978)',
+                                          icon: Icons.menu_book_rounded,
+                                          isDark: isDark,
+                                        ),
+                                        const SizedBox(width: 8),
+                                        _buildModeButton(
+                                          id: 'baku',
+                                          label: 'Baku vs Nonbaku (2.847)',
+                                          icon: Icons.spellcheck_rounded,
+                                          isDark: isDark,
+                                        ),
+                                        const SizedBox(width: 8),
+                                        _buildModeButton(
+                                          id: 'antonim',
+                                          label: 'Lawan Kata (549)',
+                                          icon: Icons.swap_horiz_rounded,
+                                          isDark: isDark,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  if (_activeMode == 'terjemahan') ...[
+                                    const SizedBox(height: 10),
+                                    _buildTranslationDirectionFilter(isDark),
+                                  ],
+                                  if (_activeMode == 'kamus') ...[
+                                    const SizedBox(height: 10),
+                                    SingleChildScrollView(
+                                      scrollDirection: Axis.horizontal,
+                                      child: Row(
+                                        children: _categories.map((cat) {
+                                          final isSelected = _selectedCategory == cat;
+                                          final label = cat == 'all' ? 'Semua Kelas' : cat;
+
+                                          return Padding(
+                                            padding: const EdgeInsets.only(right: 6),
+                                            child: FilterChip(
+                                              label: Text(label, style: const TextStyle(fontSize: 11)),
+                                              selected: isSelected,
+                                              onSelected: (val) {
+                                                setState(() => _selectedCategory = cat);
+                                                _loadEntries();
+                                              },
+                                            ),
+                                          );
+                                        }).toList(),
+                                      ),
+                                    ),
+                                  ],
+                                ],
+                              )
+                            : const SizedBox.shrink(),
+                      ),
                     ],
                   ),
                 ),
@@ -326,6 +341,40 @@ class _UniversalDictionaryTabState extends State<UniversalDictionaryTab> {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildFilterToggleButton(bool isDark) {
+    return Tooltip(
+      message: _showFilters ? 'Sembunyikan Menu & Filter' : 'Tampilkan Menu & Filter',
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () => setState(() => _showFilters = !_showFilters),
+          borderRadius: BorderRadius.circular(12),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: _showFilters
+                  ? AppTheme.primary
+                  : (isDark ? const Color(0xFF1E293B) : Colors.white),
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: _showFilters
+                    ? AppTheme.primary
+                    : (isDark ? const Color(0xFF334155) : const Color(0xFFCBD5E1)),
+                width: _showFilters ? 1.5 : 1.0,
+              ),
+            ),
+            child: Icon(
+              Icons.tune_rounded,
+              size: 20,
+              color: _showFilters ? Colors.white : AppTheme.primary,
+            ),
+          ),
         ),
       ),
     );
