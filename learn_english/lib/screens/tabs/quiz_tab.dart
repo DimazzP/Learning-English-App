@@ -26,6 +26,7 @@ class _QuizTabState extends State<QuizTab> {
 
   // Tense types: 'all', 'present', 'past', 'future', 'past_future'
   String _tenseTypeFilter = 'all';
+  bool _showFilters = false;
   GrammarQuizQuestion? _currentGrammarQuestion;
   final TextEditingController _translationController = TextEditingController();
   TranslationAnalysis? _translationAnalysis;
@@ -380,6 +381,7 @@ class _QuizTabState extends State<QuizTab> {
               if (_quizCategory == 'grammarly') ...[
                 Wrap(
                   alignment: WrapAlignment.center,
+                  crossAxisAlignment: WrapCrossAlignment.center,
                   spacing: 8,
                   runSpacing: 6,
                   children: [
@@ -396,7 +398,6 @@ class _QuizTabState extends State<QuizTab> {
                         }
                       },
                     ),
-                    const SizedBox(width: 8),
                     ChoiceChip(
                       label: const Text('Pilihan Ganda'),
                       avatar: const Icon(Icons.radio_button_checked_rounded, size: 14),
@@ -410,127 +411,140 @@ class _QuizTabState extends State<QuizTab> {
                         }
                       },
                     ),
+                    _buildFilterToggleButton(isDark),
                   ],
                 ),
-                const SizedBox(height: 10),
 
-                // 3. Level Filter Selector: Beginner, Intermediate, Expert
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                  decoration: BoxDecoration(
-                    color: isDark ? const Color(0xFF1E293B) : Colors.white,
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                      color: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
-                    ),
-                  ),
-                  child: Row(
-                    children: [
-                      const Icon(Icons.trending_up_rounded, size: 16, color: AppTheme.primary),
-                      const SizedBox(width: 6),
-                      Text(
-                        'Tingkat Kesulitan:',
-                        style: TextStyle(
-                          fontSize: 11,
-                          fontWeight: FontWeight.bold,
-                          color: isDark ? Colors.grey.shade400 : Colors.grey.shade700,
-                        ),
-                      ),
-                      const SizedBox(width: 10),
-                      Expanded(
-                        child: SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            children: [
-                              _buildLevelFilterChip('beginner', 'Beginner', Colors.green),
-                              const SizedBox(width: 6),
-                              _buildLevelFilterChip('intermediate', 'Intermediate', Colors.orange),
-                              const SizedBox(width: 6),
-                              _buildLevelFilterChip('expert', 'Expert', Colors.red),
-                              const SizedBox(width: 6),
-                              _buildLevelFilterChip('all', 'Semua Level', Colors.blue),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 10),
+                // Collapsible Filter Section (Tingkat Kesulitan & Tense Type)
+                AnimatedSize(
+                  duration: const Duration(milliseconds: 200),
+                  curve: Curves.easeInOut,
+                  child: _showFilters
+                      ? Column(
+                          children: [
+                            const SizedBox(height: 10),
+                            // 3. Level Filter Selector: Beginner, Intermediate, Expert
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: isDark ? const Color(0xFF1E293B) : Colors.white,
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(
+                                  color: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
+                                ),
+                              ),
+                              child: Row(
+                                children: [
+                                  const Icon(Icons.trending_up_rounded, size: 16, color: AppTheme.primary),
+                                  const SizedBox(width: 6),
+                                  Text(
+                                    'Tingkat Kesulitan:',
+                                    style: TextStyle(
+                                      fontSize: 11,
+                                      fontWeight: FontWeight.bold,
+                                      color: isDark ? Colors.grey.shade400 : Colors.grey.shade700,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 10),
+                                  Expanded(
+                                    child: SingleChildScrollView(
+                                      scrollDirection: Axis.horizontal,
+                                      child: Row(
+                                        children: [
+                                          _buildLevelFilterChip('beginner', 'Beginner', Colors.green),
+                                          const SizedBox(width: 6),
+                                          _buildLevelFilterChip('intermediate', 'Intermediate', Colors.orange),
+                                          const SizedBox(width: 6),
+                                          _buildLevelFilterChip('expert', 'Expert', Colors.red),
+                                          const SizedBox(width: 6),
+                                          _buildLevelFilterChip('all', 'Semua Level', Colors.blue),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 10),
 
-                // 4. Filter by Tense Type (4 types: Present, Past, Future, Past Future)
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      ChoiceChip(
-                        label: const Text('Semua Tenses'),
-                        selected: _tenseTypeFilter == 'all',
-                        onSelected: (val) {
-                          if (val) {
-                            setState(() {
-                              _tenseTypeFilter = 'all';
-                            });
-                            _loadNextQuestion();
-                          }
-                        },
-                      ),
-                      const SizedBox(width: 6),
-                      ChoiceChip(
-                        label: const Text('Present'),
-                        selected: _tenseTypeFilter == 'present',
-                        onSelected: (val) {
-                          if (val) {
-                            setState(() {
-                              _tenseTypeFilter = 'present';
-                            });
-                            _loadNextQuestion();
-                          }
-                        },
-                      ),
-                      const SizedBox(width: 6),
-                      ChoiceChip(
-                        label: const Text('Past'),
-                        selected: _tenseTypeFilter == 'past',
-                        onSelected: (val) {
-                          if (val) {
-                            setState(() {
-                              _tenseTypeFilter = 'past';
-                            });
-                            _loadNextQuestion();
-                          }
-                        },
-                      ),
-                      const SizedBox(width: 6),
-                      ChoiceChip(
-                        label: const Text('Future'),
-                        selected: _tenseTypeFilter == 'future',
-                        onSelected: (val) {
-                          if (val) {
-                            setState(() {
-                              _tenseTypeFilter = 'future';
-                            });
-                            _loadNextQuestion();
-                          }
-                        },
-                      ),
-                      const SizedBox(width: 6),
-                      ChoiceChip(
-                        label: const Text('Past Future'),
-                        selected: _tenseTypeFilter == 'past_future',
-                        onSelected: (val) {
-                          if (val) {
-                            setState(() {
-                              _tenseTypeFilter = 'past_future';
-                            });
-                            _loadNextQuestion();
-                          }
-                        },
-                      ),
-                    ],
-                  ),
+                            // 4. Filter by Tense Type (4 types: Present, Past, Future, Past Future)
+                            SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  ChoiceChip(
+                                    label: const Text('Semua Tenses'),
+                                    selected: _tenseTypeFilter == 'all',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _tenseTypeFilter = 'all';
+                                        });
+                                        _loadNextQuestion();
+                                      }
+                                    },
+                                  ),
+                                  const SizedBox(width: 6),
+                                  ChoiceChip(
+                                    label: const Text('Present'),
+                                    selected: _tenseTypeFilter == 'present',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _tenseTypeFilter = 'present';
+                                        });
+                                        _loadNextQuestion();
+                                      }
+                                    },
+                                  ),
+                                  const SizedBox(width: 6),
+                                  ChoiceChip(
+                                    label: const Text('Past'),
+                                    selected: _tenseTypeFilter == 'past',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _tenseTypeFilter = 'past';
+                                        });
+                                        _loadNextQuestion();
+                                      }
+                                    },
+                                  ),
+                                  const SizedBox(width: 6),
+                                  ChoiceChip(
+                                    label: const Text('Future'),
+                                    selected: _tenseTypeFilter == 'future',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _tenseTypeFilter = 'future';
+                                        });
+                                        _loadNextQuestion();
+                                      }
+                                    },
+                                  ),
+                                  const SizedBox(width: 6),
+                                  ChoiceChip(
+                                    label: const Text('Past Future'),
+                                    selected: _tenseTypeFilter == 'past_future',
+                                    onSelected: (val) {
+                                      if (val) {
+                                        setState(() {
+                                          _tenseTypeFilter = 'past_future';
+                                        });
+                                        _loadNextQuestion();
+                                      }
+                                    },
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        )
+                      : const SizedBox.shrink(),
                 ),
+                const SizedBox(height: 12),
               ] else ...[
                 // Sub-modes for Verb Quiz
                 SingleChildScrollView(
@@ -659,6 +673,75 @@ class _QuizTabState extends State<QuizTab> {
         fontSize: 11,
         fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
         color: isSelected ? color : null,
+      ),
+    );
+  }
+
+  Widget _buildFilterToggleButton(bool isDark) {
+    final hasActiveFilter = _tenseTypeFilter != 'all' || _levelFilter != 'all';
+    return Tooltip(
+      message: _showFilters ? 'Sembunyikan Filter' : 'Tampilkan Filter',
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () => setState(() => _showFilters = !_showFilters),
+          borderRadius: BorderRadius.circular(10),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+            decoration: BoxDecoration(
+              color: _showFilters
+                  ? AppTheme.primary
+                  : (hasActiveFilter
+                      ? AppTheme.primary.withValues(alpha: 0.15)
+                      : (isDark ? const Color(0xFF1E293B) : Colors.white)),
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(
+                color: _showFilters || hasActiveFilter
+                    ? AppTheme.primary
+                    : (isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0)),
+              ),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  _showFilters ? Icons.filter_alt_rounded : Icons.filter_alt_outlined,
+                  size: 16,
+                  color: _showFilters
+                      ? Colors.white
+                      : (hasActiveFilter
+                          ? AppTheme.primary
+                          : (isDark ? Colors.grey.shade300 : Colors.grey.shade700)),
+                ),
+                const SizedBox(width: 4),
+                Text(
+                  'Filter',
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    color: _showFilters
+                        ? Colors.white
+                        : (hasActiveFilter
+                            ? AppTheme.primary
+                            : (isDark ? Colors.grey.shade300 : Colors.grey.shade700)),
+                  ),
+                ),
+                if (hasActiveFilter) ...[
+                  const SizedBox(width: 4),
+                  Container(
+                    width: 6,
+                    height: 6,
+                    decoration: BoxDecoration(
+                      color: _showFilters ? Colors.white : AppTheme.primary,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

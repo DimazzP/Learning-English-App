@@ -6,7 +6,12 @@ Dokumen ini mencatat riwayat pembaruan, penambahan fitur, perbaikan bug, dan sta
 
 ## 📌 Ringkasan Pembaruan Terkini
 
-### 1. Penambahan 150 Soal Kuis Present Tense
+### 1. Fitur Toggle & Sembunyikan Filter (Grammar Guide & Kuis)
+- **Collapsible Filters**: Baris filter pada tab *Pembelajaran 16 Tenses* (`grammar_guide_tab.dart`) dan *Kuis Grammarly* (`quiz_tab.dart`) kini dapat disembunyikan (*hide*) dan dimunculkan kembali dengan tombol ikon Filter.
+- **Kondisi Awal Hide**: Filter dalam keadaan tertutup/tersembunyi secara default untuk menjaga tampilan UI tetap lapang dan tidak terasa penuh.
+- **Indikator Aktif**: Tombol Filter dilengkapi animasi transisi, badge/titik status ketika filter tertentu aktif, dan tooltip panduan.
+
+### 2. Penambahan 150 Soal Kuis Present Tense
 - **Ekspansi Bank Soal Present Tense**: Menambahkan **150 soal baru** berkualitas tinggi yang mencakup seluruh tingkat kesukaran:
   - `beginner_present.json`: +50 soal baru (`b_pres_61` s.d. `b_pres_110`), kini total **110 soal** (Simple Present & Present Continuous).
   - `intermediate_present.json`: +50 soal baru (`q_pres_73` s.d. `q_pres_122`), kini total **118 soal** (Simple Present, Present Continuous, & Present Perfect).
@@ -15,7 +20,7 @@ Dokumen ini mencatat riwayat pembaruan, penambahan fitur, perbaikan bug, dan sta
 - **Sinkronisasi**: `manifest.json` diperbarui dengan `totalQuestions: 553` dan verifikasi unit test di `test/verb_repository_test.dart` disesuaikan.
 - **Standar Soal**: Format `GrammarQuestion` lengkap dengan 4 opsi pilihan, kunci jawaban tepat, kalimat target terjemahan, dan penjelasan tata bahasa mendalam dalam Bahasa Indonesia.
 
-### 2. Riwayat Pembaruan Sebelumnya (Present & Past Tense)
+### 3. Riwayat Pembaruan Sebelumnya (Present & Past Tense)
 - **Ekspansi Bank Soal**: Menambahkan **117 soal baru** berkualitas tinggi yang mencakup tingkat *Beginner*, *Intermediate*, dan *Expert* untuk kategori Present Tense dan Past Tense.
 - **Total Soal Saat Ini**: Meningkat dari 286 soal menjadi **403 soal** di seluruh shards JSON (`assets/data/questions/`):
   - `beginner_present.json`: +15 soal (total 60 soal)
@@ -27,7 +32,7 @@ Dokumen ini mencatat riwayat pembaruan, penambahan fitur, perbaikan bug, dan sta
   - `manifest.json`: Diperbarui dengan `totalQuestions: 403` dan sinkronisasi jumlah tiap file shard.
 - **Standar Soal**: Menggunakan model `GrammarQuestion` dengan 4 pilihan ganda masuk akal, kunci jawaban akurat, target kalimat lengkap, kunci terjemahan, dan penjelasan tata bahasa mendalam dalam Bahasa Indonesia.
 
-### 2. Perbaikan Sistem Pelacakan Anti-Repetisi Kuis
+### 4. Perbaikan Sistem Pelacakan Anti-Repetisi Kuis
 - **Penyimpanan Permanen (SharedPreferences)**:
   - Menyimpan riwayat soal yang sudah dijawab ke dalam `VerbRepository` (`lib/services/verb_repository.dart`) dengan kunci `answered_grammar_question_ids` dan `answered_verb_keys`.
   - Progres pengerjaan soal tidak akan hilang saat pengguna berpindah tab navigasi, mengubah orientasi layar, atau menutup aplikasi.
@@ -39,7 +44,7 @@ Dokumen ini mencatat riwayat pembaruan, penambahan fitur, perbaikan bug, dan sta
 - **Menghilangkan Mutasi Diam-diam Saat Soal Habis**:
   - Menghapus baris mutasi `excludeIds.removeAll(...)` di `generateGrammarQuizQuestion`. Ketika seluruh soal dalam suatu kategori telah diselesaikan, fungsi mengembalikan nilai `null` sehingga aplikasi tidak lagi mengulang soal secara sembunyi-sembunyi.
 
-### 3. Peningkatan Antarmuka (UI) Kuis di `quiz_tab.dart`
+### 5. Peningkatan Antarmuka (UI) Kuis di `quiz_tab.dart`
 - **Bilah Progres (Progress Bar)**:
   - Menampilkan jumlah soal yang telah dikerjakan vs total soal dalam kategori aktif:
     `Progres Selesai: [x] / [total] Soal ([%])` disertai `LinearProgressIndicator` Material 3 dan tombol *Reset* cepat.
@@ -48,7 +53,7 @@ Dokumen ini mencatat riwayat pembaruan, penambahan fitur, perbaikan bug, dan sta
     - **"Ulangi Latihan Kategori Ini (Reset)"** untuk mengulang latihan kategori tersebut dari awal.
     - Opsi untuk beralih ke level/tense berikutnya.
 
-### 4. Tampilan Awal Default Split Screen (`home_screen.dart`)
+### 6. Tampilan Awal Default Split Screen (`home_screen.dart`)
 - **Tampilan Awal 2 Kolom**: Saat aplikasi atau situs web pertama kali dibuka, tampilan langsung berada pada mode **Split 2 Tampilan Berdampingan** (`2_cols`):
   - **Panel Sisi Kiri**: Panduan Pengetahuan Tata Bahasa & 16 Tenses (`GrammarGuideTab`).
   - **Panel Sisi Kanan**: Kuis & Latihan Soal Interaktif (`QuizTab`).

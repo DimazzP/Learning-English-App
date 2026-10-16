@@ -15,6 +15,7 @@ class GrammarGuideTab extends StatefulWidget {
 class _GrammarGuideTabState extends State<GrammarGuideTab> {
   String _selectedCategory = 'All'; // 'All', 'Present', 'Past', 'Future', 'Past Future'
   String _viewMode = 'compare'; // 'compare' (tabel komparasi), 'grid_table' (data table), 'cards' (kartu detail)
+  bool _showFilters = false;
 
   // Standard unified comparative examples using the verb "write"
   static const Map<String, Map<String, String>> _comparativeExamples = {
@@ -180,75 +181,91 @@ class _GrammarGuideTabState extends State<GrammarGuideTab> {
               ),
               const SizedBox(height: 16),
 
-              // View Mode Selector (Segmented buttons - no overflow)
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    _buildModeButton(
-                      label: 'Tabel Perbandingan',
-                      icon: Icons.table_rows_rounded,
-                      selected: _viewMode == 'compare',
-                      onTap: () => setState(() => _viewMode = 'compare'),
-                      isDark: isDark,
+              // View Mode Selector and Filter Toggle Button
+              Row(
+                children: [
+                  Expanded(
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          _buildModeButton(
+                            label: 'Tabel Perbandingan',
+                            icon: Icons.table_rows_rounded,
+                            selected: _viewMode == 'compare',
+                            onTap: () => setState(() => _viewMode = 'compare'),
+                            isDark: isDark,
+                          ),
+                          const SizedBox(width: 8),
+                          _buildModeButton(
+                            label: 'Tabel Grid Lengkap',
+                            icon: Icons.grid_on_rounded,
+                            selected: _viewMode == 'grid_table',
+                            onTap: () => setState(() => _viewMode = 'grid_table'),
+                            isDark: isDark,
+                          ),
+                          const SizedBox(width: 8),
+                          _buildModeButton(
+                            label: 'Kartu Penjelasan',
+                            icon: Icons.dashboard_rounded,
+                            selected: _viewMode == 'cards',
+                            onTap: () => setState(() => _viewMode = 'cards'),
+                            isDark: isDark,
+                          ),
+                        ],
+                      ),
                     ),
-                    const SizedBox(width: 8),
-                    _buildModeButton(
-                      label: 'Tabel Grid Lengkap',
-                      icon: Icons.grid_on_rounded,
-                      selected: _viewMode == 'grid_table',
-                      onTap: () => setState(() => _viewMode = 'grid_table'),
-                      isDark: isDark,
-                    ),
-                    const SizedBox(width: 8),
-                    _buildModeButton(
-                      label: 'Kartu Penjelasan',
-                      icon: Icons.dashboard_rounded,
-                      selected: _viewMode == 'cards',
-                      onTap: () => setState(() => _viewMode = 'cards'),
-                      isDark: isDark,
-                    ),
-                  ],
-                ),
+                  ),
+                  const SizedBox(width: 8),
+                  _buildFilterButton(isDark),
+                ],
               ),
-              const SizedBox(height: 14),
 
-              // Category Selector Chips (All, Present, Past, Future, Past Future)
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    ChoiceChip(
-                      label: Text('Semua (${repo.allTenses.length})'),
-                      selected: _selectedCategory == 'All',
-                      onSelected: (val) => setState(() => _selectedCategory = 'All'),
-                    ),
-                    const SizedBox(width: 8),
-                    ChoiceChip(
-                      label: const Text('Present (4)'),
-                      selected: _selectedCategory == 'Present',
-                      onSelected: (val) => setState(() => _selectedCategory = 'Present'),
-                    ),
-                    const SizedBox(width: 8),
-                    ChoiceChip(
-                      label: const Text('Past (4)'),
-                      selected: _selectedCategory == 'Past',
-                      onSelected: (val) => setState(() => _selectedCategory = 'Past'),
-                    ),
-                    const SizedBox(width: 8),
-                    ChoiceChip(
-                      label: const Text('Future (4)'),
-                      selected: _selectedCategory == 'Future',
-                      onSelected: (val) => setState(() => _selectedCategory = 'Future'),
-                    ),
-                    const SizedBox(width: 8),
-                    ChoiceChip(
-                      label: const Text('Past Future (4)'),
-                      selected: _selectedCategory == 'Past Future',
-                      onSelected: (val) => setState(() => _selectedCategory = 'Past Future'),
-                    ),
-                  ],
-                ),
+              // Category Selector Chips (Collapsible Filter, hidden by default)
+              AnimatedSize(
+                duration: const Duration(milliseconds: 200),
+                curve: Curves.easeInOut,
+                child: _showFilters
+                    ? Padding(
+                        padding: const EdgeInsets.only(top: 12),
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: [
+                              ChoiceChip(
+                                label: Text('Semua (${repo.allTenses.length})'),
+                                selected: _selectedCategory == 'All',
+                                onSelected: (val) => setState(() => _selectedCategory = 'All'),
+                              ),
+                              const SizedBox(width: 8),
+                              ChoiceChip(
+                                label: const Text('Present (4)'),
+                                selected: _selectedCategory == 'Present',
+                                onSelected: (val) => setState(() => _selectedCategory = 'Present'),
+                              ),
+                              const SizedBox(width: 8),
+                              ChoiceChip(
+                                label: const Text('Past (4)'),
+                                selected: _selectedCategory == 'Past',
+                                onSelected: (val) => setState(() => _selectedCategory = 'Past'),
+                              ),
+                              const SizedBox(width: 8),
+                              ChoiceChip(
+                                label: const Text('Future (4)'),
+                                selected: _selectedCategory == 'Future',
+                                onSelected: (val) => setState(() => _selectedCategory = 'Future'),
+                              ),
+                              const SizedBox(width: 8),
+                              ChoiceChip(
+                                label: const Text('Past Future (4)'),
+                                selected: _selectedCategory == 'Past Future',
+                                onSelected: (val) => setState(() => _selectedCategory = 'Past Future'),
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    : const SizedBox.shrink(),
               ),
               const SizedBox(height: 16),
 
@@ -501,6 +518,75 @@ class _GrammarGuideTabState extends State<GrammarGuideTab> {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildFilterButton(bool isDark) {
+    final hasActiveFilter = _selectedCategory != 'All';
+    return Tooltip(
+      message: _showFilters ? 'Sembunyikan Filter' : 'Tampilkan Filter',
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () => setState(() => _showFilters = !_showFilters),
+          borderRadius: BorderRadius.circular(10),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+            decoration: BoxDecoration(
+              color: _showFilters
+                  ? AppTheme.primary
+                  : (hasActiveFilter
+                      ? AppTheme.primary.withValues(alpha: 0.15)
+                      : (isDark ? const Color(0xFF1E293B) : Colors.white)),
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(
+                color: _showFilters || hasActiveFilter
+                    ? AppTheme.primary
+                    : (isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0)),
+              ),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  _showFilters ? Icons.filter_alt_rounded : Icons.filter_alt_outlined,
+                  size: 16,
+                  color: _showFilters
+                      ? Colors.white
+                      : (hasActiveFilter
+                          ? AppTheme.primary
+                          : (isDark ? Colors.grey.shade300 : Colors.grey.shade700)),
+                ),
+                const SizedBox(width: 4),
+                Text(
+                  'Filter',
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    color: _showFilters
+                        ? Colors.white
+                        : (hasActiveFilter
+                            ? AppTheme.primary
+                            : (isDark ? Colors.grey.shade300 : Colors.grey.shade700)),
+                  ),
+                ),
+                if (hasActiveFilter) ...[
+                  const SizedBox(width: 4),
+                  Container(
+                    width: 6,
+                    height: 6,
+                    decoration: BoxDecoration(
+                      color: _showFilters ? Colors.white : AppTheme.primary,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
         ),
       ),
     );
